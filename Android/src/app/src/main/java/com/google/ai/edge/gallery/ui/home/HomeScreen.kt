@@ -228,6 +228,7 @@ fun HomeScreen(
         .sortedByDescending { it.timestamp }
         .take(5)
     }
+  val discoveredTenderCount = scraperUiState.firebaseTenderIds.size
 
   var tasks = uiState.tasks
 
@@ -266,6 +267,10 @@ fun HomeScreen(
 
   // Show home screen content when TOS has been accepted.
   if (!showTosDialog) {
+    LaunchedEffect(Unit) {
+      tenderScraperViewModel.loadFirebaseTenders()
+    }
+
     // The code below manages the display of the model allowlist loading indicator with a debounced
     // delay. It ensures that a progress indicator is only shown if the loading operation
     // (represented by `uiState.loadingModelAllowlist`) takes longer than 200 milliseconds.
@@ -486,7 +491,7 @@ fun HomeScreen(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
               ) {
                 item {
-                  DashboardHeaderCard()
+                  DashboardHeaderCard(discoveredTenderCount = discoveredTenderCount)
                 }
 
                 item {
@@ -909,7 +914,7 @@ private fun DashboardLogoBadge(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun DashboardHeaderCard() {
+private fun DashboardHeaderCard(discoveredTenderCount: Int) {
   Card(
     modifier = Modifier.fillMaxWidth(),
     shape = RoundedCornerShape(30.dp),
@@ -930,7 +935,7 @@ private fun DashboardHeaderCard() {
       ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
           Text(
-            text = "124 Tenders Discovered",
+            text = "$discoveredTenderCount Tenders Discovered",
             style = MaterialTheme.typography.headlineSmall,
             color = Color.White,
           )
