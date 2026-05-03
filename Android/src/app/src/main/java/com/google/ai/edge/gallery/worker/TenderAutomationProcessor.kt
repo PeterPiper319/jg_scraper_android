@@ -29,90 +29,67 @@ class TenderAutomationProcessor @Inject constructor(
   companion object {
     private const val TAG = "AGTenderAutomation"
     private const val GEMMA_ENRICHMENT_FILENAME = "gemma-manifest-enrichment.json"
-    private const val MAX_FILE_TEXT_CHARS = 12000
-    private const val MAX_ENRICHMENT_PREP_PROMPT_CHARS = 1800
-    private const val MAX_CORE_DOCUMENT_CHARS = 1800
-    private const val MAX_REQUIREMENTS_DOCUMENT_CHARS = 2600
-    private const val MAX_BOQ_DOCUMENT_CHARS = 2600
+    private const val MAX_FILE_TEXT_CHARS = 7000
+    private const val MAX_ENRICHMENT_PREP_PROMPT_CHARS = 7000
+    private const val MAX_CONSOLIDATED_DOCUMENT_CHARS = 7000
   }
 
   suspend fun enrichAndUploadTender(model: Model, tenderId: String) {
-    val folder = fileManager.getTenderFolder(tenderId)
-    if (!hasGemmaReadableDocuments(folder)) {
-      fileManager.clearTenderUploadedMarker(folder)
-      firebaseSync.uploadTenderFolder(folder)
-      fileManager.markTenderUploaded(folder)
-      return
+    var response = ""
+    try {
+      val folder = fileManager.getTenderFolder(tenderId)
+      if (!hasGemmaReadableDocuments(folder)) {
+        fileManager.clearTenderUploadedMarker(folder)
+        firebaseSync.uploadTenderFolder(folder)
+        fileManager.markTenderUploaded(folder)
+        return
+      }
+
+      val prepared = prepareTenderDocuments(model = model, tenderId = tenderId) ?: return
+      fileManager.clearTenderUploadedMarker(prepared.folder)
+      val manifestContext = buildManifestContext(prepared.folder)
+      val combinedEnrichment = JSONObject()
+
+      response =
+        runGemmaInferenceForResult(
+          model = model,
+          tenderId = tenderId,
+          prompt =
+            buildGemmaCombinedEnrichmentPrompt(
+              tenderId = tenderId,
+              manifestContext = manifestContext,
+              documentBundle = buildDocumentBundle(prepared.readableFiles, MAX_CONSOLIDATED_DOCUMENT_CHARS),
+            ),
+        )
+      val enrichmentJson = extractJsonObject(response)
+      combinedEnrichment.put("documentType", enrichmentJson.optString("documentType", "unknown"))
+      combinedEnrichment.put("briefDescription", enrichmentJson.optString("briefDescription", ""))
+      combinedEnrichment.put("industry", extractIndustryValue(enrichmentJson))
+      combinedEnrichment.put("beeLevel", extractBeeLevelValue(enrichmentJson))
+      combinedEnrichment.put(
+        "estimatedTenderValue",
+        enrichmentJson.optJSONObject("estimatedTenderValue") ?: JSONObject.NULL,
+      )
+      combinedEnrichment.put(
+        "completeTenderDescription",
+        enrichmentJson.optString("completeTenderDescription", ""),
+      )
+      combinedEnrichment.put(
+        "requirements",
+        enrichmentJson.optJSONArray("requirements") ?: JSONArray(),
+      )
+      combinedEnrichment.put(
+        "billOfQuantities",
+        enrichmentJson.optJSONArray("billOfQuantities") ?: JSONArray(),
+      )
+
+      fileManager.saveTextFile(prepared.folder, GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
+      mergeGemmaEnrichmentIntoManifest(prepared.folder, combinedEnrichment)
+      firebaseSync.uploadTenderFolder(prepared.folder)
+      fileManager.markTenderUploaded(prepared.folder)
+    } catch (e: Exception) {
+      Log.e(TAG, "Failed during Gemma consolidated enrichment for $tenderId. Response preview: ${if (response.length > 200) response.take(200) + "..." else response}", e)
     }
-
-    val prepared = prepareTenderDocuments(model = model, tenderId = tenderId) ?: return
-    fileManager.clearTenderUploadedMarker(prepared.folder)
-    val manifestContext = buildManifestContext(prepared.folder)
-    val combinedEnrichment = JSONObject()
-
-    val coreResponse =
-      runGemmaInferenceForResult(
-        model = model,
-        tenderId = tenderId,
-        prompt =
-          buildGemmaCoreDetailsPrompt(
-            tenderId = tenderId,
-            manifestContext = manifestContext,
-            documentBundle = buildDocumentBundle(prepared.readableFiles, MAX_CORE_DOCUMENT_CHARS),
-          ),
-      )
-    val coreJson = extractJsonObject(coreResponse)
-    combinedEnrichment.put("documentType", coreJson.optString("documentType", "unknown"))
-    combinedEnrichment.put("briefDescription", coreJson.optString("briefDescription", ""))
-    combinedEnrichment.put("industry", extractIndustryValue(coreJson))
-    combinedEnrichment.put("beeLevel", extractBeeLevelValue(coreJson))
-    combinedEnrichment.put(
-      "estimatedTenderValue",
-      coreJson.optJSONObject("estimatedTenderValue") ?: JSONObject.NULL,
-    )
-    combinedEnrichment.put(
-      "completeTenderDescription",
-      coreJson.optString("completeTenderDescription", ""),
-    )
-
-    val requirementsResponse =
-      runGemmaInferenceForResult(
-        model = model,
-        tenderId = tenderId,
-        prompt =
-          buildGemmaRequirementsPrompt(
-            tenderId = tenderId,
-            manifestContext = manifestContext,
-            documentBundle = buildDocumentBundle(prepared.readableFiles, MAX_REQUIREMENTS_DOCUMENT_CHARS),
-          ),
-      )
-    val requirementsJson = extractJsonObject(requirementsResponse)
-    combinedEnrichment.put(
-      "requirements",
-      requirementsJson.optJSONArray("requirements") ?: JSONArray(),
-    )
-
-    val boqResponse =
-      runGemmaInferenceForResult(
-        model = model,
-        tenderId = tenderId,
-        prompt =
-          buildGemmaBoqPrompt(
-            tenderId = tenderId,
-            manifestContext = manifestContext,
-            documentBundle = buildDocumentBundle(prepared.readableFiles, MAX_BOQ_DOCUMENT_CHARS),
-          ),
-      )
-    val boqJson = extractJsonObject(boqResponse)
-    combinedEnrichment.put(
-      "billOfQuantities",
-      boqJson.optJSONArray("billOfQuantities") ?: JSONArray(),
-    )
-
-    fileManager.saveTextFile(prepared.folder, GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
-    mergeGemmaEnrichmentIntoManifest(prepared.folder, combinedEnrichment)
-    firebaseSync.uploadTenderFolder(prepared.folder)
-    fileManager.markTenderUploaded(prepared.folder)
   }
 
   private data class PreparedTenderDocuments(
@@ -120,7 +97,7 @@ class TenderAutomationProcessor @Inject constructor(
     val readableFiles: List<File>,
   )
 
-  private fun prepareTenderDocuments(model: Model, tenderId: String): PreparedTenderDocuments? {
+  private suspend fun prepareTenderDocuments(model: Model, tenderId: String): PreparedTenderDocuments? {
     val folder = fileManager.getTenderFolder(tenderId)
     val readableFiles =
       folder.listFiles()
@@ -160,7 +137,7 @@ class TenderAutomationProcessor @Inject constructor(
       input = prompt,
       resultListener = { partialResult, done, _ ->
         if (partialResult.isNotBlank()) {
-          response = processLlmResponse("$response$partialResult")
+          response += partialResult
         }
         if (done && !deferred.isCompleted) {
           deferred.complete(response.ifBlank { "Gemma completed without returning any text." })
@@ -182,7 +159,7 @@ class TenderAutomationProcessor @Inject constructor(
     return deferred.await()
   }
 
-  private fun ensureModelInitialized(model: Model): Boolean {
+  private suspend fun ensureModelInitialized(model: Model): Boolean {
     if (model.instance != null) {
       return true
     }
@@ -199,7 +176,7 @@ class TenderAutomationProcessor @Inject constructor(
 
     val deadline = System.currentTimeMillis() + 30000L
     while (model.instance == null && initializationError.isEmpty() && System.currentTimeMillis() < deadline) {
-      Thread.sleep(100)
+      delay(100)
     }
 
     return model.instance != null && initializationError.isEmpty()
@@ -279,13 +256,13 @@ class TenderAutomationProcessor @Inject constructor(
     """.trimIndent()
   }
 
-  private fun buildGemmaCoreDetailsPrompt(
+  private fun buildGemmaCombinedEnrichmentPrompt(
     tenderId: String,
     manifestContext: String,
     documentBundle: String,
   ): String {
     return """
-      You are extracting core tender details from tender documents.
+      You are extracting comprehensive tender details for tender $tenderId.
 
       Return exactly one valid JSON object and nothing else.
 
@@ -301,34 +278,7 @@ class TenderAutomationProcessor @Inject constructor(
           "displayValue": "original value text if present, else null",
           "confidence": "high|medium|low"
         },
-        "completeTenderDescription": "full detailed description based on the documents"
-      }
-
-      Rules:
-      - Keep all text compact and evidence-based.
-      - If a field is missing, use null or "unknown" as appropriate.
-      - Only use the allowed industry values.
-      - For beeLevel, prefer the explicit B-BBEE contributor level or stated BEE preference level from the documents. If not stated, use "unknown".
-      - If the documents are an advert rather than a full tender pack, say so in documentType and explain the limitation in completeTenderDescription.
-
-      $manifestContext
-
-      DOCUMENTS:
-      $documentBundle
-    """.trimIndent()
-  }
-
-  private fun buildGemmaRequirementsPrompt(
-    tenderId: String,
-    manifestContext: String,
-    documentBundle: String,
-  ): String {
-    return """
-      You are extracting a complete list of tender requirements for tender $tenderId.
-
-      Return exactly one valid JSON object and nothing else.
-      Schema:
-      {
+        "completeTenderDescription": "full detailed description based on the documents",
         "requirements": [
           {
             "category": "compliance|technical|professional_body|experience|pricing|administrative|mandatory_document|other",
@@ -336,32 +286,7 @@ class TenderAutomationProcessor @Inject constructor(
             "mandatory": true,
             "evidence": "short quote or paraphrase from the document"
           }
-        ]
-      }
-
-      Rules:
-      - Include business compliance, registrations, tax, CSD, CIDB, ISO, NHBRC, professional bodies, mandatory forms, pricing rules, delivery requirements, and technical requirements when present.
-      - Be exhaustive, but do not invent requirements.
-      - Use an empty array if nothing is present.
-
-      $manifestContext
-
-      DOCUMENTS:
-      $documentBundle
-    """.trimIndent()
-  }
-
-  private fun buildGemmaBoqPrompt(
-    tenderId: String,
-    manifestContext: String,
-    documentBundle: String,
-  ): String {
-    return """
-      You are extracting the bill of quantities or schedule of items for tender $tenderId.
-
-      Return exactly one valid JSON object and nothing else.
-      Schema:
-      {
+        ],
         "billOfQuantities": [
           {
             "item": "line item name",
@@ -376,9 +301,12 @@ class TenderAutomationProcessor @Inject constructor(
       }
 
       Rules:
-      - Include every identifiable BOQ or schedule item from the provided text.
-      - If there is no BOQ in the provided text, return an empty array.
-      - Do not invent quantities or prices.
+      - Keep all text compact and evidence-based.
+      - If a field is missing, use null or "unknown" or an empty array as appropriate.
+      - Only use the allowed industry values.
+      - For beeLevel, prefer the explicit B-BBEE contributor level.
+      - Include business compliance, technical requirements, and BOQ items if present.
+      - If no BOQ or requirements are found, return empty arrays.
 
       $manifestContext
 

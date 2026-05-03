@@ -524,7 +524,7 @@ fun HomeScreen(
                           .show()
                       } else {
                         Log.d("ScraperDebug", "Automation button clicked in UI")
-                        tenderScraperViewModel.scrapeEnrichAndUploadLatest(model, 100)
+                        tenderScraperViewModel.scrapeEnrichAndUploadLatest(model, -1)
                       }
                     },
                   )
@@ -560,13 +560,13 @@ fun HomeScreen(
                               .show()
                           } else {
                             Log.d("ScraperDebug", "Automation button clicked in UI")
-                            tenderScraperViewModel.scrapeEnrichAndUploadLatest(model, 100)
+                            tenderScraperViewModel.scrapeEnrichAndUploadLatest(model, -1)
                           }
                         },
                         modifier = Modifier.fillMaxWidth(),
                         enabled = !scraperUiState.isScraping,
                       ) {
-                        Text("Scrape, Enrich, Upload 100 Tenders")
+                        Text("Continuous Scrape, Enrich, Upload")
                       }
 
                       if (scraperUiState.isScraping) {
@@ -989,12 +989,12 @@ private fun DashboardBatchAction(
           verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
           Text(
-            text = "Start Batch",
+            text = "Start Continuous",
             style = MaterialTheme.typography.titleLarge,
             color = MaterialTheme.colorScheme.onSurface,
           )
           Text(
-            text = "100 tenders",
+            text = "5 per batch",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
           )

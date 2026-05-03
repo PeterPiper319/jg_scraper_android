@@ -24,6 +24,7 @@ import com.google.ai.edge.gallery.worker.TenderScraperWorker
 import com.google.ai.edge.gallery.worker.getScraperConstraints
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlin.math.min
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -56,7 +57,8 @@ data class ScraperUiState(
     val gemmaReadCheckStatusByTender: Map<String, String> = emptyMap(),
     val gemmaReadCheckResultByTender: Map<String, String> = emptyMap(),
     val gemmaEnrichmentStatusByTender: Map<String, String> = emptyMap(),
-    val firebaseUploadStatusByTender: Map<String, String> = emptyMap()
+    val firebaseUploadStatusByTender: Map<String, String> = emptyMap(),
+    val bulkEnrichmentStatus: String = "",
 )
 
 private data class ScrapeAutomationSession(
@@ -123,10 +125,8 @@ class TenderScraperViewModel @Inject constructor(
         private const val SESSION_STAGE_FAILED = "failed"
         private const val MAX_FILE_TEXT_CHARS = 12000
         private const val MAX_READ_CHECK_PROMPT_CHARS = 24000
-        private const val MAX_ENRICHMENT_PREP_PROMPT_CHARS = 1800
-        private const val MAX_CORE_DOCUMENT_CHARS = 1800
-        private const val MAX_REQUIREMENTS_DOCUMENT_CHARS = 2600
-        private const val MAX_BOQ_DOCUMENT_CHARS = 2600
+        private const val MAX_ENRICHMENT_PREP_PROMPT_CHARS = 4000
+        private const val MAX_CONSOLIDATED_DOCUMENT_CHARS = 4000
     }
 
     private val fileManager = TenderFileManager(context)
@@ -202,12 +202,12 @@ class TenderScraperViewModel @Inject constructor(
 
     fun scrapeEnrichAndUploadLatest(model: Model, limit: Int) {
         Log.d(TAG, "Starting automated scrape/enrich/upload for $limit tenders")
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch(Dispatchers.IO) launch@ {
             val session = ScrapeAutomationSession(
                 sessionId = System.currentTimeMillis().toString(),
-                targetLimit = limit,
+                targetLimit = limit, // -1 means continuous
                 stage = SESSION_STAGE_SCRAPING,
-                status = "Starting automated scrape for $limit tenders...",
+                status = "Starting automated scrape...",
             )
             runAutomationSession(model, session, isResume = false)
         }
@@ -250,121 +250,138 @@ class TenderScraperViewModel @Inject constructor(
             persistAutomationSession(session)
             updateScrapeStatus(session.status)
 
-            val scrapeStillNeeded = session.scrapedTenderIds.size < session.targetLimit
-            if (scrapeStillNeeded) {
-                val remaining = session.targetLimit - session.scrapedTenderIds.size
+            while (!stopRequested) {
+                val currentTotal = session.scrapedTenderIds.size
+                if (session.targetLimit != -1 && currentTotal >= session.targetLimit) {
+                    break
+                }
+
+                val batchSize = 5
+                val remainingToTarget = if (session.targetLimit == -1) batchSize else session.targetLimit - currentTotal
+                val nextBatchLimit = min(batchSize, remainingToTarget)
+
+                if (nextBatchLimit <= 0) break
+
                 session.stage = SESSION_STAGE_SCRAPING
-                session.status = "Scraping remaining $remaining tender(s)..."
+                session.status = "Scraping next batch of up to $nextBatchLimit tender(s)..."
                 persistAutomationSession(session)
                 updateScrapeStatus(session.status)
 
-                val scrapeResult =
-                    scraper.fetchLatestTenders(
-                        limit = remaining,
-                        onStatus = { status ->
-                            session.status = status
-                            persistAutomationSession(session)
-                            updateScrapeStatus(status)
-                        },
-                        shouldStop = { stopRequested },
-                        onNewTenderSaved = { tenderId ->
-                            val normalizedTenderId = normalizeTenderId(tenderId)
-                            if (!session.scrapedTenderIds.contains(normalizedTenderId)) {
-                                session.scrapedTenderIds.add(normalizedTenderId)
-                            }
-                            normalizeAutomationSession(session)
-                            persistAutomationSession(session)
-                        },
-                        sessionId = session.sessionId,
-                    )
+                val newBatchIds = mutableListOf<String>()
+                val scrapeResult = scraper.fetchLatestTenders(
+                    limit = nextBatchLimit,
+                    onStatus = { status ->
+                        session.status = status
+                        updateScrapeStatus(status)
+                    },
+                    shouldStop = { stopRequested },
+                    onNewTenderSaved = { tenderId ->
+                        val normalizedTenderId = normalizeTenderId(tenderId)
+                        if (!session.scrapedTenderIds.contains(normalizedTenderId)) {
+                            session.scrapedTenderIds.add(normalizedTenderId)
+                            newBatchIds.add(normalizedTenderId)
+                        }
+                        persistAutomationSession(session)
+                    },
+                    sessionId = session.sessionId,
+                )
 
-                reconcileSessionWithStoredTenders(session)
-                normalizeAutomationSession(session)
                 loadDownloadedTenders()
 
+                if (newBatchIds.isEmpty() && scrapeResult.exhausted) {
+                    if (session.targetLimit == -1) {
+                        session.status = "No new tenders found. Waiting 30s before next poll..."
+                        updateScrapeStatus(session.status)
+                        delay(30000)
+                        continue
+                    } else {
+                        session.status = "No more new tenders found."
+                        updateScrapeStatus(session.status)
+                        break
+                    }
+                }
+
+                // Process the current batch immediately
+                for ((index, tenderId) in newBatchIds.withIndex()) {
+                    try {
+                        if (stopRequested) {
+                            stopAutomationSession(session, "Automation stopped. Resume will continue from $tenderId.")
+                            break
+                        }
+
+                        session.status = "Enriching tender ${index + 1}/${newBatchIds.size}: $tenderId"
+                        updateScrapeStatus(session.status)
+                        persistAutomationSession(session)
+
+                        val success = enrichManifestWithGemmaInternal(model, tenderId)
+                        if (!success) {
+                            // We continue anyway in automated mode
+                            delay(1000)
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Unexpected error processing tender $tenderId", e)
+                        delay(2000)
+                    }
+
+                    val position = session.scrapedTenderIds.indexOf(tenderId) + 1
+                    val totalLabel = if (session.targetLimit == -1) "continuous" else session.targetLimit.toString()
+                    session.currentTenderId = tenderId
+
+                    // Enrich
+                    if (!session.enrichedTenderIds.contains(tenderId)) {
+                        session.stage = SESSION_STAGE_ENRICHING
+                        session.status = "Automation $position/$totalLabel: enriching $tenderId"
+                        persistAutomationSession(session)
+                        updateScrapeStatus(session.status)
+
+                        if (!hasGemmaReadableDocuments(tenderId)) {
+                            updateGemmaEnrichmentStatus(tenderId, "No readable documents found. Skipping enrichment.")
+                            session.enrichedTenderIds.add(tenderId)
+                        } else {
+                            val enriched = enrichManifestWithGemmaInternal(model, tenderId)
+                            if (!enriched) {
+                                if (stopRequested) {
+                                    stopAutomationSession(session, "Automation stopped during enrichment for $tenderId.")
+                                } else {
+                                    failAutomationSession(session, "Automation paused on enrichment failure for $tenderId.")
+                                }
+                                return
+                            }
+                            session.enrichedTenderIds.add(tenderId)
+                        }
+                        persistAutomationSession(session)
+                    }
+
+                    // Upload
+                    if (stopRequested) {
+                        stopAutomationSession(session, "Automation stopped before upload for $tenderId.")
+                        return
+                    }
+
+                    if (!session.uploadedTenderIds.contains(tenderId)) {
+                        session.stage = SESSION_STAGE_UPLOADING
+                        session.status = "Automation $position/$totalLabel: uploading $tenderId"
+                        persistAutomationSession(session)
+                        updateScrapeStatus(session.status)
+
+                        val uploaded = uploadTenderToFirebaseInternal(tenderId)
+                        if (!uploaded) {
+                            failAutomationSession(session, "Automation paused on upload failure for $tenderId.")
+                            return
+                        }
+                        session.uploadedTenderIds.add(tenderId)
+                        persistAutomationSession(session)
+                    }
+                }
+
                 if (scrapeResult.stopped || stopRequested) {
-                    stopAutomationSession(session, "Scrape stopped. Resume will continue from the last saved tender.")
+                    stopAutomationSession(session, "Automation stopped.")
                     return
                 }
 
                 if (scrapeResult.failureMessage != null) {
-                    failAutomationSession(session, "Scrape paused after an error: ${scrapeResult.failureMessage}. Resume will continue from the last saved tender.")
+                    failAutomationSession(session, "Automation paused after error: ${scrapeResult.failureMessage}")
                     return
-                }
-            }
-
-            if (session.scrapedTenderIds.isEmpty()) {
-                stopAutomationSession(session, "No new tenders were saved in this automation session.")
-                return
-            }
-
-            val pendingTenderIds = session.scrapedTenderIds.toList()
-            val total = pendingTenderIds.size
-            for ((index, tenderId) in pendingTenderIds.withIndex()) {
-                if (stopRequested) {
-                    stopAutomationSession(session, "Automation stopped. Resume will continue from $tenderId.")
-                    return
-                }
-
-                val position = index + 1
-                session.currentTenderId = tenderId
-
-                if (!session.enrichedTenderIds.contains(tenderId)) {
-                    if (!hasGemmaReadableDocuments(tenderId)) {
-                        session.stage = SESSION_STAGE_ENRICHING
-                        session.status = "Automation $position/$total: skipping Gemma for $tenderId because there are no readable PDF or text files"
-                        persistAutomationSession(session)
-                        updateScrapeStatus(session.status)
-                        updateGemmaEnrichmentStatus(
-                            tenderId,
-                            "No readable PDF or text files found. Skipping Gemma enrichment and uploading raw tender files.",
-                        )
-                        session.enrichedTenderIds.add(tenderId)
-                        persistAutomationSession(session)
-                    } else {
-                        session.stage = SESSION_STAGE_ENRICHING
-                        session.status = "Automation $position/$total: enriching $tenderId"
-                        persistAutomationSession(session)
-                        updateScrapeStatus(session.status)
-                        updateGemmaEnrichmentStatus(
-                            tenderId,
-                            "Automation $position/$total: starting Gemma enrichment...",
-                        )
-                        val enriched = enrichManifestWithGemmaInternal(model, tenderId)
-                        if (!enriched) {
-                            if (stopRequested) {
-                                stopAutomationSession(session, "Automation stopped during enrichment for $tenderId.")
-                            } else {
-                                failAutomationSession(session, "Automation paused on enrichment failure for $tenderId. Resume will retry that tender.")
-                            }
-                            return
-                        }
-                        session.enrichedTenderIds.add(tenderId)
-                        persistAutomationSession(session)
-                    }
-                }
-
-                if (stopRequested) {
-                    stopAutomationSession(session, "Automation stopped before upload for $tenderId.")
-                    return
-                }
-
-                if (!session.uploadedTenderIds.contains(tenderId)) {
-                    session.stage = SESSION_STAGE_UPLOADING
-                    session.status = "Automation $position/$total: uploading $tenderId"
-                    persistAutomationSession(session)
-                    updateScrapeStatus(session.status)
-                    updateFirebaseUploadStatus(
-                        tenderId,
-                        "Automation $position/$total: starting Firebase upload...",
-                    )
-                    val uploaded = uploadTenderToFirebaseInternal(tenderId)
-                    if (!uploaded) {
-                        failAutomationSession(session, "Automation paused on upload failure for $tenderId. Resume will retry that tender.")
-                        return
-                    }
-                    session.uploadedTenderIds.add(tenderId)
-                    persistAutomationSession(session)
                 }
             }
 
@@ -456,6 +473,94 @@ class TenderScraperViewModel @Inject constructor(
         }
     }
 
+    fun enrichAllFirebaseTenders(model: Model) {
+        viewModelScope.launch(Dispatchers.IO) {
+            val tenderIds = _uiState.value.firebaseTenderIds
+            if (tenderIds.isEmpty()) {
+                _uiState.value = _uiState.value.copy(bulkEnrichmentStatus = "No Firebase tenders loaded. Refresh and try again.")
+                return@launch
+            }
+
+            stopRequested = false
+            resetProcessingStatus(isScraping = true)
+            _uiState.value = _uiState.value.copy(
+                bulkEnrichmentStatus = "Starting bulk enrichment for ${tenderIds.size} tender(s)...",
+            )
+
+            var succeeded = 0
+            var failed = 0
+            var lastError = ""
+
+            try {
+                for ((index, tenderId) in tenderIds.withIndex()) {
+                    if (stopRequested) {
+                        _uiState.value = _uiState.value.copy(
+                            bulkEnrichmentStatus = "Bulk enrichment stopped after $index/${tenderIds.size} tender(s). Succeeded: $succeeded, Failed: $failed.${if (lastError.isNotBlank()) " Last error: $lastError" else ""}",
+                        )
+                        break
+                    }
+
+                    val progress = "${index + 1}/${tenderIds.size}"
+                    _uiState.value = _uiState.value.copy(
+                        bulkEnrichmentStatus = "[$progress] Downloading $tenderId...",
+                    )
+
+                    val downloaded = downloadTenderFromFirebaseInternal(tenderId)
+                    if (!downloaded) {
+                        Log.w(TAG, "Bulk enrich: skipping $tenderId — download failed")
+                        failed++
+                        lastError = "Download failed for $tenderId"
+                        continue
+                    }
+
+                    if (stopRequested) break
+
+                    _uiState.value = _uiState.value.copy(
+                        bulkEnrichmentStatus = "[$progress] Enriching $tenderId...",
+                    )
+
+                    val enriched = enrichManifestWithGemmaInternal(model, tenderId)
+                    if (!enriched) {
+                        Log.w(TAG, "Bulk enrich: skipping upload for $tenderId — enrichment failed")
+                        failed++
+                        lastError = "Enrichment failed for $tenderId"
+                        continue
+                    }
+
+                    if (stopRequested) break
+
+                    _uiState.value = _uiState.value.copy(
+                        bulkEnrichmentStatus = "[$progress] Uploading $tenderId...",
+                    )
+
+                    val uploaded = uploadTenderToFirebaseInternal(tenderId)
+                    if (uploaded) {
+                        succeeded++
+                    } else {
+                        failed++
+                        lastError = "Upload failed for $tenderId"
+                    }
+
+                    // Cool down delay between tenders
+                    delay(3000)
+                }
+
+                if (!stopRequested) {
+                    _uiState.value = _uiState.value.copy(
+                        bulkEnrichmentStatus = "Bulk enrichment complete. Succeeded: $succeeded, Failed: $failed.${if (lastError.isNotBlank()) " Last error: $lastError" else ""}",
+                    )
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Bulk enrichment crashed", e)
+                _uiState.value = _uiState.value.copy(
+                    bulkEnrichmentStatus = "Bulk enrichment crashed: ${e.message ?: "unknown error"}. Succeeded: $succeeded, Failed: $failed.",
+                )
+            } finally {
+                _uiState.value = _uiState.value.copy(isScraping = false)
+            }
+        }
+    }
+
     fun getManifestContent(tenderId: String): String {
         val folder = fileManager.getTenderFolder(tenderId)
         val manifestFile = File(folder, "manifest.json")
@@ -544,122 +649,92 @@ class TenderScraperViewModel @Inject constructor(
     }
 
     private suspend fun enrichManifestWithGemmaInternal(model: Model, tenderId: String): Boolean {
-            val prepared =
-                prepareTenderDocuments(
-                    model = model,
-                    tenderId = tenderId,
-                    statusUpdater = ::updateGemmaEnrichmentStatus,
-                    resultUpdater = null,
-                    maxPromptChars = MAX_ENRICHMENT_PREP_PROMPT_CHARS,
-                )
-                ?: return false
+        var response = ""
+        val prepared: PreparedTenderDocuments
+        val combinedEnrichment = JSONObject()
 
-            val manifestContext = buildManifestContext(prepared.folder)
-            val combinedEnrichment = JSONObject()
-
-            try {
-                updateGemmaEnrichmentStatus(tenderId, "Extracting core tender details with Gemma...")
-                val coreResponse =
-                    runGemmaInferenceForResult(
-                        model = model,
-                        tenderId = tenderId,
-                        prompt =
-                            buildGemmaCoreDetailsPrompt(
-                                tenderId = tenderId,
-                                manifestContext = manifestContext,
-                                documentBundle =
-                                    buildDocumentBundle(
-                                        prepared.readableFiles,
-                                        MAX_CORE_DOCUMENT_CHARS,
-                                    ),
-                            ),
-                        runningStatus = "Gemma is extracting core tender details...",
-                        statusUpdater = ::updateGemmaEnrichmentStatus,
-                    )
-                val coreJson = extractJsonObject(coreResponse)
-                combinedEnrichment.put("documentType", coreJson.optString("documentType", "unknown"))
-                combinedEnrichment.put("briefDescription", coreJson.optString("briefDescription", ""))
-                combinedEnrichment.put("industry", extractIndustryValue(coreJson))
-                combinedEnrichment.put("beeLevel", extractBeeLevelValue(coreJson))
-                combinedEnrichment.put(
-                    "estimatedTenderValue",
-                    coreJson.optJSONObject("estimatedTenderValue") ?: JSONObject.NULL,
-                )
-                combinedEnrichment.put(
-                    "completeTenderDescription",
-                    coreJson.optString("completeTenderDescription", ""),
-                )
-
-                updateGemmaEnrichmentStatus(tenderId, "Extracting requirements with Gemma...")
-                val requirementsResponse =
-                    runGemmaInferenceForResult(
-                        model = model,
-                        tenderId = tenderId,
-                        prompt =
-                            buildGemmaRequirementsPrompt(
-                                tenderId = tenderId,
-                                manifestContext = manifestContext,
-                                documentBundle =
-                                    buildDocumentBundle(
-                                        prepared.readableFiles,
-                                        MAX_REQUIREMENTS_DOCUMENT_CHARS,
-                                    ),
-                            ),
-                        runningStatus = "Gemma is extracting tender requirements...",
-                        statusUpdater = ::updateGemmaEnrichmentStatus,
-                    )
-                val requirementsJson = extractJsonObject(requirementsResponse)
-                combinedEnrichment.put(
-                    "requirements",
-                    requirementsJson.optJSONArray("requirements") ?: JSONArray(),
-                )
-
-                updateGemmaEnrichmentStatus(tenderId, "Extracting bill of quantities with Gemma...")
-                val boqResponse =
-                    runGemmaInferenceForResult(
-                        model = model,
-                        tenderId = tenderId,
-                        prompt =
-                            buildGemmaBoqPrompt(
-                                tenderId = tenderId,
-                                manifestContext = manifestContext,
-                                documentBundle =
-                                    buildDocumentBundle(
-                                        prepared.readableFiles,
-                                        MAX_BOQ_DOCUMENT_CHARS,
-                                    ),
-                            ),
-                        runningStatus = "Gemma is extracting bill of quantities...",
-                        statusUpdater = ::updateGemmaEnrichmentStatus,
-                    )
-                val boqJson = extractJsonObject(boqResponse)
-                combinedEnrichment.put(
-                    "billOfQuantities",
-                    boqJson.optJSONArray("billOfQuantities") ?: JSONArray(),
-                )
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed during Gemma multi-pass enrichment for $tenderId", e)
-                updateGemmaEnrichmentStatus(
-                    tenderId,
-                    "Gemma enrichment failed: ${e.message ?: "unknown error"}",
-                )
-                return false
-            }
-
-            try {
-                fileManager.saveTextFile(prepared.folder, GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
-                mergeGemmaEnrichmentIntoManifest(prepared.folder, combinedEnrichment)
-                updateGemmaEnrichmentStatus(tenderId, "Gemma manifest enrichment completed.")
+        try {
+            if (!hasGemmaReadableDocuments(tenderId)) {
+                val folder = fileManager.getTenderFolder(tenderId)
+                fileManager.clearTenderUploadedMarker(folder)
+                firebaseSync.uploadTenderFolder(folder)
+                fileManager.markTenderUploaded(folder)
                 return true
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to merge Gemma enrichment into manifest for $tenderId", e)
-                fileManager.saveTextFile(prepared.folder, GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
-                updateGemmaEnrichmentStatus(
-                    tenderId,
-                    "Gemma manifest merge failed: ${e.message ?: "unknown error"}",
-                )
-                return false
             }
+
+            prepared = prepareTenderDocuments(
+                model = model,
+                tenderId = tenderId,
+                statusUpdater = ::updateGemmaEnrichmentStatus,
+                resultUpdater = null,
+                maxPromptChars = MAX_ENRICHMENT_PREP_PROMPT_CHARS,
+            ) ?: return false
+
+            fileManager.clearTenderUploadedMarker(prepared.folder)
+            val manifestContext = buildManifestContext(prepared.folder)
+            
+            response = runGemmaInferenceForResult(
+                model = model,
+                tenderId = tenderId,
+                prompt = buildGemmaCombinedEnrichmentPrompt(
+                    tenderId = tenderId,
+                    manifestContext = manifestContext,
+                    documentBundle = buildDocumentBundle(
+                        prepared.readableFiles,
+                        MAX_CONSOLIDATED_DOCUMENT_CHARS,
+                    ),
+                ),
+                runningStatus = "Gemma is extracting tender details...",
+                statusUpdater = ::updateGemmaEnrichmentStatus,
+            )
+            val enrichmentJson = extractJsonObject(response)
+
+            // Populate combinedEnrichment from the single response
+            combinedEnrichment.put("documentType", enrichmentJson.optString("documentType", "unknown"))
+            combinedEnrichment.put("briefDescription", enrichmentJson.optString("briefDescription", ""))
+            combinedEnrichment.put("industry", extractIndustryValue(enrichmentJson))
+            combinedEnrichment.put("beeLevel", extractBeeLevelValue(enrichmentJson))
+            combinedEnrichment.put(
+                "estimatedTenderValue",
+                enrichmentJson.optJSONObject("estimatedTenderValue") ?: JSONObject.NULL,
+            )
+            combinedEnrichment.put(
+                "completeTenderDescription",
+                enrichmentJson.optString("completeTenderDescription", ""),
+            )
+            combinedEnrichment.put(
+                "requirements",
+                enrichmentJson.optJSONArray("requirements") ?: JSONArray(),
+            )
+            combinedEnrichment.put(
+                "billOfQuantities",
+                enrichmentJson.optJSONArray("billOfQuantities") ?: JSONArray(),
+            )
+
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed during Gemma consolidated enrichment for $tenderId. Response preview: ${if (response.length > 200) response.take(200) + "..." else response}", e)
+            updateGemmaEnrichmentStatus(
+                tenderId,
+                "Gemma enrichment failed: ${e.message ?: "unknown error"}",
+            )
+            return false
+        }
+
+        try {
+            fileManager.saveTextFile(prepared.folder, GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
+            mergeGemmaEnrichmentIntoManifest(prepared.folder, combinedEnrichment)
+            updateGemmaEnrichmentStatus(tenderId, "Gemma manifest enrichment completed.")
+            return true
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to merge Gemma enrichment into manifest for $tenderId", e)
+            // Still try to save the file
+            return try {
+                fileManager.saveTextFile(fileManager.getTenderFolder(tenderId), GEMMA_ENRICHMENT_FILENAME, combinedEnrichment.toString(2))
+                true
+            } catch (e2: Exception) {
+                false
+            }
+        }
     }
 
     private suspend fun uploadTenderToFirebaseInternal(tenderId: String): Boolean {
@@ -729,7 +804,7 @@ class TenderScraperViewModel @Inject constructor(
         val documentBundle: String,
     )
 
-    private fun prepareTenderDocuments(
+    private suspend fun prepareTenderDocuments(
         model: Model,
         tenderId: String,
         statusUpdater: (String, String) -> Unit,
@@ -804,7 +879,7 @@ class TenderScraperViewModel @Inject constructor(
                 }
 
                 if (partialResult.isNotBlank()) {
-                    response = processLlmResponse("$response$partialResult")
+                    response += partialResult
                     onPartial(response)
                 }
 
@@ -843,7 +918,7 @@ class TenderScraperViewModel @Inject constructor(
                 }
 
                 if (partialResult.isNotBlank()) {
-                    response = processLlmResponse("$response$partialResult")
+                    response += partialResult
                 }
 
                 if (done && !deferred.isCompleted) {
@@ -868,7 +943,7 @@ class TenderScraperViewModel @Inject constructor(
         return deferred.await()
     }
 
-    private fun ensureModelInitialized(model: Model): Boolean {
+    private suspend fun ensureModelInitialized(model: Model): Boolean {
         if (model.instance != null) {
             return true
         }
@@ -885,7 +960,7 @@ class TenderScraperViewModel @Inject constructor(
 
         val deadline = System.currentTimeMillis() + 30000L
         while (model.instance == null && initializationError.isEmpty() && System.currentTimeMillis() < deadline) {
-            Thread.sleep(100)
+            delay(100)
         }
 
         return model.instance != null && initializationError.isEmpty()
@@ -1099,91 +1174,64 @@ class TenderScraperViewModel @Inject constructor(
             if (start == -1 || end == -1 || end <= start) {
                 throw IllegalArgumentException("No JSON object found in Gemma response.")
             }
-            JSONObject(sanitizeGemmaJsonCandidate(codeFenceStripped.substring(start, end + 1)))
+            val candidate = codeFenceStripped.substring(start, end + 1)
+            JSONObject(sanitizeGemmaJsonCandidate(candidate))
         }
     }
 
     private fun sanitizeGemmaJsonCandidate(rawJson: String): String {
-        val cleaned = rawJson.trim()
-        val output = StringBuilder(cleaned.length)
-        var index = 0
+        // Simple but robust sanitization
+        var cleaned = rawJson.trim()
+
+        // Handle common truncation: if it doesn't end with } or ], it might be truncated.
+        // We try to close it minimally to allow parsing of what we have.
+        if (cleaned.isNotBlank() && !cleaned.endsWith("}") && !cleaned.endsWith("]")) {
+            val lastOpenBrace = cleaned.lastIndexOf('{')
+            val lastOpenBracket = cleaned.lastIndexOf('[')
+            if (lastOpenBrace > lastOpenBracket) {
+                // If it looks like it was in a string, close the string first
+                if (cleaned.count { it == '"' } % 2 != 0) {
+                    cleaned += "\""
+                }
+                cleaned += "}"
+            } else if (lastOpenBracket > lastOpenBrace) {
+                cleaned += "]"
+            }
+        }
+
+        // Remove trailing commas before closing braces/brackets
+        cleaned = cleaned.replace(Regex(",\\s*\\}"), "}")
+        cleaned = cleaned.replace(Regex(",\\s*\\]"), "]")
+
+        // Basic attempt to fix unescaped newlines in strings
+        val fixed = StringBuilder()
         var inString = false
         var escaped = false
-
-        while (index < cleaned.length) {
-            val current = cleaned[index]
-
-            if (inString) {
-                when {
-                    escaped -> {
-                        output.append(current)
-                        escaped = false
-                    }
-                    current == '\\' -> {
-                        output.append(current)
-                        escaped = true
-                    }
-                    current == '"' -> {
-                        val next = nextNonWhitespace(cleaned, index + 1)
-                        if (next == ':' || next == ',' || next == '}' || next == ']') {
-                            output.append(current)
-                            inString = false
-                        } else {
-                            output.append("\\\"")
-                        }
-                    }
-                    current == '\n' -> output.append("\\n")
-                    current == '\r' -> output.append("\\r")
-                    current == '\t' -> output.append("\\t")
-                    else -> output.append(current)
-                }
-                index++
+        for (i in cleaned.indices) {
+            val c = cleaned[i]
+            if (escaped) {
+                fixed.append(c)
+                escaped = false
                 continue
             }
-
-            if (current == ',') {
-                var lookAhead = index + 1
-                while (lookAhead < cleaned.length && cleaned[lookAhead].isWhitespace()) {
-                    lookAhead++
-                }
-
-                if (lookAhead < cleaned.length) {
-                    val next = cleaned[lookAhead]
-                    if (next == ',' || next == '}' || next == ']') {
-                        index++
-                        continue
-                    }
-                }
-            }
-
-            if ((current == '{' || current == '[') && index + 1 < cleaned.length) {
-                output.append(current)
-                var lookAhead = index + 1
-                while (lookAhead < cleaned.length && cleaned[lookAhead].isWhitespace()) {
-                    output.append(cleaned[lookAhead])
-                    lookAhead++
-                }
-                if (lookAhead < cleaned.length && cleaned[lookAhead] == ',') {
-                    index = lookAhead + 1
-                    continue
-                }
-                index++
+            if (c == '\\') {
+                fixed.append(c)
+                escaped = true
                 continue
             }
-
-            if (current == '"') {
-                inString = true
+            if (c == '"') {
+                inString = !inString
+                fixed.append(c)
+                continue
             }
-
-            output.append(current)
-            index++
+            if (c == '\n' && inString) {
+                fixed.append("\\n")
+                continue
+            }
+            fixed.append(c)
         }
-
-        if (inString) {
-            output.append('"')
-        }
-
-        return output.toString()
+        
+        return fixed.toString()
     }
 
     private fun nextNonWhitespace(value: String, startIndex: Int): Char? {
@@ -1304,6 +1352,7 @@ class TenderScraperViewModel @Inject constructor(
                 gemmaReadCheckResultByTender = emptyMap(),
                 gemmaEnrichmentStatusByTender = emptyMap(),
                 firebaseUploadStatusByTender = emptyMap(),
+                bulkEnrichmentStatus = "",
             )
     }
 
@@ -1458,4 +1507,65 @@ class TenderScraperViewModel @Inject constructor(
         }
         super.onCleared()
     }
+
+    private fun buildGemmaCombinedEnrichmentPrompt(
+        tenderId: String,
+        manifestContext: String,
+        documentBundle: String,
+    ): String {
+        return """
+            You are extracting comprehensive tender details for tender ${tenderId}.
+            
+            Return exactly one valid JSON object and nothing else.
+            
+            Schema:
+            {
+              "documentType": "tender|advert|mixed|unknown",
+              "briefDescription": "short plain-English summary",
+              "industry": "one of: Information Technology & Telecommunications | Construction & Civil Engineering | Medical & Health Services | Security & Guarding Services | Professional & Consulting Services | Agriculture, Forestry & Fishing | Manufacturing & Industrial | Energy, Water & Waste Management | Transport, Storage & Logistics | Education & Training | Media, Advertising & Marketing | Tourism, Hospitality & Catering | Legal | unknown",
+              "beeLevel": "B-BBEE level text such as Level 1, Level 2, exempted micro enterprise, QSE, non-compliant, or unknown",
+              "estimatedTenderValue": {
+                "amount": number or null,
+                "currency": "ZAR or other currency code or null",
+                "displayValue": "original value text if present, else null",
+                "confidence": "high|medium|low"
+              },
+              "completeTenderDescription": "full detailed description based on the documents",
+              "requirements": [
+                {
+                  "category": "compliance|technical|professional_body|experience|pricing|administrative|mandatory_document|other",
+                  "requirement": "specific requirement text",
+                  "mandatory": true,
+                  "evidence": "short quote or paraphrase from the document"
+                }
+              ],
+              "billOfQuantities": [
+                {
+                  "item": "line item name",
+                  "description": "line item description",
+                  "quantity": "quantity text if present",
+                  "unit": "unit if present",
+                  "rate": "rate text if present",
+                  "amount": "amount text if present",
+                  "notes": "extra notes if present"
+                }
+              ]
+            }
+
+            Rules:
+            - Keep all text compact and evidence-based.
+            - If a field is missing, use null or "unknown" or an empty array as appropriate.
+            - Only use the allowed industry values.
+            - For beeLevel, prefer the explicit B-BBEE contributor level.
+            - For requirements and billOfQuantities, include the most important items (max 10 each).
+            - Ensure the JSON is well-formed and complete.
+            - If no BOQ or requirements are found, return empty arrays.
+
+            ${manifestContext}
+
+            DOCUMENTS:
+            ${documentBundle}
+        """.trimIndent()
+    }
 }
+

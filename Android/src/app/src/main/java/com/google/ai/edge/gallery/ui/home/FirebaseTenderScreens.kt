@@ -162,11 +162,42 @@ fun FirebaseTenderEnrichmentScreen(
     navigateToScraper = navigateToScraper,
     navigateToFirebaseBrowser = navigateToFirebaseBrowser,
     navigateToFirebaseEnrichment = {},
-    isBusy = false,
+    isBusy = scraperUiState.isScraping,
     searchQuery = searchQuery,
     onSearchQueryChanged = { searchQuery = it },
     onRefresh = { tenderScraperViewModel.loadFirebaseTenders() },
     listStatus = scraperUiState.firebaseListStatus,
+    extraActions = {
+      Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Button(
+          onClick = {
+            val model = downloadedGemmaModel
+            if (model == null) {
+              Toast.makeText(context, "Download a Gemma model first.", Toast.LENGTH_SHORT).show()
+            } else {
+              tenderScraperViewModel.enrichAllFirebaseTenders(model)
+            }
+          },
+          enabled = !scraperUiState.isScraping,
+          modifier = Modifier.weight(1f),
+        ) {
+          Text("Enrich Entire Folder")
+        }
+        Button(
+          onClick = { tenderScraperViewModel.requestStopScraper() },
+          modifier = Modifier.weight(1f),
+        ) {
+          Text("Stop")
+        }
+      }
+      if (scraperUiState.bulkEnrichmentStatus.isNotBlank()) {
+        Text(
+          text = scraperUiState.bulkEnrichmentStatus,
+          style = MaterialTheme.typography.bodySmall,
+          modifier = Modifier.padding(top = 8.dp)
+        )
+      }
+    },
     tenderIds = filteredTenderIds,
     cardContent = { tenderId ->
       FirebaseTenderEnrichmentCard(

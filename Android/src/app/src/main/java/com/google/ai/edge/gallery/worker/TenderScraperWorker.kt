@@ -32,7 +32,7 @@ const val TENDER_SCRAPER_WORK_NAME = "tender_scraper_background"
 const val TENDER_SCRAPER_PROGRESS_STATUS = "tender_scraper_progress_status"
 const val TENDER_SCRAPER_PROGRESS_COMPLETED = "tender_scraper_progress_completed"
 const val TENDER_SCRAPER_PROGRESS_TOTAL = "tender_scraper_progress_total"
-private const val SCRAPE_LIMIT = 100
+private const val BATCH_SIZE = 5
 private const val CONCURRENT_TENDER_LIMIT = 1
 private const val FOREGROUND_NOTIFICATION_CHANNEL_ID = "tender_scraper_channel_foreground"
 private const val FOREGROUND_NOTIFICATION_ID = 2002
@@ -67,10 +67,12 @@ class TenderScraperWorker @AssistedInject constructor(
 
   override suspend fun doWork(): Result {
     return try {
+      val maxTendersToProcess = 50 // Sanity limit for a single background run
+
       publishProgress(
         status = "Starting background scraper...",
         completed = 0,
-        total = SCRAPE_LIMIT,
+        total = maxTendersToProcess,
         indeterminate = true,
       )
 
@@ -86,78 +88,59 @@ class TenderScraperWorker @AssistedInject constructor(
         )
       }
 
-      publishProgress(
-        status = "Scraping latest tenders...",
-        completed = 0,
-        total = SCRAPE_LIMIT,
-        indeterminate = true,
-      )
+      var totalProcessed = 0
 
-      val scrapeResult =
-        tenderScraper.fetchLatestTenders(
-          limit = SCRAPE_LIMIT,
-          onStatus = { status -> Log.d(TAG, status) },
-        )
-
-      if (scrapeResult.failureMessage != null) {
-        throw IOException(scrapeResult.failureMessage)
-      }
-
-      pendingTenderIds.addAll(scrapeResult.newTenderIds)
-
-      if (pendingTenderIds.isEmpty()) {
-        Log.d(TAG, "No new tenders were scraped. Worker finished successfully.")
-        publishProgress(status = "No pending tenders to process.", completed = 0, total = 0)
-        return Result.success()
-      }
-
-      val orderedTenderIds = pendingTenderIds.toList().sorted()
-      val semaphore = Semaphore(CONCURRENT_TENDER_LIMIT)
-      val total = orderedTenderIds.size
-      val failedTenderIds = Collections.synchronizedList(mutableListOf<String>())
-
-      coroutineScope {
-        orderedTenderIds.mapIndexed { index, tenderId ->
-          async {
-            semaphore.withPermit {
-              val position = index + 1
-              val status = "Processing tender $position/$total: $tenderId"
-              Log.d(TAG, status)
-              publishProgress(status = status, completed = position - 1, total = total)
-              try {
-                tenderAutomationProcessor.enrichAndUploadTender(model, tenderId)
-                publishProgress(
-                  status = "Completed tender $position/$total: $tenderId",
-                  completed = position,
-                  total = total,
-                )
-              } catch (error: Exception) {
-                failedTenderIds += tenderId
-                Log.e(TAG, "Failed background processing for $tenderId", error)
-                publishProgress(
-                  status = "Failed tender $position/$total: $tenderId. Continuing with remaining tenders.",
-                  completed = position,
-                  total = total,
-                )
-              }
-            }
-          }
-        }.awaitAll()
-      }
-
-      if (failedTenderIds.isNotEmpty()) {
+      while (totalProcessed < maxTendersToProcess) {
         publishProgress(
-          status = "Background scraper completed with ${failedTenderIds.size} pending failure(s). Run it again to retry unfinished tenders.",
-          completed = total,
-          total = total,
+          status = "Scraping next batch of up to $BATCH_SIZE tenders...",
+          completed = totalProcessed,
+          total = maxTendersToProcess,
+          indeterminate = true,
         )
+
+        val scrapeResult =
+          tenderScraper.fetchLatestTenders(
+            limit = BATCH_SIZE,
+            onStatus = { status -> Log.d(TAG, status) },
+          )
+
+        if (scrapeResult.failureMessage != null) {
+          throw IOException(scrapeResult.failureMessage)
+        }
+
+        if (scrapeResult.newTenderIds.isEmpty()) {
+            Log.d(TAG, "No more new tenders found in this batch.")
+            break
+        }
+
+        val batchTenderIds = scrapeResult.newTenderIds
+        for ((index, tenderId) in batchTenderIds.withIndex()) {
+            val position = totalProcessed + 1
+            val status = "Processing tender $position: $tenderId"
+            Log.d(TAG, status)
+            publishProgress(status = status, completed = totalProcessed, total = maxTendersToProcess)
+            try {
+              tenderAutomationProcessor.enrichAndUploadTender(model, tenderId)
+              totalProcessed++
+            } catch (error: Exception) {
+              Log.e(TAG, "Failed background processing for $tenderId", error)
+              // Continue with next tender in batch
+            }
+        }
+
+        if (scrapeResult.exhausted) break
+      }
+
+      if (totalProcessed == 0) {
+        Log.d(TAG, "No new tenders were processed. Worker finished successfully.")
+        publishProgress(status = "No new tenders found to process.", completed = 0, total = 0)
         return Result.success()
       }
 
       publishProgress(
-        status = "Background scraper completed $total tender(s).",
-        completed = total,
-        total = total,
+        status = "Background scraper completed $totalProcessed tender(s).",
+        completed = totalProcessed,
+        total = totalProcessed,
       )
       Result.success()
     } catch (e: Exception) {
@@ -165,7 +148,7 @@ class TenderScraperWorker @AssistedInject constructor(
       publishProgress(
         status = "Background scraper failed: ${e.message ?: "unknown error"}",
         completed = 0,
-        total = SCRAPE_LIMIT,
+        total = BATCH_SIZE,
       )
       if (isTransientNetworkError(e)) {
         Result.retry()
