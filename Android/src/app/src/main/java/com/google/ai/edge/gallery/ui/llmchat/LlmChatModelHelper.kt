@@ -69,8 +69,7 @@ object LlmChatModelHelper : LlmModelHelper {
     coroutineScope: CoroutineScope?,
   ) {
     // Prepare options.
-    val maxTokens =
-      model.getIntConfigValue(key = ConfigKeys.MAX_TOKENS, defaultValue = DEFAULT_MAX_TOKEN)
+    val maxTokens = 8192 // Pushed to 8K context (safely fits VRAM, unlike 32K)
     val topK = model.getIntConfigValue(key = ConfigKeys.TOPK, defaultValue = DEFAULT_TOPK)
     val topP = model.getFloatConfigValue(key = ConfigKeys.TOPP, defaultValue = DEFAULT_TOPP)
     val temperature =

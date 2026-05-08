@@ -219,6 +219,24 @@ class FirebaseSync(
       )
     }
 
+  suspend fun deleteAllTenders(): Boolean =
+    withContext(Dispatchers.IO) {
+      try {
+        val root = storage.reference.child("tenders")
+        val result = root.listAll().awaitResult()
+        for (folderRef in result.prefixes) {
+          deleteFolderRecursively(folderRef)
+        }
+        for (item in result.items) {
+          item.delete().awaitResult()
+        }
+        true
+      } catch (e: Exception) {
+        Log.e(TAG, "Failed to delete all Firebase tenders", e)
+        false
+      }
+    }
+
   suspend fun uploadTenderPackage(jsonPayload: String, pdfUri: Uri): TenderUploadResult =
     withContext(Dispatchers.IO) {
       require(jsonPayload.isNotBlank()) { "jsonPayload must not be blank" }

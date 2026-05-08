@@ -599,6 +599,16 @@ fun HomeScreen(
                           style = MaterialTheme.typography.bodySmall,
                         )
                       }
+                      
+                      Spacer(modifier = Modifier.height(16.dp))
+                      
+                      Button(
+                        onClick = { tenderScraperViewModel.nukeAllTenders() },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = androidx.compose.material3.ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                      ) {
+                        Text("Delete All Tenders (Local & Firebase)")
+                      }
                     }
                   }
                 }

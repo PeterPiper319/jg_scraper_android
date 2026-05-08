@@ -42,9 +42,10 @@ class TenderScraper(
     )
 
     companion object {
-        private const val OCR_FALLBACK_MIN_TEXT_CHARS = 200
+        private const val OCR_FALLBACK_MIN_TEXT_CHARS = 600
+        private const val OCR_FALLBACK_MIN_TEXT_PER_PAGE = 250
         private const val OCR_RENDER_SCALE = 2
-        private const val OCR_MAX_PAGES = 6
+        private const val OCR_MAX_PAGES = 12
     }
 
     fun fetchLatestTenders(
@@ -240,7 +241,8 @@ class TenderScraper(
 
     fun extractText(file: File): String {
         val pdfText = extractPdfText(file)
-        if (!shouldUseOcrFallback(pdfText)) {
+        val pageCount = countPdfPages(file)
+        if (!shouldUseOcrFallback(pdfText, pageCount)) {
             return pdfText
         }
 
@@ -263,9 +265,19 @@ class TenderScraper(
         }
     }
 
-    private fun shouldUseOcrFallback(text: String): Boolean {
+    private fun countPdfPages(file: File): Int {
+        val document = PDDocument.load(file)
+        return try {
+            document.numberOfPages
+        } finally {
+            document.close()
+        }
+    }
+
+    private fun shouldUseOcrFallback(text: String, pageCount: Int): Boolean {
         val normalized = text.replace(Regex("\\s+"), " ").trim()
-        return normalized.length < OCR_FALLBACK_MIN_TEXT_CHARS
+        val minimumExpectedChars = maxOf(OCR_FALLBACK_MIN_TEXT_CHARS, pageCount * OCR_FALLBACK_MIN_TEXT_PER_PAGE)
+        return normalized.length < minimumExpectedChars
     }
 
     private fun extractPdfTextWithMlKit(file: File): String {
