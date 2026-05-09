@@ -92,6 +92,13 @@ import kotlinx.coroutines.launch
 
 private const val TAG = "AGModelImportDialog"
 
+private val SOC_SPECIFIC_LITERT_MODEL_REGEX = Regex("""(?i).+_(sm\d{4}|mt\d{4})\.litertlm$""")
+
+private fun shouldDefaultImportToNpu(fileName: String): Boolean {
+  return fileName.endsWith(".litertlm", ignoreCase = true) &&
+    SOC_SPECIFIC_LITERT_MODEL_REGEX.matches(fileName)
+}
+
 private val SUPPORTED_ACCELERATORS: List<Accelerator> =
   if (isPixel10()) {
     listOf(Accelerator.CPU)
@@ -164,6 +171,10 @@ fun ModelImportDialog(
       put(ConfigKeys.NAME.label, fileName)
       // TODO: support other types.
       put(ConfigKeys.MODEL_TYPE.label, "LLM")
+
+      if (shouldDefaultImportToNpu(fileName)) {
+        put(ConfigKeys.COMPATIBLE_ACCELERATORS.label, Accelerator.NPU.label)
+      }
 
       for ((key, value) in defaultValues) {
         put(key.label, value)

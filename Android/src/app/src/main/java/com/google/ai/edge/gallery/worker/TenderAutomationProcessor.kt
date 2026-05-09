@@ -1,10 +1,14 @@
 package com.google.ai.edge.gallery.worker
 
+import android.os.Build
 import android.content.Context
 import android.util.Log
 import com.google.ai.edge.gallery.common.ThermalGuard
 import com.google.ai.edge.gallery.common.processLlmResponse
+import com.google.ai.edge.gallery.data.Accelerator
+import com.google.ai.edge.gallery.data.ConfigKeys
 import com.google.ai.edge.gallery.data.Model
+import com.google.ai.edge.gallery.data.RuntimeType
 import com.google.ai.edge.gallery.data.TenderFileManager
 import com.google.ai.edge.gallery.data.TenderScraper
 import com.google.ai.edge.gallery.infrastructure.FirebaseSync
@@ -32,12 +36,38 @@ class TenderAutomationProcessor @Inject constructor(
     private const val GEMMA_ENRICHMENT_FILENAME = "gemma-manifest-enrichment.json"
     private const val MAX_FILE_TEXT_CHARS = 24000
     private const val MAX_ENRICHMENT_PREP_PROMPT_CHARS = 24000
-    private const val MAX_CONSOLIDATED_DOCUMENT_CHARS = 24000
-    private const val CHUNK_SIZE = 1500
+    private const val MAX_CONSOLIDATED_DOCUMENT_CHARS = 12000
+    private const val CHUNK_SIZE = 2200
+    private const val MAX_MAP_REDUCE_CHUNKS = 4
+    private const val MAX_PRIORITY_DOCUMENTS = 3
   }
+
+  private val highPriorityDocumentRegex =
+    Regex(
+      """\b(rfp|rfq|bid|tender|tor|terms?[ _-]?of[ _-]?reference|spec(ification|s)?|scope|pricing|price schedule|boq|bill[ _-]?of[ _-]?quantities)\b""",
+      RegexOption.IGNORE_CASE,
+    )
+
+  private val lowPriorityDocumentRegex =
+    Regex(
+      """\b(gcc|general[ _-]?conditions|scc|special[ _-]?conditions|sbd|standard[ _-]?bidding|declaration|certificate|tax|annex(ure)?|terms[ _-]?and[ _-]?conditions|form[ _-]?[a-z0-9]+)\b""",
+      RegexOption.IGNORE_CASE,
+    )
+
+  private data class ScoredChunk(
+    val fileName: String,
+    val text: String,
+    val score: Int,
+  )
+
+  private data class ScoredDocument(
+    val file: File,
+    val score: Int,
+  )
 
   suspend fun enrichAndUploadTender(model: Model, tenderId: String, statusUpdater: ((String) -> Unit)? = null): Boolean {
     try {
+      val inferenceModel = createTenderInferenceModel(model)
       val folder = fileManager.getTenderFolder(tenderId)
       if (!hasGemmaReadableDocuments(folder)) {
         fileManager.clearTenderUploadedMarker(folder)
@@ -46,26 +76,21 @@ class TenderAutomationProcessor @Inject constructor(
         return true
       }
 
-      val prepared = prepareTenderDocuments(model = model, tenderId = tenderId) ?: return false
+      val prepared = prepareTenderDocuments(model = inferenceModel, tenderId = tenderId) ?: return false
       fileManager.clearTenderUploadedMarker(prepared.folder)
 
       // Fix 1: Pre-seed enrichment from existing manifest API fields (free data, no Gemma needed)
       val manifest = JSONObject(File(prepared.folder, "manifest.json").readText())
-      val combinedEnrichment = runMapReduceExtraction(model, tenderId, prepared.readableFiles)
+      val combinedEnrichment = runMapReduceExtraction(inferenceModel, tenderId, prepared.extractedDocuments)
       val comprehensiveEnrichment = runComprehensiveTenderExtraction(
-        model = model,
-        tenderId = tenderId,
-        folder = prepared.folder,
-        documentBundle = prepared.documentBundle,
-      )
-      val companyMatchSignals = runCompanyMatchSignalExtraction(
-        model = model,
+        model = inferenceModel,
         tenderId = tenderId,
         folder = prepared.folder,
         documentBundle = prepared.documentBundle,
       )
       mergeComprehensiveEnrichment(combinedEnrichment, comprehensiveEnrichment)
-      mergeCompanyMatchSignals(combinedEnrichment, companyMatchSignals)
+      mergeCompanyMatchSignals(combinedEnrichment, comprehensiveEnrichment)
+      seedManifestCompanySignals(combinedEnrichment, manifest)
       
       // Pre-seed briefing from manifest API data if Gemma didn't find it
       val briefingFromGemma = combinedEnrichment.optJSONObject("briefing") ?: JSONObject()
@@ -89,19 +114,8 @@ class TenderAutomationProcessor @Inject constructor(
       }
 
       // Classification
-      statusUpdater?.invoke("Running tender classification...")
-      val classificationPrompt = """
-        Based on the following extracted details from a tender, determine if the document(s) represent a full tender package or just a short advertisement/invitation.
-        Full tenders typically have mandatory returnable documents, detailed functionality evaluation criteria, and pricing details. Adverts lack these.
-        
-        EXTRACTED DETAILS:
-        ${combinedEnrichment.toString(2)}
-        
-        Return ONLY a valid JSON object matching this schema: {"document_type": "ADVERT" or "FULL_TENDER"}
-      """.trimIndent()
-      val classResponse = runGemmaInferenceForResult(model, tenderId, classificationPrompt, resetConversation = true)
-      val classJson = try { extractJsonObject(classResponse) } catch (e: Exception) { JSONObject() }
-      val classification = classJson.optString("document_type", "UNKNOWN")
+      statusUpdater?.invoke("Finalizing tender classification...")
+      val classification = deriveDocumentClassification(combinedEnrichment)
       combinedEnrichment.put("document_type", classification)
       Log.d(TAG, "Tender $tenderId classified as ${"$classification"}")
       statusUpdater?.invoke("Tender $tenderId classified as ${"$classification"}")
@@ -122,8 +136,50 @@ class TenderAutomationProcessor @Inject constructor(
   private data class PreparedTenderDocuments(
     val folder: File,
     val readableFiles: List<File>,
+    val extractedDocuments: List<ExtractedTenderDocument>,
     val documentBundle: String,
   )
+
+  private data class ExtractedTenderDocument(
+    val file: File,
+    val text: String,
+  )
+
+  private fun createTenderInferenceModel(model: Model): Model {
+    if (!shouldPreferNpuForTenderInference(model)) {
+      return model
+    }
+
+    val configValues = model.configValues.toMutableMap()
+    configValues[ConfigKeys.ACCELERATOR.label] = Accelerator.NPU.label
+
+    Log.d(TAG, "Using NPU-first tender inference on ${Build.MODEL}")
+
+    return model.copy(
+      instance = null,
+      initializing = false,
+      cleanUpAfterInit = false,
+      configValues = configValues,
+      prevConfigValues = model.prevConfigValues.toMap(),
+    )
+  }
+
+  private fun shouldPreferNpuForTenderInference(model: Model): Boolean {
+    if (model.runtimeType != RuntimeType.LITERT_LM) {
+      return false
+    }
+
+    if (!model.accelerators.contains(Accelerator.NPU)) {
+      return false
+    }
+
+    if (!Build.MANUFACTURER.equals("samsung", ignoreCase = true)) {
+      return false
+    }
+
+    val deviceModel = Build.MODEL.uppercase()
+    return deviceModel.startsWith("SM-S918") || deviceModel.startsWith("SM-F946")
+  }
 
   private suspend fun prepareTenderDocuments(model: Model, tenderId: String): PreparedTenderDocuments? {
     val folder = fileManager.getTenderFolder(tenderId)
@@ -139,7 +195,18 @@ class TenderAutomationProcessor @Inject constructor(
       return null
     }
 
-    val documentBundle = buildDocumentBundle(readableFiles, MAX_CONSOLIDATED_DOCUMENT_CHARS)
+    val prioritizedFiles = prioritizeGemmaReadableFiles(readableFiles)
+    Log.d(
+      TAG,
+      "Tender $tenderId prioritized ${prioritizedFiles.size}/${readableFiles.size} document(s) for Gemma: ${prioritizedFiles.joinToString { it.name }}",
+    )
+
+    val extractedDocuments = extractTenderDocuments(prioritizedFiles)
+    if (extractedDocuments.isEmpty()) {
+      return null
+    }
+
+    val documentBundle = buildDocumentBundle(extractedDocuments, MAX_CONSOLIDATED_DOCUMENT_CHARS)
     if (documentBundle.isBlank()) {
       return null
     }
@@ -149,7 +216,42 @@ class TenderAutomationProcessor @Inject constructor(
       return null
     }
 
-    return PreparedTenderDocuments(folder = folder, readableFiles = readableFiles, documentBundle = documentBundle)
+    return PreparedTenderDocuments(
+      folder = folder,
+      readableFiles = prioritizedFiles,
+      extractedDocuments = extractedDocuments,
+      documentBundle = documentBundle,
+    )
+  }
+
+  private fun prioritizeGemmaReadableFiles(files: List<File>): List<File> {
+    val scored = files.map { file ->
+      ScoredDocument(file = file, score = scoreTenderDocument(file.name))
+    }
+
+    val prioritized = scored
+      .filter { it.score > 0 }
+      .sortedByDescending { it.score }
+      .map { it.file }
+      .take(MAX_PRIORITY_DOCUMENTS)
+
+    if (prioritized.isNotEmpty()) {
+      return prioritized
+    }
+
+    return scored
+      .sortedByDescending { it.score }
+      .map { it.file }
+      .take(MAX_PRIORITY_DOCUMENTS.coerceAtLeast(1))
+  }
+
+  private fun scoreTenderDocument(fileName: String): Int {
+    val normalized = fileName.substringBeforeLast('.').replace(Regex("[_-]+"), " ")
+    val highPriorityHits = highPriorityDocumentRegex.findAll(normalized).count()
+    val lowPriorityHits = lowPriorityDocumentRegex.findAll(normalized).count()
+    val boqBonus = if (normalized.contains("boq", ignoreCase = true)) 2 else 0
+    val pdfBonus = if (fileName.endsWith(".pdf", ignoreCase = true)) 1 else 0
+    return (highPriorityHits * 4) + boqBonus + pdfBonus - (lowPriorityHits * 5)
   }
 
   private suspend fun runGemmaInferenceForResult(model: Model, tenderId: String, prompt: String, resetConversation: Boolean = true): String {
@@ -215,7 +317,7 @@ class TenderAutomationProcessor @Inject constructor(
   private suspend fun runMapReduceExtraction(
     model: Model,
     tenderId: String,
-    files: List<File>
+    documents: List<ExtractedTenderDocument>
   ): JSONObject {
     val finalEnrichment = JSONObject()
     finalEnrichment.put("compliance_meta", JSONObject())
@@ -234,271 +336,66 @@ class TenderAutomationProcessor @Inject constructor(
 
     val anchorRegex = Regex("\\b(cidb|grade|gb|ce|evaluation|functionality|weighting|80/20|90/10|briefing|compulsory|scope|duration|months|enquiries|contact|returnable|mandatory|local content|subcontracting|sbd 6.2|pricing|penalties|personnel|ecsa|clarification|validity|bbbee|level|eme|qse|experience|similar|projects|guarantee|surety|deposit|fee|payment terms|milestone|locality|municipality|lead time|schedule)\\b", RegexOption.IGNORE_CASE)
 
-    for (file in files) {
-      val extractedText = extractTextForGemma(file)
-      if (extractedText.isBlank()) continue
+    val candidateChunks = selectHighestSignalChunks(documents, anchorRegex)
+    Log.d(
+      TAG,
+      "Tender $tenderId selected ${candidateChunks.size} high-signal chunk(s) for map-reduce extraction.",
+    )
 
-      val fileChunks = extractedText.chunked(CHUNK_SIZE)
-
-      for (chunk in fileChunks) {
-        if (anchorRegex.containsMatchIn(chunk)) {
-          val scoutPrompt = """
-            Analyze this text block from a South African tender document.
-            Identify if it contains information about CIDB Grading, Functionality Criteria, Compulsory Briefing, Scope of Work/Duration, Contact Details, Mandatory Returnable Documents, Local Content/Subcontracting, Financial/Pricing Info, Key Personnel, Deadlines/Timelines, BBBEE/Eligibility, Previous Experience, or Logistics/Locality.
-            Return ONLY a valid JSON object matching this schema:
-            {"contains_cidb": boolean, "contains_functionality": boolean, "contains_briefing": boolean, "contains_scope_duration": boolean, "contains_contact": boolean, "contains_returnables": boolean, "contains_local_content": boolean, "contains_financials": boolean, "contains_personnel": boolean, "contains_deadlines": boolean, "contains_bbbee": boolean, "contains_experience": boolean, "contains_logistics": boolean}
-            
-            TEXT BLOCK:
-            $chunk
-          """.trimIndent()
-
-          val safeToRun = ThermalGuard.awaitSafeTemperature(context)
-          if (!safeToRun) {
-            Log.w(TAG, "Skipping chunk for $tenderId — device too hot.")
-            continue
-          }
-
-          val scoutResponse = runGemmaInferenceForResult(model, tenderId, scoutPrompt)
-          val scoutJson = try { extractJsonObject(scoutResponse) } catch (e: Exception) { continue }
-
-          if (scoutJson.optBoolean("contains_cidb", false)) {
-            val cidbPrompt = """
-              Extract the CIDB Grading (e.g. 7GB, 5CE) and Preference Points (e.g. 80/20 or 90/10) from this text.
-              Return ONLY a valid JSON object: {"cidb_grading": "string or null", "preference_points": "string or null", "is_jv_allowed": boolean}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, cidbPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("compliance_meta") ?: JSONObject()
-            if (json.has("cidb_grading") && !json.isNull("cidb_grading")) current.put("cidb_grading", json.optString("cidb_grading"))
-            if (json.has("preference_points") && !json.isNull("preference_points")) current.put("preference_points", json.optString("preference_points"))
-            if (json.has("is_jv_allowed")) current.put("is_jv_allowed", json.optBoolean("is_jv_allowed"))
-            finalEnrichment.put("compliance_meta", current)
-          }
-
-          if (scoutJson.optBoolean("contains_functionality", false)) {
-            val funcPrompt = """
-              Extract the Functionality Evaluation Criteria and Minimum Threshold from this text. 
-              Look for numeric points/weights assigned to criteria like Experience, Methodology, or Key Personnel.
-              Return ONLY a valid JSON object: {"minimum_threshold": integer or null, "criteria_weights": [{"criterion": "string", "weight": integer}]}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, funcPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("functionality_score") ?: JSONObject()
-            if (json.has("minimum_threshold") && !json.isNull("minimum_threshold")) current.put("minimum_threshold", json.optInt("minimum_threshold"))
-            if (json.has("criteria_weights") && json.optJSONArray("criteria_weights") != null) {
-                val existingArr = current.optJSONArray("criteria_weights") ?: org.json.JSONArray()
-                val newArr = json.optJSONArray("criteria_weights")
-                if (newArr != null) {
-                    for (i in 0 until newArr.length()) existingArr.put(newArr.getJSONObject(i))
-                }
-                current.put("criteria_weights", existingArr)
-            }
-            finalEnrichment.put("functionality_score", current)
-          }
-
-          if (scoutJson.optBoolean("contains_briefing", false)) {
-            val briefPrompt = """
-              Extract the Compulsory Briefing details from this text.
-              Return ONLY a valid JSON object: {"is_compulsory": boolean, "date": "string or null", "venue": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, briefPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("briefing") ?: JSONObject()
-            if (json.has("is_compulsory")) current.put("is_compulsory", json.optBoolean("is_compulsory"))
-            if (json.has("date") && !json.isNull("date")) current.put("date", json.optString("date"))
-            if (json.has("venue") && !json.isNull("venue")) current.put("venue", json.optString("venue"))
-            finalEnrichment.put("briefing", current)
-          }
-
-          if (scoutJson.optBoolean("contains_scope_duration", false)) {
-            val scopePrompt = """
-              Extract the Scope of Work (a brief summary of the goods/services required) and the Contract Duration (e.g., '36 months', '3 years', 'once-off').
-              Return ONLY a valid JSON object: {"scope_of_work": "string or null", "duration": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, scopePrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("technical_specs") ?: JSONObject()
-            if (json.has("scope_of_work") && !json.isNull("scope_of_work")) current.put("scope_of_work", json.optString("scope_of_work"))
-            if (json.has("duration") && !json.isNull("duration")) current.put("duration", json.optString("duration"))
-            finalEnrichment.put("technical_specs", current)
-          }
-
-          if (scoutJson.optBoolean("contains_contact", false)) {
-            val contactPrompt = """
-              Extract the Contact Details for Enquiries from this text.
-              Return ONLY a valid JSON object: {"contact_person": "string or null", "email": "string or null", "phone": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, contactPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("contact_details") ?: JSONObject()
-            if (json.has("contact_person") && !json.isNull("contact_person")) current.put("contact_person", json.optString("contact_person"))
-            if (json.has("email") && !json.isNull("email")) current.put("email", json.optString("email"))
-            if (json.has("phone") && !json.isNull("phone")) current.put("phone", json.optString("phone"))
-            finalEnrichment.put("contact_details", current)
-          }
-
-          if (scoutJson.optBoolean("contains_returnables", false)) {
-            val returnablesPrompt = """
-              Extract any Mandatory Returnable Documents mentioned in this text (e.g., Tax Clearance Certificate, BBBEE Certificate, SBD Forms).
-              Return ONLY a valid JSON object: {"mandatory_documents": ["string", "string"]}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, returnablesPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("returnables") ?: JSONObject()
-            if (json.has("mandatory_documents") && json.optJSONArray("mandatory_documents") != null) {
-              val existingArr = current.optJSONArray("mandatory_documents") ?: org.json.JSONArray()
-              val newArr = json.optJSONArray("mandatory_documents")
-              if (newArr != null) {
-                for (i in 0 until newArr.length()) existingArr.put(newArr.getString(i))
-              }
-              current.put("mandatory_documents", existingArr)
-            }
-            finalEnrichment.put("returnables", current)
-          }
-
-          if (scoutJson.optBoolean("contains_local_content", false)) {
-            val localContentPrompt = """
-              Extract the Local Content Requirements and Mandatory Subcontracting Details from this text.
-              Return ONLY a valid JSON object: {"minimum_local_content_percent": integer or null, "mandatory_subcontracting_percent": integer or null}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, localContentPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("local_content") ?: JSONObject()
-            if (json.has("minimum_local_content_percent") && !json.isNull("minimum_local_content_percent")) current.put("minimum_local_content_percent", json.optInt("minimum_local_content_percent"))
-            if (json.has("mandatory_subcontracting_percent") && !json.isNull("mandatory_subcontracting_percent")) current.put("mandatory_subcontracting_percent", json.optInt("mandatory_subcontracting_percent"))
-            finalEnrichment.put("local_content", current)
-          }
-
-          if (scoutJson.optBoolean("contains_financials", false)) {
-            val financialsPrompt = """
-              Extract Financial and Pricing Information such as Pricing Strategy, Penalties for Delay, Estimated Budget or Value, Performance Guarantees or Sureties, Tender Deposit or Fee, and Payment Terms from this text.
-              Return ONLY a valid JSON object: {"pricing_strategy": "string or null", "penalties_for_delay": "string or null", "estimated_budget_or_value": "string or null", "performance_guarantee": "string or null", "tender_deposit": "string or null", "payment_terms": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, financialsPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("financials") ?: JSONObject()
-            if (json.has("pricing_strategy") && !json.isNull("pricing_strategy")) current.put("pricing_strategy", json.optString("pricing_strategy"))
-            if (json.has("penalties_for_delay") && !json.isNull("penalties_for_delay")) current.put("penalties_for_delay", json.optString("penalties_for_delay"))
-            if (json.has("estimated_budget_or_value") && !json.isNull("estimated_budget_or_value")) current.put("estimated_budget_or_value", json.optString("estimated_budget_or_value"))
-            if (json.has("performance_guarantee") && !json.isNull("performance_guarantee")) current.put("performance_guarantee", json.optString("performance_guarantee"))
-            if (json.has("tender_deposit") && !json.isNull("tender_deposit")) current.put("tender_deposit", json.optString("tender_deposit"))
-            if (json.has("payment_terms") && !json.isNull("payment_terms")) current.put("payment_terms", json.optString("payment_terms"))
-            finalEnrichment.put("financials", current)
-          }
-
-          if (scoutJson.optBoolean("contains_personnel", false)) {
-            val personnelPrompt = """
-              Extract Key Personnel Requirements from this text.
-              Return ONLY a valid JSON object: {"required_key_personnel": ["string", "string"]}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, personnelPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("key_personnel") ?: JSONObject()
-            if (json.has("required_key_personnel") && json.optJSONArray("required_key_personnel") != null) {
-              val existingArr = current.optJSONArray("required_key_personnel") ?: org.json.JSONArray()
-              val newArr = json.optJSONArray("required_key_personnel")
-              if (newArr != null) {
-                for (i in 0 until newArr.length()) existingArr.put(newArr.getString(i))
-              }
-              current.put("required_key_personnel", existingArr)
-            }
-            finalEnrichment.put("key_personnel", current)
-          }
-
-          if (scoutJson.optBoolean("contains_deadlines", false)) {
-            val deadlinesPrompt = """
-              Extract Key Deadlines and Timelines such as Clarification Deadline and Validity Period (in days) from this text.
-              Return ONLY a valid JSON object: {"clarification_deadline": "string or null", "validity_period_days": integer or null}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, deadlinesPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("deadlines") ?: JSONObject()
-            if (json.has("clarification_deadline") && !json.isNull("clarification_deadline")) current.put("clarification_deadline", json.optString("clarification_deadline"))
-            if (json.has("validity_period_days") && !json.isNull("validity_period_days")) current.put("validity_period_days", json.optInt("validity_period_days"))
-            finalEnrichment.put("deadlines", current)
-          }
-
-          if (scoutJson.optBoolean("contains_bbbee", false)) {
-            val bbbeePrompt = """
-              Extract BBBEE Requirements such as minimum contributor level and EME/QSE set-aside instructions from this text.
-              Return ONLY a valid JSON object: {"bbbee_minimum_level": "string or null", "eme_qse_set_aside": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, bbbeePrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("eligibility") ?: JSONObject()
-            if (json.has("bbbee_minimum_level") && !json.isNull("bbbee_minimum_level")) current.put("bbbee_minimum_level", json.optString("bbbee_minimum_level"))
-            if (json.has("eme_qse_set_aside") && !json.isNull("eme_qse_set_aside")) current.put("eme_qse_set_aside", json.optString("eme_qse_set_aside"))
-            finalEnrichment.put("eligibility", current)
-          }
-
-          if (scoutJson.optBoolean("contains_experience", false)) {
-            val experiencePrompt = """
-              Extract Previous Experience Requirements such as years of experience required or number of similar completed projects from this text.
-              Return ONLY a valid JSON object: {"years_experience_required": "string or null", "similar_projects_required": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, experiencePrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("experience") ?: JSONObject()
-            if (json.has("years_experience_required") && !json.isNull("years_experience_required")) current.put("years_experience_required", json.optString("years_experience_required"))
-            if (json.has("similar_projects_required") && !json.isNull("similar_projects_required")) current.put("similar_projects_required", json.optString("similar_projects_required"))
-            finalEnrichment.put("experience", current)
-          }
-
-          if (scoutJson.optBoolean("contains_logistics", false)) {
-            val logisticsPrompt = """
-              Extract Geographic and Logistical Constraints such as locality points awarded for specific municipalities and delivery lead times/schedule from this text.
-              Return ONLY a valid JSON object: {"locality_points_awarded": "string or null", "delivery_lead_time": "string or null"}
-              
-              TEXT BLOCK:
-              $chunk
-            """.trimIndent()
-            val resp = runGemmaInferenceForResult(model, tenderId, logisticsPrompt)
-            val json = try { extractJsonObject(resp) } catch (e: Exception) { JSONObject() }
-            val current = finalEnrichment.optJSONObject("logistics") ?: JSONObject()
-            if (json.has("locality_points_awarded") && !json.isNull("locality_points_awarded")) current.put("locality_points_awarded", json.optString("locality_points_awarded"))
-            if (json.has("delivery_lead_time") && !json.isNull("delivery_lead_time")) current.put("delivery_lead_time", json.optString("delivery_lead_time"))
-            finalEnrichment.put("logistics", current)
-          }
-        }
+    for (chunk in candidateChunks) {
+      val safeToRun = ThermalGuard.awaitSafeTemperature(context)
+      if (!safeToRun) {
+        Log.w(TAG, "Skipping chunk for $tenderId — device too hot.")
+        continue
       }
+
+      val chunkPrompt = buildChunkExtractionPrompt(chunk.text)
+      val chunkResponse = runGemmaInferenceForResult(model, tenderId, chunkPrompt)
+      val chunkJson = try {
+        extractJsonObject(chunkResponse)
+      } catch (e: Exception) {
+        Log.w(TAG, "Chunk enrichment parse failed for $tenderId from ${chunk.fileName}", e)
+        continue
+      }
+
+      mergeMapReduceChunkEnrichment(finalEnrichment, chunkJson)
     }
     return finalEnrichment
+  }
+
+  private fun selectHighestSignalChunks(
+    documents: List<ExtractedTenderDocument>,
+    anchorRegex: Regex,
+  ): List<ScoredChunk> {
+    val scoredChunks = mutableListOf<ScoredChunk>()
+
+    for (document in documents) {
+      if (document.text.isBlank()) {
+        continue
+      }
+
+      val fileChunks = document.text.chunked(CHUNK_SIZE)
+      for ((index, rawChunk) in fileChunks.withIndex()) {
+        val chunk = rawChunk.trim()
+        if (chunk.isBlank() || !anchorRegex.containsMatchIn(chunk)) {
+          continue
+        }
+
+        val matchCount = anchorRegex.findAll(chunk).count()
+        val headingBonus = if (index == 0) 3 else 0
+        val evidenceBonus = if (chunk.contains(Regex("\\b(mandatory|required|must|shall|compulsory)\\b", RegexOption.IGNORE_CASE))) 2 else 0
+        scoredChunks += ScoredChunk(
+          fileName = document.file.name,
+          text = chunk,
+          score = matchCount + headingBonus + evidenceBonus,
+        )
+      }
+    }
+
+    return scoredChunks
+      .sortedByDescending { it.score }
+      .distinctBy { it.text.lowercase() }
+      .take(MAX_MAP_REDUCE_CHUNKS)
   }
 
   private suspend fun runComprehensiveTenderExtraction(
@@ -567,30 +464,6 @@ class TenderAutomationProcessor @Inject constructor(
     }
   }
 
-  private suspend fun runCompanyMatchSignalExtraction(
-    model: Model,
-    tenderId: String,
-    folder: File,
-    documentBundle: String,
-  ): JSONObject {
-    if (documentBundle.isBlank()) {
-      return JSONObject()
-    }
-
-    val prompt = buildCompanyMatchSignalPrompt(
-      tenderId = tenderId,
-      manifestContext = buildManifestContext(folder),
-      documentBundle = documentBundle,
-    )
-    val response = runGemmaInferenceForResult(model, tenderId, prompt, resetConversation = true)
-    return try {
-      extractJsonObject(response)
-    } catch (e: Exception) {
-      Log.w(TAG, "Company match extraction parse failed for $tenderId", e)
-      JSONObject()
-    }
-  }
-
   private fun mergeCompanyMatchSignals(target: JSONObject, source: JSONObject) {
     val companyMatchSignals = JSONObject()
 
@@ -620,6 +493,47 @@ class TenderAutomationProcessor @Inject constructor(
     }
 
     if (companyMatchSignals.length() > 0) {
+      target.put("companyMatchSignals", companyMatchSignals)
+    }
+  }
+
+  private fun seedManifestCompanySignals(target: JSONObject, manifest: JSONObject) {
+    val companyMatchSignals = target.optJSONObject("companyMatchSignals") ?: JSONObject()
+    var changed = false
+
+    if ((companyMatchSignals.optJSONArray("targetProvinces")?.length() ?: 0) == 0) {
+      val provinces = normalizeSignalEntries(manifest.optString("province", ""), "targetProvinces")
+      if (provinces.length() > 0) {
+        companyMatchSignals.put("targetProvinces", provinces)
+        changed = true
+      }
+    }
+
+    if ((companyMatchSignals.optJSONArray("deliveryLocations")?.length() ?: 0) == 0) {
+      val locations = normalizeSignalEntries(manifest.optString("delivery", ""), "deliveryLocations")
+      if (locations.length() > 0) {
+        companyMatchSignals.put("deliveryLocations", locations)
+        changed = true
+      }
+    }
+
+    val contractType = companyMatchSignals.optString("contractType", "unknown")
+    if (contractType.isBlank() || contractType == "unknown") {
+      inferContractType(manifest)?.let {
+        companyMatchSignals.put("contractType", it)
+        changed = true
+      }
+    }
+
+    val contractTerm = companyMatchSignals.optString("contractTerm", "").ifBlank { null }
+    if (contractTerm == null) {
+      inferContractTerm(manifest)?.let {
+        companyMatchSignals.put("contractTerm", it)
+        changed = true
+      }
+    }
+
+    if (changed && companyMatchSignals.length() > 0) {
       target.put("companyMatchSignals", companyMatchSignals)
     }
   }
@@ -662,23 +576,29 @@ class TenderAutomationProcessor @Inject constructor(
       ?: false
   }
 
-  private fun buildDocumentBundle(files: List<File>, maxPromptChars: Int): String {
+  private fun extractTenderDocuments(files: List<File>): List<ExtractedTenderDocument> {
+    return files.mapNotNull { file ->
+      val extractedText = extractTextForGemma(file)
+      if (extractedText.isBlank()) {
+        null
+      } else {
+        ExtractedTenderDocument(file = file, text = extractedText)
+      }
+    }
+  }
+
+  private fun buildDocumentBundle(documents: List<ExtractedTenderDocument>, maxPromptChars: Int): String {
     val chunks = mutableListOf<String>()
     var totalChars = 0
 
-    for (file in files) {
-      val extractedText = extractTextForGemma(file)
-      if (extractedText.isBlank()) {
-        continue
-      }
-
-      val header = "FILE: ${file.name}\n"
+    for (document in documents) {
+      val header = "FILE: ${document.file.name}\n"
       val remainingChars = maxPromptChars - totalChars - header.length
       if (remainingChars <= 0) {
         break
       }
 
-      val normalizedText = extractedText.take(MAX_FILE_TEXT_CHARS).trim()
+      val normalizedText = document.text.take(MAX_FILE_TEXT_CHARS).trim()
       val fittedText = normalizedText.take(remainingChars)
       if (fittedText.isBlank()) {
         continue
@@ -747,37 +667,7 @@ class TenderAutomationProcessor @Inject constructor(
             "amount": "amount text if present",
             "notes": "extra notes if present"
           }
-        ]
-      }
-
-      Rules:
-      - Keep all text compact and evidence-based.
-      - If a field is missing, use null or "unknown" or an empty array as appropriate.
-      - Only use the allowed industry values.
-      - For beeLevel, prefer the explicit B-BBEE contributor level.
-      - For requirements and billOfQuantities, include the most important items that help match the tender to a company profile.
-      - If the documents are only an advert rather than a full tender pack, say so in documentType and explain the limitation in completeTenderDescription.
-      - Do not use markdown code fences.
-
-      $manifestContext
-
-      DOCUMENTS:
-      $documentBundle
-    """.trimIndent()
-  }
-
-  private fun buildCompanyMatchSignalPrompt(
-    tenderId: String,
-    manifestContext: String,
-    documentBundle: String,
-  ): String {
-    return """
-      You are extracting company-matching signals for tender $tenderId.
-
-      Return exactly one valid JSON object and nothing else.
-
-      Schema:
-      {
+        ],
         "targetProvinces": ["province names relevant to delivery, service coverage, or locality scoring"],
         "targetMunicipalities": ["municipality or district names explicitly relevant to this tender"],
         "deliveryLocations": ["delivery sites, project sites, campuses, depots, offices, or towns"],
@@ -794,13 +684,19 @@ class TenderAutomationProcessor @Inject constructor(
       }
 
       Rules:
-      - Be evidence-based and compact.
-      - Only include items that materially help match a tender to a company profile.
-      - Prefer exact named places, registrations, certifications, and capabilities from the documents.
-      - Use empty arrays for missing list fields.
-      - Use null for contractTerm when absent.
-      - Use unknown for contractType when the contract shape is not stated.
-      - Use null for siteWorkRequired when the documents do not make it clear.
+      - Keep all text compact and evidence-based.
+      - Keep briefDescription under 240 characters.
+      - Keep completeTenderDescription under 900 characters.
+      - If a field is missing, use null or "unknown" or an empty array as appropriate.
+      - Only use the allowed industry values.
+      - For beeLevel, prefer the explicit B-BBEE contributor level.
+      - For requirements, include at most 8 of the highest-signal items that help match the tender to a company profile.
+      - For billOfQuantities, include at most 3 representative line items. Prefer an empty array over long menu-style or repetitive item dumps.
+      - For company-match fields, prefer exact named places, registrations, certifications, equipment, and capabilities from the documents.
+      - For targetProvinces, only return South African province names when the province is explicit or strongly implied.
+      - For requiredRegistrations and requiredCertifications, return specific named items like CIDB or ISO 9001, not generic filler such as "all applicable registrations".
+      - For requiredCapabilities and riskFlags, keep each item short, specific, and commercially useful for supplier matching.
+      - If the documents are only an advert rather than a full tender pack, say so in documentType and explain the limitation in completeTenderDescription.
       - Do not use markdown code fences.
 
       $manifestContext
@@ -810,12 +706,250 @@ class TenderAutomationProcessor @Inject constructor(
     """.trimIndent()
   }
 
+  private fun buildChunkExtractionPrompt(chunk: String): String {
+    return """
+      You are extracting structured tender signals from one text block of a South African tender document.
+
+      Return exactly one valid JSON object and nothing else.
+
+      Schema:
+      {
+        "compliance_meta": {
+          "cidb_grading": "string or null",
+          "preference_points": "string or null",
+          "is_jv_allowed": true
+        },
+        "functionality_score": {
+          "minimum_threshold": 0,
+          "criteria_weights": [{"criterion": "string", "weight": 0}]
+        },
+        "briefing": {
+          "is_compulsory": true,
+          "date": "string or null",
+          "venue": "string or null"
+        },
+        "technical_specs": {
+          "scope_of_work": "string or null",
+          "duration": "string or null"
+        },
+        "contact_details": {
+          "contact_person": "string or null",
+          "email": "string or null",
+          "phone": "string or null"
+        },
+        "returnables": {
+          "mandatory_documents": ["string"]
+        },
+        "local_content": {
+          "minimum_local_content_percent": 0,
+          "mandatory_subcontracting_percent": 0
+        },
+        "financials": {
+          "pricing_strategy": "string or null",
+          "penalties_for_delay": "string or null",
+          "estimated_budget_or_value": "string or null",
+          "performance_guarantee": "string or null",
+          "tender_deposit": "string or null",
+          "payment_terms": "string or null"
+        },
+        "key_personnel": {
+          "required_key_personnel": ["string"]
+        },
+        "deadlines": {
+          "clarification_deadline": "string or null",
+          "validity_period_days": 0
+        },
+        "eligibility": {
+          "bbbee_minimum_level": "string or null",
+          "eme_qse_set_aside": "string or null"
+        },
+        "experience": {
+          "years_experience_required": "string or null",
+          "similar_projects_required": "string or null"
+        },
+        "logistics": {
+          "locality_points_awarded": "string or null",
+          "delivery_lead_time": "string or null"
+        }
+      }
+
+      Rules:
+      - Be evidence-based and compact.
+      - Use null for missing strings, empty arrays for missing lists, and omit nested fields you cannot support from this text block.
+      - Only extract what is visible in this block. Do not infer across missing context.
+      - Do not use markdown code fences.
+
+      TEXT BLOCK:
+      $chunk
+    """.trimIndent()
+  }
+
+  private fun mergeMapReduceChunkEnrichment(target: JSONObject, source: JSONObject) {
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "compliance_meta",
+      stringKeys = listOf("cidb_grading", "preference_points"),
+      booleanKeys = listOf("is_jv_allowed"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "functionality_score",
+      intKeys = listOf("minimum_threshold"),
+      arrayKeys = listOf("criteria_weights"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "briefing",
+      stringKeys = listOf("date", "venue"),
+      booleanKeys = listOf("is_compulsory"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "technical_specs",
+      stringKeys = listOf("scope_of_work", "duration"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "contact_details",
+      stringKeys = listOf("contact_person", "email", "phone"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "returnables",
+      arrayKeys = listOf("mandatory_documents"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "local_content",
+      intKeys = listOf("minimum_local_content_percent", "mandatory_subcontracting_percent"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "financials",
+      stringKeys = listOf(
+        "pricing_strategy",
+        "penalties_for_delay",
+        "estimated_budget_or_value",
+        "performance_guarantee",
+        "tender_deposit",
+        "payment_terms",
+      ),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "key_personnel",
+      arrayKeys = listOf("required_key_personnel"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "deadlines",
+      stringKeys = listOf("clarification_deadline"),
+      intKeys = listOf("validity_period_days"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "eligibility",
+      stringKeys = listOf("bbbee_minimum_level", "eme_qse_set_aside"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "experience",
+      stringKeys = listOf("years_experience_required", "similar_projects_required"),
+    )
+    mergeNestedObject(
+      target = target,
+      source = source,
+      key = "logistics",
+      stringKeys = listOf("locality_points_awarded", "delivery_lead_time"),
+    )
+  }
+
+  private fun mergeNestedObject(
+    target: JSONObject,
+    source: JSONObject,
+    key: String,
+    stringKeys: List<String> = emptyList(),
+    intKeys: List<String> = emptyList(),
+    booleanKeys: List<String> = emptyList(),
+    arrayKeys: List<String> = emptyList(),
+  ) {
+    val sourceObject = source.optJSONObject(key) ?: return
+    val targetObject = target.optJSONObject(key) ?: JSONObject()
+
+    for (field in stringKeys) {
+      val value = sourceObject.optString(field, "").ifBlank { null }
+      if (value != null) {
+        targetObject.put(field, value)
+      }
+    }
+
+    for (field in intKeys) {
+      if (sourceObject.has(field) && !sourceObject.isNull(field)) {
+        targetObject.put(field, sourceObject.optInt(field))
+      }
+    }
+
+    for (field in booleanKeys) {
+      if (sourceObject.has(field) && !sourceObject.isNull(field)) {
+        targetObject.put(field, sourceObject.optBoolean(field))
+      }
+    }
+
+    for (field in arrayKeys) {
+      val sourceArray = sourceObject.optJSONArray(field) ?: continue
+      if (sourceArray.length() == 0) {
+        continue
+      }
+      val targetArray = targetObject.optJSONArray(field) ?: JSONArray()
+      for (index in 0 until sourceArray.length()) {
+        targetArray.put(sourceArray.get(index))
+      }
+      targetObject.put(field, targetArray)
+    }
+
+    target.put(key, targetObject)
+  }
+
+  private fun deriveDocumentClassification(enrichment: JSONObject): String {
+    return when (enrichment.optString("documentType", "unknown").lowercase()) {
+      "advert" -> "ADVERT"
+      "tender", "mixed" -> "FULL_TENDER"
+      else -> {
+        val hasReturnables = enrichment.optJSONObject("returnables")?.optJSONArray("mandatory_documents")?.length()?.let { it > 0 } == true
+        val hasFunctionality = enrichment.optJSONObject("functionality_score")?.has("minimum_threshold") == true ||
+          (enrichment.optJSONObject("functionality_score")?.optJSONArray("criteria_weights")?.length() ?: 0) > 0
+        val hasFinancials = enrichment.optJSONObject("financials")?.let {
+          it.optString("pricing_strategy", "").isNotBlank() ||
+            it.optString("estimated_budget_or_value", "").isNotBlank() ||
+            it.optString("tender_deposit", "").isNotBlank()
+        } == true
+        when {
+          hasReturnables || hasFunctionality || hasFinancials -> "FULL_TENDER"
+          else -> "UNKNOWN"
+        }
+      }
+    }
+  }
+
   private fun mergeStringArrayIfPresent(target: JSONObject, source: JSONObject, key: String) {
     val values = source.optJSONArray(key) ?: return
-    if (values.length() == 0) {
+    val normalizedValues = normalizeSignalEntries(values, key)
+    if (normalizedValues.length() == 0) {
       return
     }
-    target.put(key, values)
+    target.put(key, normalizedValues)
   }
 
   private fun extractJsonObject(rawResponse: String): JSONObject {
@@ -827,15 +961,31 @@ class TenderAutomationProcessor @Inject constructor(
         .removePrefix("```")
         .removeSuffix("```")
         .trim()
-    return try {
-      JSONObject(sanitizeGemmaJsonCandidate(codeFenceStripped))
-    } catch (_: Exception) {
-      val start = codeFenceStripped.indexOf('{')
-      val end = codeFenceStripped.lastIndexOf('}')
-      if (start == -1 || end == -1 || end <= start) {
-        throw IllegalArgumentException("No JSON object found in Gemma response.")
+    val candidates = linkedSetOf<String>()
+    addJsonCandidate(candidates, codeFenceStripped)
+
+    val firstBrace = codeFenceStripped.indexOf('{')
+    if (firstBrace != -1) {
+      addJsonCandidate(candidates, codeFenceStripped.substring(firstBrace))
+    }
+
+    extractBalancedJsonObjectCandidate(codeFenceStripped)?.let { addJsonCandidate(candidates, it) }
+    repairTruncatedJsonObjectCandidate(codeFenceStripped)?.let { addJsonCandidate(candidates, it) }
+
+    for (candidate in candidates) {
+      try {
+        return JSONObject(candidate)
+      } catch (_: Exception) {
       }
-      JSONObject(sanitizeGemmaJsonCandidate(codeFenceStripped.substring(start, end + 1)))
+    }
+
+    throw IllegalArgumentException("No JSON object found in Gemma response.")
+  }
+
+  private fun addJsonCandidate(candidates: MutableSet<String>, rawCandidate: String) {
+    val sanitized = sanitizeGemmaJsonCandidate(rawCandidate)
+    if (sanitized.isNotBlank()) {
+      candidates += sanitized
     }
   }
 
@@ -919,7 +1069,258 @@ class TenderAutomationProcessor @Inject constructor(
       output.append('"')
     }
 
-    return output.toString()
+    return output
+      .toString()
+      .replace(Regex(",\\s*([}\\]])"), "$1")
+      .trim()
+  }
+
+  private fun extractBalancedJsonObjectCandidate(value: String): String? {
+    val start = value.indexOf('{')
+    if (start == -1) {
+      return null
+    }
+
+    val stack = ArrayDeque<Char>()
+    var inString = false
+    var escaped = false
+
+    for (index in start until value.length) {
+      val current = value[index]
+      if (inString) {
+        when {
+          escaped -> escaped = false
+          current == '\\' -> escaped = true
+          current == '"' -> inString = false
+        }
+        continue
+      }
+
+      when (current) {
+        '"' -> inString = true
+        '{', '[' -> stack.addLast(current)
+        '}' -> {
+          if (stack.isNotEmpty() && stack.last() == '{') {
+            stack.removeLast()
+          }
+          if (stack.isEmpty()) {
+            return value.substring(start, index + 1)
+          }
+        }
+        ']' -> {
+          if (stack.isNotEmpty() && stack.last() == '[') {
+            stack.removeLast()
+          }
+          if (stack.isEmpty()) {
+            return value.substring(start, index + 1)
+          }
+        }
+      }
+    }
+
+    return null
+  }
+
+  private fun repairTruncatedJsonObjectCandidate(value: String): String? {
+    val start = value.indexOf('{')
+    if (start == -1) {
+      return null
+    }
+
+    val stack = ArrayDeque<Char>()
+    val repaired = StringBuilder(value.length + 8)
+    var inString = false
+    var escaped = false
+
+    for (index in start until value.length) {
+      val current = value[index]
+      repaired.append(current)
+
+      if (inString) {
+        when {
+          escaped -> escaped = false
+          current == '\\' -> escaped = true
+          current == '"' -> inString = false
+        }
+        continue
+      }
+
+      when (current) {
+        '"' -> inString = true
+        '{', '[' -> stack.addLast(current)
+        '}' -> if (stack.isNotEmpty() && stack.last() == '{') stack.removeLast()
+        ']' -> if (stack.isNotEmpty() && stack.last() == '[') stack.removeLast()
+      }
+    }
+
+    if (repaired.isEmpty()) {
+      return null
+    }
+
+    if (inString) {
+      repaired.append('"')
+    }
+
+    while (repaired.isNotEmpty() && repaired.last().isWhitespace()) {
+      repaired.setLength(repaired.length - 1)
+    }
+    if (repaired.isNotEmpty() && repaired.last() == ',') {
+      repaired.setLength(repaired.length - 1)
+    }
+
+    while (stack.isNotEmpty()) {
+      repaired.append(if (stack.removeLast() == '{') '}' else ']')
+    }
+
+    return repaired.toString()
+  }
+
+  private fun normalizeSignalEntries(values: JSONArray, key: String): JSONArray {
+    val normalized = linkedSetOf<String>()
+
+    for (index in 0 until values.length()) {
+      val rawValue = values.optString(index, "")
+      normalized += normalizeSignalValues(rawValue, key)
+    }
+
+    return JSONArray(normalized.toList())
+  }
+
+  private fun normalizeSignalEntries(rawValue: String, key: String): JSONArray {
+    return JSONArray(normalizeSignalValues(rawValue, key))
+  }
+
+  private fun normalizeSignalValues(rawValue: String, key: String): List<String> {
+    val items = splitSignalValues(rawValue, key)
+      .mapNotNull { normalizeSignalValue(it, key) }
+      .distinctBy { it.lowercase() }
+
+    return items
+  }
+
+  private fun splitSignalValues(rawValue: String, key: String): List<String> {
+    val cleaned = rawValue
+      .replace(Regex("[\\r\\n]+"), "\n")
+      .replace(Regex("\\s+"), " ")
+      .trim()
+      .trim(',', ';')
+
+    if (cleaned.isBlank()) {
+      return emptyList()
+    }
+
+    val separatorRegex =
+      when (key) {
+        "targetProvinces", "targetMunicipalities", "deliveryLocations" -> Regex("\\s*(?:;|/|\\|)\\s*|\\s+\\n\\s+")
+        else -> Regex("\\s*(?:,|;|/|\\||\\band\\b)\\s*|\\s+\\n\\s+")
+      }
+
+    return cleaned
+      .split(separatorRegex)
+      .map { it.trim().trim('-', '*', '•', '.', ' ') }
+      .filter { it.isNotBlank() }
+  }
+
+  private fun normalizeSignalValue(rawValue: String, key: String): String? {
+    val compact = rawValue
+      .replace(Regex("\\s+"), " ")
+      .trim()
+      .trim(',', ';', ':', '-', ' ')
+
+    if (compact.isBlank()) {
+      return null
+    }
+
+    val lower = compact.lowercase()
+    val genericPattern = Regex("^(unknown|n/?a|none|null|not specified|tbd|various|all applicable|if applicable)$")
+    if (genericPattern.matches(lower)) {
+      return null
+    }
+
+    if ((key == "requiredRegistrations" || key == "requiredCertifications") &&
+      (lower.contains("other registrations") || lower.contains("other certifications"))
+    ) {
+      return null
+    }
+
+    return when (key) {
+      "targetProvinces" -> normalizeProvinceName(compact)
+      "requiredRegistrations", "requiredCertifications" -> normalizeAccreditationName(compact)
+      "contractType" -> normalizeContractType(compact)
+      else -> compact
+        .replace(Regex("^(must have|must be|ability to|capable of)\\s+", RegexOption.IGNORE_CASE), "")
+        .trim()
+        .takeIf { it.length >= 3 }
+    }
+  }
+
+  private fun normalizeProvinceName(value: String): String? {
+    val normalized = value.lowercase().replace(Regex("[^a-z]"), "")
+    val province =
+      when (normalized) {
+        "easterncape" -> "Eastern Cape"
+        "freestate" -> "Free State"
+        "gauteng" -> "Gauteng"
+        "kwazulunatal", "kzn" -> "KwaZulu-Natal"
+        "limpopo" -> "Limpopo"
+        "mpumalanga" -> "Mpumalanga"
+        "northwest" -> "North West"
+        "northerncape" -> "Northern Cape"
+        "westerncape", "wc" -> "Western Cape"
+        else -> value.takeIf { it.length >= 4 }
+      }
+
+    return province?.trim()
+  }
+
+  private fun normalizeAccreditationName(value: String): String {
+    return value
+      .replace(Regex("\\bcidb\\b", RegexOption.IGNORE_CASE), "CIDB")
+      .replace(Regex("\\bcsd\\b", RegexOption.IGNORE_CASE), "CSD")
+      .replace(Regex("\\bnhbrc\\b", RegexOption.IGNORE_CASE), "NHBRC")
+      .replace(Regex("\\bpsira\\b", RegexOption.IGNORE_CASE), "PSIRA")
+      .replace(Regex("\\bcipc\\b", RegexOption.IGNORE_CASE), "CIPC")
+      .replace(Regex("\\bb-?bbbee\\b", RegexOption.IGNORE_CASE), "B-BBEE")
+      .replace(Regex("\\biso\\b", RegexOption.IGNORE_CASE), "ISO")
+      .trim()
+  }
+
+  private fun inferContractType(manifest: JSONObject): String? {
+    val source = listOf(
+      manifest.optString("type", ""),
+      manifest.optString("description", ""),
+    ).joinToString(" ").lowercase()
+
+    return when {
+      source.contains("framework") -> "framework"
+      source.contains("panel") -> "panel"
+      source.contains("month") || source.contains("year") || source.contains("term contract") -> "term"
+      source.contains("once off") || source.contains("once-off") -> "once_off"
+      else -> null
+    }
+  }
+
+  private fun inferContractTerm(manifest: JSONObject): String? {
+    val source = listOf(
+      manifest.optString("type", ""),
+      manifest.optString("description", ""),
+    ).joinToString(" ")
+
+    return Regex("\\b\\d+\\s*(day|days|month|months|year|years)\\b", RegexOption.IGNORE_CASE)
+      .find(source)
+      ?.value
+  }
+
+  private fun normalizeContractType(value: String): String? {
+    val normalized = value.lowercase().trim()
+    return when {
+      normalized.contains("framework") -> "framework"
+      normalized.contains("panel") -> "panel"
+      normalized.contains("term") || normalized.contains("month") || normalized.contains("year") -> "term"
+      normalized.contains("once") -> "once_off"
+      normalized == "unknown" -> null
+      else -> value
+    }
   }
 
   private fun nextNonWhitespace(value: String, startIndex: Int): Char? {

@@ -102,8 +102,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.BlurredEdgeTreatment
-import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Brush.Companion.linearGradient
@@ -460,22 +458,29 @@ fun HomeScreen(
                   }
                 val configuration = LocalConfiguration.current
                 val screenWidth = configuration.screenWidthDp.dp
-                val targetWidth = screenWidth * 1.5f
-                Image(
-                  painter = painterResource(id = R.drawable.bg_star),
-                  contentDescription = null,
+                val glowSize = screenWidth * 1.1f
+                Box(
                   modifier =
-                    Modifier.requiredWidth(targetWidth)
-                      .blur(radius = 35.dp, edgeTreatment = BlurredEdgeTreatment.Unbounded)
-                      .offset(x = screenWidth * 0.25f, y = -screenWidth * 0.1f)
+                    Modifier.size(glowSize)
+                      .offset(x = screenWidth * 0.22f, y = -screenWidth * 0.18f)
                       .graphicsLayer {
-                        rotationZ = (1f - progress) * 40f
-                        scaleX = 0.4f + 0.6f * progress
-                        scaleY = 0.4f + 0.6f * progress
-                        alpha = progress * 2f
-                      },
-                  contentScale = ContentScale.Crop,
-                  colorFilter = ColorFilter.tint(MaterialTheme.customColors.bgStarColor),
+                        rotationZ = (1f - progress) * 24f
+                        scaleX = 0.75f + 0.25f * progress
+                        scaleY = 0.75f + 0.25f * progress
+                        alpha = 0.18f + (0.24f * progress)
+                      }
+                      .background(
+                        brush =
+                          Brush.radialGradient(
+                            colors =
+                              listOf(
+                                MaterialTheme.customColors.bgStarColor.copy(alpha = 0.95f),
+                                MaterialTheme.customColors.bgStarColor.copy(alpha = 0.38f),
+                                Color.Transparent,
+                              )
+                          ),
+                        shape = CircleShape,
+                      )
                 )
               }
 

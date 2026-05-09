@@ -45,6 +45,7 @@ import com.google.ai.edge.litertlm.MessageCallback
 import com.google.ai.edge.litertlm.SamplerConfig
 import com.google.ai.edge.litertlm.ToolProvider
 import java.io.ByteArrayOutputStream
+import java.io.File
 import java.util.concurrent.CancellationException
 import kotlinx.coroutines.CoroutineScope
 
@@ -55,6 +56,13 @@ data class LlmModelInstance(val engine: Engine, var conversation: Conversation)
 object LlmChatModelHelper : LlmModelHelper {
   // Indexed by model name.
   private val cleanUpListeners: MutableMap<String, CleanUpListener> = mutableMapOf()
+
+  @OptIn(ExperimentalApi::class)
+  private data class RuntimeSelection(
+    val acceleratorLabel: String,
+    val backend: Backend,
+    val visionBackend: Backend,
+  )
 
   @OptIn(ExperimentalApi::class) // opt-in experimental flags
   override fun initialize(
@@ -74,78 +82,74 @@ object LlmChatModelHelper : LlmModelHelper {
     val topP = model.getFloatConfigValue(key = ConfigKeys.TOPP, defaultValue = DEFAULT_TOPP)
     val temperature =
       model.getFloatConfigValue(key = ConfigKeys.TEMPERATURE, defaultValue = DEFAULT_TEMPERATURE)
-    val accelerator =
-      model.getStringConfigValue(key = ConfigKeys.ACCELERATOR, defaultValue = Accelerator.GPU.label)
     val visionAccelerator =
       model.getStringConfigValue(
         key = ConfigKeys.VISION_ACCELERATOR,
         defaultValue = DEFAULT_VISION_ACCELERATOR.label,
       )
-    val visionBackend =
-      when (visionAccelerator) {
-        Accelerator.CPU.label -> Backend.CPU()
-        Accelerator.GPU.label -> Backend.GPU()
-        Accelerator.NPU.label ->
-          Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
-        Accelerator.TPU.label ->
-          Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
-        else -> Backend.GPU()
-      }
     val shouldEnableImage = supportImage
     val shouldEnableAudio = supportAudio
-    val preferredBackend =
-      when (accelerator) {
-        Accelerator.CPU.label -> Backend.CPU()
-        Accelerator.GPU.label -> Backend.GPU()
-        Accelerator.NPU.label ->
-          Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
-        Accelerator.TPU.label ->
-          Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
-        else -> Backend.CPU()
-      }
-    Log.d(TAG, "Preferred backend: $preferredBackend")
+    val configuredAccelerator =
+      model.getStringConfigValue(key = ConfigKeys.ACCELERATOR, defaultValue = Accelerator.GPU.label)
 
-    val modelPath = model.getPath(context = context)
-    val engineConfig =
-      EngineConfig(
-        modelPath = modelPath,
-        backend = preferredBackend,
-        visionBackend = if (shouldEnableImage) visionBackend else null, // must be GPU for Gemma 4 e4b
-        audioBackend = if (shouldEnableAudio) Backend.CPU() else null, // must be CPU for Gemma 4 e4b
-        maxNumTokens = maxTokens,
-        cacheDir =
-          if (modelPath.startsWith("/data/local/tmp"))
-            context.getExternalFilesDir(null)?.absolutePath
-          else null,
-      )
-
-    // Create an instance of LiteRT LM engine and conversation.
     try {
-      val engine = Engine(engineConfig)
-      engine.initialize()
-
-      ExperimentalFlags.enableConversationConstrainedDecoding =
-        enableConversationConstrainedDecoding
-      val conversation =
-        engine.createConversation(
-          ConversationConfig(
-            samplerConfig =
-              if (preferredBackend is Backend.NPU) {
-                null
-              } else {
-                SamplerConfig(
-                  topK = topK,
-                  topP = topP.toDouble(),
-                  temperature = temperature.toDouble(),
-                )
-              },
-            systemInstruction = systemInstruction,
-            tools = tools,
-          )
+      val runtimeSelection =
+        buildRuntimeSelection(
+          context = context,
+          acceleratorLabel = configuredAccelerator,
+          visionAcceleratorLabel = visionAccelerator,
         )
-      ExperimentalFlags.enableConversationConstrainedDecoding = false
-      model.instance = LlmModelInstance(engine = engine, conversation = conversation)
+      val instance =
+        createModelInstance(
+          context = context,
+          model = model,
+          runtimeSelection = runtimeSelection,
+          shouldEnableImage = shouldEnableImage,
+          shouldEnableAudio = shouldEnableAudio,
+          maxTokens = maxTokens,
+          topK = topK,
+          topP = topP,
+          temperature = temperature,
+          systemInstruction = systemInstruction,
+          tools = tools,
+          enableConversationConstrainedDecoding = enableConversationConstrainedDecoding,
+        )
+      model.instance = instance
+      persistAcceleratorConfig(model, runtimeSelection.acceleratorLabel)
     } catch (e: Exception) {
+      if (shouldRetryWithGpu(model, configuredAccelerator)) {
+        Log.w(TAG, "NPU initialization failed for '${model.name}', retrying with GPU", e)
+        try {
+          val fallbackSelection =
+            buildRuntimeSelection(
+              context = context,
+              acceleratorLabel = Accelerator.GPU.label,
+              visionAcceleratorLabel = visionAccelerator,
+            )
+          val instance =
+            createModelInstance(
+              context = context,
+              model = model,
+              runtimeSelection = fallbackSelection,
+              shouldEnableImage = shouldEnableImage,
+              shouldEnableAudio = shouldEnableAudio,
+              maxTokens = maxTokens,
+              topK = topK,
+              topP = topP,
+              temperature = temperature,
+              systemInstruction = systemInstruction,
+              tools = tools,
+              enableConversationConstrainedDecoding = enableConversationConstrainedDecoding,
+            )
+          model.instance = instance
+          persistAcceleratorConfig(model, fallbackSelection.acceleratorLabel)
+          onDone("")
+          return
+        } catch (fallbackException: Exception) {
+          onDone(cleanUpMediapipeTaskErrorMessage(fallbackException.message ?: "Unknown error"))
+          return
+        }
+      }
       onDone(cleanUpMediapipeTaskErrorMessage(e.message ?: "Unknown error"))
       return
     }
@@ -241,6 +245,121 @@ object LlmChatModelHelper : LlmModelHelper {
   override fun stopResponse(model: Model) {
     val instance = model.instance as? LlmModelInstance ?: return
     instance.conversation.cancelProcess()
+  }
+
+  @OptIn(ExperimentalApi::class)
+  private fun createModelInstance(
+    context: Context,
+    model: Model,
+    runtimeSelection: RuntimeSelection,
+    shouldEnableImage: Boolean,
+    shouldEnableAudio: Boolean,
+    maxTokens: Int,
+    topK: Int,
+    topP: Float,
+    temperature: Float,
+    systemInstruction: Contents?,
+    tools: List<ToolProvider>,
+    enableConversationConstrainedDecoding: Boolean,
+  ): LlmModelInstance {
+    Log.d(TAG, "Preferred backend: ${runtimeSelection.backend}")
+
+    val modelPath = model.getPath(context = context)
+    val engineConfig =
+      EngineConfig(
+        modelPath = modelPath,
+        backend = runtimeSelection.backend,
+        visionBackend = if (shouldEnableImage) runtimeSelection.visionBackend else null,
+        audioBackend = if (shouldEnableAudio) Backend.CPU() else null,
+        maxNumTokens = maxTokens,
+        cacheDir =
+          if (modelPath.startsWith("/data/local/tmp")) {
+            context.getExternalFilesDir(null)?.absolutePath
+          } else {
+            null
+          },
+      )
+
+    val engine = Engine(engineConfig)
+    engine.initialize()
+
+    ExperimentalFlags.enableConversationConstrainedDecoding =
+      enableConversationConstrainedDecoding
+    val conversation =
+      engine.createConversation(
+        ConversationConfig(
+          samplerConfig =
+            if (runtimeSelection.acceleratorLabel == Accelerator.NPU.label ||
+              runtimeSelection.acceleratorLabel == Accelerator.TPU.label
+            ) {
+              null
+            } else {
+              SamplerConfig(
+                topK = topK,
+                topP = topP.toDouble(),
+                temperature = temperature.toDouble(),
+              )
+            },
+          systemInstruction = systemInstruction,
+          tools = tools,
+        )
+      )
+    ExperimentalFlags.enableConversationConstrainedDecoding = false
+
+    return LlmModelInstance(engine = engine, conversation = conversation)
+  }
+
+  @OptIn(ExperimentalApi::class)
+  private fun buildRuntimeSelection(
+    context: Context,
+    acceleratorLabel: String,
+    visionAcceleratorLabel: String,
+  ): RuntimeSelection {
+    val visionBackend = backendFromLabel(context, visionAcceleratorLabel)
+    val backend = backendFromLabel(context, acceleratorLabel)
+    return RuntimeSelection(
+      acceleratorLabel = acceleratorLabel,
+      backend = backend,
+      visionBackend = visionBackend,
+    )
+  }
+
+  @OptIn(ExperimentalApi::class)
+  private fun backendFromLabel(context: Context, acceleratorLabel: String): Backend {
+    return when (acceleratorLabel) {
+      Accelerator.CPU.label -> Backend.CPU()
+      Accelerator.GPU.label -> Backend.GPU()
+      Accelerator.NPU.label, Accelerator.TPU.label ->
+        if (hasBundledNpuRuntime(context)) {
+          Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
+        } else {
+          throw IllegalStateException(
+            "NPU runtime is not bundled in this APK. Rebuild with LiteRT dispatch libraries or use a non-NPU backend.",
+          )
+        }
+      else -> Backend.CPU()
+    }
+  }
+
+  private fun hasBundledNpuRuntime(context: Context): Boolean {
+    val nativeLibraryDir = context.applicationInfo.nativeLibraryDir ?: return false
+    val nativeLibs = File(nativeLibraryDir).listFiles() ?: return false
+    return nativeLibs.any { file ->
+      val name = file.name.lowercase()
+      name.endsWith(".so") &&
+        (name.contains("dispatch") || name.contains("qnn") || name.contains("htp"))
+    }
+  }
+
+  private fun shouldRetryWithGpu(model: Model, acceleratorLabel: String): Boolean {
+    return (acceleratorLabel == Accelerator.NPU.label || acceleratorLabel == Accelerator.TPU.label) &&
+      model.accelerators.contains(Accelerator.GPU)
+  }
+
+  private fun persistAcceleratorConfig(model: Model, acceleratorLabel: String) {
+    val configValues = model.configValues.toMutableMap()
+    configValues[ConfigKeys.ACCELERATOR.label] = acceleratorLabel
+    model.configValues = configValues
   }
 
   override fun runInference(

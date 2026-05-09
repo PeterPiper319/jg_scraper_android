@@ -50,6 +50,7 @@ import com.google.ai.edge.gallery.data.SOC
 import com.google.ai.edge.gallery.data.TMP_FILE_EXT
 import com.google.ai.edge.gallery.data.Task
 import com.google.ai.edge.gallery.data.ValueType
+import com.google.ai.edge.gallery.data.createLlmChatConfigsForNpuModel
 import com.google.ai.edge.gallery.data.createLlmChatConfigs
 import com.google.ai.edge.gallery.proto.AccessTokenData
 import com.google.ai.edge.gallery.proto.ImportedModel
@@ -1182,15 +1183,23 @@ constructor(
     val llmSupportTinyGarden = info.llmConfig.supportTinyGarden
     val llmSupportMobileActions = info.llmConfig.supportMobileActions
     val llmSupportThinking = info.llmConfig.supportThinking
+    val npuOnly = accelerators.size == 1 && accelerators[0] == Accelerator.NPU
     val configs: MutableList<Config> =
-      createLlmChatConfigs(
-          defaultMaxToken = llmMaxToken,
-          defaultTopK = info.llmConfig.defaultTopk,
-          defaultTopP = info.llmConfig.defaultTopp,
-          defaultTemperature = info.llmConfig.defaultTemperature,
-          accelerators = accelerators,
-          supportThinking = llmSupportThinking,
-        )
+      (if (npuOnly) {
+          createLlmChatConfigsForNpuModel(
+            defaultMaxToken = llmMaxToken,
+            accelerators = accelerators,
+          )
+        } else {
+          createLlmChatConfigs(
+            defaultMaxToken = llmMaxToken,
+            defaultTopK = info.llmConfig.defaultTopk,
+            defaultTopP = info.llmConfig.defaultTopp,
+            defaultTemperature = info.llmConfig.defaultTemperature,
+            accelerators = accelerators,
+            supportThinking = llmSupportThinking,
+          )
+        })
         .toMutableList()
     val model =
       Model(
