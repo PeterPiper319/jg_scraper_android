@@ -334,7 +334,7 @@ object LlmChatModelHelper : LlmModelHelper {
           Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
         } else {
           throw IllegalStateException(
-            "NPU runtime is not bundled in this APK. Rebuild with LiteRT dispatch libraries or use a non-NPU backend.",
+            "NPU runtime is not bundled in this APK. Add the local QAIRT bridge AAR at app/libs/qtld-release.aar and package the QNN/HTP .so files under src/main/jniLibs/arm64-v8a, or use a non-NPU backend.",
           )
         }
       else -> Backend.CPU()

@@ -20,6 +20,7 @@ webkit = "1.14.0"
 protobuf = "0.9.5"
 protobufJavaLite = "4.26.1"
 #noinspection GradleDependency
+litert = "2.1.4"
 litertlm = "0.10.0"
 commonmark = "1.0.0-alpha02"
 richtext = "1.0.0-alpha02"
@@ -69,6 +70,7 @@ androidx-datastore = { group = "androidx.datastore", name = "datastore", version
 com-google-code-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleProcess" }
 androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "webkit"}
+litert = { group = "com.google.ai.edge.litert", name = "litert", version.ref = "litert" }
 litertlm = { group = "com.google.ai.edge.litertlm", name = "litertlm-android", version.ref = "litertlm" }
 commonmark = { group = "com.halilibo.compose-richtext", name = "richtext-commonmark", version.ref = "commonmark" }
 richtext = { group = "com.halilibo.compose-richtext", name = "richtext-ui-material3", version.ref = "richtext" }

@@ -117,6 +117,7 @@ class TenderAutomationProcessor @Inject constructor(
       statusUpdater?.invoke("Finalizing tender classification...")
       val classification = deriveDocumentClassification(combinedEnrichment)
       combinedEnrichment.put("document_type", classification)
+      deriveTenderAdvertValue(combinedEnrichment)?.let { combinedEnrichment.put("tenderAdvertType", it) }
       Log.d(TAG, "Tender $tenderId classified as ${"$classification"}")
       statusUpdater?.invoke("Tender $tenderId classified as ${"$classification"}")
 
@@ -943,6 +944,18 @@ class TenderAutomationProcessor @Inject constructor(
     }
   }
 
+  private fun deriveTenderAdvertValue(enrichment: JSONObject): String? {
+    return when (deriveDocumentClassification(enrichment)) {
+      "ADVERT" -> "advert"
+      "FULL_TENDER" -> "tender"
+      else -> when (enrichment.optString("documentType", "unknown").lowercase()) {
+        "advert" -> "advert"
+        "tender", "mixed" -> "tender"
+        else -> null
+      }
+    }
+  }
+
   private fun mergeStringArrayIfPresent(target: JSONObject, source: JSONObject, key: String) {
     val values = source.optJSONArray(key) ?: return
     val normalizedValues = normalizeSignalEntries(values, key)
@@ -1478,6 +1491,13 @@ class TenderAutomationProcessor @Inject constructor(
 
     val documentType = enrichment.optString("documentType", "unknown")
     if (documentType.isNotBlank() && documentType != "unknown") manifest.put("documentType", documentType)
+
+    val tenderAdvertType = enrichment.optString("tenderAdvertType", "").ifBlank {
+      deriveTenderAdvertValue(enrichment)
+    }
+    if (tenderAdvertType != null) {
+      manifest.put("tenderAdvertType", tenderAdvertType)
+    }
 
     val briefDescription = enrichment.optString("briefDescription", "").ifBlank { null }
     if (briefDescription != null) manifest.put("briefDescription", briefDescription)

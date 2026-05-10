@@ -28,6 +28,15 @@ plugins {
   kotlin("kapt")
 }
 
+val qairtQtldAar = layout.projectDirectory.file("libs/qtld-release.aar").asFile
+
+kapt {
+  correctErrorTypes = true
+  arguments {
+    arg("dagger.hilt.android.internal.disableAndroidSuperclassValidation", "true")
+  }
+}
+
 android {
   namespace = "com.google.ai.edge.gallery"
   compileSdk = 36
@@ -89,7 +98,11 @@ dependencies {
   implementation(libs.androidx.lifecycle.process)
   implementation(libs.androidx.security.crypto)
   implementation(libs.androidx.webkit)
+  implementation(libs.litert)
   implementation(libs.litertlm)
+  if (qairtQtldAar.exists()) {
+    implementation(files(qairtQtldAar))
+  }
   implementation(libs.commonmark)
   implementation(libs.richtext)
   implementation(libs.tflite)
