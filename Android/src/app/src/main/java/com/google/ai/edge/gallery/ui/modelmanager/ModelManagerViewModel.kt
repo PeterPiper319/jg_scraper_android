@@ -1166,6 +1166,7 @@ constructor(
   }
 
   private fun createModelFromImportedModelInfo(info: ImportedModel): Model {
+    val runtimeType = parseImportedRuntimeType(info)
     val accelerators: MutableList<Accelerator> =
       info.llmConfig.compatibleAcceleratorsList
         .mapNotNull { acceleratorLabel ->
@@ -1234,11 +1235,25 @@ constructor(
         accelerators = accelerators,
         // We assume all imported models are LLM for now.
         isLlm = true,
-        runtimeType = RuntimeType.LITERT_LM,
+        runtimeType = runtimeType,
       )
     model.preProcess()
 
     return model
+  }
+
+  private fun parseImportedRuntimeType(info: ImportedModel): RuntimeType {
+    val persistedRuntimeType = info.runtimeType.trim()
+    if (persistedRuntimeType.isNotEmpty()) {
+      return RuntimeType.entries.firstOrNull { it.name == persistedRuntimeType }
+        ?: RuntimeType.LITERT_LM
+    }
+
+    return if (info.fileName.endsWith(".onnx", ignoreCase = true)) {
+      RuntimeType.QNN_ONNX
+    } else {
+      RuntimeType.LITERT_LM
+    }
   }
 
   private fun groupTasksByCategory(): Map<String, List<Task>> {

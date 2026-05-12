@@ -137,8 +137,13 @@ fun GlobalModelManager(
         result.data?.data?.let { uri ->
           val fileName = getFileName(context = context, uri = uri)
           Log.d(TAG, "Selected file: $fileName")
-          // Show warning for model file types other than .task and .litertlm.
-          if (fileName != null && !fileName.endsWith(".task") && !fileName.endsWith(".litertlm")) {
+          // Show warning for model file types other than .task, .litertlm, and .onnx.
+          if (
+            fileName != null &&
+              !fileName.endsWith(".task") &&
+              !fileName.endsWith(".litertlm") &&
+              !fileName.endsWith(".onnx")
+          ) {
             showUnsupportedFileTypeDialog = true
           }
           // Show warning for web-only model (by checking if the file name has "-web" in it).

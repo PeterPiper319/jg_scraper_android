@@ -39,6 +39,7 @@ enum class ModelCapability {
 enum class RuntimeType {
   @SerializedName("unknown") UNKNOWN,
   @SerializedName("litert_lm") LITERT_LM,
+  @SerializedName("qnn_onnx") QNN_ONNX,
   @SerializedName("aicore") AICORE,
 }
 

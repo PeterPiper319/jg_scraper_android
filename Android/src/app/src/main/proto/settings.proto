@@ -42,6 +42,7 @@ message AccessTokenData {
 message ImportedModel {
   string file_name = 1;
   int64 file_size = 2;
+  string runtime_type = 4;
 
   oneof config {
     LlmConfig llm_config = 3;

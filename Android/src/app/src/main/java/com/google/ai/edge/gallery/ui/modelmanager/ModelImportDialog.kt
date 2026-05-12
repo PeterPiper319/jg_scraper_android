@@ -74,6 +74,7 @@ import com.google.ai.edge.gallery.data.DEFAULT_TOPP
 import com.google.ai.edge.gallery.data.IMPORTS_DIR
 import com.google.ai.edge.gallery.data.LabelConfig
 import com.google.ai.edge.gallery.data.NumberSliderConfig
+import com.google.ai.edge.gallery.data.RuntimeType
 import com.google.ai.edge.gallery.data.SegmentedButtonConfig
 import com.google.ai.edge.gallery.data.ValueType
 import com.google.ai.edge.gallery.data.convertValueToTargetType
@@ -95,8 +96,19 @@ private const val TAG = "AGModelImportDialog"
 private val SOC_SPECIFIC_LITERT_MODEL_REGEX = Regex("""(?i).+_(sm\d{4}|mt\d{4})\.litertlm$""")
 
 private fun shouldDefaultImportToNpu(fileName: String): Boolean {
-  return fileName.endsWith(".litertlm", ignoreCase = true) &&
-    SOC_SPECIFIC_LITERT_MODEL_REGEX.matches(fileName)
+  return fileName.endsWith(".onnx", ignoreCase = true) ||
+    (
+      fileName.endsWith(".litertlm", ignoreCase = true) &&
+        SOC_SPECIFIC_LITERT_MODEL_REGEX.matches(fileName)
+    )
+}
+
+private fun inferImportedRuntimeType(fileName: String): RuntimeType {
+  return if (fileName.endsWith(".onnx", ignoreCase = true)) {
+    RuntimeType.QNN_ONNX
+  } else {
+    RuntimeType.LITERT_LM
+  }
 }
 
 private val SUPPORTED_ACCELERATORS: List<Accelerator> =
@@ -289,10 +301,12 @@ fun ModelImportDialog(
                   valueType = ValueType.BOOLEAN,
                 )
                   as Boolean
+              val runtimeType = inferImportedRuntimeType(fileName)
               val importedModel: ImportedModel =
                 ImportedModel.newBuilder()
                   .setFileName(fileName)
                   .setFileSize(fileSize)
+                  .setRuntimeType(runtimeType.name)
                   .setLlmConfig(
                     LlmConfig.newBuilder()
                       .addAllCompatibleAccelerators(supportedAccelerators)

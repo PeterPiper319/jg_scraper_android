@@ -3,3 +3,13 @@
 # IntelliJ / Android Studio
 .idea/
 *.iml
+
+# Local model artifacts and prep outputs
+downloads/
+third_party/
+model_fp16.onnx
+model_uint8.onnx
+qnn_model_prep/out/
+qnn_model_prep/out_fp16/
+qnn_model_prep/out_fp16_opt/
+qnn_model_prep/__pycache__/

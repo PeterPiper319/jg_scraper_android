@@ -1,0 +1,3 @@
+numpy>=1.26.4,<2
+onnx>=1.17,<1.19
+onnxruntime-qnn==1.22.0

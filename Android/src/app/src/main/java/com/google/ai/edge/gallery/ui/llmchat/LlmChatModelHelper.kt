@@ -46,6 +46,7 @@ import com.google.ai.edge.litertlm.SamplerConfig
 import com.google.ai.edge.litertlm.ToolProvider
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.util.zip.ZipFile
 import java.util.concurrent.CancellationException
 import kotlinx.coroutines.CoroutineScope
 
@@ -91,12 +92,13 @@ object LlmChatModelHelper : LlmModelHelper {
     val shouldEnableAudio = supportAudio
     val configuredAccelerator =
       model.getStringConfigValue(key = ConfigKeys.ACCELERATOR, defaultValue = Accelerator.GPU.label)
+    val preferredAccelerator = configuredAccelerator
 
     try {
       val runtimeSelection =
         buildRuntimeSelection(
           context = context,
-          acceleratorLabel = configuredAccelerator,
+          acceleratorLabel = preferredAccelerator,
           visionAcceleratorLabel = visionAccelerator,
         )
       val instance =
@@ -117,7 +119,7 @@ object LlmChatModelHelper : LlmModelHelper {
       model.instance = instance
       persistAcceleratorConfig(model, runtimeSelection.acceleratorLabel)
     } catch (e: Exception) {
-      if (shouldRetryWithGpu(model, configuredAccelerator)) {
+      if (shouldRetryWithGpu(model, preferredAccelerator)) {
         Log.w(TAG, "NPU initialization failed for '${model.name}', retrying with GPU", e)
         try {
           val fallbackSelection =
@@ -334,7 +336,7 @@ object LlmChatModelHelper : LlmModelHelper {
           Backend.NPU(nativeLibraryDir = context.applicationInfo.nativeLibraryDir)
         } else {
           throw IllegalStateException(
-            "NPU runtime is not bundled in this APK. Add the local QAIRT bridge AAR at app/libs/qtld-release.aar and package the QNN/HTP .so files under src/main/jniLibs/arm64-v8a, or use a non-NPU backend.",
+            "NPU runtime is not bundled in this APK. Add the local QAIRT bridge AAR at app/libs/qtld-release.aar and package the QNN/HTP Android .so files under src/main/jniLibs/arm64-v8a, including libQnnTFLiteDelegate.so, libQnnHtp.so, libQnnHtpPrepare.so, libQnnSystem.so, the device-matched HTP stub such as libQnnHtpV73Stub.so, and the matching DSP skeleton such as libQnnHtpV73Skel.so, or use a non-NPU backend.",
           )
         }
       else -> Backend.CPU()
@@ -342,13 +344,30 @@ object LlmChatModelHelper : LlmModelHelper {
   }
 
   private fun hasBundledNpuRuntime(context: Context): Boolean {
-    val nativeLibraryDir = context.applicationInfo.nativeLibraryDir ?: return false
-    val nativeLibs = File(nativeLibraryDir).listFiles() ?: return false
-    return nativeLibs.any { file ->
-      val name = file.name.lowercase()
-      name.endsWith(".so") &&
-        (name.contains("dispatch") || name.contains("qnn") || name.contains("htp"))
+    val nativeLibraryDir = context.applicationInfo.nativeLibraryDir
+    if (nativeLibraryDir != null) {
+      val nativeLibs = File(nativeLibraryDir).listFiles()
+      if (nativeLibs?.any { file -> isBundledNpuRuntimeLibrary(file.name) } == true) {
+        return true
+      }
     }
+
+    val sourceApk = context.applicationInfo.sourceDir ?: return false
+    return runCatching {
+      ZipFile(sourceApk).use { apk ->
+        apk.entries().asSequence().any { entry ->
+          !entry.isDirectory &&
+            entry.name.startsWith("lib/arm64-v8a/") &&
+            isBundledNpuRuntimeLibrary(entry.name.substringAfterLast('/'))
+        }
+      }
+    }.getOrDefault(false)
+  }
+
+  private fun isBundledNpuRuntimeLibrary(fileName: String): Boolean {
+    val name = fileName.lowercase()
+    return name.endsWith(".so") &&
+      (name.contains("dispatch") || name.contains("qnn") || name.contains("htp"))
   }
 
   private fun shouldRetryWithGpu(model: Model, acceleratorLabel: String): Boolean {

@@ -29,6 +29,7 @@ plugins {
 }
 
 val qairtQtldAar = layout.projectDirectory.file("libs/qtld-release.aar").asFile
+val onnxRuntimeQnnAar = layout.projectDirectory.file("libs/onnxruntime-android-qnn.aar").asFile
 
 kapt {
   correctErrorTypes = true
@@ -98,8 +99,12 @@ dependencies {
   implementation(libs.androidx.lifecycle.process)
   implementation(libs.androidx.security.crypto)
   implementation(libs.androidx.webkit)
-  implementation(libs.litert)
   implementation(libs.litertlm)
+  if (onnxRuntimeQnnAar.exists()) {
+    implementation(files(onnxRuntimeQnnAar))
+  } else {
+    implementation(libs.onnxruntime.android)
+  }
   if (qairtQtldAar.exists()) {
     implementation(files(qairtQtldAar))
   }

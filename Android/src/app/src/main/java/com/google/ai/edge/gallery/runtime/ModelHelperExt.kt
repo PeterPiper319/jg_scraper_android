@@ -19,12 +19,14 @@ package com.google.ai.edge.gallery.runtime
 import com.google.ai.edge.gallery.data.Model
 import com.google.ai.edge.gallery.data.RuntimeType
 import com.google.ai.edge.gallery.runtime.aicore.AICoreModelHelper
+import com.google.ai.edge.gallery.runtime.qnn.QnnOnnxModelHelper
 import com.google.ai.edge.gallery.ui.llmchat.LlmChatModelHelper
 
 val Model.runtimeHelper: LlmModelHelper
   get() {
-    if (this.runtimeType == RuntimeType.AICORE) {
-      return AICoreModelHelper
+    return when (this.runtimeType) {
+      RuntimeType.AICORE -> AICoreModelHelper
+      RuntimeType.QNN_ONNX -> QnnOnnxModelHelper
+      else -> LlmChatModelHelper
     }
-    return LlmChatModelHelper
   }
