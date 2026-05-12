@@ -25,7 +25,6 @@ import android.widget.Toast
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Build
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -50,17 +49,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.PagerState
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.TextAutoSize
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ListAlt
 import androidx.compose.material.icons.rounded.Error
@@ -80,15 +78,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.Button
 import androidx.compose.material3.TextButton
-import androidx.compose.material3.ModalBottomSheet
-import androidx.compose.foundation.text.selection.SelectionContainer
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.core.content.FileProvider
-import android.content.Intent
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.ai.edge.gallery.ui.scraper.TenderScraperViewModel
-import java.io.File
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -144,11 +135,8 @@ import com.google.ai.edge.gallery.ui.common.tos.TosViewModel
 import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel
 import com.google.ai.edge.gallery.ui.theme.customColors
 import com.google.ai.edge.gallery.ui.theme.homePageTitleStyle
-import java.text.SimpleDateFormat
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.util.Date
-import java.util.Locale
 
 private const val TAG = "AGHomeScreen"
 private const val TASK_COUNT_ANIMATION_DURATION = 250
@@ -165,12 +153,6 @@ private const val TASK_CARD_ANIMATION_DURATION = 600
 private const val CONTENT_COMPOSABLES_ANIMATION_DURATION = 1200
 private const val CONTENT_COMPOSABLES_OFFSET_Y = 16
 private val JGGold = Color(0xFFC5A059)
-private val JGMidnightNavy = Color(0xFF1A2B48)
-
-private data class RecentSyncEntry(
-  val tenderId: String,
-  val timestamp: Long,
-)
 
 
 private object HomeScreenDestination {
@@ -185,7 +167,6 @@ fun HomeScreen(
   modelManagerViewModel: ModelManagerViewModel,
   tosViewModel: TosViewModel,
   navigateToTaskScreen: (Task) -> Unit,
-  onTenderDetailClicked: (String) -> Unit,
   onModelsClicked: () -> Unit,
   onFirebaseBrowserClicked: () -> Unit,
   onFirebaseEnrichmentClicked: () -> Unit,
@@ -201,12 +182,6 @@ fun HomeScreen(
   val scope = rememberCoroutineScope()
   val context = LocalContext.current
   val isDevBuild = context.packageName.endsWith(".dev")
-
-  // Bottom sheet states
-  var showBottomSheet by remember { mutableStateOf(false) }
-  var bottomSheetContent by remember { mutableStateOf("") }
-  var tenderFiles by remember { mutableStateOf<List<File>>(emptyList()) }
-  var isViewingFiles by remember { mutableStateOf(false) }
   val downloadedGemmaModel =
     remember(uiState.modelDownloadStatus, uiState.tasks) {
       modelManagerViewModel.getAllDownloadedModels().firstOrNull {
@@ -214,19 +189,6 @@ fun HomeScreen(
         modelName.contains("gemma", ignoreCase = true)
       }
     }
-  val recentSyncs =
-    remember(scraperUiState.downloadedTenders) {
-      scraperUiState.downloadedTenders
-        .map { tender ->
-          RecentSyncEntry(
-            tenderId = tender.tenderId,
-            timestamp = tender.files.maxOfOrNull(File::lastModified) ?: 0L,
-          )
-        }
-        .sortedByDescending { it.timestamp }
-        .take(5)
-    }
-  val discoveredTenderCount = scraperUiState.firebaseTenderIds.size
 
   var tasks = uiState.tasks
 
@@ -265,10 +227,6 @@ fun HomeScreen(
 
   // Show home screen content when TOS has been accepted.
   if (!showTosDialog) {
-    LaunchedEffect(Unit) {
-      tenderScraperViewModel.loadFirebaseTenders()
-    }
-
     // The code below manages the display of the model allowlist loading indicator with a debounced
     // delay. It ensures that a progress indicator is only shown if the loading operation
     // (represented by `uiState.loadingModelAllowlist`) takes longer than 200 milliseconds.
@@ -496,10 +454,6 @@ fun HomeScreen(
                 verticalArrangement = Arrangement.spacedBy(16.dp),
               ) {
                 item {
-                  DashboardHeaderCard(discoveredTenderCount = discoveredTenderCount)
-                }
-
-                item {
                   Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -533,10 +487,6 @@ fun HomeScreen(
                       }
                     },
                   )
-                }
-
-                item {
-                  RecentSyncsCard(recentSyncs = recentSyncs)
                 }
 
                 item {
@@ -666,121 +616,6 @@ fun HomeScreen(
                     }
                   }
                 }
-
-                item {
-                  Text(
-                    "Downloaded Tenders",
-                    style = MaterialTheme.typography.headlineSmall,
-                  )
-                }
-
-                items(scraperUiState.downloadedTenders, key = { it.tenderId }) { tender ->
-                    Column(
-                      modifier = Modifier.fillMaxWidth(),
-                      verticalArrangement = Arrangement.spacedBy(8.dp),
-                    ) {
-                      TenderIntelligenceCard(
-                        tenderId = tender.tenderId,
-                        title = tenderScraperViewModel.getTenderTitle(tender.tenderId),
-                        statusLabel = "Spec Found",
-                        onClick = { onTenderDetailClicked(Uri.encode(tender.tenderId)) },
-                      )
-                      Card(
-                        modifier = Modifier.fillMaxWidth(),
-                        shape = RoundedCornerShape(24.dp),
-                      ) {
-                      Column(modifier = Modifier.padding(16.dp)) {
-                        Row(
-                          modifier = Modifier.fillMaxWidth(),
-                          horizontalArrangement = Arrangement.spacedBy(8.dp)
-                        ) {
-                          Button(onClick = {
-                            bottomSheetContent = tenderScraperViewModel.getManifestContent(tender.tenderId)
-                            isViewingFiles = false
-                            showBottomSheet = true
-                          }) {
-                            Text("View JSON")
-                          }
-                          Button(onClick = {
-                            tenderFiles = tenderScraperViewModel.getTenderFiles(tender.tenderId)
-                            isViewingFiles = true
-                            showBottomSheet = true
-                          }) {
-                            Text("View Files")
-                          }
-                        }
-                        Row(
-                          modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
-                          horizontalArrangement = Arrangement.spacedBy(8.dp)
-                        ) {
-                          Button(onClick = {
-                            val model = downloadedGemmaModel
-                            if (model == null) {
-                              Toast.makeText(context, "Download a Gemma model first.", Toast.LENGTH_SHORT).show()
-                            } else {
-                              tenderScraperViewModel.runGemmaReadCheck(model, tender.tenderId)
-                            }
-                          }) {
-                            Text("Check Gemma Read")
-                          }
-                          Button(onClick = {
-                            bottomSheetContent = tenderScraperViewModel.getGemmaReadCheckContent(tender.tenderId)
-                            isViewingFiles = false
-                            showBottomSheet = true
-                          }) {
-                            Text("View Gemma Result")
-                          }
-                        }
-                        Row(
-                          modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
-                          horizontalArrangement = Arrangement.spacedBy(8.dp)
-                        ) {
-                          Button(onClick = {
-                            val model = downloadedGemmaModel
-                            if (model == null) {
-                              Toast.makeText(context, "Download a Gemma model first.", Toast.LENGTH_SHORT).show()
-                            } else {
-                              tenderScraperViewModel.enrichManifestWithGemma(model, tender.tenderId)
-                            }
-                          }) {
-                            Text("Enrich Manifest")
-                          }
-                          Button(onClick = {
-                            tenderScraperViewModel.uploadTenderToFirebase(tender.tenderId)
-                          }) {
-                            Text("Upload Firebase")
-                          }
-                        }
-                        val gemmaStatus = scraperUiState.gemmaReadCheckStatusByTender[tender.tenderId]
-                        if (!gemmaStatus.isNullOrBlank()) {
-                          Text(
-                            text = gemmaStatus,
-                            style = MaterialTheme.typography.bodySmall,
-                            modifier = Modifier.padding(top = 8.dp)
-                          )
-                        }
-                        val gemmaEnrichmentStatus =
-                          scraperUiState.gemmaEnrichmentStatusByTender[tender.tenderId]
-                        if (!gemmaEnrichmentStatus.isNullOrBlank()) {
-                          Text(
-                            text = gemmaEnrichmentStatus,
-                            style = MaterialTheme.typography.bodySmall,
-                            modifier = Modifier.padding(top = 4.dp)
-                          )
-                        }
-                        val firebaseUploadStatus =
-                          scraperUiState.firebaseUploadStatusByTender[tender.tenderId]
-                        if (!firebaseUploadStatus.isNullOrBlank()) {
-                          Text(
-                            text = firebaseUploadStatus,
-                            style = MaterialTheme.typography.bodySmall,
-                            modifier = Modifier.padding(top = 4.dp)
-                          )
-                        }
-                      }
-                    }
-                    }
-                }
               }
             }
 
@@ -843,70 +678,6 @@ fun HomeScreen(
       },
     )
   }
-
-  // Bottom sheet for viewing JSON or files
-  if (showBottomSheet) {
-    Log.d(TAG, "Showing bottom sheet, isViewingFiles = $isViewingFiles, content length = ${bottomSheetContent.length}")
-    ModalBottomSheet(onDismissRequest = { showBottomSheet = false }) {
-      if (isViewingFiles) {
-        LazyColumn(modifier = Modifier.padding(16.dp)) {
-          items(tenderFiles) { file ->
-            TextButton(onClick = {
-              if (file.extension.lowercase() == "json" || file.extension.lowercase() == "txt") {
-                Log.d(TAG, "Attempting to read file: ${file.name}, path: ${file.absolutePath}")
-                runCatching { file.readText() }
-                  .onSuccess { content ->
-                    Log.d(TAG, "Successfully read file: ${file.name}, content length: ${content.length}")
-                    bottomSheetContent = content
-                    isViewingFiles = false
-                    Log.d(TAG, "Set bottomSheetContent, isViewingFiles = false")
-                  }
-                  .onFailure { e ->
-                    Log.e(TAG, "Failed to read file: ${file.name}", e)
-                    Toast.makeText(context, "Unable to read ${file.name}", Toast.LENGTH_SHORT)
-                      .show()
-                  }
-                return@TextButton
-              }
-
-              val uri = androidx.core.content.FileProvider.getUriForFile(
-                context,
-                "${context.packageName}.provider",
-                file
-              )
-              val mimeType =
-                when (file.extension.lowercase()) {
-                  "pdf" -> "application/pdf"
-                  "json" -> "application/json"
-                  "txt" -> "text/plain"
-                  else -> "*/*"
-                }
-              val intent = android.content.Intent(android.content.Intent.ACTION_VIEW).apply {
-                setDataAndType(uri, mimeType)
-                addFlags(android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
-              }
-              val chooser = android.content.Intent.createChooser(intent, "Open ${file.name}").apply {
-                addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
-              }
-              if (intent.resolveActivity(context.packageManager) != null) {
-                context.startActivity(chooser)
-              } else {
-                Toast.makeText(context, "No app available to open ${file.name}", Toast.LENGTH_SHORT)
-                  .show()
-              }
-            }) {
-              Text(file.name)
-            }
-          }
-        }
-      } else {
-        androidx.compose.foundation.text.selection.SelectionContainer {
-          Text(bottomSheetContent, modifier = Modifier.padding(16.dp).verticalScroll(rememberScrollState()))
-        }
-      }
-    }
-  }
 }
 
 @Composable
@@ -925,47 +696,6 @@ private fun DashboardLogoBadge(modifier: Modifier = Modifier) {
       style = MaterialTheme.typography.titleLarge,
       color = JGGold,
     )
-  }
-}
-
-@Composable
-private fun DashboardHeaderCard(discoveredTenderCount: Int) {
-  Card(
-    modifier = Modifier.fillMaxWidth(),
-    shape = RoundedCornerShape(30.dp),
-    colors = CardDefaults.cardColors(containerColor = JGMidnightNavy),
-  ) {
-    Column(
-      modifier = Modifier.padding(horizontal = 22.dp, vertical = 24.dp),
-      verticalArrangement = Arrangement.spacedBy(18.dp),
-    ) {
-      Text(
-        text = "Compliance Dashboard",
-        style = MaterialTheme.typography.titleMedium,
-        color = Color.White.copy(alpha = 0.82f),
-      )
-      Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween,
-      ) {
-        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-          Text(
-            text = "$discoveredTenderCount Tenders Discovered",
-            style = MaterialTheme.typography.headlineSmall,
-            color = Color.White,
-          )
-          Text(
-            text = "Live procurement surface",
-            style = MaterialTheme.typography.bodySmall,
-            color = Color.White.copy(alpha = 0.7f),
-          )
-        }
-        Column(
-          horizontalAlignment = Alignment.End,
-          verticalArrangement = Arrangement.spacedBy(4.dp),
-        ) {}
-      }
-    }
   }
 }
 
@@ -1017,70 +747,6 @@ private fun DashboardBatchAction(
       }
     }
   }
-}
-
-@Composable
-private fun RecentSyncsCard(recentSyncs: List<RecentSyncEntry>) {
-  Card(
-    modifier = Modifier.fillMaxWidth(),
-    shape = RoundedCornerShape(28.dp),
-    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-  ) {
-    Column(
-      modifier = Modifier.padding(horizontal = 20.dp, vertical = 18.dp),
-      verticalArrangement = Arrangement.spacedBy(14.dp),
-    ) {
-      Text(
-        text = "Recent Syncs",
-        style = MaterialTheme.typography.titleLarge,
-      )
-      if (recentSyncs.isEmpty()) {
-        Text(
-          text = "No sync history yet.",
-          style = MaterialTheme.typography.bodyMedium,
-          color = MaterialTheme.colorScheme.onSurfaceVariant,
-        )
-      } else {
-        recentSyncs.forEachIndexed { index, entry ->
-          Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(14.dp),
-          ) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-              Box(
-                modifier = Modifier.size(10.dp).clip(CircleShape).background(JGGold),
-              )
-              if (index != recentSyncs.lastIndex) {
-                Box(
-                  modifier = Modifier.padding(top = 4.dp).width(1.dp).height(34.dp)
-                    .background(JGGold.copy(alpha = 0.35f)),
-                )
-              }
-            }
-            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-              Text(
-                text = entry.tenderId,
-                style = MaterialTheme.typography.titleMedium,
-              )
-              Text(
-                text = formatRecentSyncTimestamp(entry.timestamp),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-              )
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-private fun formatRecentSyncTimestamp(timestamp: Long): String {
-  if (timestamp <= 0L) {
-    return "Timestamp unavailable"
-  }
-  val formatter = SimpleDateFormat("dd MMM yyyy, HH:mm", Locale.getDefault())
-  return formatter.format(Date(timestamp))
 }
 
 @Composable

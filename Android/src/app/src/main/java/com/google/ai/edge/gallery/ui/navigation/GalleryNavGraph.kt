@@ -214,9 +214,6 @@ fun GalleryNavHost(
                 Bundle().apply { putString("capability_name", task.id) },
               )
             },
-            onTenderDetailClicked = { tenderId ->
-              navController.navigate("$ROUTE_TENDER_DETAIL/$tenderId")
-            },
             onModelsClicked = { navController.navigate(ROUTE_MODEL_MANAGER) },
             onFirebaseBrowserClicked = { navController.navigate(ROUTE_FIREBASE_TENDERS) },
             onFirebaseEnrichmentClicked = { navController.navigate(ROUTE_FIREBASE_ENRICHMENT) },
