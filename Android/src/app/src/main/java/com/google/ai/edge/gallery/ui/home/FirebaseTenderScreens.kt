@@ -100,11 +100,6 @@ fun FirebaseTenderBrowserScreen(
         tenderId = tenderId,
         downloadStatus = scraperUiState.firebaseDownloadStatusByTender[tenderId],
         onSync = { tenderScraperViewModel.downloadTenderFromFirebase(tenderId) },
-        onViewJson = {
-          bottomSheetContent = tenderScraperViewModel.getManifestContent(tenderId)
-          isViewingFiles = false
-          showBottomSheet = true
-        },
         onViewFiles = {
           tenderFiles = tenderScraperViewModel.getTenderFiles(tenderId)
           isViewingFiles = true
@@ -206,11 +201,6 @@ fun FirebaseTenderEnrichmentScreen(
         enrichmentStatus = scraperUiState.gemmaEnrichmentStatusByTender[tenderId],
         uploadStatus = scraperUiState.firebaseUploadStatusByTender[tenderId],
         onSync = { tenderScraperViewModel.downloadTenderFromFirebase(tenderId) },
-        onViewJson = {
-          bottomSheetContent = tenderScraperViewModel.getManifestContent(tenderId)
-          isViewingFiles = false
-          showBottomSheet = true
-        },
         onViewFiles = {
           tenderFiles = tenderScraperViewModel.getTenderFiles(tenderId)
           isViewingFiles = true
@@ -238,7 +228,7 @@ fun FirebaseTenderEnrichmentScreen(
 }
 
 @Composable
-private fun FirebaseTenderScreenScaffold(
+internal fun FirebaseTenderScreenScaffold(
   title: String,
   currentPage: FirebaseTenderPage,
   navigateToScraper: () -> Unit,
@@ -248,7 +238,9 @@ private fun FirebaseTenderScreenScaffold(
   searchQuery: String,
   onSearchQueryChanged: (String) -> Unit,
   onRefresh: () -> Unit,
+  searchLabel: String = "Search tender ID",
   listStatus: String,
+  emptyMessage: String = "No Firebase tenders match the current search.",
   extraActions: @Composable (() -> Unit)? = null,
   tenderIds: List<String>,
   cardContent: @Composable (String) -> Unit,
@@ -275,7 +267,7 @@ private fun FirebaseTenderScreenScaffold(
         value = searchQuery,
         onValueChange = onSearchQueryChanged,
         modifier = Modifier.weight(1f),
-        label = { Text("Search tender ID") },
+        label = { Text(searchLabel) },
         singleLine = true,
       )
       Button(onClick = onRefresh) {
@@ -299,7 +291,7 @@ private fun FirebaseTenderScreenScaffold(
     ) {
       if (tenderIds.isEmpty()) {
         item {
-          Text("No Firebase tenders match the current search.")
+          Text(emptyMessage)
         }
       }
       items(tenderIds) { tenderId ->
@@ -345,11 +337,10 @@ private fun FirebaseTenderNavRow(
 }
 
 @Composable
-private fun FirebaseTenderBrowserCard(
+internal fun FirebaseTenderBrowserCard(
   tenderId: String,
   downloadStatus: String?,
   onSync: () -> Unit,
-  onViewJson: () -> Unit,
   onViewFiles: () -> Unit,
 ) {
   Card(modifier = Modifier.fillMaxWidth()) {
@@ -361,9 +352,6 @@ private fun FirebaseTenderBrowserCard(
       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Button(onClick = onSync, modifier = Modifier.weight(1f)) {
           Text("Sync Firebase")
-        }
-        Button(onClick = onViewJson, modifier = Modifier.weight(1f)) {
-          Text("View JSON")
         }
       }
       Button(onClick = onViewFiles, modifier = Modifier.fillMaxWidth()) {
@@ -383,7 +371,6 @@ private fun FirebaseTenderEnrichmentCard(
   enrichmentStatus: String?,
   uploadStatus: String?,
   onSync: () -> Unit,
-  onViewJson: () -> Unit,
   onViewFiles: () -> Unit,
   onEnrichAndUpload: () -> Unit,
 ) {
@@ -396,9 +383,6 @@ private fun FirebaseTenderEnrichmentCard(
       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Button(onClick = onSync, modifier = Modifier.weight(1f)) {
           Text("Sync Firebase")
-        }
-        Button(onClick = onViewJson, modifier = Modifier.weight(1f)) {
-          Text("View JSON")
         }
       }
       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -424,7 +408,7 @@ private fun FirebaseTenderEnrichmentCard(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun FirebaseTenderBottomSheet(
+internal fun FirebaseTenderBottomSheet(
   showBottomSheet: Boolean,
   onDismiss: () -> Unit,
   isViewingFiles: Boolean,

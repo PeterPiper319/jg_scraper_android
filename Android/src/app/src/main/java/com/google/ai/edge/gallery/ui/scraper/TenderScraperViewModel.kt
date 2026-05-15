@@ -261,6 +261,91 @@ class TenderScraperViewModel @Inject constructor(
         }
     }
 
+    fun scrapeCompanyContactsForAwardedTenders() {
+        Log.d(TAG, "scrapeCompanyContactsForAwardedTenders() called")
+        viewModelScope.launch(Dispatchers.IO) {
+            updateScrapeStatus("Scraping awarded tenders and company contacts from portal...")
+
+            try {
+                // Use the new function to scrape awarded tenders directly from the portal
+                val result = scraper.scrapeAwardedTendersFromPortal(
+                    limit = -1, // Scrape all available awarded tenders
+                    onStatus = { status -> updateScrapeStatus(status) },
+                    shouldStop = { stopRequested },
+                    onNewTenderSaved = { tenderId ->
+                        // Update UI with progress
+                        viewModelScope.launch(Dispatchers.Main) {
+                            loadDownloadedTenders()
+                        }
+                    }
+                )
+
+                if (result.stopped) {
+                    updateScrapeStatus("Awarded tenders scraping stopped. Saved ${result.newTenderIds.size} awarded tenders.")
+                } else if (result.failureMessage != null) {
+                    updateScrapeStatus("Error scraping awarded tenders: ${result.failureMessage}")
+                } else if (result.exhausted) {
+                    updateScrapeStatus("Completed: Scraped all available awarded tenders from portal. Saved ${result.newTenderIds.size} awarded tenders.")
+                } else {
+                    updateScrapeStatus("Completed: Scraped awarded tenders from portal. Saved ${result.newTenderIds.size} awarded tenders.")
+                }
+
+            } catch (e: Exception) {
+                Log.e(TAG, "Error scraping awarded tenders from portal", e)
+                updateScrapeStatus("Error: ${e.message}")
+            }
+        }
+    }
+
+    private fun getAwardedTenderIds(): List<String> {
+        val downloadedTenders = _uiState.value.downloadedTenders
+        Log.d(TAG, "Total downloaded tenders: ${downloadedTenders.size}")
+        return downloadedTenders
+            .map { it.tenderId }
+            .filter { tenderId ->
+                try {
+                    val manifestFile = getManifestFile(tenderId)
+                    if (manifestFile.exists()) {
+                        val manifest = JSONObject(manifestFile.readText())
+                        val status = manifest.optString("status", "").lowercase()
+                        Log.d(TAG, "Tender $tenderId status: '$status'")
+                        status.contains("awarded")
+                    } else {
+                        Log.d(TAG, "Manifest file not found for tender $tenderId")
+                        false
+                    }
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error checking status for tender $tenderId", e)
+                    false
+                }
+            }
+    }
+
+    private fun loadCompaniesCache(): Map<String, Map<String, String>> {
+        return try {
+            val companiesFile = File(context.filesDir, "companies_cache.json")
+            if (companiesFile.exists()) {
+                val companiesData = JSONObject(companiesFile.readText())
+                val result = mutableMapOf<String, Map<String, String>>()
+                
+                companiesData.keys().forEach { key ->
+                    val companyJson = companiesData.getJSONObject(key)
+                    val details = mutableMapOf<String, String>()
+                    companyJson.keys().forEach { detailKey ->
+                        details[detailKey] = companyJson.getString(detailKey)
+                    }
+                    result[key] = details
+                }
+                result
+            } else {
+                emptyMap()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to load companies cache", e)
+            emptyMap()
+        }
+    }
+
     private suspend fun runAutomationSession(
         model: Model,
         session: ScrapeAutomationSession,
@@ -371,8 +456,10 @@ class TenderScraperViewModel @Inject constructor(
                 }
 
                 if (scrapeResult.failureMessage != null) {
-                    failAutomationSession(session, "Automation paused after error: ${scrapeResult.failureMessage}")
-                    return
+                    session.status = "Network error: ${scrapeResult.failureMessage}. Retrying in 15 seconds..."
+                    updateScrapeStatus(session.status)
+                    delay(15000)
+                    continue
                 }
             }
 
