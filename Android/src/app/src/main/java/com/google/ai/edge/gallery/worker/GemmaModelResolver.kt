@@ -17,18 +17,25 @@ class GemmaModelResolver @Inject constructor(
 ) {
   fun resolveDownloadedGemmaModel(): Model? {
     val allowlistFile = File(context.getExternalFilesDir(null), MODEL_ALLOWLIST_FILENAME)
-    if (!allowlistFile.exists()) {
-      return null
-    }
-
-    val allowlist = Gson().fromJson(allowlistFile.readText(), ModelAllowlist::class.java) ?: return null
-    return allowlist.models
-      .asSequence()
-      .map { it.toModel() }
-      .filter { model ->
-        val displayName = model.displayName.ifEmpty { model.name }
-        displayName.contains("gemma", ignoreCase = true) || model.name.contains("gemma", ignoreCase = true)
+    if (allowlistFile.exists()) {
+      val allowlist = Gson().fromJson(allowlistFile.readText(), ModelAllowlist::class.java)
+      if (allowlist != null) {
+        val localGemma = allowlist.models
+          .asSequence()
+          .map { it.toModel() }
+          .filter { model ->
+            val displayName = model.displayName.ifEmpty { model.name }
+            displayName.contains("gemma", ignoreCase = true) || model.name.contains("gemma", ignoreCase = true)
+          }
+          .firstOrNull { model -> File(model.getPath(context)).exists() }
+        if (localGemma != null) {
+          return localGemma
+        }
       }
-      .firstOrNull { model -> File(model.getPath(context)).exists() }
+    }
+    return Model(
+      name = "OpenRouter Llama 4 Scout",
+      displayName = "OpenRouter Llama 4 Scout"
+    )
   }
 }

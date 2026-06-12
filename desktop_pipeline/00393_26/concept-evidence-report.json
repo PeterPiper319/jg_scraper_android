@@ -1,0 +1,760 @@
+{
+  "generatedAt": "2026-06-03T00:11:27.916133+02:00",
+  "tenderId": "00393_26",
+  "summary": {
+    "resultCount": 60,
+    "criticalFieldCount": 7,
+    "lowConfidenceCount": 20,
+    "mediumConfidenceCount": 2,
+    "highConfidenceCount": 38
+  },
+  "confidenceCounts": {
+    "high": 38,
+    "none": 19,
+    "medium": 2,
+    "low": 1
+  },
+  "criticalFieldsNeedingReview": [
+    "submission_mechanics_submission_method",
+    "tender_metadata_tender_reference_number",
+    "tender_metadata_procurement_category",
+    "critical_dates_closing_date_time"
+  ],
+  "contactDetails": {
+    "emails": [
+      "kea@joburgtheatre.com",
+      "ntombizodwa@joburgtheatre.com"
+    ],
+    "phoneNumbers": [
+      "011-877-6800"
+    ],
+    "faxNumbers": [],
+    "addressLines": [
+      {
+        "text": "\"streetname\": \"163 Civic Boulevard \",",
+        "sourceFile": "manifest.json"
+      }
+    ],
+    "contactLines": [
+      {
+        "text": "\"streetname\": \"163 Civic Boulevard \",",
+        "sourceFile": "manifest.json",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"contactPerson\": \"Keabetswe Senne \",",
+        "sourceFile": "manifest.json",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"email\": \"kea@joburgtheatre.com\",",
+        "sourceFile": "manifest.json",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"telephone\": \"011-877-6800\",",
+        "sourceFile": "manifest.json",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "\"fax\": \"N\\\/A\",",
+        "sourceFile": "manifest.json",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"username\": \"ntombizodwa@joburgtheatre.com\",",
+        "sourceFile": "manifest.json",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"updatedBy\": \"ntombizodwa@joburgtheatre.com\",",
+        "sourceFile": "manifest.json",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "\"cancelled\": null,",
+        "sourceFile": "manifest.json",
+        "hasEmail": false,
+        "hasPhone": false,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "\"type\": \"Request for Bid(Open-Tender)\",",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "province",
+      "label": "Province",
+      "value": "Gauteng",
+      "status": "DONE",
+      "evidence": "\"province\": \"Gauteng\",",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Tourism, Hospitality & Catering",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "tourism_hospitality",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "Corporate Catering & Food Services",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "Hotel & Lodging Management, Professional Catering & Culinary",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Commercial Kitchen Facilities",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "Tender context is focused on food and beverage licenses, corporate catering, and hospitality services, which matches the specializations, skills, and capabilities of the Tourism, Hospitality & Catering industry.",
+      "status": "DONE",
+      "evidence": "\"description\": \"Appointment of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licenses on an as and when needs basis\",",
+      "evidenceScore": 60,
+      "evidenceConfidence": "medium",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission: submission Method",
+      "value": "Not found (Unsupported Evidence)",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Submission: physical Box Address",
+      "value": "Joburg Theatre,163 Civic Boulevard , Braamfontein",
+      "status": "DONE",
+      "evidence": "\"briefingVenue\": \"Joburg Theatre, 163 Civic Boulevard , Braamfontein\",",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Submission: required Hard Copies",
+      "value": "1",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_soft_copy_medium",
+      "label": "Submission: required Soft Copy Medium",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Submission: electronic Portal Url",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "Compliance: csd Registration Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "\"active\": true,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "Compliance: sars Tax Compliance Pin Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "\"active\": true,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "Compliance: cipc Annual Returns Good Standing Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "\"active\": true,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "Compliance: coida Letter Of Good Standing Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "\"active\": true,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_uif_registration_required",
+      "label": "Compliance: uif Registration Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"briefingSession\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_paye_registration_required",
+      "label": "Compliance: paye Registration Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"briefingSession\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_bank_confirmation_letter_required",
+      "label": "Compliance: bank Confirmation Letter Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_certified_director_id_required",
+      "label": "Compliance: certified Director Id Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_certified_id_max_age_months",
+      "label": "Compliance: certified Id Max Age Months",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_municipal_account_arrears_allowed_days",
+      "label": "Compliance: municipal Account Arrears Allowed Days",
+      "value": "90",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_insurance_requirements_public_liability_min_zar",
+      "label": "Compliance: insurance Requirements Public Liability Min Zar",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_insurance_requirements_professional_indemnity_min_zar",
+      "label": "Compliance: insurance Requirements Professional Indemnity Min Zar",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_insurance_requirements_car_insurance_required",
+      "label": "Compliance: insurance Requirements Car Insurance Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "Forms: sbd Forms Sbd 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_3_1_required",
+      "label": "Forms: sbd Forms Sbd 3 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_3_2_required",
+      "label": "Forms: sbd Forms Sbd 3 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_3_3_required",
+      "label": "Forms: sbd Forms Sbd 3 3 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "Forms: sbd Forms Sbd 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "Forms: sbd Forms Sbd 6 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_2_required",
+      "label": "Forms: sbd Forms Sbd 6 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_7_1_required",
+      "label": "Forms: sbd Forms Sbd 7 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_7_2_required",
+      "label": "Forms: sbd Forms Sbd 7 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_8_required",
+      "label": "Forms: sbd Forms Sbd 8 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_9_required",
+      "label": "Forms: sbd Forms Sbd 9 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "Forms: mbd Forms Mbd 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_3_1_required",
+      "label": "Forms: mbd Forms Mbd 3 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_3_2_required",
+      "label": "Forms: mbd Forms Mbd 3 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_3_3_required",
+      "label": "Forms: mbd Forms Mbd 3 3 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "Forms: mbd Forms Mbd 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "Forms: mbd Forms Mbd 6 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_2_required",
+      "label": "Forms: mbd Forms Mbd 6 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_7_1_required",
+      "label": "Forms: mbd Forms Mbd 7 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_7_2_required",
+      "label": "Forms: mbd Forms Mbd 7 2 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_8_required",
+      "label": "Forms: mbd Forms Mbd 8 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_9_required",
+      "label": "Forms: mbd Forms Mbd 9 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "Forms: mbd Forms Mbd 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "\"eSubmission\": false,",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "00393\/26",
+      "status": "DONE",
+      "evidence": "\"tender_No\": \"00393\\\/26\",",
+      "evidenceScore": 82,
+      "evidenceConfidence": "medium",
+      "sourceFile": "manifest.json",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "Appointment of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licenses on an as and when needs basis",
+      "status": "DONE",
+      "evidence": "\"description\": \"Appointment of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licenses on an as and when needs basis\",",
+      "evidenceScore": 90,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "JOBURG THEATRE (SOC) LTD",
+      "status": "DONE",
+      "evidence": "\"organ_of_State\": \"JOBURG THEATRE (SOC) LTD\",",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "Other",
+      "status": "DONE",
+      "evidence": "\"type\": \"Request for Bid(Open-Tender)\",",
+      "evidenceScore": 24,
+      "evidenceConfidence": "low",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Not found (Unsupported Evidence)",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "Gauteng",
+      "status": "DONE",
+      "evidence": "\"province\": \"Gauteng\",",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "manifest.json",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Dates: closing Date Time",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Dates: compulsory Briefing Briefing Date Time",
+      "value": "Not found",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    }
+  ]
+}

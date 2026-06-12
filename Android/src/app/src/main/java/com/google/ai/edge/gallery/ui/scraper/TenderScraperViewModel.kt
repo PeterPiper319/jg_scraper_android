@@ -9,6 +9,7 @@ import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
+import com.google.ai.edge.gallery.BuildConfig
 import com.google.ai.edge.gallery.common.ThermalGuard
 import com.google.ai.edge.gallery.common.processLlmResponse
 import com.google.ai.edge.gallery.data.Model
@@ -32,9 +33,15 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File
+import java.io.IOException
 import javax.inject.Inject
 
 data class TenderFolder(
@@ -119,7 +126,7 @@ class TenderScraperViewModel @Inject constructor(
     companion object {
         private const val TAG = "AGTenderScraperVM"
         private const val GEMMA_READ_CHECK_FILENAME = "gemma-read-check.txt"
-        private const val GEMMA_ENRICHMENT_FILENAME = "gemma-manifest-enrichment.json"
+        private const val GEMMA_ENRICHMENT_FILENAME = "concept-manifest-enrichment.json"
         private const val SESSION_STAGE_SCRAPING = "scraping"
         private const val SESSION_STAGE_ENRICHING = "enriching"
         private const val SESSION_STAGE_UPLOADING = "uploading"
@@ -537,17 +544,24 @@ class TenderScraperViewModel @Inject constructor(
 
     fun enrichFirebaseTender(model: Model, tenderId: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            val downloaded = downloadTenderFromFirebaseInternal(tenderId)
-            if (!downloaded) {
-                return@launch
+            val folder = fileManager.getTenderFolder(tenderId)
+            val hasEnrichment = fileManager.hasGemmaEnrichment(folder)
+            
+            val success = if (hasEnrichment) {
+                Log.i(TAG, "Tender $tenderId already has local enrichment file. Skipping extraction and proceeding to upload.")
+                true
+            } else {
+                val downloaded = downloadTenderFromFirebaseInternal(tenderId)
+                if (!downloaded) {
+                    false
+                } else {
+                    enrichManifestWithGemmaInternal(model, tenderId)
+                }
             }
 
-            val enriched = enrichManifestWithGemmaInternal(model, tenderId)
-            if (!enriched) {
-                return@launch
+            if (success) {
+                uploadTenderToFirebaseInternal(tenderId)
             }
-
-            uploadTenderToFirebaseInternal(tenderId)
         }
     }
 
@@ -974,39 +988,64 @@ $chunk""",
         statusUpdater: (String, String) -> Unit,
         readableFileCount: Int,
     ) {
-        var response = ""
-        var firstPartial = true
-
-        Log.d(TAG, "Gemma prompt length for $tenderId: ${prompt.length} chars")
-
+        Log.d(TAG, "OpenRouter Llama 4 Scout prompt length for $tenderId: ${prompt.length} chars")
         statusUpdater(
             tenderId,
-            "Reading ${readableFileCount} downloaded document(s) with ${model.displayName.ifEmpty { model.name }}..."
+            "Reading ${readableFileCount} downloaded document(s) with OpenRouter Llama 4 Scout..."
         )
-        model.runtimeHelper.resetConversation(model = model, supportImage = false, supportAudio = false)
-        Thread.sleep(300)
-        model.runtimeHelper.runInference(
-            model = model,
-            input = prompt,
-            resultListener = { partialResult, done, _ ->
-                if (firstPartial && partialResult.isNotBlank()) {
-                    firstPartial = false
-                    statusUpdater(tenderId, "Gemma is responding...")
+
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                val client = okhttp3.OkHttpClient.Builder()
+                    .connectTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+                    .readTimeout(180, java.util.concurrent.TimeUnit.SECONDS)
+                    .writeTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+                    .build()
+                val mediaType = "application/json; charset=utf-8".toMediaType()
+
+                val requestBodyJson = JSONObject().apply {
+                    put("model", "meta-llama/llama-4-scout")
+                    put("messages", JSONArray().apply {
+                        put(JSONObject().apply {
+                            put("role", "user")
+                            put("content", prompt)
+                        })
+                    })
                 }
 
-                if (partialResult.isNotBlank()) {
-                    response += partialResult
-                    onPartial(response)
-                }
+                val apiKey = BuildConfig.OPENROUTER_API_KEY
+                val request = Request.Builder()
+                    .url("https://openrouter.ai/api/v1/chat/completions")
+                    .post(requestBodyJson.toString().toRequestBody(mediaType))
+                    .addHeader("Authorization", "Bearer $apiKey")
+                    .addHeader("Content-Type", "application/json")
+                    .addHeader("HTTP-Referer", "https://github.com/PeterPiper319/jg_scraper_android")
+                    .addHeader("X-Title", "JG Scraper")
+                    .build()
 
-                if (done) {
-                    onDone(response.ifBlank { "Gemma completed without returning any text." })
+                client.newCall(request).execute().use { response ->
+                    if (!response.isSuccessful) {
+                        val errBody = response.body?.string() ?: ""
+                        throw IOException("OpenRouter error (code ${response.code}): $errBody")
+                    }
+                    val responseBody = response.body?.string() ?: throw IOException("Empty response body from OpenRouter")
+                    val jsonResponse = JSONObject(responseBody)
+                    val choices = jsonResponse.optJSONArray("choices")
+                    if (choices != null && choices.length() > 0) {
+                        val choice = choices.getJSONObject(0)
+                        val message = choice.optJSONObject("message")
+                        val content = message?.optString("content") ?: ""
+                        onPartial(content)
+                        onDone(content)
+                    } else {
+                        throw IOException("No choices returned from OpenRouter: $responseBody")
+                    }
                 }
-            },
-            cleanUpListener = { onStopped() },
-            onError = { error -> onError(error) },
-            coroutineScope = viewModelScope,
-        )
+            } catch (e: Exception) {
+                Log.e(TAG, "OpenRouter Llama 4 Scout inference failed for $tenderId", e)
+                onError(e.message ?: "Unknown error")
+            }
+        }
     }
 
     private suspend fun runGemmaInferenceForResult(
@@ -1016,70 +1055,61 @@ $chunk""",
         runningStatus: String,
         statusUpdater: (String, String) -> Unit,
     ): String {
-        val deferred = CompletableDeferred<String>()
-        var response = ""
-        var firstPartial = true
-
-        Log.d(TAG, "Gemma prompt length for $tenderId: ${prompt.length} chars")
+        Log.d(TAG, "OpenRouter Llama 4 Scout prompt length for $tenderId: ${prompt.length} chars")
         statusUpdater(tenderId, runningStatus)
-        model.runtimeHelper.resetConversation(model = model, supportImage = false, supportAudio = false)
-        delay(300)
-        model.runtimeHelper.runInference(
-            model = model,
-            input = prompt,
-            resultListener = { partialResult, done, _ ->
-                if (firstPartial && partialResult.isNotBlank()) {
-                    firstPartial = false
-                    statusUpdater(tenderId, "Gemma is responding...")
-                }
 
-                if (partialResult.isNotBlank()) {
-                    response += partialResult
-                }
+        val client = okhttp3.OkHttpClient.Builder()
+            .connectTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+            .readTimeout(180, java.util.concurrent.TimeUnit.SECONDS)
+            .writeTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+            .build()
+        val mediaType = "application/json; charset=utf-8".toMediaType()
 
-                if (done && !deferred.isCompleted) {
-                    deferred.complete(response.ifBlank { "Gemma completed without returning any text." })
-                }
-            },
-            cleanUpListener = {
-                if (!deferred.isCompleted) {
-                    deferred.completeExceptionally(
-                        IllegalStateException("Gemma inference stopped before completion."),
-                    )
-                }
-            },
-            onError = { error ->
-                if (!deferred.isCompleted) {
-                    deferred.completeExceptionally(IllegalStateException(error))
-                }
-            },
-            coroutineScope = viewModelScope,
-        )
+        val requestBodyJson = JSONObject().apply {
+            put("model", "meta-llama/llama-4-scout")
+            put("messages", JSONArray().apply {
+                put(JSONObject().apply {
+                    put("role", "user")
+                    put("content", prompt)
+                })
+            })
+        }
 
-        return deferred.await()
+        val apiKey = BuildConfig.OPENROUTER_API_KEY
+        val request = Request.Builder()
+            .url("https://openrouter.ai/api/v1/chat/completions")
+            .post(requestBodyJson.toString().toRequestBody(mediaType))
+            .addHeader("Authorization", "Bearer $apiKey")
+            .addHeader("Content-Type", "application/json")
+            .addHeader("HTTP-Referer", "https://github.com/PeterPiper319/jg_scraper_android")
+            .addHeader("X-Title", "JG Scraper")
+            .build()
+
+        return withContext(Dispatchers.IO) {
+            client.newCall(request).execute().use { response ->
+                if (!response.isSuccessful) {
+                    val errBody = response.body?.string() ?: ""
+                    throw IOException("OpenRouter error (code ${response.code}): $errBody")
+                }
+                val responseBody = response.body?.string() ?: throw IOException("Empty response body from OpenRouter")
+                val jsonResponse = JSONObject(responseBody)
+                val choices = jsonResponse.optJSONArray("choices")
+                if (choices != null && choices.length() > 0) {
+                    val choice = choices.getJSONObject(0)
+                    val message = choice.optJSONObject("message")
+                    val content = message?.optString("content") ?: ""
+                    statusUpdater(tenderId, "Llama 4 Scout responded.")
+                    content
+                } else {
+                    throw IOException("No choices returned from OpenRouter: $responseBody")
+                }
+            }
+        }
     }
 
     private suspend fun ensureModelInitialized(model: Model): Boolean {
-        if (model.instance != null) {
-            return true
-        }
-
-        var initializationError = ""
-        model.runtimeHelper.initialize(
-            context = context,
-            model = model,
-            supportImage = false,
-            supportAudio = false,
-            onDone = { error -> initializationError = error },
-            coroutineScope = viewModelScope,
-        )
-
-        val deadline = System.currentTimeMillis() + 30000L
-        while (model.instance == null && initializationError.isEmpty() && System.currentTimeMillis() < deadline) {
-            delay(100)
-        }
-
-        return model.instance != null && initializationError.isEmpty()
+        // OpenRouter inference is remote, no need to initialize local model.
+        return true
     }
 
     private fun buildDocumentBundle(files: List<File>, maxPromptChars: Int): String {

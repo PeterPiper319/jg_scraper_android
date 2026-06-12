@@ -1,0 +1,517 @@
+{
+  "generatedAt": "2026-06-12T01:15:28.125866+00:00",
+  "tenderId": "00393_26",
+  "summary": {
+    "resultCount": 39,
+    "criticalFieldCount": 11,
+    "lowConfidenceCount": 10,
+    "mediumConfidenceCount": 0,
+    "highConfidenceCount": 29
+  },
+  "confidenceCounts": {
+    "high": 29,
+    "none": 10,
+    "medium": 0,
+    "low": 0
+  },
+  "criticalFieldsNeedingReview": [],
+  "contactDetails": {
+    "emails": [
+      "ntombizodwa@joburgtheatre.com",
+      "kea@joburgtheatre.com"
+    ],
+    "phoneNumbers": [
+      "0800007277"
+    ],
+    "faxNumbers": [],
+    "addressLines": [
+      {
+        "text": "Reception Area, 1st Floor of Joburg Theatre, 163 Civic Boulevard (previously Loveday Street), Braamfontein (Opposite Metro Centre)",
+        "sourceFile": ""
+      }
+    ],
+    "contactLines": [
+      {
+        "text": "Any communication with respect to this RFP should be directed to: Keabetswe Senne (kea@joburgtheatre.com) OR Ntombizodwa Zulu (ntombizodwa@joburgtheatre.com)",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Applications for the Tax Clearance Certificates MUST be made via eFiling. In order to use this provision, taxpayers will need to register with SARS as eFilers through the website www.sars.gov.za or contact the SARS Contact Centre on 0800007277",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "<td>All enquiries concerning this bid should be addressed to: -<br>Email:ntombizodwa@joburgtheatre.com or kea@joburgtheatre.com</td>",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "<td>kea@joburgtheatre.com</td>",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "<td>kea@joburgtheatre.com</td>",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "<td>kea@joburgtheatre.com</td>",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "<td>kea@joburgtheatre.com</td>",
+        "sourceFile": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis_FINAL.docx",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Professional & Consulting Services",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "consulting_prof",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "General Business Advisory",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "Management Consulting",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The tender is for the appointment of a service provider to facilitate renewals and new applications of food and beverages licenses. This involves providing professional services to assist with licensing applications, which aligns with the consulting and professional services industry. The required skills and capabilities, such as management consulting and general business advisory, are also indicative of this industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "00393/26",
+      "status": "DONE",
+      "evidence": "BID No. 00393/26",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis",
+      "status": "DONE",
+      "evidence": "DESCRIPTION Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis",
+      "status": "DONE",
+      "evidence": "DESCRIPTION Appointment Of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licences on An as And When Needs Basis",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "Joburg City Theatres",
+      "status": "DONE",
+      "evidence": "BID SUBMISSION: BIDS MUST BE DELIVERED BY THE STIPULATED TIME TO THE CORRECT ADDRESS. LATE BIDS WILL NOT BE ACCEPTED FOR CONSIDERATION. Joburg City Theatres",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "Other",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Professional Services",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "False",
+      "status": "DONE",
+      "evidence": "COMPULSORY BRIEFING n/a",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "19 June 2026 @ 12h00",
+      "status": "DONE",
+      "evidence": "CLOSING TIME AND DATE 19 June 2026 @ 12h00",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Physical Box",
+      "status": "DONE",
+      "evidence": "DELIVERY DETAILS: To be deposited in the \u201cTender box\u201d situated at the Reception Area, 1st Floor of Joburg Theatre",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "Reception Area, 1st Floor of Joburg Theatre, 163 Civic Boulevard (previously Loveday Street), Braamfontein (Opposite Metro Centre)",
+      "status": "DONE",
+      "evidence": "163 Civic Boulevard (previously Loveday Street), Braamfontein (Opposite Metro Centre)",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "0",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "True",
+      "status": "DONE",
+      "evidence": "Provide a National Treasury Centralised Supplier Database (CSD) registration summary report",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "True",
+      "status": "DONE",
+      "evidence": "BIDDERS MUST ENSURE COMPLIANCE WITH THEIR TAX OBLIGATIONS. BIDDERS ARE REQUIRED TO SUBMIT THEIR UNIQUE PERSONAL IDENTIFICATION NUMBER (PIN) ISSUED BY SARS",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "True",
+      "status": "DONE",
+      "evidence": "Provide proof of its entity\u2019s registration documentation (e.g., CIPC)",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "True",
+      "status": "DONE",
+      "evidence": "The Tenderer must provide proof that it is in possession of a letter of good standing from the Compensation Fund or a licensed compensation insurer",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "80/20",
+      "status": "DONE",
+      "evidence": "The bid will be evaluated in accordance with the SCM regulations, MFMA, Preferential Procurement Policy Framework Act and the Preferential Procurement Regulations 2022",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "False",
+      "status": "DONE",
+      "evidence": "CIDB GRADE n/a",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "0",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "False",
+      "status": "DONE",
+      "evidence": "Current audited annual financial statements Or If the bidder is not obliged by law to be prepare annual financial statements for auditing purposes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "True",
+      "status": "DONE",
+      "evidence": "Test Minimum Threshold of 80% for Technical / Functional Criteria",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "80.0",
+      "status": "DONE",
+      "evidence": "80%",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    }
+  ]
+}

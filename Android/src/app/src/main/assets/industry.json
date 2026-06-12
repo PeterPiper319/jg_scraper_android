@@ -1,0 +1,512 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Industry Schema",
+  "description": "Schema and data for each industry in the JG TenderMatch application, including its unique identifier, display name, specializations, skills, and capabilities.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique snake_case identifier for the industry."
+    },
+    "name": {
+      "type": "string",
+      "description": "The human-readable display name of the industry."
+    },
+    "specializations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific focus areas or sub-sectors within the industry."
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Professional skills and domain expertise typical of businesses in this industry."
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Physical assets, equipment, tools, regulatory registrations, or certifications required to operate."
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "specializations",
+    "skills",
+    "capabilities"
+  ],
+  "industries": [
+    {
+      "id": "it_telecom",
+      "name": "Information Technology & Telecommunications",
+      "specializations": [
+        "Software Platforms & Applications",
+        "Cybersecurity & Threat Monitoring",
+        "Cloud Infrastructure & DevOps",
+        "Networks, Telecoms & Connectivity",
+        "Data, Analytics & AI",
+        "Hardware Supply & End-user Computing",
+        "Systems Integration & Automation"
+      ],
+      "skills": [
+        "Software Development (Web/Mobile)",
+        "Cybersecurity & Penetration Testing",
+        "Cloud Infrastructure (AWS/Azure/GCP)",
+        "Network Engineering & Administration",
+        "Data Analytics & Business Intelligence",
+        "IT Support & Managed Services",
+        "UI/UX Design & User Research",
+        "Database Management & Optimization",
+        "AI & Machine Learning Implementation",
+        "Systems Integration & API Development",
+        "Telecommunications Infrastructure",
+        "Fiber Optic Installation",
+        "Project Management (Agile/Scrum)"
+      ],
+      "capabilities": [
+        "Software Licenses & Subscriptions",
+        "High-Performance Server Hardware",
+        "Network Infrastructure Equipment",
+        "Data Center Facilities",
+        "Remote Monitoring Tools",
+        "Specialized Testing Equipment",
+        "ISO 27001 Certification",
+        "Cloud Hosting Credits",
+        "Disaster Recovery Systems"
+      ]
+    },
+    {
+      "id": "construction_civil",
+      "name": "Construction & Civil Engineering",
+      "specializations": [
+        "General Building Works",
+        "Civil Works, Roads & Stormwater",
+        "Electrical Building Services",
+        "Plumbing, Water & Sanitation",
+        "HVAC & Mechanical Installations",
+        "Roofing, Waterproofing & Finishes",
+        "Structural Steel, Fencing & Paving"
+      ],
+      "skills": [
+        "General Building Construction",
+        "Civil Engineering & Infrastructure",
+        "Road Construction & Maintenance",
+        "Electrical Wiring & Installation",
+        "Plumbing & Drainage Systems",
+        "HVAC & Industrial Cooling",
+        "Roofing & Waterproofing",
+        "Painting & Floor Finishing",
+        "Quantity Surveying & Cost Estimation",
+        "Architectural Design & Planning",
+        "Structural Engineering",
+        "Project Management (PMBOK)",
+        "Health & Safety Management (OHS)"
+      ],
+      "capabilities": [
+        "Earthmoving Equipment (TLBs, Excavators)",
+        "Scaffolding & Access Platforms",
+        "Concrete Mixing & Pouring Equipment",
+        "Professional Indemnity Insurance",
+        "CIDB Grading Certification",
+        "NHBRC Registration",
+        "On-site Safety Equipment",
+        "Surveying Instruments (Total Stations)",
+        "Material Testing Laboratory Access"
+      ]
+    },
+    {
+      "id": "medical_health",
+      "name": "Medical & Health Services",
+      "specializations": [
+        "Clinical Services & Patient Care",
+        "Laboratory Diagnostics & Testing",
+        "Pharmaceutical Supply & Distribution",
+        "Medical Equipment Supply & Maintenance",
+        "Occupational Health & Safety",
+        "Emergency & Ambulance Services"
+      ],
+      "skills": [
+        "General Medical Practice",
+        "Nursing & Patient Care",
+        "Laboratory Testing & Diagnostics",
+        "Medical Equipment Maintenance",
+        "Pharmaceutical Supply & Logistics",
+        "Hospital Management & Administration",
+        "Occupational Health & Safety",
+        "Radiology & Medical Imaging",
+        "Mental Health & Social Services",
+        "Emergency Medical Response",
+        "Medical waste Management",
+        "Biotechnological Research"
+      ],
+      "capabilities": [
+        "Certified Medical Facilities",
+        "Specialized Diagnostic Machinery",
+        "Cold Chain Storage (Vaccines/Meds)",
+        "Ambulance/Medical Response Vehicles",
+        "HPCSA Professional Registration",
+        "SAPC Pharmacy Registration",
+        "Clinical Trial Protocols",
+        "Medical Grade Sterilization Equipment"
+      ]
+    },
+    {
+      "id": "security_services",
+      "name": "Security & Guarding Services",
+      "specializations": [
+        "Static Guarding & Access Control",
+        "Armed Response & Patrol Services",
+        "CCTV, Surveillance & Monitoring",
+        "Event, Crowd & VIP Security",
+        "Alarm Systems & Control Rooms",
+        "Investigations & Risk Management"
+      ],
+      "skills": [
+        "Static Guarding & Site Security",
+        "VIP Protection & Bodyguarding",
+        "CCTV Installation & Monitoring",
+        "Alarm Systems & Armed Response",
+        "Risk Assessment & Planning",
+        "Crowd Control & Event Security",
+        "Cybersecurity & Data Privacy",
+        "K9 Unit & Tactical Operations",
+        "Forensic Investigation",
+        "Cash-in-Transit Operations"
+      ],
+      "capabilities": [
+        "PSIRA Registration",
+        "Firearms Licenses & Safe Storage",
+        "Marked Patrol Vehicles",
+        "CCTV Control Room Infrastructure",
+        "Radio Communication Systems",
+        "Body-worn Cameras",
+        "Ballistic Vests & Equipment",
+        "Biometric Access Control Systems"
+      ]
+    },
+    {
+      "id": "consulting_prof",
+      "name": "Professional & Consulting Services",
+      "specializations": [
+        "Management & Strategy Consulting",
+        "Audit, Accounting & Advisory",
+        "HR, Recruitment & Labour Services",
+        "Research, Surveys & Assessments",
+        "Communications & Change Management",
+        "General Business Advisory"
+      ],
+      "skills": [
+        "Management Consulting",
+        "Financial Auditing & Accounting",
+        "Legal Advisory & Litigation",
+        "Taxation & Regulatory Compliance",
+        "Human Resources & Recruitment",
+        "Market Research & Analysis",
+        "Strategic Planning",
+        "Public Relations & Communications",
+        "Economic Impact Assessment",
+        "Change Management"
+      ],
+      "capabilities": [
+        "Professional Body Membership (SAICA/SAIPA)",
+        "Legal Practice Council Registration",
+        "Proprietary Assessment Tools",
+        "Cloud-based Analytical Software",
+        "Professional Indemnity Insurance",
+        "FSP Licensing (Financial Services)"
+      ]
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture, Forestry & Fishing",
+      "specializations": [
+        "Crop Production & Irrigation",
+        "Livestock & Animal Health",
+        "Forestry & Timber Operations",
+        "Fishing & Aquaculture",
+        "Agro-processing & Packaging",
+        "Agricultural Equipment & Inputs"
+      ],
+      "skills": [
+        "Crop Production & Scaling",
+        "Livestock Farming & Husbandry",
+        "Irrigation Systems Management",
+        "Soil Analysis & Enrichment",
+        "Agricultural Technology (Agri-Tech)",
+        "Forestry & Timber Management",
+        "Commercial Fishing Operations",
+        "Aquaculture & Fish Farming",
+        "Agro-Processing & Value Addition"
+      ],
+      "capabilities": [
+        "Tractors & Harvesting Machinery",
+        "Large-scale Irrigation Infrastructure",
+        "Grain Storage & Silo Facilities",
+        "Processing & Packaging Plants",
+        "Fishing Vessels & Equipment",
+        "Cold Storage Transport",
+        "Global GAP Certification",
+        "Organic Certification"
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing & Industrial",
+      "specializations": [
+        "Metal Fabrication, Machining & Welding",
+        "Foundries, Castings & Smelters",
+        "Plastics & Polymer Products",
+        "Chemical Processing & Industrial Consumables",
+        "Printing, Packaging & Labels",
+        "Machinery Repair & Industrial Maintenance",
+        "Electrical Components & Control Panels",
+        "Textiles, Garments & Soft Goods",
+        "Food Processing & Beverage Production",
+        "Furniture, Joinery & Industrial Woodwork"
+      ],
+      "skills": [
+        "Metal Fabrication & Welding",
+        "Automotive Assembly & Parts",
+        "Textile & Clothing Manufacturing",
+        "Chemical Processing & Production",
+        "Food & Beverage Manufacturing",
+        "Industrial Design & Engineering",
+        "Quality Control & Lean Six Sigma",
+        "Supply Chain Management",
+        "Machine Maintenance & Repairs"
+      ],
+      "capabilities": [
+        "Industrial Plant & Machinery",
+        "Factory Floor Infrastructure",
+        "CNC Machining Centers",
+        "ISO 9001 Quality Management",
+        "SABS Product Approval",
+        "Hazardous Material Facilities",
+        "Bulk Material Handling Storage"
+      ]
+    },
+    {
+      "id": "energy_water",
+      "name": "Energy, Water & Waste Management",
+      "specializations": [
+        "Solar, Renewable & Backup Power",
+        "Electrical Distribution & Grid Services",
+        "Water Treatment & Purification",
+        "Wastewater & Sanitation Systems",
+        "Solid Waste, Recycling & Landfill Services",
+        "Boreholes, Pipelines & Water Infrastructure"
+      ],
+      "skills": [
+        "Renewable Energy (Solar/Wind)",
+        "Electrical Grid Maintenance",
+        "Water Purification & Treatment",
+        "Wastewater Management",
+        "Refuse Removal & Waste Logistics",
+        "Recycling & Circular Economy",
+        "Environmental Impact Assessment",
+        "Energy Auditing & Efficiency",
+        "Borehole Drilling & Installation"
+      ],
+      "capabilities": [
+        "Solar Panel Systems & Inverters",
+        "Water Treatment Plants",
+        "Waste Collection Fleet",
+        "ECA/ECASA Registration",
+        "Environmental Permits",
+        "Water Testing Laboratory",
+        "Energy Storage Systems (ESS)"
+      ]
+    },
+    {
+      "id": "transport_logistics",
+      "name": "Transport, Storage & Logistics",
+      "specializations": [
+        "Road Freight & Haulage",
+        "Courier, Dispatch & Last-mile Delivery",
+        "Warehousing & Inventory Control",
+        "Cold Chain & Temperature-controlled Logistics",
+        "Fleet Management & Vehicle Operations",
+        "Clearing, Forwarding & Customs"
+      ],
+      "skills": [
+        "Road Freight & Haulage",
+        "Courier & Last-mile Delivery",
+        "Warehouse Management",
+        "Freight Forwarding & Clearing",
+        "Public Transport Operations",
+        "Cold Chain Logistics",
+        "Fleet Management & Telematics",
+        "Inventory Optimization",
+        "Customs Compliance"
+      ],
+      "capabilities": [
+        "Trucking Fleet (Interlink/Side-tipper)",
+        "Cold Chain Reefer Units",
+        "Large-scale Warehousing Facility",
+        "Customs Bonded Warehouse",
+        "Inventory Management Software",
+        "Goods in Transit Insurance",
+        "RTMS Certification"
+      ]
+    },
+    {
+      "id": "education_training",
+      "name": "Education & Training",
+      "specializations": [
+        "SETA, Learnerships & Accredited Training",
+        "Curriculum Design & Content Development",
+        "E-learning Platforms & Digital Training",
+        "Assessment, Moderation & Skills Audits",
+        "Early Childhood & School Support",
+        "Corporate Coaching & Leadership Development"
+      ],
+      "skills": [
+        "Curriculum Development",
+        "Vocational Training & SETA",
+        "E-Learning Content Creation",
+        "Language & Literacy Training",
+        "Corporate Leadership Coaching",
+        "Special Needs Education",
+        "Skills Audit & Assessment",
+        "Academic Research",
+        "Early Childhood Development"
+      ],
+      "capabilities": [
+        "SETA Accreditation",
+        "QCTO Provider Status",
+        "LMS (Learning Management System)",
+        "Training Facilities & Classrooms",
+        "Certified Assessor/Moderator Pool",
+        "Department of Higher Education Registration"
+      ]
+    },
+    {
+      "id": "media_marketing",
+      "name": "Media, Advertising & Marketing",
+      "specializations": [
+        "Graphic Design, Branding & Creative",
+        "Printing, Signage & Promotional Materials",
+        "Digital Marketing & Paid Media",
+        "Video, Photography & Content Production",
+        "Events, Activations & PR",
+        "Research, Surveys & Market Insights"
+      ],
+      "skills": [
+        "Digital Marketing & SEO",
+        "Content Strategy & Copywriting",
+        "Graphic Design & Branding",
+        "Video Production & Editing",
+        "Social Media Management",
+        "Public Relations & Media Liaison",
+        "Market Research & Consumer Insights",
+        "Event Planning & Activation",
+        "Media Buying & Planning"
+      ],
+      "capabilities": [
+        "High-end Video/Photo Equipment",
+        "Licensed Creative Software (Adobe)",
+        "Digital Ad Management Platforms",
+        "Studio Facilities",
+        "Large-scale Printing Equipment",
+        "Media Database Access"
+      ]
+    },
+    {
+      "id": "tourism_hospitality",
+      "name": "Tourism, Hospitality & Catering",
+      "specializations": [
+        "Corporate Catering & Food Services",
+        "Accommodation & Guest Services",
+        "Venue, Events & Conferencing",
+        "Travel Management & Tour Operations",
+        "Tourism Support & Conservation Services",
+        "Kitchen, Hospitality & Housekeeping"
+      ],
+      "skills": [
+        "Hotel & Lodging Management",
+        "Professional Catering & Culinary",
+        "Tour Guiding & Expedition Planning",
+        "Travel Agency Services",
+        "Event & Venue Management",
+        "Food Safety & Hygiene (HACCP)",
+        "Guest Relations & Concierge",
+        "Eco-Tourism & Conservation"
+      ],
+      "capabilities": [
+        "Commercial Kitchen Facilities",
+        "Hospitality Grade Amenities",
+        "Guest Accommodation Infrastructure",
+        "Tour Vehicles (4x4/Minibus)",
+        "Tourism Grading Council Membership",
+        "Qualified Professional Guides",
+        "Liquor Licenses"
+      ]
+    },
+    {
+      "id": "legal_regulatory",
+      "name": "Legal & Regulatory Services",
+      "specializations": [
+        "Corporate, Commercial & Contract Law",
+        "Labour, Employment & Dispute Resolution",
+        "Property, Conveyancing & Notarial",
+        "Regulatory Compliance & Governance",
+        "Litigation, Arbitration & Mediation",
+        "Environmental & Sector-specific Law"
+      ],
+      "skills": [
+        "Corporate & Commercial Law",
+        "Litigation & Dispute Resolution",
+        "Labor & Employment Law",
+        "Property & Conveyancing",
+        "Intellectual Property Protection",
+        "Regulatory Compliance Auditing",
+        "Contract Drafting & Review",
+        "Notary Public Services",
+        "Environmental Law"
+      ],
+      "capabilities": [
+        "Legal Practice Council Registration",
+        "Secure Digital Signatures (e-Law)",
+        "Law Library & Database Access",
+        "Professional Indemnity Coverage",
+        "Trust Account Auditing",
+        "Arbitration/Mediation Facilities"
+      ]
+    },
+    {
+      "id": "real_estate",
+      "name": "Real Estate & Property Management",
+      "specializations": [
+        "Property Management & Facilities Services",
+        "Real Estate Brokerage & Leasing",
+        "Valuation, Appraisal & Advisory",
+        "Tenant, Body Corporate & Portfolio Management",
+        "Urban Planning & Development Support",
+        "Maintenance Networks & Property Operations"
+      ],
+      "skills": [
+        "Property Valuation & Appraisal",
+        "Real Estate Sales & Brokerage",
+        "Property Portfolio Management",
+        "Facilities & Building Maintenance",
+        "Urban Planning & Development",
+        "Leasing & Tenant Management",
+        "Property Law & Sectional Title"
+      ],
+      "capabilities": [
+        "PPRA Registration (EAAB)",
+        "Property Management Software",
+        "Trust Account Facilities",
+        "Valuation Professional Membership",
+        "Maintenance Service Network",
+        "Real Estate Database (Windeed/TPN)"
+      ]
+    }
+  ]
+}

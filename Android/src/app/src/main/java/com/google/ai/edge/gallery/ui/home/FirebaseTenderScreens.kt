@@ -139,7 +139,10 @@ fun FirebaseTenderEnrichmentScreen(
       modelManagerViewModel.getAllDownloadedModels().firstOrNull {
         val modelName = it.displayName.ifEmpty { it.name }
         modelName.contains("gemma", ignoreCase = true)
-      }
+      } ?: com.google.ai.edge.gallery.data.Model(
+        name = "OpenRouter Llama 4 Scout",
+        displayName = "OpenRouter Llama 4 Scout"
+      )
     }
 
   LaunchedEffect(Unit) {

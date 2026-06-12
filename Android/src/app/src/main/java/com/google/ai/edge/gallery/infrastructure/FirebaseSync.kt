@@ -3,9 +3,13 @@ package com.google.ai.edge.gallery.infrastructure
 import android.content.Context
 import android.net.Uri
 import android.util.Log
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.google.android.gms.tasks.Task
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.SetOptions
 import com.google.firebase.storage.FileDownloadTask
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ListResult
@@ -143,6 +147,22 @@ class FirebaseSync(
         tenderId = folder.name,
         uploadedPaths = uploadedPaths,
       )
+    }
+
+  suspend fun syncToFirestore(tenderId: String, manifestJson: String): Boolean =
+    withContext(Dispatchers.IO) {
+      try {
+        val db = FirebaseFirestore.getInstance(firebaseApp)
+        val type = object : TypeToken<Map<String, Any>>() {}.type
+        val data: Map<String, Any> = Gson().fromJson(manifestJson, type)
+        
+        // Use an await-like callback or just let it fire and forget since the Android SDK handles offline queuing natively
+        db.collection("tenders").document(tenderId).set(data, SetOptions.merge())
+        true
+      } catch (e: Exception) {
+        Log.e(TAG, "Failed to sync to Firestore", e)
+        false
+      }
     }
 
   suspend fun listTenderFolders(): List<FirebaseTenderFolder> =

@@ -1,0 +1,74 @@
+{
+  "submission_mechanics": {
+    "submission_method": "Physical Box",
+    "physical_box_address": "Joburg Theatre,163 Civic Boulevard , Braamfontein",
+    "required_hard_copies": 1,
+    "required_soft_copy_medium": "LOOK_DEEPER",
+    "electronic_portal_url": "LOOK_DEEPER"
+  },
+  "administrative_compliance": {
+    "csd_registration_required": true,
+    "sars_tax_compliance_pin_required": true,
+    "cipc_annual_returns_good_standing_required": true,
+    "coida_letter_of_good_standing_required": true,
+    "uif_registration_required": false,
+    "paye_registration_required": false,
+    "bank_confirmation_letter_required": false,
+    "certified_director_id_required": false,
+    "certified_id_max_age_months": null,
+    "municipal_account_arrears_allowed_days": 90,
+    "insurance_requirements": {
+      "public_liability_min_zar": 0,
+      "professional_indemnity_min_zar": 0,
+      "car_insurance_required": false
+    }
+  },
+  "statutory_forms": {
+    "sbd_forms": {
+      "sbd_1_required": false,
+      "sbd_3_1_required": false,
+      "sbd_3_2_required": false,
+      "sbd_3_3_required": false,
+      "sbd_4_required": false,
+      "sbd_6_1_required": false,
+      "sbd_6_2_required": false,
+      "sbd_7_1_required": false,
+      "sbd_7_2_required": false,
+      "sbd_8_required": false,
+      "sbd_9_required": false
+    },
+    "mbd_forms": {
+      "mbd_1_required": false,
+      "mbd_3_1_required": false,
+      "mbd_3_2_required": false,
+      "mbd_3_3_required": false,
+      "mbd_4_required": false,
+      "mbd_6_1_required": false,
+      "mbd_6_2_required": false,
+      "mbd_7_1_required": false,
+      "mbd_7_2_required": false,
+      "mbd_8_required": false,
+      "mbd_9_required": false,
+      "mbd_15_required": false
+    }
+  },
+  "tender_metadata": {
+    "tender_reference_number": "00393\/26",
+    "tender_title": "Appointment of a Service Provider to Facilitate Renewals and New Applications of Food and Beverages Licenses on an as and when needs basis",
+    "issuing_institution": "JOBURG THEATRE (SOC) LTD",
+    "institution_type": "Other",
+    "procurement_category": "Goods & Services",
+    "geographic_locality": {
+      "province": "Gauteng",
+      "district_municipality": "LOOK_DEEPER",
+      "local_municipality": "LOOK_DEEPER",
+      "ward": "LOOK_DEEPER"
+    }
+  },
+  "critical_dates": {
+    "closing_date_time": "Not found",
+    "compulsory_briefing": {
+      "briefing_date_time": "Not found"
+    }
+  }
+}

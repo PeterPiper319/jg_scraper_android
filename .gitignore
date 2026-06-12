@@ -13,3 +13,9 @@ qnn_model_prep/out/
 qnn_model_prep/out_fp16/
 qnn_model_prep/out_fp16_opt/
 qnn_model_prep/__pycache__/
+
+# Python Desktop Pipeline
+desktop_pipeline/venv/
+desktop_pipeline/sample_tender/
+desktop_pipeline/serviceAccountKey.json
+**/__pycache__/

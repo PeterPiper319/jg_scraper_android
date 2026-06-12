@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGS Tender Intelligence Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">🔷</span>
+                <h2>JGS Intel</h2>
+            </div>
+            <nav>
+                <button class="nav-btn active" data-tab="dashboard">
+                    <span class="btn-icon">📊</span> Single Enrichment
+                </button>
+                <button class="nav-btn" data-tab="batch">
+                    <span class="btn-icon">📁</span> Batch Processing
+                </button>
+                <button class="nav-btn" data-tab="settings">
+                    <span class="btn-icon">⚙️</span> Settings
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>System Status: <span class="status-dot healthy"></span> Online</p>
+                <small>v1.0.0 (Gemma Engine)</small>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Header -->
+            <header class="main-header">
+                <h1>Tender Extraction & Enrichment</h1>
+                <div class="user-profile">
+                    <span class="badge">Desktop Operator</span>
+                </div>
+            </header>
+
+            <!-- Dashboard Tab -->
+            <section id="tab-dashboard" class="tab-content active">
+                <div class="card search-card">
+                    <h3>Select Tender Directory</h3>
+                    <p class="card-desc">Enter the absolute local directory path containing the tender files (PDF, DOCX, XLSX, etc.).</p>
+                    <div class="input-group">
+                        <input type="text" id="folder-path" placeholder="e.g. C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline\00393_26" value="C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline\00393_26">
+                        <button id="btn-run" class="btn btn-primary">▶ Run Enrichment</button>
+                    </div>
+                </div>
+
+                <!-- Active Pipeline Operations -->
+                <div class="grid grid-2">
+                    <!-- Live Logs -->
+                    <div class="card terminal-card">
+                        <div class="card-header">
+                            <h3>Pipeline Live Feed</h3>
+                            <span class="live-indicator">LIVE STREAM</span>
+                        </div>
+                        <div id="terminal-output" class="terminal">
+                            <div class="terminal-line system">Waiting for execution request...</div>
+                        </div>
+                        <div class="terminal-footer">
+                            <button id="btn-clear-logs" class="btn btn-secondary btn-small">Clear Logs</button>
+                        </div>
+                    </div>
+
+                    <!-- Rapid Results Summary -->
+                    <div class="card results-summary-card">
+                        <h3>Enrichment Summary</h3>
+                        <div id="summary-content" class="summary-placeholder">
+                            <p>No active enrichment data. Run the pipeline to display results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Field Review -->
+                <div class="card detail-card hidden" id="results-detail-card">
+                    <div class="card-header">
+                        <h2>Enrichment Details & Audits</h2>
+                        <button id="btn-export-json" class="btn btn-secondary">📥 Export JSON</button>
+                    </div>
+                    <div class="tabs-sub">
+                        <button class="tab-sub-btn active" data-subtab="metadata">Metadata & Classification</button>
+                        <button class="tab-sub-btn" data-subtab="compliance">Compliance & Financial</button>
+                        <button class="tab-sub-btn" data-subtab="contacts">Contacts & PII Redaction</button>
+                    </div>
+                    
+                    <div id="subtab-metadata" class="subtab-content active">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Field Name</th>
+                                    <th>Value</th>
+                                    <th>Confidence / Audit</th>
+                                    <th>Evidence</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-metadata-body"></tbody>
+                        </table>
+                    </div>
+
+                    <div id="subtab-compliance" class="subtab-content">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Field Name</th>
+                                    <th>Value</th>
+                                    <th>Confidence / Audit</th>
+                                    <th>Evidence</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-compliance-body"></tbody>
+                        </table>
+                    </div>
+
+                    <div id="subtab-contacts" class="subtab-content">
+                        <div class="contacts-wrapper">
+                            <h4>PII Compliance Status: <span class="badge badge-success">Redacted</span></h4>
+                            <div class="contacts-grid">
+                                <div>
+                                    <h5>Scraped Enquiries Contact</h5>
+                                    <pre id="contacts-raw" class="code-preview"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Batch Tab -->
+            <section id="tab-batch" class="tab-content">
+                <div class="card">
+                    <h3>Batch Folder Enrichment</h3>
+                    <p class="card-desc">Select a root directory that contains individual tender folders as children.</p>
+                    <div class="input-group">
+                        <input type="text" id="batch-root-path" placeholder="e.g. C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline" value="C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline">
+                        <button id="btn-scan-batch" class="btn btn-secondary">Scan Directories</button>
+                        <button id="btn-run-batch" class="btn btn-primary hidden">▶ Run Batch Enrichment</button>
+                    </div>
+                </div>
+
+                <div class="card hidden" id="batch-list-card">
+                    <div class="batch-progress-bar-container hidden" id="batch-progress-container">
+                        <div class="progress-info">
+                            <span id="batch-progress-text">Processing: 0 / 0</span>
+                            <span id="batch-current-folder"></span>
+                        </div>
+                        <div class="progress-bar-track">
+                            <div class="progress-bar-fill" id="batch-progress-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <h3>Discovered Directories</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Tender ID</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="batch-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Settings Tab -->
+            <section id="tab-settings" class="tab-content">
+                <div class="card">
+                    <h3>Pipeline Engine Configuration</h3>
+                    <div class="settings-group">
+                        <label>AI Models Shard</label>
+                        <select disabled>
+                            <option>Gemma-2B-IT (On-Device Scout Variant)</option>
+                        </select>
+                        <small>Locked to local hardware settings.</small>
+                    </div>
+                    <div class="settings-group">
+                        <label>Parser Modes</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pref-docling" checked disabled>
+                            <label for="pref-docling">Docling Layout Parser (Primary)</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="pref-mineru" checked>
+                            <label for="pref-mineru">MinerU Table Merging (Active fallback)</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

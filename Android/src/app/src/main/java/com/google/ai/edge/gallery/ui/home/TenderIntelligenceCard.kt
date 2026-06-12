@@ -94,7 +94,7 @@ fun TenderIntelligenceCard(
           onClick = onClick,
           label = {
             Text(
-              text = "Enriched by Gemma",
+              text = "Enriched by Llama 4 Scout",
               style = MaterialTheme.typography.labelSmall,
             )
           },

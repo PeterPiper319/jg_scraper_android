@@ -1,0 +1,922 @@
+
+--- PAGE 1 ---
+Architecting a Gold Standard Tender 
+Data Extraction Engine: A 
+First-Principles Analysis of 
+Layout-Aware Parsing and Schema 
+Validation 
+The First-Principles Foundation of Procurement 
+Digitization 
+The extraction of structured data from public procurement documentation presents a uniquely 
+unforgiving computational challenge, one that resists the application of generalized artificial 
+intelligence solutions. By applying strict first principles to the problem of tender data extraction, 
+the fundamental nature of the source material must be acknowledged: a tender document is not 
+a linear string of text, but rather a complex, multi-modal visual topology designed exclusively for 
+human reading and legal compliance, rather than machine parsing. It contains legally binding 
+administrative, financial, and technical constraints embedded within complex matrices, 
+multi-page tables, and domain-specific regulatory vernacular. 
+To engineer a "gold standard" tender data extraction engine, one cannot rely on rudimentary 
+Optical Character Recognition (OCR) combined with standard probabilistic Large Language 
+Model (LLM) prompts. Basic OCR merely extracts disconnected glyphs positioned on an infinite 
+digital canvas, systematically destroying the spatial relationships critical for understanding 
+hierarchical clauses, merged table cells, nested lists, and multi-column architectural 
+specifications. Instead, the architecture must bridge the visual-semantic divide through a 
+layout-aware document parsing pipeline, sophisticated hierarchical chunking methodologies, 
+and highly constrained deterministic generation mechanisms. 
+This comprehensive analysis deconstructs the architecture required for such an engine, 
+specifically localized to the South African public procurement landscape. It scrutinizes the 
+transition from visual artifacts to validated JSON payloads, utilizing state-of-the-art open-source 
+Vision-Language Models (VLMs), mixture-of-experts (MoE) reasoning architectures, and strict 
+schema enforcements to guarantee zero-hallucination outputs suitable for enterprise 
+deployment and governmental auditing. 
+The Ground Truth: South African Regulatory 
+Constraints and Document Morphologies 
+A first-principles approach dictates that the data extraction engine must possess an intrinsic 
+understanding of the domain's ontological rules. In South African public procurement, the 
+National Treasury and various regulatory bodies enforce strict compliance criteria. An extraction 
+engine must not merely locate these terms via keyword matching but must understand their 
+
+--- PAGE 2 ---
+relational logic and legal implications. 
+Standard Bidding Documents and the Mechanics of Compliance 
+The Public Finance Management Act (PFMA) and Municipal Finance Management Act (MFMA) 
+mandate the use of the National Treasury’s Standard Bidding Documents (SBDs) for national 
+and provincial tenders, and Municipal Bidding Documents (MBDs) for municipal tenders. These 
+documents form the administrative backbone of any bid. The extraction engine must flawlessly 
+identify the presence, revision status, and requirements surrounding these forms, as the 
+omission of a single signature, an outdated form revision, or incomplete data by a bidder 
+renders the submission fatally non-compliant before the evaluation committee. 
+The physical completion of these forms introduces significant complexity for extraction engines. 
+Regulatory guidelines explicitly state that Standard Bidding Documents must be completed in 
+full using black ink, whether handwritten or typed. Furthermore, any changes or corrections on 
+the SBD forms must be formally countersigned by the bidder, and the use of correction fluid 
+(such as Tippex) or any similar obscuring material is strictly prohibited. This presents a unique 
+challenge for parsing engines, which must be capable of distinguishing between valid 
+countersigned amendments and illicit alterations. 
+The core forms that the engine must reliably target, extract, and classify include a vast array of 
+standardized declarations: 
+Document Code 
+Document Purpose and 
+Content Attributes 
+Extracted Entities Required 
+SBD 1 / MBD 1 
+Invitation to Bid. Acts as the 
+primary metadata source for 
+the tender. 
+Tender number, description, 
+closing date/time, contact 
+details, submission method, 
+briefing information. 
+SBD 3.1 / 3.2 
+Pricing Schedules for firm and 
+non-firm prices. Often 
+presented in complex, 
+multi-page tabular formats. 
+Line item pricing, total bid price, 
+currency validity periods. 
+SBD 4 
+Declaration of Interest. 
+Assesses conflicts of interest 
+and historical convictions. 
+Boolean flags for 
+fraud/corruption convictions, 
+details of terminated contracts 
+with organs of state. 
+SBD 6.1 
+Preference points claim form in 
+terms of the Preferential 
+Procurement Regulations. 
+Specific goals claimed, points 
+allocated, B-BBEE status levels 
+(historically). 
+SBD 6.2 
+Declaration certificate for local 
+production and content. Critical 
+for designated sectors. 
+Minimum threshold 
+percentages for local content, 
+specific item exemptions. 
+SBD 7.1 / 7.2 / 7.3 
+Contract forms for the purchase 
+of goods, works, and services 
+respectively. 
+Terms of agreement, legal 
+signatory data. 
+The pipeline must not only parse the text of these forms but must also successfully interpret 
+pre-qualification checklists where these forms are explicitly requested. These checklists are 
+frequently structured in dense, borderless tables, requiring sophisticated multi-column extraction 
+
+--- PAGE 3 ---
+capabilities to align the requirement with its corresponding "Yes/No" checkbox. 
+The Preferential Procurement Regulations (2022) and Mathematical 
+Scoring 
+The extraction engine must possess the programmatic capacity to interpret the legal and 
+mathematical frameworks dictating bid evaluation. Following a landmark Constitutional Court 
+order in February 2022 (often referred to in procurement circles as the Afribusiness decision), 
+the Preferential Procurement Regulations of 2017 were declared invalid, with the order of 
+invalidity suspended for 12 months to allow for legislative correction. Consequently, the Minister 
+of Finance promulgated the Preferential Procurement Regulations, 2022, which fundamentally 
+shifted the evaluation mechanics. 
+Under the 2022 Regulations, organs of state are granted more discretion to implement their own 
+procurement policies and set quantifiable, transformative specific goals. Unlike the 2017 
+regulations, which strictly utilized Broad-Based Black Economic Empowerment (B-BBEE) status 
+levels as the sole metric for preference points, the 2022 framework allows preference points to 
+be awarded for specific goals, including contracting with persons historically disadvantaged by 
+unfair discrimination based on race, gender, and disability, as well as the implementation of 
+Reconstruction and Development Programme initiatives. Furthermore, the new regulations 
+explicitly prohibit organs of state from applying "pre-qualification criteria" to tenders, a common 
+practice under the previous regime. 
+The engine must accurately extract the scoring system dictated by the tender document, which 
+defines how price and these specific transformative goals are weighted. The regulations 
+mandate two distinct mathematical frameworks based on the estimated Rand value of the 
+contract: 
+The 80/20 Preference Point System is legally required for the acquisition of goods or services 
+with a Rand value equal to or above R30,000 and up to a maximum of R50 million (inclusive of 
+all applicable taxes). In this paradigm, price accounts for a maximum of 80 points, while a 
+maximum of 20 points are allocated to the specific transformative goals stipulated in the tender 
+invitation. The mathematical formula utilized for the 80/20 system for price evaluation is 
+modeled as: 
+P_s = 80 \left(1 - \frac{P_t - P_{min}}{P_{min}}\right) 
+Where P_s equals the points scored for the price of the tender under consideration, P_t is the 
+price of the tender under consideration, and P_{min} is the price of the lowest acceptable 
+tender. 
+Conversely, the 90/10 Preference Point System applies to bids with a Rand value strictly above 
+R50 million. Here, 90 points are allocated to price using a mirrored formula, and a maximum of 
+10 points are awarded to the tenderer meeting the specific goals. 
+An advanced data extraction engine must execute semantic cross-referencing regarding these 
+regulations. It must identify whether a tender explicitly mentions the "80/20" or "90/10" system 
+and cross-reference this extraction against any budgetary values mentioned in the document. If 
+a document explicitly states an estimated value of R60 million but simultaneously requests an 
+80/20 evaluation system, the extraction engine should ideally flag this contradiction as a 
+potential regulatory anomaly, adding a layer of intelligent auditing to the extraction process. 
+Furthermore, it must navigate municipal deviations, such as acknowledging that 
+income-generating tenders or auctions for the leasing of movable and immovable assets may 
+
+--- PAGE 4 ---
+bypass standard preference point systems, depending on specific council policies. 
+The Infrastructure Taxonomy: Construction Industry 
+Development Board (CIDB) Grading 
+For infrastructure and construction-related tenders, the data extraction engine encounters one 
+of the most rigidly structured taxonomies in the South African regulatory environment: the 
+Construction Industry Development Board (CIDB) requirements. Mandated by the Construction 
+Industry Development Board Act No 38 of 2000, the CIDB regulates the industry to ensure best 
+practices, compliance, and sector transformation. 
+The CIDB utilizes a strict 9-tier grading designation system that dictates the maximum tender 
+value a contractor is legally permitted to bid on. This grading is not arbitrary; it is calculated 
+based on the contractor's verifiable track record (the largest contract completed during the five 
+years immediately preceding the application), their best annual turnover, and their available 
+capital. The extraction engine must be capable of locating these specific grading thresholds 
+within the tender document and mapping them against the project's scope. 
+The following table illustrates the current CIDB grading thresholds, maximum tender values 
+(VAT inclusive), and the requisite financial and track record benchmarks required to achieve 
+each grade. A gold standard extraction engine uses this ground-truth data to validate the 
+consistency of the tender requirements : 
+CIDB Grade 
+Maximum Tender 
+Value Limit (VAT 
+Incl.) 
+Required Track 
+Record (Largest 
+Contract) 
+Best Annual 
+Turnover Required 
+Available Capital 
+Required 
+Grade 1 
+Up to R500,000 
+None 
+Not Specified 
+Not Specified 
+Grade 2 
+Up to R1,000,000 R130,000 
+Not Specified 
+Not Specified 
+Grade 3 
+Up to R3,000,000 R450,000 
+R1,000,000 
+R100,000 
+Grade 4 
+Up to R6,000,000 R900,000 
+R2,000,000 
+R200,000 
+Grade 5 
+Up to R10,000,000 R1,500,000 
+R3,250,000 
+R650,000 
+Grade 6 
+Up to R20,000,000 R3,000,000 
+R6,500,000 
+R1,300,000 
+Grade 7 
+Up to R60,000,000 R9,000,000 
+R20,000,000 
+R4,000,000 
+Grade 8 
+Up to 
+R200,000,000 
+R30,000,000 
+R65,000,000 
+R13,000,000 
+Grade 9 
+No Limit 
+R90,000,000 
+R200,000,000 
+R40,000,000 
+Data aggregated and validated from South African CIDB regulatory thresholds and registration 
+guidelines for 2025/2026. 
+Beyond the financial grading, the extraction engine must interpret the alphanumeric "Class of 
+Work" codes, which denote the specific engineering or construction discipline required. The 
+engine must extract combinations such as "4 GB" (Grade 4, General Building) or "1 CE" (Grade 
+1, Civil Engineering) seamlessly. The taxonomy of these classes represents a highly specific 
+lexicon that the engine's schema must anticipate. 
+Code 
+Class of Work 
+Description 
+Code 
+Class of Work 
+Description 
+CE 
+Civil Engineering 
+SG 
+Glazing, curtain walls 
+and shop fronts 
+GB 
+General Building 
+SH 
+Landscaping, irrigation 
+and horticulture works 
+
+--- PAGE 5 ---
+Code 
+Class of Work 
+Description 
+Code 
+Class of Work 
+Description 
+EB 
+Electrical Engineering 
+Works – Building 
+SI 
+Lifts, escalators and 
+travellators 
+EP 
+Electrical Engineering 
+Works – Infrastructure 
+SM 
+Timber Building and 
+Structures 
+ME 
+Mechanical 
+Engineering 
+SN 
+Waterproofing, Roofing 
+and Glazing 
+SB 
+Asphalt works (supply 
+and lay) 
+SO 
+Water Supply and 
+Drainage 
+SC 
+Building excavations, 
+shaft sinking 
+SQ 
+Access Control / Steel 
+Security Fencing 
+SD 
+Corrosion protection 
+(cathodic, anodic) 
+SE 
+Demolition and blasting 
+A sophisticated extraction pipeline must parse nested or composite CIDB requirements. For 
+instance, a tender might stipulate a primary requirement for a "7 CE" main contractor, 
+accompanied by a mandatory condition that a specialized subcontractor holding a "4 EB" 
+(Electrical Engineering Building) and "1 SQ" (Access Control) designation be utilized. The 
+engine must maintain the relational hierarchy between the main contractor requirements and 
+subcontractor requirements, mapping these to discrete JSON arrays within the 
+industry_credentials schema, rather than conflating them into a single list. Furthermore, the 
+engine must identify requirements for other professional body registrations that accompany 
+CIDB gradings, such as active standing with the National Home Builders Registration Council 
+(NHBRC), the Department of Employment and Labour (DEL) for electricians, or the Plumbing 
+Industry Registration Board (PIRB). 
+Statutory Identifiers and Database Integration: CSD 
+and SARS Ontologies 
+To ensure a level playing field, eliminate corruption, and prevent the state from doing business 
+with entities listed on the Register for Tender Defaulters, procurement documents demand strict 
+proof of statutory registration. The extraction engine must be programmed with regular 
+expressions and pattern recognition to identify distinct alphanumeric patterns corresponding to 
+these national databases. 
+The Central Supplier Database (CSD) 
+Established by the National Treasury, the Central Supplier Database (CSD) is the mandatory 
+master repository and single source of truth for all supplier information across all spheres of 
+government, encompassing departments, constitutional institutions, and public entities listed in 
+schedules 2 and 3 of the PFMA. An engine parsing tender conditions must recognize that CSD 
+registration is an absolute prerequisite. 
+When analyzing procurement text, the engine must specifically look for requirements 
+surrounding the supplier's CSD registration parameters. The CSD architecture verifies supplier 
+information directly against primary institutions such as the Companies and Intellectual Property 
+Commission (CIPC) and the Department of Home Affairs. Registration completion yields two 
+
+--- PAGE 6 ---
+critical identifiers that tenders frequently request bidders to provide on their forms: a 36-digit 
+Unique Registration Reference Number, and a primary Supplier Number, which strictly begins 
+with the prefix "MAAA". The extraction engine must distinguish between requests for the MAAA 
+number and the 36-digit reference. Furthermore, when parsing supplier contact requirements or 
+database forms, the engine should recognize standard accepted formats for South African local 
+phone numbers (e.g., 0823456789, 082 123 1234, 082-1234567) and international dialing 
+formats (e.g., +123-12-123-1234) which are prerequisites for OTP (One Time Pin) verification 
+during CSD onboarding. 
+SARS Tax Compliance Status (TCS) PIN Verification 
+Simultaneously, the South African Revenue Service (SARS) enforces strict tax compliance 
+verification for all public procurement. The paradigm of tax compliance has modernized 
+significantly. Historically, bidders submitted static, paper-based Tax Clearance Certificates 
+(TCC). However, to strengthen legislative alignment and prevent fraud, SARS replaced static 
+certificates with a dynamically verifiable Tax Compliance Status (TCS) system. 
+Bidders now apply via eFiling for a TCS request (often marked for the purpose of "Good 
+Standing"). Upon approval, SARS issues a highly specific 10-character alphanumeric TCS PIN 
+(an operational example being E9DD56E22Q) along with an overall compliance status and an 
+explicit expiry date. This PIN provides a secure mechanism for third parties, such as organs of 
+state, to view the taxpayer's compliance status online at the exact date and time they check it, 
+rather than relying on the status at the time the PIN was issued. To protect taxpayer 
+confidentiality, no other financial information is accessible via this PIN. 
+From a data extraction perspective, the engine must utilize the administrative_compliance 
+schema to differentiate between the mere mention of tax compliance (a boolean requirement 
+denoting whether tax compliance is required) and the actual presence of the 10-character PIN 
+or the 10-digit Tax Reference Number (which typically starts with a 9, e.g., 9045478147). If a 
+tender specifies that a "valid and original Tax Clearance Certificate" or a "TCS PIN" must be 
+submitted with the SBD 1 and SBD 2 forms, the engine must flag this as a critical mandatory 
+requirement. Furthermore, in bids where joint ventures or consortia are involved, the engine 
+must detect clauses stipulating that each separate party must submit their own individual TCS 
+PIN and CSD MAAA number, extracting these as multi-entity requirements. 
+The Visual-Semantic Divide: Architecting 
+Layout-Aware Document Parsing 
+Before any intelligent reasoning can be performed over the procurement constraints detailed 
+above, the source PDF document must be serialized into an intermediate machine-readable 
+format. This represents the most critical failure point in traditional data extraction architectures. 
+Traditional pipelines fail because they treat PDFs as linear text streams. A standard PDF stores 
+content as individually positioned glyphs on a coordinate canvas, lacking any structural 
+Document Object Model (DOM) metadata that denotes paragraphs, headings, or tabular 
+boundaries. 
+When a legacy OCR tool or a basic text-extraction library (such as PyPDF2) encounters a 
+complex document—such as a two-column architectural specification, a scanned invoice, or an 
+SBD 3.1 pricing table—it frequently reads blindly from left to right across the page. This linear 
+traversal conflates text from column A with column B, creating unusable, fragmented sentences 
+
+--- PAGE 7 ---
+and hallucinated string configurations that completely destroy the semantic meaning of the 
+document. For a RAG (Retrieval-Augmented Generation) pipeline, this is catastrophic. The 
+issue manifests as a generation problem ("the LLM hallucinated the answer"), but the root cause 
+is a fundamental parsing failure: the text lines were never in the correct order to begin with. 
+To achieve a gold-standard extraction engine, the architecture must transition entirely to 
+layout-aware document parsing. This methodology treats the document as a visual artifact, 
+utilizing deep learning vision models to predict bounding boxes for semantic blocks, classify 
+elements (e.g., Titles, NarrativeText, ListItems, Tables, Footers), and preserve the structural 
+hierarchy in a layout-rich output format such as Markdown or HTML before any text is fed to an 
+LLM. 
+The Vanguard of Document Parsers: Open Source vs. Proprietary 
+As of 2026, the landscape of document parsing has evolved rapidly, with end-to-end 
+vision-language models closing the gap between raw pixel data and highly structured 
+Markdown. The architectural choices for a gold standard engine encompass several leading 
+solutions: 
+Parsing Engine 
+Architecture / Model Type 
+Core Strengths for 
+Procurement Documents 
+Docling (IBM) 
+VLM (GraniteDocling / Heron 
+layout model) 
+Avoids OCR where 
+programmatic text exists, 
+boosting speed 30x. 
+Exceptional Markdown and 
+JSON exports. Local execution 
+capable. 
+MinerU (OpenDataLab) 
+VLM 
+(MinerU2.5-Pro-2604-1.2B) + 
+109-language OCR 
+Native full-format support (PDF, 
+DOCX, PPTX). Unparalleled 
+cross-page table merging and 
+truncated paragraph assembly. 
+Arctic-Extract (Snowflake) 
+Compact 6.6 GiB VLM 
+Single-step joint reasoning over 
+visual and textual information 
+without external OCR. Massive 
+throughput (125 pages per 
+GPU). 
+LlamaParse (LlamaIndex) 
+Proprietary layout-aware vision 
++ Agentic validation loops 
+Dedicated modes (Fast, 
+Balanced, Premium). 
+Specializes in complex nested 
+tables and multi-line headers 
+translated to LLM-friendly 
+Markdown. 
+Deep Dive: Docling Developed by IBM AI Research, Docling represents a massive leap 
+forward by actively sidestepping heavy OCR dependencies whenever programmatic PDF text 
+exists. Instead, it relies on computer vision models to categorize the visual elements on a page, 
+mapping the embedded text to its detected layout bounding box. According to IBM researchers, 
+avoiding OCR reduces typical typographical errors and accelerates the time-to-solution by an 
+astonishing factor of 30. Docling utilizes the advanced Heron layout model by default to 
+reconstruct multi-column text, complex borderless tables, and even visual charts (converting bar 
+
+--- PAGE 8 ---
+charts and pie charts directly into data tables or descriptive text) into a highly structured 
+DoclingDocument representation. This representation is subsequently exported to clean 
+Markdown or lossless JSON. Its ability to seamlessly identify headers and paragraphs natively 
+preserves the semantic boundaries required for accurate downstream processing. Furthermore, 
+its permissive MIT license allows for untethered commercial deployment within highly secure, 
+air-gapped server environments, an absolute necessity for processing sensitive or classified 
+state procurement data. 
+Deep Dive: MinerU MinerU has emerged as another formidable open-source parsing engine, 
+operating on a robust VLM+OCR dual-engine architecture. Its 3.1.0 release in April 2026 
+fundamentally altered its trajectory by migrating from the highly restrictive AGPLv3 license to a 
+custom MinerU Open Source License based on Apache 2.0, drastically reducing commercial 
+adoption friction. The architecture is powered by the MinerU2.5-Pro-2604-1.2B primary 
+Vision-Language Model, which achieves state-of-the-art accuracy in addressing one of the most 
+persistent problems in document parsing: cross-page table merging and truncated paragraph 
+merging. Cross-page table merging is incredibly vital for procurement documents, as multi-page 
+pricing schedules (SBD 3.1) and functional evaluation matrices frequently span page breaks. 
+MinerU's ability to logically stitch these separated graphical constructs back into a continuous 
+HTML or Markdown table prevents the fragmentation of tabular context. Furthermore, MinerU 
+supports native parsing of DOCX, PPTX, and XLSX files without the traditional, lossy 
+intermediate step of converting them to PDF first, resulting in end-to-end speeds improved by 
+tens of times. 
+Deep Dive: LlamaParse For scenarios requiring managed API infrastructure rather than local 
+deployment, LlamaParse tackles the layout problem through proprietary layout-aware vision 
+models combined with agentic validation loops. It offers developers granular control over the 
+parsing mechanisms through three distinct modes: Fast (cheapest/fastest), Balanced (optimal 
+cost/speed trade-off), and Premium (utilizing the most accurate proprietary techniques). 
+LlamaParse is explicitly designed to handle nested cells, multi-line headers, and complex 
+borderless structures. It detects repeating structural patterns—such as table rows, list items, 
+and visual separators—and segments the document into intelligent chunks based on these 
+entities. 
+The Crucible of Table Extraction 
+The extraction of tabular data remains the ultimate crucible for parsing engines. The 2025 PDF 
+Extraction Benchmark from Procycons identified that models like Docling achieve up to 97.9% 
+accuracy on complex table structures. However, nuanced evaluations, such as the 2026 study 
+by the Institute for Machine Learning and Analytics (IMLA), highlight the necessity of specialized 
+models for tabular geometries. The study, utilizing an LLM-as-a-judge approach across 451 
+tables, demonstrated that dedicated models like LightOnOCR-2-1B—an end-to-end multilingual 
+VLM—outscore models substantially larger than themselves (such as Claude, GPT-5, Qwen3, 
+Mistral, and Mathpix). LightOnOCR-2-1B operates as a dedicated topological decoder, proving 
+to be 3.3x faster than Chandra OCR and achieving state-of-the-art results on the OlmOCR 
+bench. 
+For optimal retrieval performance on tables featuring merged cells (a staple in public sector 
+evaluation criteria matrices), engineering consensus suggests that converting tables directly to 
+HTML rather than Markdown is highly recommended. HTML natively expresses colspan and 
+rowspan attributes, seamlessly preserving the geometry of merged cells. In standard Markdown, 
+these attributes are inherently lacking, forcing parsers to duplicate values across cells, which 
+
+--- PAGE 9 ---
+can artificially inflate token counts and confuse downstream language models. Therefore, an 
+engine like MinerU, which natively converts document tables to HTML format while maintaining 
+the rest of the text in Markdown, offers a significant architectural advantage. 
+Hierarchical Vector Retrieval and Layout-Aware 
+Chunking 
+Once the tender document is parsed into a pristine, layout-preserved Markdown and HTML 
+artifact, it must be chunked for retrieval. Traditional chunking strategies utilized in standard 
+LangChain or LlamaIndex pipelines rely heavily on arbitrary word counts or static token limits 
+(e.g., chunking every 500 tokens with a 50-token overlap). In the context of dense procurement 
+data, this approach fails catastrophically. A token-based chunk might arbitrarily slice a complex 
+functional evaluation matrix in half, leaving the LLM with the scoring criteria but completely 
+severing the column detailing the maximum points allocated or the minimum threshold required 
+to pass. 
+The gold standard pipeline necessitates hierarchical, layout-aware chunking. By leveraging 
+the Markdown outputs from the parsing stage, the chunking algorithm utilizes the document's 
+inherent Document Object Model. Headers (H1, H2, H3), paragraphs, and specifically list items 
+are maintained as cohesive, indivisible semantic units. 
+When an analyst searches for a specific clause, the chunking system does not merely return an 
+isolated paragraph. Instead, it dynamically generates chunks at query time, retrieving the 
+relevant paragraph and prepending its entire hierarchical lineage (the parent headers and 
+sub-headers) to the chunk. This ensures the LLM receives the full hierarchical context—for 
+example, knowing definitively that a specific "Penalty for Delay" clause exists under the "Special 
+Conditions of Contract" section rather than the "General Conditions of Contract," completely 
+altering its legal weight. This structural injection dramatically improves retrieval evaluation 
+metrics such as Hit@k and Mean Reciprocal Rank (MRR), minimizing hallucinations caused by 
+context starvation. As noted by engineers dealing with complex SEC documents, when the 
+internal variable column_position == "multi" is detected, standard chunking must immediately 
+escalate to these layout-aware methodologies to prevent critical data truncation. 
+The Cognitive Engine: Llama 4 Scout and MoE 
+Architecture 
+Based on the architectural blueprint outlined in the enrichment.md framework, the extraction 
+engine operates in a multi-staged, multi-schema pipeline designed to optimize token efficiency 
+and maximize extraction fidelity. This pipeline is powered by the highly advanced Meta Llama 4 
+Scout model. 
+Llama 4 Scout Specifications and Parameter Tuning 
+Released publicly on April 5, 2025, under the Llama 4 Community License (trained on data up 
+to August 2024), Llama 4 Scout (specifically the 17B Instruct variant) represents the bleeding 
+edge of efficient open-weight models. It is built upon a sparse Mixture-of-Experts (MoE) 
+architecture. While the model encompasses an enormous 109 billion total parameters, its MoE 
+router activates only 16 specialized experts per forward pass, resulting in merely 17 billion 
+
+--- PAGE 10 ---
+active parameters being utilized for any given token generation. This sparse activation allows 
+the engine to possess the massive reasoning capacity and world knowledge of a 100B+ class 
+model without the extreme latency, GPU memory bottlenecks, and computational overhead 
+associated with dense architectures. 
+Crucially for document extraction, Llama 4 Scout supports a staggering context length of 10 
+million tokens and incorporates early fusion mechanisms for seamless multi-modality 
+integration, allowing it to interpret native visual inputs alongside text if required. Its 
+instruction-tuned alignment makes it exceptionally adept at acting as an assistant-style 
+reasoning engine, flawlessly following strict system prompts and parsing complex nested JSON 
+instructions. Furthermore, at an API cost of merely $0.10 per 1 million input tokens and a 
+latency as low as 0.26 seconds (with a throughput of 207 tokens per second on optimized 
+providers like DeepInfra), it represents a highly cost-effective brain for high-throughput, 
+enterprise-scale pipeline operations. 
+To force Llama 4 Scout into a purely analytical extraction mode, the inference parameters must 
+be strictly controlled to eliminate creative deviation : 
+Parameter 
+Recommended Value 
+Engineering Rationale 
+temperature 
+0.0 
+Forces deterministic, greedy 
+decoding. The model will 
+almost always choose the most 
+statistically likely token, 
+eliminating creative 
+hallucinations in data 
+extraction. 
+presence_penalty 
+0.0 
+Neutralizes the penalty for 
+repeating tokens. In data 
+extraction, repeating the same 
+word (e.g., "Not found") is 
+highly necessary and should 
+not be penalized. 
+repetition_penalty 
+1.0 
+Neutralizes the penalty for 
+repeating sequences from the 
+input text. Essential for 
+verbatim extraction of clauses 
+and addresses. 
+top_k 
+0 
+Removes arbitrary token 
+limitation pools, allowing the 
+temperature=0 setting to 
+dominate the logit selection 
+purely based on probability. 
+min_p 
+0.0 
+Removes relative probability 
+cutoffs. 
+Deterministic Output Coercion: Pydantic and 
+Instructor 
+A foundational, catastrophic risk in utilizing LLMs for automated data extraction is their 
+inherently probabilistic nature. By default, LLMs predict the next token based on statistical 
+
+--- PAGE 11 ---
+likelihoods. Without strict constraints, this leads to structural deviations, missing closing 
+brackets, fabricated JSON keys, or data type violations (e.g., returning the string "Three" instead 
+of the integer 3). A gold standard pipeline cannot tolerate malformed JSON payloads. 
+To solve this, the pipeline must implement structural enforcement using the Instructor library 
+operating in tandem with Pydantic. Pydantic is a highly sophisticated Python library designed 
+for defining and validating structured data using native Python type hints. It operates effectively 
+as JSON Schema formulated in a Pythonic syntax, providing type validation, auto-parsing, and 
+clear traceback error messages. 
+The mechanics of this structured output pipeline are highly deterministic and bypass the need 
+for brittle prompt engineering techniques like "Please format your response as JSON": 
+1.​ Pydantic Model Definition: The data engineering team defines the required extraction 
+schemas (such as tender.json and industry.json) entirely as Python Pydantic classes (e.g., 
+class TenderMetadata(BaseModel): reference_number: str, cidb_grade: int). Strict 
+field-level validations are applied programmatically at this stage. 
+2.​ Schema Translation and Logit Bias: When the prompt is dispatched to the LLM via the 
+Instructor client, Instructor automatically translates the nested Pydantic models into a 
+strict JSON Schema payload. This schema is injected into the LLM API call using the 
+response_format parameter. 
+3.​ Deterministic Constraint: The LLM's underlying inference engine actively masks logits 
+(token probabilities) that would result in a violation of the JSON schema. If the schema 
+demands an integer for a field, the probability of the model generating a letter token is 
+mathematically reduced to absolute zero. It physically prevents the model from generating 
+text outside the bounds of the requested blueprint. As analysts working with FOIA 
+requests have noted, this constraint transforms raw LLM capabilities into reliable, highly 
+maintainable data processing pipelines. 
+4.​ Auto-Parsing and Retry Loops: Upon generation, Instructor automatically receives the 
+JSON string, parses it, and deeply validates it against the original Pydantic model. If an 
+anomaly manages to bypass the API constraint, Instructor possesses built-in mechanisms 
+to catch the error, dynamically append the exact validation error message to a new 
+prompt, and trigger an automated retry to force the LLM to correct its own mistake. 
+This architecture reduces the engineering complexity of parsing and ensures that the application 
+layer receives guaranteed, typed objects, allowing Instructor to handle the pure schema-first 
+extraction flows with maximum efficiency. 
+Deep Analysis of the Enrichment Pipeline Architecture 
+Implementing the aforementioned technologies, the specific data pipeline defined in the 
+enrichment.md framework executes a multi-stage process to transform raw context into 
+validated intelligence. 
+Stage 1: Document Classification and Industry Taxonomy 
+The initial stage operates as a wide-net filter, categorizing the document's core purpose and 
+assigning its overarching industry taxonomy to prevent misrouting downstream. 
+1.​ Context Retrieval: The vector database is queried using broad, generalized search 
+terms: "tender advert type, industry category, services scope". The retrieval engine 
+isolates and extracts the top 3 highest-signal text chunks containing metadata about the 
+
+--- PAGE 12 ---
+document's origin. 
+2.​ Schema Injection: These 3 chunks are injected into the Llama 4 Scout context window 
+alongside the strictly defined definitions located in the industry.json schema. 
+3.​ Classification Mechanics: 
+○​ Document Type Resolution: The MoE model analyzes the verbiage to distinguish 
+between a full "Tender" (a comprehensive RFQ/RFP containing detailed compliance 
+rules, SBD forms, and evaluation criteria matrices) and an "Advert" (a brief, 
+high-level notice lacking actionable bidding mechanics). 
+○​ Industry Taxonomy Mapping: The industry.json schema acts as a constraint 
+taxonomy, supporting 14 specific industries. Each industry block defines a strict 
+snake_case ID, a display name, and arrays of specializations, skills, and 
+capabilities. The LLM matches the document against this list, returning a highly 
+constrained ID (such as it_telecom, construction_civil, or manufacturing), while 
+simultaneously extracting and classifying the specific technical skills mentioned 
+within the text into the appropriate arrays. 
+Stage 2: Deep Schema Extraction 
+Following successful classification, the pipeline initiates a highly granular sweep for actionable 
+regulatory and financial attributes, moving from macro to micro analysis. 
+1.​ High-Signal Vector Search: The retrieval mechanism executes a dense vector search 
+using a synthesized query representing the entire target schema: "CIDB grading class of 
+work, briefing date venue compulsory, submission box address portal, tax compliance 
+CSD SBD forms, estimated value budget, functionality evaluation criteria threshold". 
+2.​ Context Window Aggregation: The chunking engine retrieves the top 6 most relevant 
+chunks, aggregating approximately 5,000 to 6,000 characters of highly dense, 
+layout-preserved context (retaining tables and hierarchical headers). 
+3.​ Target Schema Constraint (tender.json): The extracted context is passed to Llama 4 
+Scout, strictly constrained by the tender.json schema. This Pydantic-backed schema acts 
+as the ultimate blueprint, defining the exact administrative, financial, and technical 
+constraints required. 
+The tender.json extraction covers multiple critical domains simultaneously: 
+●​ tender_metadata: Isolates the primary reference number, institution type, category, and 
+geographical locality. 
+●​ critical_dates: Extracts exact timestamps for compulsory briefing sessions, final 
+submission closing dates, and bid validity periods. 
+●​ submission_mechanics: Determines whether the bid requires physical submission at a 
+specified box address, digital submission via an eTender portal, and the exact number of 
+physical and digital copies required. 
+●​ administrative_compliance: Hunts for boolean status flags or string data regarding CSD 
+registration requirements (e.g., MAAA numbers), SARS tax compliance PINs, CIPC 
+company registration proofs, and COIDA letters of good standing. 
+●​ statutory_forms: Populates a comprehensive boolean checklist identifying every 
+required SBD or MBD form mentioned in the text. 
+●​ preferential_procurement: Identifies whether the tender explicitly utilizes the 80/20 or 
+90/10 point system, or if it designates points for specific transformative goals. 
+●​ industry_credentials: Specifically targets the CIDB grading levels (e.g., Grade 6) and 
+the specific class of work (e.g., CE, GB), as well as other professional body registrations 
+
+--- PAGE 13 ---
+required to legally execute the contract. 
+●​ financial_criteria: Extracts total estimated ZAR values, localized budgets, or required 
+guarantees. 
+●​ technical_functionality: Extracts the minimum threshold percentages required to pass 
+from the functional evaluation stage to the pricing evaluation phase, alongside extracting 
+the entire evaluation criteria matrix into a structured object. 
+Stage 4: Normalization and Flat JSON Assembly 
+Because procurement documents are notoriously inconsistent, poorly drafted, or highly variable 
+in scope, certain requested fields defined in the rigid tender.json schema will inevitably be 
+entirely absent from the source text. 
+During the Normalization Stage, the pipeline programmatically inspects the extracted 
+key-value pairs returned by Instructor. Any fields that return empty strings, Python None types, 
+or literal "null" strings generated by the LLM are systematically standardized to the absolute 
+string value "Not found". This crucial sanitization step prevents downstream user interfaces and 
+mobile applications from triggering fatal null-reference exceptions when attempting to render 
+missing data points. 
+Simultaneously, the pipeline executes conditional logic to assemble a flat JSON payload 
+mapped to the target enrichment_example.md layout. This flattened payload architecture 
+minimizes nested complexity, containing a generatedAt timestamp, a unique tenderId, and a 
+flattened array of fields representing labels, extracted evidence strings, and internal status flags. 
+Crucially, the normalization engine implements an automated auditing and escalation protocol. If 
+a field deemed structurally critical—such as the closing date, the CIDB grade, or a mandatory 
+SBD form checklist—resolves to "Not found", the engine attaches a "status": "WARNING" flag to 
+that specific object within the array. Furthermore, all such flagged fields are aggregated into a 
+specialized criticalFieldsNeedingReview array within the payload. This human-in-the-loop 
+escalation pathway ensures that critical extraction failures or genuinely missing data points are 
+visually flagged for manual analyst review, rather than silently failing into production databases 
+where they could cause disastrous compliance breaches for end-users. 
+Stage 5: Manifest Merge and Firebase Synchronization 
+In the final operational stage, the system optimizes the data structure specifically for rapid 
+retrieval and rendering by the frontend application. Rather than forcing the client-side mobile or 
+web application to parse and download the entire heavy, deep JSON tree just to populate a 
+basic list view or search index, the pipeline executes a Manifest Merge. 
+Specific, high-utility top-level variables extracted from the document are promoted directly to a 
+lightweight manifest.json file. The promoted variables include: 
+●​ title 
+●​ organ_of_State 
+●​ cidb_grading 
+●​ preference_points 
+●​ briefingDate 
+By isolating and indexing these specific fields, the application architecture allows for 
+millisecond-latency search results, rapid filtering, and clean dashboard views without the 
+payload overhead of the relational extraction data. Once the manifest is merged and finalized, 
+the system flags the parent tender directory as fully enriched and automatically synchronizes 
+
+--- PAGE 14 ---
+the entire structured payload directory to the target Firebase cloud environment, finalizing the 
+automated ingestion and extraction cycle. 
+Global Interoperability: Mapping to the Open 
+Contracting Data Standard (OCDS) 
+While the enrichment pipeline relies on highly customized, localized schemas (industry.json and 
+tender.json) to navigate the specific idiosyncrasies of South African procurement law, a globally 
+mature system must prioritize international interoperability, transparency, and data portability. 
+The National Treasury of South Africa's eTender Publications Portal, managed by the Office of 
+the Chief Procurement Officer (OCPO), actively tracks and publishes procurement data 
+formatted to align with the Open Contracting Data Standard (OCDS). 
+The OCDS, developed by the Open Contracting Partnership, provides a standardized, globally 
+recognized data model to represent the entire lifecycle of public contracting, divided into five 
+distinct stages: Planning, Tender, Award, Contract, and Implementation. 
+OCDS Stage 
+Included Data Elements 
+Enabling Capabilities 
+Planning 
+Budgets, project plans, 
+procurement plans, market 
+studies. 
+Strategic planning, market 
+research. 
+Tender 
+Tender notices, specifications, 
+line items, values, important 
+dates, enquiries. 
+Competitive tendering, red flag 
+analysis. 
+Award 
+Details of award, bidder 
+information, awarded suppliers, 
+bid evaluation, values. 
+Efficient complaints 
+mechanism, link to beneficial 
+ownership data. 
+Contract 
+Final details, signed contract, 
+amendments, values. 
+Cross-border analysis. 
+Implementation 
+Payments, progress updates, 
+location, extensions, 
+milestones, termination info. 
+Tracking service delivery. 
+A gold standard extraction engine should ideally implement a post-processing transformation 
+layer that maps the custom tender.json extractions directly to the official OCDS Release 
+Schema (version 1.1.5). For instance, the data extracted under tender_metadata and 
+critical_dates maps seamlessly to the OCDS Tender object, specifically populating the tender 
+notices, specifications, and important dates sub-fields. 
+By utilizing compilation tools such as 
+o[span_195](start_span)[span_195](end_span)[span_199](start_span)[span_199](end_span)cd
+skit (e.g., ocdskit --pretty compile --published-date... --schema schema/release-schema.json), 
+the system can systematically combine localized schema outputs into unified, versioned OCDS 
+release packages. This ensures that the extracted data is instantly compatible with international 
+anti-corruption monitoring tools, cross-border trade analysis platforms, and open-source data 
+visualization dashboards. Furthermore, because the OCPO's publication policy mandates full 
+compliance with the Promotion of Personal Information Act (POPIA), ensuring that personal 
+information related to bidders is excluded unless consent is provided, the extraction engine can 
+utilize OCDS extensions to automatically redact or mask sensitive PII prior to data 
+
+--- PAGE 15 ---
+synchronization, maintaining rigorous legal compliance. 
+Conclusion 
+The architecture detailed herein transcends legacy text extraction techniques, defining a 
+resilient, mathematically sound paradigm for regulatory digitization. By deconstructing the 
+extraction process through strict first principles, it is evident that successfully digitizing South 
+African public procurement data requires a highly orchestrated symphony of advanced 
+computational disciplines. 
+The engine must first acknowledge and respect the geometric reality of the PDF canvas, 
+utilizing state-of-the-art layout-aware vision models like Docling or MinerU to ensure that 
+multi-page evaluation matrices, pricing tables, and hierarchical structures survive the 
+visual-to-text translation intact. Secondly, it must utilize intelligent, layout-aware vector retrieval 
+to isolate high-signal context blocks without arbitrarily cleaving semantic relationships. Thirdly, 
+the reasoning engine—driven by highly efficient, multi-modal MoE architectures like Llama 4 
+Scout—must be intimately tethered to the ground truth of the regulatory domain, possessing the 
+predefined computational vocabulary required to navigate 9-tier CIDB gradings, 80/20 
+preferential point formulations, CSD MAAA database identifiers, and dynamically verifiable 
+SARS TCS PINs. 
+Finally, the inherent stochastic nature of large language models must be ruthlessly suppressed 
+through deterministic Pydantic schema validation and Instructor integration, forcing the output 
+into flawless JSON topologies complete with automated null-state normalizations and 
+human-in-the-loop warning flags. By rigorously adhering to this architectural blueprint, 
+organizations can deploy a genuine gold standard extraction pipeline, capable of converting 
+highly complex, unstructured regulatory artifacts into structured, actionable, and globally 
+interoperable intelligence with unprecedented scale and fidelity. 
+Works cited 
+1. Best PDF Parsers for AI and RAG Workflows in 2026 - Firecrawl, 
+https://www.firecrawl.dev/blog/best-pdf-parsers 2. Document Parsing for RAG: A Complete 
+Guide for 2026 - Omdena, https://www.omdena.com/blog/document-parsing-for-rag 3. SBD 
+Forms Complete Guide: What Each Standard Bidding Document Requires in 2026, 
+https://www.tenders-sa.org/blog/general-procurement-guide-2026-03-25 4. Blog | How To 
+Compile A Tender Bid Pack South Africa 2026, 
+https://tenderprosa.co.za/blog/how-to-compile-a-tender-bid-pack-south-africa-2026 5. SCM-Bid 
+documents SBD 1 - The Presidency, 
+https://thepresidency.gov.za/sites/default/files/2025-05/BID%20DOCUMENT%20PO%202025.2
+6_008.pdf 6. New Preferential Procurement Regulations: a "placeholder" - Webber Wentzel, 
+https://www.webberwentzel.com/News/Pages/new-preferential-procurement-regulations-a-place
+holder.aspx 7. New Preferential Procurement Regulations will give state organs more discretion 
+to implement their own procurement policies - ENS, 
+https://www.ensafrica.com/news/detail/6438/new-preferential-procurement-regulations-will 8. 
+Preferential Procurement Policy Framework Act: Regulations, 
+https://www.gov.za/sites/default/files/gcis_document/202203/46026reg11403gon1851.pdf 9. 
+IMPLEMENTATION GUIDE: PREFERENTIAL PROCUREMENT REGULATIONS, 2022 - OCPO 
+Website, 
+
+--- PAGE 16 ---
+https://ocpo.treasury.gov.za/Legislation/guidelines/IMPLEMENTATION%20GUIDE%20PPR%20
+2022%20-%20MARCH%202023%20VERSION%201.pdf 10. PREFERENTIAL 
+PROCUREMENT POLICY - Garden Route District Municipality, 
+https://www.gardenroute.gov.za/wp-content/uploads/2024/06/Preferential-Procurement-Policy-2
+024.pdf 11. Climbing the – grades Ladder - CIDB, 
+https://www.cidb.org.za/download/50/brochures/13958/climbing-the-grades-ladder.pdf 12. 
+Requirements For Grading - CIDB, 
+https://www.cidb.org.za/contractors/register-of-contractors/requirements-for-grading/ 13. 
+Overview of the Register of Contractors - CIDB, 
+https://www.cidb.org.za/contractors/register-of-contractors/overview/ 14. Compliance | Cidb 
+Grading - TenderProSA, https://tenderprosa.co.za/compliance/cidb-grading 15. Understanding 
+the CIDB Rating System in South Africa | CivilSure®, 
+https://civilsure.co.za/understanding-the-cidb-rating-system-in-south-africa/ 16. CIDB 
+GRADING: 4GB/3GBPE OR HIGHER - Tswelopele Local Municipality, 
+https://www.tswelopele.gov.za/wp-content/uploads/2025/11/TENDER-DOC-SCM-TSW-13-2025-
+2026-REFURBISHMENT-OF-HOOPSTAD-LANDFILL-SITE-AND-ASSOCIATED-INFRASTRUC
+TURE.pdf 17. DOH180-2025/2026 REQUEST FOR WRITTEN PRICE QUOTATION, 
+https://www.health.gov.za/wp-content/uploads/2025/07/DOH180-2025.2026.pdf 18. CIDB 
+Grading Designations and Classes of Construction Works - MarketDirect, 
+https://community.marketdirect.co.za/portal/en-gb/kb/articles/cidb-grading-designations-and-clas
+ses-of-construction-works 19. SBD FORMS, 
+https://www.etenders.gov.za/home/Download/?blobName=54ccbc71-822d-4edd-8ddd-70d5f196
+912e.pdf&downloadedFileName=SBD%20FORMS.pdf 20. Central Supplier Database 
+Registration FAQ - Casidra, 
+https://www.casidra.co.za/wp-content/uploads/2025/04/CSD-Registration-FAQ.pdf 21. Supplier 
+Databases | Western Cape Government, 
+https://www.westerncape.gov.za/treasury/supplier-databases 22. Registration Process - Central 
+Supplier Database Application - CSD, https://secure.csd.gov.za/Home/RegistrationProcess 23. 
+Blog | Csd Registration Guide South Africa 2026 | TenderProSA, 
+https://tenderprosa.co.za/blog/csd-registration-guide-south-africa-2026 24. Register user - 
+Central Supplier Database Application, https://secure.csd.gov.za/Account/Register 25. Guide to 
+the Tax Compliance Status functionality on eFiling | South African Revenue Service, 
+https://www.sars.gov.za/guide-to-the-tax-compliance-status-functionality-on-efiling/ 26. How to 
+request your Tax Compliance Status | South African Revenue Service, 
+https://www.sars.gov.za/individuals/manage-your-tax-compliance-status/how-to-request-your-tax
+-compliance-status/ 27. TAX COMPLIANCE STATUS PIN Issued - University of Cape Town, 
+https://uct.ac.za/sites/default/files/content_migration/uct_ac_za/39/files/tax_clearance_pin.pdf 
+28. SBD 1 PART A INVITATION TO BID - Department of Science and Innovation, 
+https://www.dsti.gov.za/images/2021/Bid_documents.pdf 29. Beyond extract_text: The Two 
+Layers of a PDF That Drive RAG Quality, 
+https://towardsdatascience.com/beyond-extract_text-the-two-layers-of-a-pdf-that-drive-rag-qualit
+y/ 30. Advanced RAG: Layout Aware and multi-document RAG. Part 1 : Layout aware parsing 
+and chunking of documents | by Viraj Kadam, 
+https://viraajkadam.medium.com/advanced-rag-layout-aware-and-multi-document-rag-f45cb0d5
+838d 31. Index - Docling - GitHub Pages, https://docling-project.github.io/docling/ 32. A new tool 
+to unlock data from enterprise documents for generative AI - IBM Research, 
+https://research.ibm.com/blog/docling-generative-AI 33. docling-project/docling: Get your 
+documents ready for gen AI - GitHub, https://github.com/docling-project/docling 34. Docling is a 
+
+--- PAGE 17 ---
+new library from IBM that efficiently parses PDF, DOCX, and PPTX and exports them to 
+Markdown and JSON. - Reddit, 
+https://www.reddit.com/r/LocalLLaMA/comments/1ghbmoq/docling_is_a_new_library_from_ibm
+_that/ 35. GitHub - opendatalab/MinerU: Transforms complex documents like PDFs and Office 
+docs into LLM-ready markdown/JSON for your Agentic workflows., 
+https://github.com/opendatalab/mineru 36. opendatalab/MinerU-Ecosystem - GitHub, 
+https://github.com/opendatalab/MinerU-Ecosystem 37. Text Parsing Software for PDFs & 
+Complex Docs | LlamaIndex, https://www.llamaindex.ai/services/text-parsing-software 38. 
+LlamaParse Update: New Modes & Upcoming Features - LlamaIndex, 
+https://www.llamaindex.ai/blog/llamaparse-update-new-and-upcoming-features 39. Extract Data 
+From PDF Tables: Row-Level Guide - LlamaIndex, 
+https://www.llamaindex.ai/blog/extracting-repeating-entities-from-documents 40. Extracting Data 
+from PDFs: A Developer's Guide to Techniques and Tools - Docsumo, 
+https://www.docsumo.com/blog/extracting-data-from-pdfs 41. Open-Source LightOnOCR-2 Just 
+Outscored Claude, GPT-5, Qwen3, Mistral and Mathpix at Table Extraction - LightOn AI, 
+https://lighton.ai/lighton-blogs/open-source-lightonocr-2-just-outscored-claude-gpt-5-qwen3-mist
+ral-and-mathpix-at-table-extraction 42. Benchmarking PDF Parsers on Table Extraction with 
+LLM-based Semantic Evaluation, https://arxiv.org/html/2603.18652v1 43. MinerU, 
+https://opendatalab.github.io/MinerU/ 44. High-Precision Table Extraction from Complex PDFs : 
+r/Rag - Reddit, 
+https://www.reddit.com/r/Rag/comments/1sk0reu/highprecision_table_extraction_from_complex
+_pdfs/ 45. How we Chunk - turning PDF's into hierarchical structure for RAG : r/LangChain - 
+Reddit, 
+https://www.reddit.com/r/LangChain/comments/1dpbc4g/how_we_chunk_turning_pdfs_into_hier
+archical/ 46. Llama 4 Scout - API Pricing & Benchmarks | OpenRouter, 
+https://openrouter.ai/meta-llama/llama-4-scout 47. Meta Llama API and Models | OpenRouter, 
+https://openrouter.ai/meta-llama 48. Models - OpenRouter, https://openrouter.ai/models 49. 
+Llama 4 Maverick - API Pricing & Benchmarks | OpenRouter, 
+https://openrouter.ai/meta-llama/llama-4-maverick 50. Meta: Llama 4 Maverick – API Quickstart | 
+OpenRouter, https://openrouter.ai/meta-llama/llama-4-maverick/api 51. Structured output with 
+Instructor - Writer AI Studio, https://dev.writer.com/home/integrations/instructor 52. 
+567-labs/instructor: structured outputs for llms - GitHub, https://github.com/567-labs/instructor 
+53. How I Get LLMs on Hugging Face to Speak Structured Data? The Two-Library Magic 
+(Instructor + Pydantic) - Medium, 
+https://medium.com/@jenlindadsouza/how-i-get-llms-on-hugging-face-to-speak-structured-data-
+1fb34bf15792 54. Your First LLM Extraction: Structured Outputs Tutorial - Instructor, 
+https://python.useinstructor.com/learning/getting_started/first_extraction/ 55. Structured Outputs: 
+Making LLMs Reliable for Document Processing | by Nick Hagar, 
+https://generative-ai-newsroom.com/structured-outputs-making-llms-reliable-for-document-proce
+ssing-c3b6b2baed36 56. South Africa: National Treasury | OCP Data Registry - Open 
+Contracting Partnership, https://data.open-contracting.org/en/publication/143 57. How does the 
+OCDS work? - Open Contracting Data Standard, 
+https://standard.open-contracting.org/latest/en/primer/how/ 58. Open Contracting Data 
+Standard, https://www.open-contracting.org/data-standard/ 59. Release Reference — Open 
+Contracting Data Standard 1.1.5 documentation, 
+https://standard.open-contracting.org/latest/en/schema/reference/ 60. Open Contracting Data 
+Standard - Documents & Reports, 
+https://documents1.worldbank.org/curated/en/744551614955316901/pdf/Open-Contracting-Dat
+
+--- PAGE 18 ---
+a-Standard.pdf 61. Documentation of the Open Contracting Data Standard (OCDS) - GitHub, 
+https://github.com/open-contracting/standard 

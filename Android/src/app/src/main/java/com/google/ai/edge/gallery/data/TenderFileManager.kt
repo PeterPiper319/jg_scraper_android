@@ -9,7 +9,7 @@ class TenderFileManager(private val context: Context) {
         private const val SCRAPE_SESSION_FILENAME = "scrape-automation-session.json"
         private const val SCRAPE_SESSION_MARKER_FILENAME = ".scrape-session-id"
         private const val FIREBASE_UPLOADED_MARKER_FILENAME = ".firebase-uploaded"
-        private const val GEMMA_ENRICHMENT_FILENAME = "gemma-manifest-enrichment.json"
+        private const val GEMMA_ENRICHMENT_FILENAME = "concept-manifest-enrichment.json"
     }
 
     private fun sanitizeTenderNumber(tenderNumber: String): String {

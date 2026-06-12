@@ -1,0 +1,1531 @@
+{
+  "$defs": {
+    "AdministrativeCompliance": {
+      "properties": {
+        "csd_registration_required": {
+          "description": "Whether Central Supplier Database registration is required",
+          "title": "Csd Registration Required",
+          "type": "boolean"
+        },
+        "sars_tax_compliance_pin_required": {
+          "description": "Whether a valid SARS tax compliance status PIN is required",
+          "title": "Sars Tax Compliance Pin Required",
+          "type": "boolean"
+        },
+        "cipc_annual_returns_good_standing_required": {
+          "description": "Whether CIPC annual returns proof of good standing is required",
+          "title": "Cipc Annual Returns Good Standing Required",
+          "type": "boolean"
+        },
+        "coida_letter_of_good_standing_required": {
+          "description": "Whether COIDA letter of good standing is required",
+          "title": "Coida Letter Of Good Standing Required",
+          "type": "boolean"
+        },
+        "uif_registration_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether registration with UIF is required",
+          "title": "Uif Registration Required"
+        },
+        "paye_registration_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether registration for PAYE is required",
+          "title": "Paye Registration Required"
+        },
+        "bank_confirmation_letter_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether a bank confirmation letter is required",
+          "title": "Bank Confirmation Letter Required"
+        },
+        "certified_director_id_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether certified copies of directors' IDs are required",
+          "title": "Certified Director Id Required"
+        },
+        "certified_id_max_age_months": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Maximum age of ID certifications in months (e.g. 3 or 6)",
+          "title": "Certified Id Max Age Months"
+        },
+        "municipal_account_arrears_allowed_days": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 90,
+          "description": "Maximum allowed days in arrears for municipal accounts",
+          "title": "Municipal Account Arrears Allowed Days"
+        },
+        "insurance_requirements": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/InsuranceRequirements"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "csd_registration_required",
+        "sars_tax_compliance_pin_required",
+        "cipc_annual_returns_good_standing_required",
+        "coida_letter_of_good_standing_required"
+      ],
+      "title": "AdministrativeCompliance",
+      "type": "object"
+    },
+    "CidbRequirements": {
+      "properties": {
+        "is_required": {
+          "description": "Whether CIDB registration is required for construction works",
+          "title": "Is Required",
+          "type": "boolean"
+        },
+        "minimum_grade": {
+          "anyOf": [
+            {
+              "maximum": 9,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Minimum CIDB grade required (1 to 9)",
+          "title": "Minimum Grade"
+        },
+        "potentially_emerging_status_accepted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether PE (potentially emerging) contractor status is accepted",
+          "title": "Potentially Emerging Status Accepted"
+        },
+        "class_of_work": {
+          "anyOf": [
+            {
+              "enum": [
+                "GB",
+                "CE",
+                "ME",
+                "EB",
+                "EP",
+                "EE",
+                "SQ",
+                "SL",
+                "SH",
+                "SG",
+                "SK",
+                "SO",
+                "SE",
+                "N/A"
+              ],
+              "type": "string"
+            },
+            {
+              "const": "N/A",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "CIDB work class code (e.g. GB, CE)",
+          "title": "Class Of Work"
+        }
+      },
+      "required": [
+        "is_required"
+      ],
+      "title": "CidbRequirements",
+      "type": "object"
+    },
+    "CompulsoryBriefing": {
+      "properties": {
+        "is_compulsory": {
+          "description": "Whether attendance at the briefing session is mandatory",
+          "title": "Is Compulsory",
+          "type": "boolean"
+        },
+        "briefing_date_time": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date and time of the briefing session",
+          "title": "Briefing Date Time"
+        },
+        "briefing_venue": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Physical location or virtual meeting details of the briefing",
+          "title": "Briefing Venue"
+        },
+        "attendance_register_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether bidders must sign an attendance register",
+          "title": "Attendance Register Required"
+        }
+      },
+      "required": [
+        "is_compulsory"
+      ],
+      "title": "CompulsoryBriefing",
+      "type": "object"
+    },
+    "CriticalDates": {
+      "properties": {
+        "publish_date": {
+          "description": "Date when the tender was advertised or published (YYYY-MM-DD)",
+          "title": "Publish Date",
+          "type": "string"
+        },
+        "compulsory_briefing": {
+          "$ref": "#/$defs/CompulsoryBriefing",
+          "description": "Details of the briefing session"
+        },
+        "site_inspection": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SiteInspection"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "closing_date_time": {
+          "description": "Deadline for tender submission (ISO 8601 YYYY-MM-DDTHH:MM:SS)",
+          "title": "Closing Date Time",
+          "type": "string"
+        },
+        "validity_period_days": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of days the tender submission must remain valid",
+          "title": "Validity Period Days"
+        }
+      },
+      "required": [
+        "publish_date",
+        "compulsory_briefing",
+        "closing_date_time"
+      ],
+      "title": "CriticalDates",
+      "type": "object"
+    },
+    "EvaluationCriterion": {
+      "properties": {
+        "criterion_name": {
+          "description": "Name of the criterion (e.g., Company Experience, Key Personnel)",
+          "title": "Criterion Name",
+          "type": "string"
+        },
+        "max_points": {
+          "description": "Maximum points available for this criterion",
+          "title": "Max Points",
+          "type": "number"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Brief description of the scoring details",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "criterion_name",
+        "max_points"
+      ],
+      "title": "EvaluationCriterion",
+      "type": "object"
+    },
+    "EvidenceMap": {
+      "properties": {
+        "tender_metadata_tender_reference_number": {
+          "description": "Exact verbatim text snippet showing the tender reference number. Use 'Not found' if missing.",
+          "title": "Tender Metadata Tender Reference Number",
+          "type": "string"
+        },
+        "tender_metadata_tender_title": {
+          "description": "Exact verbatim text snippet showing the tender title. Use 'Not found' if missing.",
+          "title": "Tender Metadata Tender Title",
+          "type": "string"
+        },
+        "tender_metadata_tender_description": {
+          "description": "Exact verbatim text snippet showing the detailed tender description or scope. Use 'Not found' if missing.",
+          "title": "Tender Metadata Tender Description",
+          "type": "string"
+        },
+        "tender_metadata_issuing_institution": {
+          "description": "Exact verbatim text snippet showing the issuing institution/organ of state. Use 'Not found' if missing.",
+          "title": "Tender Metadata Issuing Institution",
+          "type": "string"
+        },
+        "tender_metadata_institution_type": {
+          "description": "Exact verbatim text snippet showing the institution type. Use 'Not found' if missing.",
+          "title": "Tender Metadata Institution Type",
+          "type": "string"
+        },
+        "tender_metadata_procurement_category": {
+          "description": "Exact verbatim text snippet showing the procurement category. Use 'Not found' if missing.",
+          "title": "Tender Metadata Procurement Category",
+          "type": "string"
+        },
+        "tender_metadata_geographic_locality_province": {
+          "description": "Exact verbatim text snippet showing the province. Use 'Not found' if missing.",
+          "title": "Tender Metadata Geographic Locality Province",
+          "type": "string"
+        },
+        "tender_metadata_geographic_locality_district_municipality": {
+          "description": "Exact verbatim text snippet showing the district municipality. Use 'Not found' if missing.",
+          "title": "Tender Metadata Geographic Locality District Municipality",
+          "type": "string"
+        },
+        "tender_metadata_geographic_locality_local_municipality": {
+          "description": "Exact verbatim text snippet showing the local municipality. Use 'Not found' if missing.",
+          "title": "Tender Metadata Geographic Locality Local Municipality",
+          "type": "string"
+        },
+        "tender_metadata_geographic_locality_ward": {
+          "description": "Exact verbatim text snippet showing the ward. Use 'Not found' if missing.",
+          "title": "Tender Metadata Geographic Locality Ward",
+          "type": "string"
+        },
+        "critical_dates_publish_date": {
+          "description": "Exact verbatim text snippet showing the publish date. Use 'Not found' if missing.",
+          "title": "Critical Dates Publish Date",
+          "type": "string"
+        },
+        "critical_dates_compulsory_briefing_is_compulsory": {
+          "description": "Exact verbatim text snippet stating whether the briefing is compulsory. Use 'Not found' if missing.",
+          "title": "Critical Dates Compulsory Briefing Is Compulsory",
+          "type": "string"
+        },
+        "critical_dates_compulsory_briefing_briefing_date_time": {
+          "description": "Exact verbatim text snippet showing the briefing date and time. Use 'Not found' if missing.",
+          "title": "Critical Dates Compulsory Briefing Briefing Date Time",
+          "type": "string"
+        },
+        "critical_dates_compulsory_briefing_briefing_venue": {
+          "description": "Exact verbatim text snippet showing the briefing venue/meeting link. Use 'Not found' if missing.",
+          "title": "Critical Dates Compulsory Briefing Briefing Venue",
+          "type": "string"
+        },
+        "critical_dates_closing_date_time": {
+          "description": "Exact verbatim text snippet showing the closing date/time. Use 'Not found' if missing.",
+          "title": "Critical Dates Closing Date Time",
+          "type": "string"
+        },
+        "critical_dates_validity_period_days": {
+          "description": "Exact verbatim text snippet showing the validity period in days. Use 'Not found' if missing.",
+          "title": "Critical Dates Validity Period Days",
+          "type": "string"
+        },
+        "submission_mechanics_submission_method": {
+          "description": "Exact verbatim text snippet showing the submission method. Use 'Not found' if missing.",
+          "title": "Submission Mechanics Submission Method",
+          "type": "string"
+        },
+        "submission_mechanics_physical_box_address": {
+          "description": "Exact verbatim text snippet showing the physical box address. Use 'Not found' if missing.",
+          "title": "Submission Mechanics Physical Box Address",
+          "type": "string"
+        },
+        "submission_mechanics_electronic_portal_url": {
+          "description": "Exact verbatim text snippet showing the electronic portal url. Use 'Not found' if missing.",
+          "title": "Submission Mechanics Electronic Portal Url",
+          "type": "string"
+        },
+        "submission_mechanics_required_hard_copies": {
+          "description": "Exact verbatim text snippet showing the number of hard copies. Use 'Not found' if missing.",
+          "title": "Submission Mechanics Required Hard Copies",
+          "type": "string"
+        },
+        "administrative_compliance_csd_registration_required": {
+          "description": "Exact verbatim text snippet showing if CSD registration is required. Use 'Not found' if missing.",
+          "title": "Administrative Compliance Csd Registration Required",
+          "type": "string"
+        },
+        "administrative_compliance_sars_tax_compliance_pin_required": {
+          "description": "Exact verbatim text snippet showing if SARS tax compliance status PIN is required. Use 'Not found' if missing.",
+          "title": "Administrative Compliance Sars Tax Compliance Pin Required",
+          "type": "string"
+        },
+        "administrative_compliance_cipc_annual_returns_good_standing_required": {
+          "description": "Exact verbatim text snippet showing if CIPC annual returns good standing is required. Use 'Not found' if missing.",
+          "title": "Administrative Compliance Cipc Annual Returns Good Standing Required",
+          "type": "string"
+        },
+        "administrative_compliance_coida_letter_of_good_standing_required": {
+          "description": "Exact verbatim text snippet showing if COIDA letter of good standing is required. Use 'Not found' if missing.",
+          "title": "Administrative Compliance Coida Letter Of Good Standing Required",
+          "type": "string"
+        },
+        "preferential_procurement_scoring_system_applicable": {
+          "description": "Exact verbatim text snippet showing the preference point scoring system (80/20 or 90/10). Use 'Not found' if missing.",
+          "title": "Preferential Procurement Scoring System Applicable",
+          "type": "string"
+        },
+        "industry_credentials_cidb_requirements_is_required": {
+          "description": "Exact verbatim text snippet showing if CIDB registration is required. Use 'Not found' if missing.",
+          "title": "Industry Credentials Cidb Requirements Is Required",
+          "type": "string"
+        },
+        "industry_credentials_cidb_requirements_minimum_grade": {
+          "description": "Exact verbatim text snippet showing the minimum CIDB grade. Use 'Not found' if missing.",
+          "title": "Industry Credentials Cidb Requirements Minimum Grade",
+          "type": "string"
+        },
+        "industry_credentials_cidb_requirements_class_of_work": {
+          "description": "Exact verbatim text snippet showing the CIDB class of work. Use 'Not found' if missing.",
+          "title": "Industry Credentials Cidb Requirements Class Of Work",
+          "type": "string"
+        },
+        "financial_criteria_estimated_tender_value_zar": {
+          "description": "Exact verbatim text snippet showing the estimated tender value or budget. Use 'Not found' if missing.",
+          "title": "Financial Criteria Estimated Tender Value Zar",
+          "type": "string"
+        },
+        "financial_criteria_audited_financials_required": {
+          "description": "Exact verbatim text snippet showing if audited financials are required. Use 'Not found' if missing.",
+          "title": "Financial Criteria Audited Financials Required",
+          "type": "string"
+        },
+        "technical_functionality_has_functionality_threshold": {
+          "description": "Exact verbatim text snippet showing if a technical functionality threshold is required. Use 'Not found' if missing.",
+          "title": "Technical Functionality Has Functionality Threshold",
+          "type": "string"
+        },
+        "technical_functionality_minimum_threshold_percentage": {
+          "description": "Exact verbatim text snippet showing the minimum functionality threshold percentage. Use 'Not found' if missing.",
+          "title": "Technical Functionality Minimum Threshold Percentage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "tender_metadata_tender_reference_number",
+        "tender_metadata_tender_title",
+        "tender_metadata_tender_description",
+        "tender_metadata_issuing_institution",
+        "tender_metadata_institution_type",
+        "tender_metadata_procurement_category",
+        "tender_metadata_geographic_locality_province",
+        "tender_metadata_geographic_locality_district_municipality",
+        "tender_metadata_geographic_locality_local_municipality",
+        "tender_metadata_geographic_locality_ward",
+        "critical_dates_publish_date",
+        "critical_dates_compulsory_briefing_is_compulsory",
+        "critical_dates_compulsory_briefing_briefing_date_time",
+        "critical_dates_compulsory_briefing_briefing_venue",
+        "critical_dates_closing_date_time",
+        "critical_dates_validity_period_days",
+        "submission_mechanics_submission_method",
+        "submission_mechanics_physical_box_address",
+        "submission_mechanics_electronic_portal_url",
+        "submission_mechanics_required_hard_copies",
+        "administrative_compliance_csd_registration_required",
+        "administrative_compliance_sars_tax_compliance_pin_required",
+        "administrative_compliance_cipc_annual_returns_good_standing_required",
+        "administrative_compliance_coida_letter_of_good_standing_required",
+        "preferential_procurement_scoring_system_applicable",
+        "industry_credentials_cidb_requirements_is_required",
+        "industry_credentials_cidb_requirements_minimum_grade",
+        "industry_credentials_cidb_requirements_class_of_work",
+        "financial_criteria_estimated_tender_value_zar",
+        "financial_criteria_audited_financials_required",
+        "technical_functionality_has_functionality_threshold",
+        "technical_functionality_minimum_threshold_percentage"
+      ],
+      "title": "EvidenceMap",
+      "type": "object"
+    },
+    "FinancialCriteria": {
+      "properties": {
+        "estimated_tender_value_zar": {
+          "description": "Estimated value or budget of the tender in South African Rands (ZAR)",
+          "title": "Estimated Tender Value Zar",
+          "type": "number"
+        },
+        "pricing_schedule_format_strict": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether the pricing template/BoQ must be strictly followed without alterations",
+          "title": "Pricing Schedule Format Strict"
+        },
+        "vat_inclusive_pricing_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": true,
+          "description": "Whether prices must be quoted inclusive of VAT",
+          "title": "Vat Inclusive Pricing Required"
+        },
+        "audited_financials_required": {
+          "description": "Whether audited financial statements are required",
+          "title": "Audited Financials Required",
+          "type": "boolean"
+        },
+        "required_financial_years": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 0,
+          "description": "Number of years of audited financials required",
+          "title": "Required Financial Years"
+        },
+        "credit_or_working_capital_proof_zar": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": 0.0,
+          "description": "Minimum ZAR amount of credit or working capital proof required",
+          "title": "Credit Or Working Capital Proof Zar"
+        }
+      },
+      "required": [
+        "estimated_tender_value_zar",
+        "audited_financials_required"
+      ],
+      "title": "FinancialCriteria",
+      "type": "object"
+    },
+    "GeographicLocality": {
+      "properties": {
+        "province": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Province"
+        },
+        "district_municipality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "District Municipality"
+        },
+        "local_municipality": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Local Municipality"
+        },
+        "ward": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ward"
+        }
+      },
+      "title": "GeographicLocality",
+      "type": "object"
+    },
+    "IndustryCredentials": {
+      "properties": {
+        "cidb_requirements": {
+          "$ref": "#/$defs/CidbRequirements",
+          "description": "CIDB construction industry credentials required"
+        },
+        "professional_body_registrations": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/ProfessionalBodyRegistration"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Professional Body Registrations"
+        }
+      },
+      "required": [
+        "cidb_requirements"
+      ],
+      "title": "IndustryCredentials",
+      "type": "object"
+    },
+    "InsuranceRequirements": {
+      "properties": {
+        "public_liability_min_zar": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Minimum ZAR value required for public liability insurance",
+          "title": "Public Liability Min Zar"
+        },
+        "professional_indemnity_min_zar": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Minimum ZAR value required for professional indemnity insurance",
+          "title": "Professional Indemnity Min Zar"
+        },
+        "car_insurance_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether motor vehicle insurance is required",
+          "title": "Car Insurance Required"
+        }
+      },
+      "title": "InsuranceRequirements",
+      "type": "object"
+    },
+    "LocalContentRequirement": {
+      "properties": {
+        "is_designated_sector": {
+          "description": "Whether the tender falls under a designated local production sector",
+          "title": "Is Designated Sector",
+          "type": "boolean"
+        },
+        "designated_sector_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Name of the designated sector (e.g. Steel Products, Furniture)",
+          "title": "Designated Sector Name"
+        },
+        "minimum_local_content_threshold_percent": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Minimum percentage threshold for local content",
+          "title": "Minimum Local Content Threshold Percent"
+        }
+      },
+      "required": [
+        "is_designated_sector"
+      ],
+      "title": "LocalContentRequirement",
+      "type": "object"
+    },
+    "MbdForms": {
+      "properties": {
+        "mbd_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 1 Required"
+        },
+        "mbd_3_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 3 1 Required"
+        },
+        "mbd_3_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 3 2 Required"
+        },
+        "mbd_3_3_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 3 3 Required"
+        },
+        "mbd_4_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 4 Required"
+        },
+        "mbd_6_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 6 1 Required"
+        },
+        "mbd_6_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 6 2 Required"
+        },
+        "mbd_7_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 7 1 Required"
+        },
+        "mbd_7_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 7 2 Required"
+        },
+        "mbd_8_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 8 Required"
+        },
+        "mbd_9_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 9 Required"
+        },
+        "mbd_15_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Mbd 15 Required"
+        }
+      },
+      "title": "MbdForms",
+      "type": "object"
+    },
+    "PreferentialProcurement": {
+      "properties": {
+        "scoring_system_applicable": {
+          "description": "Preference point system (e.g., 80/20 or 90/10)",
+          "enum": [
+            "80/20",
+            "90/10",
+            "80/20 or 90/10",
+            "None"
+          ],
+          "title": "Scoring System Applicable",
+          "type": "string"
+        },
+        "is_income_generating": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "description": "Whether this is an income-generating contract",
+          "title": "Is Income Generating"
+        },
+        "specific_goals_allocation": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/SpecificGoalAllocation"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Specific Goals Allocation"
+        },
+        "local_content_requirement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LocalContentRequirement"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "scoring_system_applicable"
+      ],
+      "title": "PreferentialProcurement",
+      "type": "object"
+    },
+    "ProfessionalBodyRegistration": {
+      "properties": {
+        "body_code": {
+          "description": "Regulatory body acronym (e.g. PSIRA, ECSA)",
+          "enum": [
+            "CIDB",
+            "PSIRA",
+            "NHBRC",
+            "ECSA",
+            "ICASA",
+            "ISO",
+            "SAHRA",
+            "SABS",
+            "SAFCEC",
+            "MBSA",
+            "SABPP"
+          ],
+          "title": "Body Code",
+          "type": "string"
+        },
+        "registration_level": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required level or category of registration",
+          "title": "Registration Level"
+        },
+        "is_compulsory": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": true,
+          "description": "Whether registration is mandatory prior to award",
+          "title": "Is Compulsory"
+        }
+      },
+      "required": [
+        "body_code"
+      ],
+      "title": "ProfessionalBodyRegistration",
+      "type": "object"
+    },
+    "SbdForms": {
+      "properties": {
+        "sbd_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 1 Required"
+        },
+        "sbd_3_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 3 1 Required"
+        },
+        "sbd_3_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 3 2 Required"
+        },
+        "sbd_3_3_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 3 3 Required"
+        },
+        "sbd_4_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 4 Required"
+        },
+        "sbd_6_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 6 1 Required"
+        },
+        "sbd_6_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 6 2 Required"
+        },
+        "sbd_7_1_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 7 1 Required"
+        },
+        "sbd_7_2_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 7 2 Required"
+        },
+        "sbd_8_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 8 Required"
+        },
+        "sbd_9_required": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": false,
+          "title": "Sbd 9 Required"
+        }
+      },
+      "title": "SbdForms",
+      "type": "object"
+    },
+    "SiteInspection": {
+      "properties": {
+        "is_compulsory": {
+          "description": "Whether a physical site inspection is mandatory",
+          "title": "Is Compulsory",
+          "type": "boolean"
+        },
+        "inspection_date_time": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date and time of the site inspection",
+          "title": "Inspection Date Time"
+        },
+        "inspection_venue": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Venue or location of the site inspection",
+          "title": "Inspection Venue"
+        }
+      },
+      "required": [
+        "is_compulsory"
+      ],
+      "title": "SiteInspection",
+      "type": "object"
+    },
+    "SpecificGoalAllocation": {
+      "properties": {
+        "goal_type": {
+          "description": "The type of specific goal being targeted",
+          "enum": [
+            "B-BBEE Contributor Level",
+            "Black Ownership",
+            "Black Women Ownership",
+            "Youth Ownership",
+            "Disability Ownership",
+            "Locality",
+            "SMME Promotion",
+            "Military Veterans",
+            "Other"
+          ],
+          "title": "Goal Type",
+          "type": "string"
+        },
+        "allocated_points": {
+          "description": "Points allocated for matching this goal",
+          "title": "Allocated Points",
+          "type": "number"
+        },
+        "target_percentage_threshold": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Required target ownership/participation percentage",
+          "title": "Target Percentage Threshold"
+        },
+        "required_evidence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Proof document required (e.g. BBBEE Certificate, CSD report)",
+          "title": "Required Evidence"
+        }
+      },
+      "required": [
+        "goal_type",
+        "allocated_points"
+      ],
+      "title": "SpecificGoalAllocation",
+      "type": "object"
+    },
+    "StatutoryForms": {
+      "properties": {
+        "sbd_forms": {
+          "$ref": "#/$defs/SbdForms",
+          "description": "National Government Standard Bidding Documents required"
+        },
+        "mbd_forms": {
+          "$ref": "#/$defs/MbdForms",
+          "description": "Municipal Standard Bidding Documents required"
+        }
+      },
+      "required": [
+        "sbd_forms",
+        "mbd_forms"
+      ],
+      "title": "StatutoryForms",
+      "type": "object"
+    },
+    "SubmissionMechanics": {
+      "properties": {
+        "submission_method": {
+          "description": "Channel through which the bid proposal must be submitted",
+          "enum": [
+            "Physical Box",
+            "Electronic Portal",
+            "Email",
+            "Fax",
+            "Dual"
+          ],
+          "title": "Submission Method",
+          "type": "string"
+        },
+        "physical_box_address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Physical address of the tender box if method is Physical Box or Dual",
+          "title": "Physical Box Address"
+        },
+        "electronic_portal_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Website URL for electronic submissions if applicable",
+          "title": "Electronic Portal Url"
+        },
+        "required_hard_copies": {
+          "description": "Number of hard copy documents required for submission",
+          "title": "Required Hard Copies",
+          "type": "integer"
+        },
+        "required_soft_copy_medium": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Format of soft copies if required (e.g., USB, CD, email)",
+          "title": "Required Soft Copy Medium"
+        }
+      },
+      "required": [
+        "submission_method",
+        "required_hard_copies"
+      ],
+      "title": "SubmissionMechanics",
+      "type": "object"
+    },
+    "TechnicalFunctionality": {
+      "properties": {
+        "has_functionality_threshold": {
+          "description": "Whether the bid has a minimum technical functionality threshold",
+          "title": "Has Functionality Threshold",
+          "type": "boolean"
+        },
+        "minimum_threshold_percentage": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Minimum percentage score required to pass technical evaluation",
+          "title": "Minimum Threshold Percentage"
+        },
+        "evaluation_criteria_matrix": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/EvaluationCriterion"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Evaluation Criteria Matrix"
+        }
+      },
+      "required": [
+        "has_functionality_threshold"
+      ],
+      "title": "TechnicalFunctionality",
+      "type": "object"
+    },
+    "TenderMetadata": {
+      "properties": {
+        "tender_reference_number": {
+          "description": "Unique reference number of the tender",
+          "title": "Tender Reference Number",
+          "type": "string"
+        },
+        "tender_title": {
+          "description": "Official title of the tender solicitation",
+          "title": "Tender Title",
+          "type": "string"
+        },
+        "tender_description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Detailed text summary of the tender scope",
+          "title": "Tender Description"
+        },
+        "issuing_institution": {
+          "description": "Organ of state or department issuing the tender",
+          "title": "Issuing Institution",
+          "type": "string"
+        },
+        "institution_type": {
+          "description": "Type of government institution",
+          "enum": [
+            "National Department",
+            "Provincial Department",
+            "Metropolitan Municipality",
+            "District Municipality",
+            "Local Municipality",
+            "State Owned Enterprise",
+            "Public Entity",
+            "Constitutional Institution",
+            "Other"
+          ],
+          "title": "Institution Type",
+          "type": "string"
+        },
+        "procurement_category": {
+          "description": "Primary category of the procurement package",
+          "enum": [
+            "Civil Works",
+            "General Building Works",
+            "Electrical Works",
+            "Mechanical Works",
+            "Specialist Works",
+            "Professional Services",
+            "Goods & Services",
+            "ICT & Telecommunications",
+            "Medical & Health",
+            "Security & Guarding",
+            "Catering & Hospitality",
+            "Transport & Logistics",
+            "Other"
+          ],
+          "title": "Procurement Category",
+          "type": "string"
+        },
+        "geographic_locality": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GeographicLocality"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "tender_reference_number",
+        "tender_title",
+        "issuing_institution",
+        "institution_type",
+        "procurement_category"
+      ],
+      "title": "TenderMetadata",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "tender_metadata": {
+      "$ref": "#/$defs/TenderMetadata"
+    },
+    "critical_dates": {
+      "$ref": "#/$defs/CriticalDates"
+    },
+    "submission_mechanics": {
+      "$ref": "#/$defs/SubmissionMechanics"
+    },
+    "administrative_compliance": {
+      "$ref": "#/$defs/AdministrativeCompliance"
+    },
+    "statutory_forms": {
+      "$ref": "#/$defs/StatutoryForms"
+    },
+    "preferential_procurement": {
+      "$ref": "#/$defs/PreferentialProcurement"
+    },
+    "industry_credentials": {
+      "$ref": "#/$defs/IndustryCredentials"
+    },
+    "financial_criteria": {
+      "$ref": "#/$defs/FinancialCriteria"
+    },
+    "technical_functionality": {
+      "$ref": "#/$defs/TechnicalFunctionality"
+    },
+    "evidence_map": {
+      "$ref": "#/$defs/EvidenceMap"
+    }
+  },
+  "required": [
+    "tender_metadata",
+    "critical_dates",
+    "submission_mechanics",
+    "administrative_compliance",
+    "statutory_forms",
+    "preferential_procurement",
+    "industry_credentials",
+    "financial_criteria",
+    "technical_functionality",
+    "evidence_map"
+  ],
+  "title": "SouthAfricanTenderExtraction",
+  "type": "object"
+}

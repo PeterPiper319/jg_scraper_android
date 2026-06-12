@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import java.util.Properties
 
 plugins {
   alias(libs.plugins.android.application)
@@ -48,6 +49,17 @@ android {
     targetSdk = 35
     versionCode = 29
     versionName = "1.0.12"
+
+    // Load OpenRouter API Key
+    val localProperties = Properties()
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+      localPropertiesFile.inputStream().use { localProperties.load(it) }
+    }
+    val openRouterApiKey = localProperties.getProperty("openrouter.api.key")
+      ?: System.getenv("OPENROUTER_API_KEY")
+      ?: "placeholder_openrouter_key"
+    buildConfigField("String", "OPENROUTER_API_KEY", "\"$openRouterApiKey\"")
 
     // Needed for HuggingFace auth workflows.
     // Use the scheme of the "Redirect URLs" in HuggingFace app.
@@ -128,6 +140,7 @@ dependencies {
   implementation(libs.firebase.analytics)
   implementation(libs.firebase.messaging)
   implementation(libs.firebase.storage)
+  implementation("com.google.firebase:firebase-firestore-ktx")
   implementation(libs.okhttp)
   implementation(libs.jsoup)
   implementation(libs.androidx.exifinterface)
@@ -147,6 +160,11 @@ dependencies {
   implementation("com.google.mlkit:text-recognition:16.0.1")
   implementation("com.tom-roush:pdfbox-android:2.0.27.0")
   implementation("com.squareup.okhttp3:okhttp:4.12.0")
+  
+  // Apache POI for DOCX and XLSX extraction
+  implementation("org.apache.poi:poi-ooxml:5.2.5") {
+      exclude(group = "org.bouncycastle")
+  }
 }
 
 protobuf {
