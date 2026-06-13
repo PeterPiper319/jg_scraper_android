@@ -84,6 +84,7 @@ import com.google.ai.edge.gallery.proto.Theme
 import com.google.ai.edge.gallery.ui.common.ClickableLink
 import com.google.ai.edge.gallery.ui.common.tos.AppTosDialog
 import com.google.ai.edge.gallery.ui.modelmanager.ModelManagerViewModel
+import com.google.ai.edge.gallery.ui.scraper.TenderScraperViewModel
 import com.google.ai.edge.gallery.ui.theme.ThemeSettings
 import com.google.ai.edge.gallery.ui.theme.labelSmallNarrow
 import java.time.Instant
@@ -100,6 +101,7 @@ private val THEME_OPTIONS = listOf(Theme.THEME_AUTO, Theme.THEME_LIGHT, Theme.TH
 fun SettingsDialog(
   curThemeOverride: Theme,
   modelManagerViewModel: ModelManagerViewModel,
+  tenderScraperViewModel: TenderScraperViewModel,
   onDismissed: () -> Unit,
 ) {
   var selectedTheme by remember { mutableStateOf(curThemeOverride) }
@@ -197,6 +199,20 @@ fun SettingsDialog(
           }
 
           RouterDebugSection(modelManagerViewModel = modelManagerViewModel)
+
+          Column(modifier = Modifier.fillMaxWidth().semantics(mergeDescendants = true) {}) {
+            Text(
+              "Data Management",
+              style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Medium),
+            )
+            Button(
+              onClick = { tenderScraperViewModel.nukeAllTenders() },
+              modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+              colors = androidx.compose.material3.ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+            ) {
+              Text("Delete All Tenders (Local & Firebase)")
+            }
+          }
         }
 
         // Button row.

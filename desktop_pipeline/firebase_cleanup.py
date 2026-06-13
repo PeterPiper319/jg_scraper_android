@@ -55,31 +55,55 @@ def cleanup_database():
             del tender["gemmaEnrichment"]
             updated = True
             
-        # 2. Delete empty arrays
+        # 2. Delete empty arrays and specific junk drawer items
+        junk_keys = ["turnoverRequirements", "siteCoverageTags", "sectorTags", "contractTerms"]
+        for jk in junk_keys:
+            if jk in tender:
+                del tender[jk]
+                updated = True
+
         keys_to_delete = []
         for k, v in tender.items():
             if isinstance(v, list) and len(v) == 0:
                 keys_to_delete.append(k)
-                updated = True
         for k in keys_to_delete:
             del tender[k]
+            updated = True
             
         # 3. Handle MBD/SBD logic
         inst_type = tender.get("organ_of_State", "") or tender.get("institution_type", "")
         if inst_type:
             is_muni = "municipality" in inst_type.lower() or "municipal" in inst_type.lower()
-            is_national = "national" in inst_type.lower() or "entity" in inst_type.lower() or "department" in inst_type.lower()
+            is_national = "national" in inst_type.lower() or "entity" in inst_type.lower() or "department" in inst_type.lower() or "enterprise" in inst_type.lower()
             
             if is_national and not is_muni:
+                # Top level if present
                 for k in ["mbd_1_required", "mbd_4_required", "mbd_6_1_required", "mbd_15_required"]:
-                    if k in tender and tender[k] == "true":
+                    if str(tender.get(k, "")).lower() == "true":
                         tender[k] = "false"
                         updated = True
+                
+                # Inside ai_enrichment
+                if "ai_enrichment" in tender and "fields" in tender["ai_enrichment"]:
+                    for field in tender["ai_enrichment"]["fields"]:
+                        if field.get("field") in ["statutory_forms_mbd_forms_mbd_1_required", "statutory_forms_mbd_forms_mbd_4_required", "statutory_forms_mbd_forms_mbd_6_1_required", "statutory_forms_mbd_forms_mbd_15_required"]:
+                            if str(field.get("value", "")).lower() == "true":
+                                field["value"] = "False"
+                                updated = True
+                                
             elif is_muni:
                 for k in ["sbd_1_required", "sbd_4_required", "sbd_6_1_required"]:
-                    if k in tender and tender[k] == "true":
+                    if str(tender.get(k, "")).lower() == "true":
                         tender[k] = "false"
                         updated = True
+                
+                # Inside ai_enrichment
+                if "ai_enrichment" in tender and "fields" in tender["ai_enrichment"]:
+                    for field in tender["ai_enrichment"]["fields"]:
+                        if field.get("field") in ["statutory_forms_sbd_forms_sbd_1_required", "statutory_forms_sbd_forms_sbd_4_required", "statutory_forms_sbd_forms_sbd_6_1_required"]:
+                            if str(field.get("value", "")).lower() == "true":
+                                field["value"] = "False"
+                                updated = True
                         
         # 4. Status and Closing Date Fix
         closing_date_str = tender.get("closing_Date") or tender.get("closingDate")
@@ -108,6 +132,44 @@ def cleanup_database():
                 del tender["closingDate"]
                 updated = True
                 
+            # Date Fallback in ai_enrichment
+            if closing_date_str and "ai_enrichment" in tender and "fields" in tender["ai_enrichment"]:
+                for field in tender["ai_enrichment"]["fields"]:
+                    if field.get("field") == "critical_dates_closing_date_time" and str(field.get("value", "")).lower() in ["not found", "none", "", "null"]:
+                        field["value"] = closing_date_str
+                        field["status"] = "DONE"
+                        field["evidence"] = "Recovered from portal manifest"
+                        field["evidenceScore"] = 100
+                        field["evidenceConfidence"] = "high"
+                        updated = True
+                        
+                        # Remove from critical list if present
+                        if "criticalFieldsNeedingReview" in tender["ai_enrichment"]:
+                            if "critical_dates_closing_date_time" in tender["ai_enrichment"]["criticalFieldsNeedingReview"]:
+                                tender["ai_enrichment"]["criticalFieldsNeedingReview"].remove("critical_dates_closing_date_time")
+
+        # 4b. Taxonomy Override (Solar vs Mechanical)
+        classified_industry = str(tender.get("classified_industry", "")).lower()
+        if "solar" in classified_industry:
+            title_desc = str(tender.get("title", "")) + " " + str(tender.get("description", ""))
+            title_desc = title_desc.lower()
+            if any(phrase in title_desc for phrase in ["boiler", "chassis", "structural steel", "turbine"]):
+                tender["classified_industry"] = "Manufacturing & Industrial"
+                tender["industry_id"] = "manufacturing"
+                tender["specializations"] = ["Metal Fabrication, Machining & Welding"]
+                updated = True
+                
+                if "ai_enrichment" in tender and "fields" in tender["ai_enrichment"]:
+                    for field in tender["ai_enrichment"]["fields"]:
+                        if field.get("field") == "classified_industry":
+                            field["value"] = "Manufacturing & Industrial"
+                        elif field.get("field") == "industry_id":
+                            field["value"] = "manufacturing"
+                        elif field.get("field") == "matched_specializations":
+                            field["value"] = "Metal Fabrication, Machining & Welding"
+                        elif field.get("field") == "classification_reasoning":
+                            field["value"] = "Overridden by validation layer: heavy mechanical phrases detected."
+                
         # 5. Sanitize Strings (Deep check for "null", "NaN", "LOOK_DEEPER")
         import copy
         before_sanitize = copy.deepcopy(tender)
@@ -115,6 +177,30 @@ def cleanup_database():
         if tender != before_sanitize:
             updated = True
             
+        # Specific fix for addressLines literal 'null' strings
+        if "ai_enrichment" in tender and "contactDetails" in tender["ai_enrichment"]:
+            contact_details = tender["ai_enrichment"]["contactDetails"]
+            if "addressLines" in contact_details:
+                valid_addresses = []
+                for addr in contact_details["addressLines"]:
+                    text_val = addr.get("text")
+                    if text_val is not None:
+                        text_str = str(text_val).strip().lower()
+                        if text_str not in ["null", "not found", "none", ""]:
+                            valid_addresses.append(addr)
+                if len(valid_addresses) != len(contact_details["addressLines"]):
+                    contact_details["addressLines"] = valid_addresses
+                    updated = True
+            
+            # Specific fix for contactLines HTML tag pollution
+            if "contactLines" in contact_details:
+                import re
+                for line in contact_details["contactLines"]:
+                    text_val = line.get("text", "")
+                    if text_val and "<" in text_val and ">" in text_val:
+                        line["text"] = re.sub(r'<[^>]+>', '', text_val).strip()
+                        updated = True
+
         # 6. Group unstructured fields into ai_enrichment if needed
         # (Assuming the main structural fields like 'fields', 'criticalFieldsNeedingReview', etc. might be loose)
         ai_enrichment_keys = ["fields", "criticalFieldsNeedingReview", "contactDetails", "confidenceCounts", "summary"]

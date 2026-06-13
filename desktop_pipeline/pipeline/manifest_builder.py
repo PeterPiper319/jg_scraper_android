@@ -58,6 +58,22 @@ def merge_enrichment_into_manifest(manifest_path: str, classification: IndustryC
     if dates.closing_date_time:
         manifest["closingDate"] = dates.closing_date_time
 
+    # Manifest Date Fallback: Heal the field value if missing from parser
+    manifest_closing_date = manifest.get("closing_Date")
+    if manifest_closing_date:
+        for fld in enrichment_payload.get("fields", []):
+            if fld.get("field") == "critical_dates_closing_date_time" and fld.get("value") in ["Not found", None, ""]:
+                fld["value"] = manifest_closing_date
+                fld["status"] = "DONE"
+                fld["evidence"] = "Recovered from portal manifest"
+                fld["evidenceScore"] = 100
+                fld["evidenceConfidence"] = "high"
+                
+        # Remove from critical reviews if present
+        if "criticalFieldsNeedingReview" in enrichment_payload:
+            if "critical_dates_closing_date_time" in enrichment_payload["criticalFieldsNeedingReview"]:
+                enrichment_payload["criticalFieldsNeedingReview"].remove("critical_dates_closing_date_time")
+
     # Technical threshold
     tech = extraction.technical_functionality
     if tech.has_functionality_threshold and tech.minimum_threshold_percentage is not None:
@@ -74,6 +90,12 @@ def merge_enrichment_into_manifest(manifest_path: str, classification: IndustryC
             keys_to_delete.append(k)
     for k in keys_to_delete:
         del manifest[k]
+
+    # Explicit junk drawer cleanup
+    junk_keys = ["turnoverRequirements", "siteCoverageTags", "sectorTags", "contractTerms"]
+    for jk in junk_keys:
+        if jk in manifest:
+            del manifest[jk]
 
     # Map validated properties into the nested 'ai_enrichment' namespace
     manifest["ai_enrichment"] = enrichment_payload
@@ -92,7 +114,9 @@ def merge_enrichment_into_manifest(manifest_path: str, classification: IndustryC
                 else:
                     sanitize(v)
         elif isinstance(obj, list):
-            for i, v in enumerate(obj):
+            # Iterate backwards to allow safe removal
+            for i in range(len(obj) - 1, -1, -1):
+                v = obj[i]
                 if isinstance(v, str):
                     s = v.strip().lower()
                     if s in ["null", "not found", "look_deeper"]:
@@ -103,5 +127,19 @@ def merge_enrichment_into_manifest(manifest_path: str, classification: IndustryC
                     sanitize(v)
 
     sanitize(manifest)
+
+    # Specific fix for addressLines literal 'null' strings
+    if "ai_enrichment" in manifest and "contactDetails" in manifest["ai_enrichment"]:
+        contact_details = manifest["ai_enrichment"]["contactDetails"]
+        if "addressLines" in contact_details:
+            valid_addresses = []
+            for addr in contact_details["addressLines"]:
+                text_val = addr.get("text")
+                if text_val is not None:
+                    text_str = str(text_val).strip().lower()
+                    if text_str not in ["null", "not found", "none", ""]:
+                        valid_addresses.append(addr)
+            contact_details["addressLines"] = valid_addresses
+
 
     return manifest

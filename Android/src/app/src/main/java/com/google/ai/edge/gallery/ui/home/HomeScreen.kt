@@ -557,16 +557,6 @@ fun HomeScreen(
                           style = MaterialTheme.typography.bodySmall,
                         )
                       }
-                      
-                      Spacer(modifier = Modifier.height(16.dp))
-                      
-                      Button(
-                        onClick = { tenderScraperViewModel.nukeAllTenders() },
-                        modifier = Modifier.fillMaxWidth(),
-                        colors = androidx.compose.material3.ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
-                      ) {
-                        Text("Delete All Tenders (Local & Firebase)")
-                      }
                     }
                   }
                 }
@@ -574,48 +564,45 @@ fun HomeScreen(
                 item {
                   Card(
                     modifier = Modifier.fillMaxWidth(),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-                    shape = RoundedCornerShape(28.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFF1E1E1E)),
+                    shape = RoundedCornerShape(12.dp),
                   ) {
                     Column(
-                      modifier = Modifier.padding(20.dp),
-                      verticalArrangement = Arrangement.spacedBy(12.dp),
+                      modifier = Modifier.padding(16.dp).fillMaxWidth().height(200.dp),
+                      verticalArrangement = Arrangement.spacedBy(8.dp),
                     ) {
-                  Text(
-                    "Background Scraper",
-                    style = MaterialTheme.typography.titleLarge,
-                  )
-
-                  Button(
-                    onClick = { tenderScraperViewModel.enqueueBackgroundScraper() },
-                    modifier = Modifier.fillMaxWidth(),
-                    enabled = !scraperUiState.isBackgroundScraperRunning,
-                  ) {
-                    Text("Schedule Background Scraper")
-                  }
-
-                  if (scraperUiState.isBackgroundScraperRunning) {
-                    Button(
-                      onClick = { tenderScraperViewModel.cancelBackgroundScraper() },
-                      modifier = Modifier.fillMaxWidth(),
-                    ) {
-                      Text("Cancel Background Scraper")
-                    }
-                  } else if (scraperUiState.canResumeBackgroundScraper) {
-                    Button(
-                      onClick = { tenderScraperViewModel.resumeBackgroundScraper() },
-                      modifier = Modifier.fillMaxWidth(),
-                    ) {
-                      Text("Resume Background Scraper")
-                    }
-                  }
-
-                  if (scraperUiState.backgroundScraperStatus.isNotBlank()) {
-                    Text(
-                      text = scraperUiState.backgroundScraperStatus,
-                      style = MaterialTheme.typography.bodySmall,
-                    )
-                  }
+                      Text(
+                        "Terminal Logs",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = Color(0xFF4AF626)
+                      )
+                      val terminalState = rememberLazyListState()
+                      val logs = scraperUiState.scrapeStatus.ifEmpty { "Ready..." }.split("\n")
+                      LaunchedEffect(logs.size) {
+                        if (logs.isNotEmpty()) {
+                          terminalState.scrollToItem(logs.size - 1)
+                        }
+                      }
+                      LazyColumn(modifier = Modifier.fillMaxSize(), state = terminalState) {
+                        itemsIndexed(logs) { _, log ->
+                          Text(
+                            text = log,
+                            color = Color(0xFF4AF626),
+                            fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
+                            style = MaterialTheme.typography.bodySmall
+                          )
+                        }
+                        if (scraperUiState.backgroundScraperStatus.isNotBlank()) {
+                          item {
+                            Text(
+                              text = scraperUiState.backgroundScraperStatus,
+                              color = Color(0xFF4AF626),
+                              fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
+                              style = MaterialTheme.typography.bodySmall
+                            )
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -655,6 +642,7 @@ fun HomeScreen(
     SettingsDialog(
       curThemeOverride = modelManagerViewModel.readThemeOverride(),
       modelManagerViewModel = modelManagerViewModel,
+      tenderScraperViewModel = tenderScraperViewModel,
       onDismissed = { showSettingsDialog = false },
     )
   }

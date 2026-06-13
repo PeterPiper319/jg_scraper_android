@@ -1481,7 +1481,20 @@ $chunk""",
     }
 
     private fun updateScrapeStatus(status: String) {
-        _uiState.value = _uiState.value.copy(scrapeStatus = status)
+        val maxLines = 100
+        val currentStatus = _uiState.value.scrapeStatus
+        val timestamp = java.text.SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).format(java.util.Date())
+        val formattedStatus = "[$timestamp] $status"
+        val newStatus = if (currentStatus.isEmpty()) formattedStatus else "$currentStatus\n$formattedStatus"
+        
+        val lines = newStatus.split("\n")
+        val finalStatus = if (lines.size > maxLines) {
+            lines.takeLast(maxLines).joinToString("\n")
+        } else {
+            newStatus
+        }
+        
+        _uiState.value = _uiState.value.copy(scrapeStatus = finalStatus)
     }
 
     private fun updateFirebaseListStatus(status: String) {

@@ -1,0 +1,25 @@
+{
+  "ocid": "ocds-jgs-00393_26",
+  "id": "rel-00393_26-1781366966",
+  "date": "2026-06-13T16:09:26.162799Z",
+  "tag": [
+    "tender"
+  ],
+  "initiationType": "tender",
+  "buyer": {
+    "id": "unknown_institution",
+    "name": "Unknown Institution"
+  },
+  "tender": {
+    "id": "Unknown",
+    "title": "Unknown Title",
+    "status": "active",
+    "value": {
+      "amount": 0.0,
+      "currency": "ZAR"
+    },
+    "tenderPeriod": {
+      "endDate": ""
+    }
+  }
+}

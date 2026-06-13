@@ -305,43 +305,52 @@ class SouthAfricanTenderExtraction(BaseModel):
         
         if is_municipal:
             if any_sbd_true:
-                raise ValueError(
-                    f"Institution type is a municipality ('{inst_type}'). Municipalities use MBD forms, not SBD forms. "
-                    "Please set all SBD form flags to false."
-                )
+                # Silently auto-correct instead of throwing a ValueError
+                sbd.sbd_1_required = False
+                sbd.sbd_3_1_required = False
+                sbd.sbd_3_2_required = False
+                sbd.sbd_3_3_required = False
+                sbd.sbd_4_required = False
+                sbd.sbd_6_1_required = False
+                sbd.sbd_6_2_required = False
+                sbd.sbd_7_1_required = False
+                sbd.sbd_7_2_required = False
+                sbd.sbd_8_required = False
+                sbd.sbd_9_required = False
         else:
             if any_mbd_true:
-                raise ValueError(
-                    f"Institution type is a national/provincial entity or SOE ('{inst_type}'). These organs of state use SBD forms, not municipal MBD forms. "
-                    "Please set all MBD form flags to false."
-                )
+                # Silently auto-correct instead of throwing a ValueError
+                mbd.mbd_1_required = False
+                mbd.mbd_3_1_required = False
+                mbd.mbd_3_2_required = False
+                mbd.mbd_3_3_required = False
+                mbd.mbd_4_required = False
+                mbd.mbd_6_1_required = False
+                mbd.mbd_6_2_required = False
+                mbd.mbd_7_1_required = False
+                mbd.mbd_7_2_required = False
+                mbd.mbd_8_required = False
+                mbd.mbd_9_required = False
+                mbd.mbd_15_required = False
                 
         # 2. CIDB Requirements vs Procurement Category
         cidb = self.industry_credentials.cidb_requirements
         category = self.tender_metadata.procurement_category
         if cidb.is_required:
             if category not in ("Civil Works", "General Building Works", "Electrical Works", "Mechanical Works", "Specialist Works"):
-                raise ValueError(
-                    f"CIDB registration is only required for construction/works packages. The procurement category is '{category}', which is not a construction works category. "
-                    "Please set cidb_requirements.is_required to false unless this is explicitly a construction works contract."
-                )
+                # Silently auto-correct
+                cidb.is_required = False
                 
         # 3. Technical Functionality Threshold Contradiction
         tech = self.technical_functionality
         has_matrix = len(tech.evaluation_criteria_matrix or []) > 0
         if has_matrix and not tech.has_functionality_threshold:
-            raise ValueError(
-                "An evaluation_criteria_matrix is populated, which means technical functionality criteria are being evaluated. "
-                "Please set has_functionality_threshold to true."
-            )
+            # Silently auto-correct
+            tech.has_functionality_threshold = True
             
-        if tech.has_functionality_threshold:
-            val = tech.minimum_threshold_percentage
-            if val is None or val <= 0.0:
-                raise ValueError(
-                    "has_functionality_threshold is true, but minimum_threshold_percentage is missing or <= 0%. "
-                    "If a functionality threshold is enabled, it must be a valid percentage greater than 0% (e.g., 60%, 70%, 80%)."
-                )
+        # Removed the strict ValueError for missing minimum_threshold_percentage.
+        # If the LLM knows a matrix exists but can't find the exact passing percentage,
+        # it should just leave it as null/None, which normalizer.py will flag as "Not found".
                 
         # 4. Evidence Map Verbatim Quotes Validation
         evidence_dict = self.evidence_map.dict() if hasattr(self.evidence_map, "dict") else self.evidence_map.model_dump()
@@ -352,10 +361,9 @@ class SouthAfricanTenderExtraction(BaseModel):
             
             # Reject JSON fragments/structure
             if '":' in quote_clean or quote_clean.startswith("{") or quote_clean.endswith("}"):
-                raise ValueError(
-                    f"Evidence for field '{field}' looks like a JSON structure/manifest snippet ('{quote}'). "
-                    "Every evidence snippet must be a verbatim excerpt from the raw document text, not a JSON key-value pair."
-                )
+                # Silently auto-correct to Not found
+                setattr(self.evidence_map, field, "Not found")
+                continue
             
             # Check for lazy confirmation
             if quote_clean.lower() in confirmations:
@@ -363,11 +371,8 @@ class SouthAfricanTenderExtraction(BaseModel):
                 if val_in_model is not None:
                     val_str = str(val_in_model).strip().lower()
                     if val_str not in ("not found", "not applicable", "false", "none", "", "n/a", "0", "0.0", "0.00"):
-                        raise ValueError(
-                            f"Evidence for field '{field}' is a lazy confirmation ('{quote}'). "
-                            "Every evidence snippet must be a verbatim excerpt (sentence, clause, or table row) from the specified source document. "
-                            "It cannot be a simple 'Yes', 'No', 'True', 'False', or copy of JSON keys."
-                        )
+                        # Silently auto-correct to Not found
+                        setattr(self.evidence_map, field, "Not found")
                     
         return self
 

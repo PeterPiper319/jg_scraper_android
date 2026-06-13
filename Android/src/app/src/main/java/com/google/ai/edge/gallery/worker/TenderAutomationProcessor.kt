@@ -217,8 +217,9 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
           }.toList()
           
             if (foundEmails.isNotEmpty() || foundPhones.isNotEmpty()) {
+              val cleanText = trimmedLine.replace(Regex("<[^>]+>"), "").trim()
               contactLinesArr.put(JSONObject().apply {
-                put("text", redactContactNames(trimmedLine))
+                put("text", redactContactNames(cleanText))
                 put("sourceFile", doc.file.name)
               put("hasEmail", foundEmails.isNotEmpty())
               put("hasPhone", foundPhones.isNotEmpty())
@@ -240,7 +241,7 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       }
       
       val boxAddress = extractionJson.optJSONObject("submission_mechanics")?.optString("physical_box_address")
-      if (!boxAddress.isNullOrBlank() && boxAddress != "Not found") {
+      if (!boxAddress.isNullOrBlank() && boxAddress != "Not found" && !boxAddress.equals("null", ignoreCase = true)) {
         contactDetails.optJSONArray("addressLines")?.put(JSONObject().apply {
           put("text", boxAddress)
           put("sourceFile", "")
@@ -282,9 +283,26 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
         })
       }
 
+      // Taxonomy Override (Solar vs Mechanical)
+      val meta = extractionJson.optJSONObject("tender_metadata")
+      var classifiedIndustry = classificationJson.optString("classified_industry", "Manufacturing & Industrial")
+      var industryId = classificationJson.optString("industry_id", "manufacturing")
+      if (classifiedIndustry.lowercase().contains("solar")) {
+          val titleLower = meta?.optString("tender_title", "")?.lowercase() ?: ""
+          val textContent = prepared.extractedDocuments.joinToString(" ") { it.text.lowercase() } + " " + titleLower
+          if (textContent.contains("boiler") || textContent.contains("chassis") || textContent.contains("structural steel") || textContent.contains("turbine")) {
+              classifiedIndustry = "Manufacturing & Industrial"
+              industryId = "manufacturing"
+              classificationJson.put("classified_industry", classifiedIndustry)
+              classificationJson.put("industry_id", industryId)
+              classificationJson.put("matched_specializations", JSONArray().put("Metal Fabrication, Machining & Welding"))
+              classificationJson.put("classification_reasoning", "Overridden by validation layer: heavy mechanical phrases detected.")
+          }
+      }
+
       addField("document_type", "Document Type", classificationJson.optString("document_type", "Tender"))
-      addField("classified_industry", "Classified Industry", classificationJson.optString("classified_industry", "Manufacturing & Industrial"))
-      addField("industry_id", "Industry ID", classificationJson.optString("industry_id", "manufacturing"))
+      addField("classified_industry", "Classified Industry", classifiedIndustry)
+      addField("industry_id", "Industry ID", industryId)
       addField("matched_specializations", "Matched Specializations", classificationJson.optJSONArray("matched_specializations")?.let { arr ->
         (0 until arr.length()).map { arr.getString(it) }.joinToString(", ")
       } ?: "")
@@ -297,7 +315,6 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       addField("classification_reasoning", "Classification Reasoning", classificationJson.optString("classification_reasoning", ""))
 
       // Map paths from extractionJson
-      val meta = extractionJson.optJSONObject("tender_metadata")
       addField("tender_metadata_tender_reference_number", "Tender Reference Number", meta?.optString("tender_reference_number") ?: "Not found", true)
       addField("tender_metadata_tender_title", "Tender Title", meta?.optString("tender_title") ?: "Not found", true)
       addField("tender_metadata_tender_description", "Tender Description", meta?.optString("tender_description") ?: "Not found")
@@ -345,13 +362,38 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       addField("industry_credentials_cidb_requirements_minimum_grade", "CIDB Minimum Grade", cidbGradeVal, true)
       addField("industry_credentials_cidb_requirements_class_of_work", "CIDB Class of Work", cidbClassVal, true)
 
-      val stat = extractionJson.optJSONObject("statutory_forms")?.optJSONObject("mbd_forms")
+      // Legislative Gatekeeper (MBD/SBD Overrides) applied before generating fields
+      val statForms = extractionJson.optJSONObject("statutory_forms")
+      val instType = meta?.optString("institution_type", "") ?: ""
+      if (statForms != null) {
+          val isMuni = instType.contains("Municipality", ignoreCase = true) || instType.contains("Municipal", ignoreCase = true)
+          val isNationalOrSOE = instType.contains("National", ignoreCase = true) || instType.contains("Enterprise", ignoreCase = true) || instType.contains("Entity", ignoreCase = true) || instType.contains("Department", ignoreCase = true)
+          
+          if (isNationalOrSOE && !isMuni) {
+             val mbd = statForms.optJSONObject("mbd_forms")
+             if (mbd != null) {
+               mbd.put("mbd_1_required", false)
+               mbd.put("mbd_4_required", false)
+               mbd.put("mbd_6_1_required", false)
+               mbd.put("mbd_15_required", false)
+             }
+          } else if (isMuni) {
+             val sbd = statForms.optJSONObject("sbd_forms")
+             if (sbd != null) {
+               sbd.put("sbd_1_required", false)
+               sbd.put("sbd_4_required", false)
+               sbd.put("sbd_6_1_required", false)
+             }
+          }
+      }
+
+      val stat = statForms?.optJSONObject("mbd_forms")
       addField("statutory_forms_mbd_forms_mbd_1_required", "MBD 1 Required", stat?.optBoolean("mbd_1_required", false)?.toString() ?: "false")
       addField("statutory_forms_mbd_forms_mbd_4_required", "MBD 4 Required", stat?.optBoolean("mbd_4_required", false)?.toString() ?: "false")
       addField("statutory_forms_mbd_forms_mbd_6_1_required", "MBD 6.1 Required", stat?.optBoolean("mbd_6_1_required", false)?.toString() ?: "false")
       addField("statutory_forms_mbd_forms_mbd_15_required", "MBD 15 Required", stat?.optBoolean("mbd_15_required", false)?.toString() ?: "false")
 
-      val sbdStat = extractionJson.optJSONObject("statutory_forms")?.optJSONObject("sbd_forms")
+      val sbdStat = statForms?.optJSONObject("sbd_forms")
       addField("statutory_forms_sbd_forms_sbd_1_required", "SBD 1 Required", sbdStat?.optBoolean("sbd_1_required", false)?.toString() ?: "false")
       addField("statutory_forms_sbd_forms_sbd_4_required", "SBD 4 Required", sbdStat?.optBoolean("sbd_4_required", false)?.toString() ?: "false")
       addField("statutory_forms_sbd_forms_sbd_6_1_required", "SBD 6.1 Required", sbdStat?.optBoolean("sbd_6_1_required", false)?.toString() ?: "false")
@@ -388,6 +430,29 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       // Update top-level manifest with extracted fields
       val manifestFile = File(prepared.folder, "manifest.json")
       val manifest = JSONObject(manifestFile.readText())
+
+      // Manifest Date Fallback
+      val manifestClosingDate = manifest.optString("closing_Date", "")
+      if (manifestClosingDate.isNotBlank()) {
+          for (i in 0 until fieldsArray.length()) {
+              val f = fieldsArray.getJSONObject(i)
+              if (f.optString("field") == "critical_dates_closing_date_time" && (f.optString("value") == "Not found" || f.optString("value").isEmpty())) {
+                  f.put("value", manifestClosingDate)
+                  f.put("status", "DONE")
+                  f.put("evidence", "Recovered from portal manifest")
+                  f.put("evidenceScore", 100)
+                  f.put("evidenceConfidence", "high")
+                  
+                  // Also remove from critical list
+                  for (j in 0 until critList.length()) {
+                      if (critList.optString(j) == "critical_dates_closing_date_time") {
+                          critList.remove(j)
+                          break
+                      }
+                  }
+              }
+          }
+      }
       
       manifest.put("document_type", classificationJson.optString("document_type", "Tender"))
       manifest.put("tenderAdvertType", classificationJson.optString("document_type", "Tender").lowercase())
@@ -520,31 +585,8 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       val complianceArr = org.json.JSONArray()
       val adminComp = extractionJson.optJSONObject("administrative_compliance")
       
-      // Override MBD/SBD based on Institution Type
-      val instType = meta?.optString("institution_type", "") ?: ""
-      val statForms = extractionJson.optJSONObject("statutory_forms")
-      if (statForms != null) {
-        val isMuni = instType.contains("Municipality", ignoreCase = true) || instType.contains("Municipal", ignoreCase = true)
-        val isNational = instType.contains("National", ignoreCase = true) || instType.contains("Entity", ignoreCase = true) || instType.contains("Department", ignoreCase = true)
-        
-        if (isNational && !isMuni) {
-           val mbd = statForms.optJSONObject("mbd_forms")
-           if (mbd != null) {
-             mbd.put("mbd_1_required", false)
-             mbd.put("mbd_4_required", false)
-             mbd.put("mbd_6_1_required", false)
-             mbd.put("mbd_15_required", false)
-           }
-        } else if (isMuni) {
-           val sbd = statForms.optJSONObject("sbd_forms")
-           if (sbd != null) {
-             sbd.put("sbd_1_required", false)
-             sbd.put("sbd_4_required", false)
-             sbd.put("sbd_6_1_required", false)
-           }
-        }
-      }
-
+      // MBD/SBD Overrides already applied above before fieldsArray generation
+      
       if (adminComp != null) {
         if (adminComp.optBoolean("csd_registration_required")) complianceArr.put("CSD Registration")
         if (adminComp.optBoolean("sars_tax_compliance_pin_required")) complianceArr.put("SARS Tax Compliance Pin")
@@ -572,6 +614,11 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
         }
       }
       keysToRemove.forEach { manifest.remove(it) }
+
+      // Also explicitly remove junk drawer arrays
+      listOf("turnoverRequirements", "siteCoverageTags", "sectorTags", "contractTerms").forEach { 
+          manifest.remove(it) 
+      }
 
       // Add the entire enriched payload as a clean, nested namespace instead of a Junk Drawer
       manifest.put("ai_enrichment", finalEnrichment)

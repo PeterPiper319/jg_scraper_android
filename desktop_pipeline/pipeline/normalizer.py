@@ -255,8 +255,9 @@ def extract_contacts_from_chunks(chunks: List[Any]) -> Dict[str, Any]:
                     valid_phones.append(p)
 
             if found_emails or valid_phones:
+                clean_text = re.sub(r'<[^>]+>', '', line_str).strip()
                 contact_lines.append({
-                    "text": line_str,
+                    "text": clean_text,
                     "sourceFile": chunk.source_file,
                     "hasEmail": bool(found_emails),
                     "hasPhone": bool(valid_phones),
@@ -277,6 +278,29 @@ def extract_contacts_from_chunks(chunks: List[Any]) -> Dict[str, Any]:
     }
 
 def build_final_enrichment_payload(tender_id: str, classification: IndustryClassification, extraction: SouthAfricanTenderExtraction, chunks: List[Any] = None) -> Dict[str, Any]:
+    # --- HARD TAXONOMY OVERRIDE ---
+    if classification.classified_industry and "solar" in classification.classified_industry.lower():
+        text_content = ""
+        if chunks:
+            text_content = " ".join([c.content.lower() for c in chunks])
+        if extraction.tender_metadata.tender_title:
+            text_content += " " + extraction.tender_metadata.tender_title.lower()
+            
+        mechanical_phrases = ["boiler", "chassis", "structural steel", "turbine"]
+        if any(phrase in text_content for phrase in mechanical_phrases):
+            classification.classified_industry = "Manufacturing & Industrial"
+            classification.industry_id = "manufacturing"
+            classification.matched_specializations = ["Metal Fabrication, Machining & Welding"]
+            classification.classification_reasoning = "Overridden by validation layer: heavy mechanical phrases detected."
+
+    # --- LEGISLATIVE GATEKEEPER ---
+    inst_type = extraction.tender_metadata.institution_type
+    if inst_type in ["State Owned Enterprise", "National Department"]:
+        extraction.statutory_forms.mbd_forms.mbd_1_required = False
+        extraction.statutory_forms.mbd_forms.mbd_4_required = False
+        extraction.statutory_forms.mbd_forms.mbd_6_1_required = False
+        extraction.statutory_forms.mbd_forms.mbd_15_required = False
+
     fields = build_flat_fields(classification, extraction)
     
     critical_reviews = []
