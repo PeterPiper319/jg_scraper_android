@@ -1,0 +1,613 @@
+{
+  "generatedAt": "2026-06-13T09:17:36.282695+02:00",
+  "tenderId": "RFB_004-2026_2027",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "giovanni@gcis.gov.za",
+      "namane@gcis.gov.za",
+      "ntombifuthi@gcis.gov.za"
+    ],
+    "phoneNumbers": [
+      "012 473 0116",
+      "012 473 0218"
+    ],
+    "faxNumbers": [],
+    "addressLines": [],
+    "contactLines": [
+      {
+        "text": "Email: giovanni@gcis.gov.za",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Email: namane@gcis.gov.za",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Email: ntombifuthi@gcis.gov.za",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "TELEPHONE NUMBER 012 473 0116\/0093",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "E NUMBER 012 473 0218",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "E-MAIL ADDRESS giovanni@gcis.gov.za\/namane@gcis.gov.za",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "ADDRESS ntombifuthi@gcis.gov.za",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Tel: 012 473 0116\/0093",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "Tel: 012 473 0218",
+        "sourceFile": "RFB 004-2026-2027.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Professional & Consulting Services",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "consulting_prof",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "Management & Strategy Consulting, Research, Surveys & Assessments",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "Management Consulting, Market Research & Analysis, Strategic Planning",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Proprietary Assessment Tools, Professional Indemnity Insurance",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The document appears to be a tender document (RFB) for research services, specifically mentioning research project services, quantitative and qualitative research services, and fieldwork services. The required skills and specializations align with the consulting and professional services industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "RFB 004-2026-2027",
+      "status": "DONE",
+      "evidence": "RFB 004-2026-2027",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "APPOINTMENT OF GCIS RESEARCH PROJECTS’ PANEL OF RESEARCH SERVICE PROVIDERS",
+      "status": "DONE",
+      "evidence": "APPOINTMENT OF GCIS RESEARCH PROJECTS’ PANEL OF RESEARCH SERVICE PROVIDERS",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "GCIS",
+      "status": "DONE",
+      "evidence": "GCIS",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "National Department",
+      "status": "DONE",
+      "evidence": "National Department",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Professional Services",
+      "status": "DONE",
+      "evidence": "Professional Services",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "false",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "18 June 2026, 10:00 am – 11:30 am",
+      "status": "DONE",
+      "evidence": "18 June 2026, 10:00 am – 11:30 am",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Virtual – MS Teams Platform",
+      "status": "DONE",
+      "evidence": "Virtual – MS Teams Platform",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Electronic Portal",
+      "status": "DONE",
+      "evidence": "Electronic Portal",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "https:\/\/secure.csd.gov.za\/",
+      "status": "DONE",
+      "evidence": "https:\/\/secure.csd.gov.za\/",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "0",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Prospective bidders must be registered on the Central Suppliers Database (CSD) and provide proof of CSD in the form of MAAA number of CSD report.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "BIDDERS MUST ENSURE COMPLIANCE WITH THEIR TAX OBLIGATIONS. BIDDERS ARE REQUIRED TO SUBMIT THEIR UNIQUE PERSONAL IDENTIFICATION NUMBER (PIN) ISSUED BY SARS",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "80\/20",
+      "status": "DONE",
+      "evidence": "SBD 6.1 – Preference Points Claim Form in Terms of the Preferential Procurement Regulations 2022",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "For this RFB, potential bidders will be evaluated in terms of functionality.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "regulatory_audit_finding_0",
+      "label": "Regulatory Audit Finding",
+      "value": "REGULATORY_ANOMALY: Technical functionality evaluation threshold is enabled, but minimum threshold is missing or specified as 0%.",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    }
+  ],
+  "criticalFieldsNeedingReview": [
+    "regulatory_audit_finding_0",
+    "critical_dates_closing_date_time"
+  ]
+}

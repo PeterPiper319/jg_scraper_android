@@ -1,0 +1,125 @@
+{
+  "id": 159003,
+  "tender_No": "DFFE RFQ 58",
+  "description": "Quotation for food for Gough Island 2026 voyage",
+  "category": "Food and beverage service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Department of Forestry, Fisheries and Environment",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 East Pier Building, East Pier Road",
+  "surburb": "Waterfront",
+  "town": "Cape Town",
+  "code": "8001",
+  "conditions": "N\/A",
+  "contactPerson": "Andiswa Charlie",
+  "email": "acharlie@environment.gov.za",
+  "telephone": "021-493-7149",
+  "fax": "N\/A",
+  "username": "acharlie@dffe.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 5,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 16,
+  "departmentsID": 180,
+  "departments": {
+    "departmentsID": 180,
+    "name": "National - Environment, Forestry and Fisheries"
+  },
+  "department": "National - Environment, Forestry and Fisheries",
+  "categories": {
+    "categoriesID": 16,
+    "name": "Food and beverage service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "37ea484e-82ad-4962-99d9-3b630f43476e",
+      "fileName": "DFFE RFQ 58 Food Gough Island 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159003,
+      "active": true,
+      "updatedBy": "acharlie@dffe.gov.za",
+      "dateModified": "2026-06-12T11:08:14.3821815"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "DFFE RFQ 58",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 East Pier Building, East Pier Road-Waterfront-Cape Town-8001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Road Freight & Haulage",
+    "Courier, Dispatch & Last-mile Delivery",
+    "Warehousing & Inventory Control",
+    "Cold Chain & Temperature-controlled Logistics"
+  ],
+  "skills": [
+    "Road Freight & Haulage",
+    "Courier & Last-mile Delivery",
+    "Warehouse Management",
+    "Freight Forwarding & Clearing",
+    "Cold Chain Logistics",
+    "Fleet Management & Telematics"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)",
+    "Cold Chain Reefer Units",
+    "Large-scale Warehousing Facility",
+    "Goods in Transit Insurance"
+  ],
+  "title": "Food Gough Island 2026",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T11:00:00",
+  "reference": "DFFE RFQ 58",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

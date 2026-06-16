@@ -1,0 +1,121 @@
+{
+  "id": 159088,
+  "tender_No": "CDP-001-2026",
+  "description": "Expression of Interest for Contractor Development Programme",
+  "category": "Construction",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "SANRAL",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T10:00:00",
+  "briefingVenue": "Virtual meeting",
+  "streetname": "The Provincial Head (Western and Northern Cape Provinces) ",
+  "surburb": "The Provincial Head (Free State and Kwa-Zulu Natal Provinces) ,The Provincial Head (Eastern Cape Pro",
+  "town": "South AfricaThe Provincial Head (Gauteng, Northwest, Limpopo and Mpumalanga Provinces) ",
+  "code": "0000",
+  "conditions": "-     Active CIDB-registered Black owned construction companies (with experience within their grading designation and class of work, and who are registered in       the Civil Engineering (CE) class for grades 5CE to 9CE. The black contractors with the Potentially Emerging status will also be considered (excluding 4CE PE)\r\n-\tRegistered on the National Treasury Central Supplier Database.\r\n-\tCompanies in existence (not dormant or suspended) and operational for at least three consecutive years at the date of closure of the EOI.\r\n-\tOnly South African citizens are eligible to participate in the programme.\r\n",
+  "contactPerson": "procurementsr2",
+  "email": "procurementsr2@sanral.co.za",
+  "telephone": "041-398-3200",
+  "fax": "N\/A",
+  "username": "kekanab@nra.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 84,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "Multiple Provinces",
+  "categoriesID": 27,
+  "departmentsID": 618,
+  "departments": {
+    "departmentsID": 618,
+    "name": "South African National Roads Agency Soc Limited (SANRAL)"
+  },
+  "department": "South African National Roads Agency Soc Limited (SANRAL)",
+  "categories": {
+    "categoriesID": 27,
+    "name": "Construction"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "8df2c8ab-8bc5-490c-adb9-f43146448002",
+      "fileName": "CDP-001-2026 Contractor Development EOI_.pdf",
+      "extension": ".pdf",
+      "tendersID": 159088,
+      "active": true,
+      "updatedBy": "kekanab@nra.co.za",
+      "dateModified": "2026-06-12T15:13:07.1196821"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CDP-001-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "The Provincial Head (Western and Northern Cape Provinces) -The Provincial Head (Free State and Kwa-Zulu Natal Provinces) ,The Provincial Head (Eastern Cape Pro-South AfricaThe Provincial Head (Gauteng, Northwest, Limpopo and Mpumalanga Provinces) -0000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "General Building Works"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "General Building Construction"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "CIDB Grading Certification"
+  ],
+  "title": "Contractor Development EOI",
+  "cidb_grading": "1CE",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "23 June 2026, 10:00",
+  "reference": "CDP-001-2026",
+  "provinceNames": [
+    "Multiple Provinces"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

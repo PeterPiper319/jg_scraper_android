@@ -1,0 +1,120 @@
+{
+  "id": 158961,
+  "tender_No": "INF012606RFQ10",
+  "description": "REPAIR THATCH ROOF\/ BUILDING  MANOR HOUSE - ARC NIETVOORBIJ FARM - STELLENBOSCH - WESTERN CAPE",
+  "category": "Services to buildings and landscape activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Agricultural Research Council",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "{\"publish_date\":null,\"closing_date_time\":\"25\\\/06\\\/2026 at 11:00 am\",\"validity_period_days\":\"Not found\"}",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T11:00:00",
+  "briefingVenue": "ARC Nietvoorbij Manor House, R44 Klapmuts Road, Stellenbosch",
+  "streetname": "ARC Nietvoorbij, R44 Klapmuts Road,",
+  "surburb": "Stellenbosch",
+  "town": "Stellenbosch",
+  "code": "7256",
+  "conditions": "N\/A",
+  "contactPerson": "Zimkhita Matayi",
+  "email": "MatayiZ@arc.agric.za",
+  "telephone": "021-809-3093",
+  "fax": "N\/A",
+  "username": "matayiz@arc.agric.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 182,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 10,
+  "departmentsID": 6,
+  "departments": {
+    "departmentsID": 6,
+    "name": "Agricultural Research Council"
+  },
+  "department": "Agricultural Research Council",
+  "categories": {
+    "categoriesID": 10,
+    "name": "Services to buildings and landscape activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "85c2ab0c-9cd2-4a64-a633-1afd3ad87022",
+      "fileName": "SPECS THATCH ROOF REFURBISHMENT INF012606RFQ10.pdf",
+      "extension": ".pdf",
+      "tendersID": 158961,
+      "active": true,
+      "updatedBy": "matayiz@arc.agric.za",
+      "dateModified": "2026-06-12T09:59:27.3134223"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "INF012606RFQ10",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "ARC Nietvoorbij, R44 Klapmuts Road,-Stellenbosch-Stellenbosch-7256",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Roofing, Waterproofing & Finishes"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Roofing & Waterproofing",
+    "Construction"
+  ],
+  "capabilities": [
+    "Scaffolding & Access Platforms",
+    "On-site Safety Equipment"
+  ],
+  "title": "REPAIR THATCH ROOF\/ BUILDING MANOR HOUSE",
+  "cidb_grading": "1GB",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "18\/06\/2026 at 11:00 am",
+  "closingDate": "{\"publish_date\":null,\"closing_date_time\":\"25\\\/06\\\/2026 at 11:00 am\",\"validity_period_days\":\"Not found\"}",
+  "reference": "INF012606RFQ10",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

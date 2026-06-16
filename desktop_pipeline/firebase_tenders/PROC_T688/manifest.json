@@ -1,0 +1,111 @@
+{
+  "id": 158922,
+  "tender_No": "PROC T688",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF RESOURCES TO SUPPORT THE PROJECT MANAGEMENT SUPPORT UNIT",
+  "category": "Activities of head offices; management consultancy activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "SERVICES SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-16T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "15 Sherborne Road,Parktown,JHB",
+  "surburb": "Parktown",
+  "town": "Gauteng",
+  "code": "2193",
+  "conditions": "None",
+  "contactPerson": "Conny Mathebula",
+  "email": "connym@serviceseta.org.za",
+  "telephone": "011-276-9621",
+  "fax": "011-276-9600",
+  "username": "SimonS@serviceseta.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 51,
+  "departmentsID": 588,
+  "departments": {
+    "departmentsID": 588,
+    "name": "Services Sector Education and Training Authority"
+  },
+  "department": "Services Sector Education and Training Authority",
+  "categories": {
+    "categoriesID": 51,
+    "name": "Activities of head offices; management consultancy activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d1234eed-22de-409e-9b17-d707021026fb",
+      "fileName": "PROC-T688-BID-DOCUMENT- RESOURCES TO SUPPORT THE PROJECT MANAGEMENT SUPPORT UNIT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158922,
+      "active": true,
+      "updatedBy": "SimonS@serviceseta.org.za",
+      "dateModified": "2026-06-12T08:16:39.1855923"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PROC T688",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "15 Sherborne Road,Parktown,JHB-Parktown-Gauteng-2193",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "skills": [
+    "Project Management (Agile\/Scrum)",
+    "Management Consulting",
+    "Strategic Planning"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF RESOURCES TO SUPPORT THE PROJECT MANAGEMENT SUPPORT UNIT",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-16T11:00:00",
+  "reference": "PROC T688",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

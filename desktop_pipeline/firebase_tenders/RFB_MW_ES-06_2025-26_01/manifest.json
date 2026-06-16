@@ -1,0 +1,96 @@
+{
+  "id": 159144,
+  "tender_No": "RFB\/MW\/ES-06\/2025-26\/01",
+  "description": "APPOINTMENT OF A PROFESSIONAL SERVICE PROVIDER FOR THE REFURBISHMENT OF MMABATHO WASTEWATER TREATMENT WORKS",
+  "category": "Professional, scientific and technical activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Magalies Water",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-09T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-24T12:00:00",
+  "briefingVenue": "Location: Mmabatho Wastewater Treatment Plant Coordinates: (-25.864702, 25.561152)",
+  "streetname": "38 Heystek",
+  "surburb": "Rustenburg",
+  "town": "Rustenburg",
+  "code": "0299",
+  "conditions": "Payment of a non-refundable fee of R500.00 for the tender documents (prior to issuing) must be paid into Magalies Water's bank account as follows: Standard Bank, Branch: Rustenburg, Branch Code: 052646, Account Name: Magalies Water, Account Number: 033139539. The payment reference will be the relevant tender number. The tender documents will be made available during working hours from 19 June 2026 from 08:00 to 16:00 at Magalies Water, 38 Heystek Street, Rustenburg, 0300, upon receipt of proof of payment",
+  "contactPerson": "SCM",
+  "email": "tenders@magalieswater.co.za",
+  "telephone": "014-597-4636",
+  "fax": "014-597-4636",
+  "username": "baokengm@magalieswater.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 123,
+  "provincesID": 1,
+  "provinces": {
+    "provincesID": 1,
+    "name": "North West"
+  },
+  "province": "North West",
+  "categoriesID": 90,
+  "departmentsID": 365,
+  "departments": {
+    "departmentsID": 365,
+    "name": "Magalies Water"
+  },
+  "department": "Magalies Water",
+  "categories": {
+    "categoriesID": 90,
+    "name": "Professional, scientific and technical activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c46225d8-9491-4065-96cb-17803f2c9189",
+      "fileName": "Tender Advert PSP for Mmabatho refurbishment.pdf",
+      "extension": ".pdf",
+      "tendersID": 159144,
+      "active": true,
+      "updatedBy": "baokengm@magalieswater.co.za",
+      "dateModified": "2026-06-12T19:54:49.3207212"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFB\/MW\/ES-06\/2025-26\/01",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "38 Heystek-Rustenburg-Rustenburg-0299",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Water Treatment & Purification",
+    "Wastewater & Sanitation Systems"
+  ],
+  "skills": [
+    "Water Purification & Treatment",
+    "Wastewater Management"
+  ],
+  "capabilities": [
+    "Water Treatment Plants"
+  ]
+}

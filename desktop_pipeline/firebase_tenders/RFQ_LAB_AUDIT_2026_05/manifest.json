@@ -1,0 +1,112 @@
+{
+  "id": 158878,
+  "tender_No": "RFQ\/LAB\/AUDIT\/2026\/05",
+  "description": "Professional Services –Audit the Laboratory’s quality management system in relation to ISO\/IEC 17025:2017 and SANAS requirements (technical) Microbiology",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "PPECB",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T16:30:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Centurion Close Bock B,119 Gerhard Street",
+  "surburb": "Centurion ",
+  "town": "Pretoria",
+  "code": "0157",
+  "conditions": "N\/A",
+  "contactPerson": "Portia jonginyanga",
+  "email": "PortiaJ@ppecb.com",
+  "telephone": "021-930-1154",
+  "fax": "N\/A",
+  "username": "ppecb-procurement@ppecb.com",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 537,
+  "departments": {
+    "departmentsID": 537,
+    "name": "Perishable Products Export Control Board"
+  },
+  "department": "Perishable Products Export Control Board",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "b2397e9f-c64f-4e35-8221-1033d9d72afe",
+      "fileName": "Pricing Schedule .xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158878,
+      "active": true,
+      "updatedBy": "ppecb-procurement@ppecb.com",
+      "dateModified": "2026-06-11T16:17:04.5393351"
+    },
+    {
+      "supportDocumentID": "032d89ba-5c7e-4ee2-b2fd-ab4801c0c612",
+      "fileName": "RFQ Audit Services Microbiology.pdf",
+      "extension": ".pdf",
+      "tendersID": 158878,
+      "active": true,
+      "updatedBy": "ppecb-procurement@ppecb.com",
+      "dateModified": "2026-06-11T16:17:04.5763479"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ\/LAB\/AUDIT\/2026\/05",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Centurion Close Bock B,119 Gerhard Street-Centurion -Pretoria-0157",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "Professional Services –Audit the Laboratory’s quality management system in relation to ISO\/IEC 17025:2017 and SANAS requirements (technical) Microbiology",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 72,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-26T16:30:00",
+  "reference": "RFQ\/LAB\/AUDIT\/2026\/05",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

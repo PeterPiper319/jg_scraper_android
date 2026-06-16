@@ -1,0 +1,121 @@
+{
+  "id": 159008,
+  "tender_No": "CS 01\/2026",
+  "description": "Appointment of Internet Service Providers for a Period of Three (3) Years",
+  "category": "Information and communication",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Alfred Duma Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-14T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-25T10:00:00",
+  "briefingVenue": "Legal Services Boardroom, Lister Clarence Building at 221 Murchison Street, Ladysmith",
+  "streetname": "221 Murchison Street",
+  "surburb": "Ladysmith",
+  "town": "Ladysmith",
+  "code": "3370",
+  "conditions": "N\/A",
+  "contactPerson": "MR DM Fourie",
+  "email": "dmfourie@alfredduma.gov.za",
+  "telephone": "036-637-2231",
+  "fax": "N\/A",
+  "username": "NFGODO@alfredduma.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 40,
+  "departmentsID": 13,
+  "departments": {
+    "departmentsID": 13,
+    "name": "Alfred Duma Local Municipality"
+  },
+  "department": "Alfred Duma Local Municipality",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "44334af9-01ef-4ce6-9d55-6361a04b018b",
+      "fileName": "CS 01 2026 APPOINTMENT OF INTERNET SERVICE PROVIDERS FOR A PERIOD OF THREE YEARS.pdf",
+      "extension": ".pdf",
+      "tendersID": 159008,
+      "active": true,
+      "updatedBy": "NFGODO@alfredduma.gov.za",
+      "dateModified": "2026-06-12T11:41:58.2199725"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CS 01\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "221 Murchison Street-Ladysmith-Ladysmith-3370",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Networks, Telecoms & Connectivity",
+    "Data, Analytics & AI",
+    "Hardware Supply & End-user Computing"
+  ],
+  "skills": [
+    "Network Engineering & Administration",
+    "Data Analytics & Business Intelligence",
+    "IT Support & Managed Services",
+    "Telecommunications Infrastructure"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "Data Center Facilities",
+    "Remote Monitoring Tools",
+    "High-Performance Server Hardware"
+  ],
+  "title": "APPOINTMENT OF INTERNET SERVICE PROVIDERS FOR A PERIOD OF THREE YEARS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "2026-06-25T10:00:00",
+  "closingDate": "2026-07-14T11:00:00",
+  "reference": "CS 01\/2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

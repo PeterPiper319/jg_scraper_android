@@ -1,0 +1,135 @@
+{
+  "id": 159099,
+  "tender_No": "RFQ30242",
+  "description": "THE ONCE OFF PROVISION OF GUARD RAILS REPAIRS AT KING SHAKA INTERNATIONAL AIRPORT",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Airports Company South Africa SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "30 June 2026 at 16h00 pm",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T11:00:00",
+  "briefingVenue": "MSO Building, Reception, Ground Floor",
+  "streetname": "King Shaka International Airport",
+  "surburb": "La Mercy",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Mlungisi.mgobhozi@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 84,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "bdd30b3b-8aa4-40bf-a7f5-1d794fe9dd6c",
+      "fileName": "CIDB BID DOCUMENT RFQ30242.pdf",
+      "extension": ".pdf",
+      "tendersID": 159099,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T15:33:47.4729148"
+    },
+    {
+      "supportDocumentID": "bc5a7e75-8bdb-4be3-9e28-d358800e0ee8",
+      "fileName": "NEC TSC Guardrails Contract  KSIA.pdf",
+      "extension": ".pdf",
+      "tendersID": 159099,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T15:34:15.577212"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ30242",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Shaka International Airport-La Mercy-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification"
+  ],
+  "cidb_grading": "1CE",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "18 June 2026 at 11:00AM",
+  "closingDate": "30 June 2026 at 16h00 pm",
+  "reference": "RFQ30242",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

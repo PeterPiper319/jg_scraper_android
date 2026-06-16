@@ -1,0 +1,107 @@
+{
+  "id": 159026,
+  "tender_No": "HEDP007\/25\/26",
+  "description": "The department of health offers various specialized clinical services that require advanced technology in order to ensure effective and efficient medical diagnosis and reporting.",
+  "category": "Supplies: Medical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Health",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "21\/07\/2026 11:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-26T09:30:00",
+  "briefingVenue": "Pietersburg Hospital: X-Ray Department",
+  "streetname": "18 College Avenue",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "There will be Compulsory site visit for this bid.\r\n•\tDate: 26 June 2026\r\n•\tTime: 09H30\r\n•\tVenue: Pietersburg Hospital : X-Ray Department\r\n",
+  "contactPerson": "Taelo Sekome",
+  "email": "Taelo.Sekome@dhsd.limpopo.gov.za",
+  "telephone": "083-265-8365",
+  "fax": "N\/A",
+  "username": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 365,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 89,
+  "departmentsID": 349,
+  "departments": {
+    "departmentsID": 349,
+    "name": "Limpopo - Health"
+  },
+  "department": "Limpopo - Health",
+  "categories": {
+    "categoriesID": 89,
+    "name": "Supplies: Medical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "7ff85c3a-d64b-4863-9fee-73ef088b7457",
+      "fileName": "Bid Document Bi-Plane HEDP007 25 26 (1).pdf",
+      "extension": ".pdf",
+      "tendersID": 159026,
+      "active": true,
+      "updatedBy": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+      "dateModified": "2026-06-12T12:40:41.4111306"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "HEDP007\/25\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "18 College Avenue-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "",
+  "industry_id": "",
+  "title": "SUPPLY, DELIVERY, COMMISSIONING AND MAINTENANCE OF MEDICAL EQUIPMENT (BI-PLANE IMAGING SYSTEM FOR AN INTERVENTIONAL CARDIOLOGY \/ CATHETERIZATION LABORATORY) IN THE LIMPOPO DEPARTMENT OF HEALTH FOR A PERIOD OF THIRTY-SIX (36) MONTHS. (THREE YEARS)",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "26 June 2026 09H30",
+  "closingDate": "21\/07\/2026 11:00",
+  "reference": "HEDP007\/25\/26",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

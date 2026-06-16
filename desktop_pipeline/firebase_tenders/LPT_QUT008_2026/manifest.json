@@ -1,0 +1,119 @@
+{
+  "id": 158655,
+  "tender_No": "LPT\/QUT008\/2026",
+  "description": "supply of goods\/services",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Limpopo Provincial Government Institution of Treasury",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T11:00:00",
+  "briefingVenue": "46 Hans Van Rensburg Street Polokwane",
+  "streetname": "46 Hans Van Rensburg",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0700",
+  "conditions": "NB: Mandatory Requirements\r\n1. A letter of good standing with the office of the compensation Commissioner of Department of Employment and Labour (DoEL)\r\n2. Proof of registration\/membership of any relevant cleaning service association\/board",
+  "contactPerson": "Sebata JR",
+  "email": "sebatajr@treasury.limpopo.gov.za",
+  "telephone": "015-298-7280",
+  "fax": "N\/A",
+  "username": "sebatajr@treasury.limpopo.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 48,
+  "departmentsID": 356,
+  "departments": {
+    "departmentsID": 356,
+    "name": "Limpopo - Provincial Treasury"
+  },
+  "department": "Limpopo - Provincial Treasury",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "28ba3e66-62e0-44ac-ab93-d43e37ceeaf6",
+      "fileName": "LPTQUT008.pdf",
+      "extension": ".pdf",
+      "tendersID": 158655,
+      "active": true,
+      "updatedBy": "sebatajr@treasury.limpopo.gov.za",
+      "dateModified": "2026-06-10T11:10:21.9258407"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "LPT\/QUT008\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "46 Hans Van Rensburg-Polokwane-Polokwane-0700",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "REQUEST FOR QUOTATIONS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T11:00:00",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": 159015,
+  "tender_No": "281S\/2025\/26",
+  "description": "Term Tender for the Supply, Servicing, Repairs, testing and Certification of Breathing Apparatus Equipment and Cylinders for the City of Cape Town on a Basket and\/or Item-Based Allocation Basis",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "City of Cape Town",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-15T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-07-03T10:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/343997771681148?p=t5nLMSE2a2tmcCEA4A",
+  "streetname": "12 Hertzog Boulevard",
+  "surburb": "Cape Town ",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "Link: https:\/\/teams.microsoft.com\/meet\/343997771681148?p=t5nLMSE2a2tmcCEA4A   \r\nMeeting ID: 343 997 771 681 148 \r\nPasscode: yE6Y3B3X\r\n",
+  "contactPerson": "SCM Team",
+  "email": "SCM.Tenders30@capetown.gov.za",
+  "telephone": "021-800-0000",
+  "fax": "N\/A",
+  "username": "Leigh.Lekay@capetown.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 365,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 61,
+  "departmentsID": 59,
+  "departments": {
+    "departmentsID": 59,
+    "name": "City of Cape Town"
+  },
+  "department": "City of Cape Town",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "08c7c976-981a-41d1-af46-57baa590633e",
+      "fileName": "281S 2025-26 - Final document for advertising.pdf",
+      "extension": ".pdf",
+      "tendersID": 159015,
+      "active": true,
+      "updatedBy": "Leigh.Lekay@capetown.gov.za",
+      "dateModified": "2026-06-12T11:56:19.0776207"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "281S\/2025\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "12 Hertzog Boulevard-Cape Town -Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "title": "Term Tender for the Supply, Servicing, Repairs, testing and Certification of Breathing Apparatus Equipment and Cylinders for the City of Cape Town on a Basket and\/or Item-Based Allocation Basis",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "10:00am on Date: 3 July 2026",
+  "reference": "281S\/2025\/26",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

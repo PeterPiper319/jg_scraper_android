@@ -1,0 +1,223 @@
+{
+  "id": 159006,
+  "tender_No": "NT008-2026",
+  "description": "Appointment of a service provider for the design, development, implementation and operationalisation of electronic procurement system for National Treasury",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "National Treasury",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "03 July 2026 at 11:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T10:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/354916327385299?p=dChPtHI9lOWFC3zA2Q",
+  "streetname": "40 Church Square",
+  "surburb": "Pretoria",
+  "town": "Pretoria",
+  "code": "0002",
+  "conditions": "N\/A",
+  "contactPerson": "NTAdministrative Tenders",
+  "email": "NTAdministrativeTenders@Treasury.gov.za",
+  "telephone": "012-406-9007",
+  "fax": "N\/A",
+  "username": "siphesihle.nyandeni@treasury.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 473,
+  "departments": {
+    "departmentsID": 473,
+    "name": "National Treasury"
+  },
+  "department": "National Treasury",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "96e2aee6-14a7-40cc-9fb6-23c14c93e5fb",
+      "fileName": "1- SBD1.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.3280134"
+    },
+    {
+      "supportDocumentID": "a23e8a28-2023-429d-a4b8-361e310edc73",
+      "fileName": "8.1 Tax on service providers Questionnaire B Other than individuals.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.5695302"
+    },
+    {
+      "supportDocumentID": "e85c43f9-68e4-4109-81d2-3cc7c7332c0a",
+      "fileName": "CV Template.docx",
+      "extension": ".docx",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.7383693"
+    },
+    {
+      "supportDocumentID": "b4f09074-c170-4bf8-835d-4dbcf9d47cf2",
+      "fileName": "TERMS OF REFERENCE - National Treasury eProcurement System.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:44.1627238"
+    },
+    {
+      "supportDocumentID": "e5ae2c43-c522-4522-992d-69ee43032277",
+      "fileName": "e-Submission_User Manual For Suppliers.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.8915741"
+    },
+    {
+      "supportDocumentID": "89b5297d-9511-464a-b8ad-6c717760bef0",
+      "fileName": "Special Conditions of Contract - National Treasury eProcurement System.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:44.0428762"
+    },
+    {
+      "supportDocumentID": "d652f035-251a-40a0-8ad1-7ba03781a550",
+      "fileName": "7- General Conditions of Contract.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.4925797"
+    },
+    {
+      "supportDocumentID": "963c1071-6ed6-4259-98c6-9e45bc09697c",
+      "fileName": "4 - SBD 3.3..pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.3962573"
+    },
+    {
+      "supportDocumentID": "c683c2f4-df1d-47d1-bdce-a2b64dd81fb1",
+      "fileName": "CV Template.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.8619812"
+    },
+    {
+      "supportDocumentID": "6d71d80e-442a-4e74-b369-a36be30a94f0",
+      "fileName": "6 - SBD 6.1 IN TERMS OF PPR2022.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.4585804"
+    },
+    {
+      "supportDocumentID": "cd04fe8f-b4d7-4bcc-94cc-afa07329f63c",
+      "fileName": "8. Tax on service providers Questionnaire A Individuals.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.5296766"
+    },
+    {
+      "supportDocumentID": "8716dc0d-0152-4c0f-8af3-cfe100230b44",
+      "fileName": "Annexure A - National Treasury eProcurement Scope Overview.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T13:06:38.8248758"
+    },
+    {
+      "supportDocumentID": "c02c4d79-1099-4b07-b69f-d2cb6a320da4",
+      "fileName": "5 -SDB 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 159006,
+      "active": true,
+      "updatedBy": "siphesihle.nyandeni@treasury.gov.za",
+      "dateModified": "2026-06-12T11:32:43.4247868"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "NT008-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "40 Church Square-Pretoria-Pretoria-0002",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO DESIGN, DEVELOPMENT, IMPLEMENT AND SUPPORT THE ELECTRONIC PROCUREMENT SYSTEM FOR NATIONAL TREASURY FOR A PERIOD OF 36 MONTHS",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "19 June 2026",
+  "closingDate": "03 July 2026 at 11:00",
+  "reference": "NT008-2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

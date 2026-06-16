@@ -1,0 +1,131 @@
+{
+  "id": 158876,
+  "tender_No": "EHC\/JESB\/2026",
+  "description": "The EHC seeks to appoint a suitable qualified service provider to provide job grading\/evaluation and salary benchmarking for 35 positions in the organisational structure.",
+  "category": "Office administrative, office support and other business support activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Ekurhuleni Housing Company (EHC)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19\/06\/2026 11h00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Cnr Victoria Street and Linton Jones Street, Germiston (next to Fire Station)",
+  "streetname": "Cnr Victoria Street and Linton Street Chris Hani Village Germiston 1400 (next to Fire Station)",
+  "surburb": "Germiston",
+  "town": "Germiston",
+  "code": "1400",
+  "conditions": "N\/A",
+  "contactPerson": "Esther Matlala",
+  "email": "estherm@ehco.org.za",
+  "telephone": "010-101-4675",
+  "fax": "N\/A",
+  "username": "Patriciam@ehco.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 62,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 68,
+  "departmentsID": 150,
+  "departments": {
+    "departmentsID": 150,
+    "name": "Ekurhuieni Housing Company"
+  },
+  "department": "Ekurhuieni Housing Company",
+  "categories": {
+    "categoriesID": 68,
+    "name": "Office administrative, office support and other business support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "9639b464-9382-463e-8bb1-501cc36513ff",
+      "fileName": "etender advert evaluation and benchmarking.pdf",
+      "extension": ".pdf",
+      "tendersID": 158876,
+      "active": true,
+      "updatedBy": "Patriciam@ehco.org.za",
+      "dateModified": "2026-06-11T16:14:38.1538797"
+    },
+    {
+      "supportDocumentID": "06bd8fed-2497-4ae1-8a9e-b592e35e92cf",
+      "fileName": "MBDs.zip",
+      "extension": ".zip",
+      "tendersID": 158876,
+      "active": true,
+      "updatedBy": "Patriciam@ehco.org.za",
+      "dateModified": "2026-06-11T16:12:59.6286941"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "EHC\/JESB\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Cnr Victoria Street and Linton Street Chris Hani Village Germiston 1400 (next to Fire Station)-Germiston-Germiston-1400",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Research, Surveys & Assessments"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Market Research & Analysis",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT JOB EVALUATION AND SALARY BENCHMARKING",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "17 June 2026 11h00",
+  "closingDate": "19\/06\/2026 11h00",
+  "reference": "EHC\/JESB\/2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ]
+}

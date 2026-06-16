@@ -1,0 +1,117 @@
+{
+  "id": 158971,
+  "tender_No": "BOCMA RFB 2026\/01",
+  "description": "REQUEST FOR BID: INTERNAL AUDIT SERVICES FOR A PERIOD OF 36 MONTHS ",
+  "category": "Financial service activities, except insurance and pension funding",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Breede-Olifants Catchment Management Agency",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-09T14:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "CNR Mountain mill and East Lake Road",
+  "surburb": "worcester ",
+  "town": "Worcester",
+  "code": "6850",
+  "conditions": "The tender is also advertised on our website ",
+  "contactPerson": "Noxolo Mafanya",
+  "email": "nmafanya@bocma.co.za",
+  "telephone": "023-346-8000",
+  "fax": "N\/A",
+  "username": "nmafanya@bgcma.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 22,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 81,
+  "departmentsID": 756,
+  "departments": {
+    "departmentsID": 756,
+    "name": "Breede-Gouritz Catchment Management Agency"
+  },
+  "department": "Breede-Gouritz Catchment Management Agency",
+  "categories": {
+    "categoriesID": 81,
+    "name": "Financial service activities, except insurance and pension funding"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2f51f214-6efe-4b18-aea3-4bd929befd2a",
+      "fileName": "IA Final tender 09.06.2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158971,
+      "active": true,
+      "updatedBy": "nmafanya@bgcma.co.za",
+      "dateModified": "2026-06-12T10:13:49.9600833"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "BOCMA RFB 2026\/01",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CNR Mountain mill and East Lake Road-worcester -Worcester-6850",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Financial Auditing & Accounting",
+    "Management Consulting"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "INTERNAL AUDIT SERVICES FOR BREEDE-OLIFANTS CATCHMENT MANAGEMENT AGENCY FOR A PERIOD OF 36 MONTHS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-09T14:00:00",
+  "reference": "BOCMA RFB 2026\/01",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

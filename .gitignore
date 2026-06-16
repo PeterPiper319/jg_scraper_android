@@ -19,3 +19,4 @@ desktop_pipeline/venv/
 desktop_pipeline/sample_tender/
 desktop_pipeline/serviceAccountKey.json
 **/__pycache__/
+logcat.txt

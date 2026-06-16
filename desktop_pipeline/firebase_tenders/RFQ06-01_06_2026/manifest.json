@@ -1,0 +1,107 @@
+{
+  "id": 159075,
+  "tender_No": "RFQ06-01\/06\/2026",
+  "description": "THE APPOINTMENT OF ONE (1) SERVICE PROVIDER TO SUPPLY AND DELIVER GENERAL BUILDING MATERIAL ON AS AND WHEN REQUIRED BASIS IN SOUTH GAUTENG REGION FOR A PERIOD OF 24 MONTHS",
+  "category": "Services: Building",
+  "type": "Request for Quotation",
+  "organ_of_State": "Passenger Rail Agency of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-29T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "30 WOLMARANS STREET, UMJANTSHI HOUSE",
+  "surburb": "BRAAMFONTEIN",
+  "town": "JOHANNESBURG",
+  "code": "2017",
+  "conditions": "DOCUMENTS TO BE HAND DELIVERED AT THE PROVIDED ADDRESS ON THE RFQ DOCUMENT.",
+  "contactPerson": "TOKOLLO PRECIUS LEABA",
+  "email": "precius.leaba@prasa.com",
+  "telephone": "011-013-1617",
+  "fax": "N\/A",
+  "username": "Precius.Leaba@prasa.com",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 78,
+  "departmentsID": 534,
+  "departments": {
+    "departmentsID": 534,
+    "name": "Passenger Rail Agency of South Africa"
+  },
+  "department": "Passenger Rail Agency of South Africa",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2f76a9d8-1520-441e-b0e1-6aea14b8534c",
+      "fileName": "RFQ DOCUMENT.pdf",
+      "extension": ".pdf",
+      "tendersID": 159075,
+      "active": true,
+      "updatedBy": "Precius.Leaba@prasa.com",
+      "dateModified": "2026-06-12T14:54:49.3986154"
+    },
+    {
+      "supportDocumentID": "021fdac6-4a88-4311-841d-f61f7eb80906",
+      "fileName": "Specification_As and When - Supply  deliver General Building Materials. Final submission. 6 June doc. Correct doc.pdf",
+      "extension": ".pdf",
+      "tendersID": 159075,
+      "active": true,
+      "updatedBy": "Precius.Leaba@prasa.com",
+      "dateModified": "2026-06-12T14:56:40.0764428"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ06-01\/06\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "30 WOLMARANS STREET, UMJANTSHI HOUSE-BRAAMFONTEIN-JOHANNESBURG-2017",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ]
+}

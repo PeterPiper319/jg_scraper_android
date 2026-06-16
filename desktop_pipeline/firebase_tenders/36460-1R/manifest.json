@@ -1,0 +1,124 @@
+{
+  "id": 158973,
+  "tender_No": "36460-1R",
+  "description": "Gravel to surface upgrade of \r\nUmsilinga Way, Ward 42\r\n",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Ethekwini Metropolitan Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-17T09:30:00",
+  "briefingVenue": "at Nzuzo Road (GPS Coordinates: 29°43’11.0”S; 30°56’42.7”E)",
+  "streetname": "166 K E  Masinga  Road(Formerly Old Fort Road)",
+  "surburb": "Durban",
+  "town": "KZN",
+  "code": "4001",
+  "conditions": "-A COMPULSORY clarification meeting will be held at 9:30, on 2026-06-17, at Nzuzo Road (GPS Coordinates: 29°43’11.0”S; 30°56’42.7”E).\r\n-All questions and answers will be consolidated and posted on eTenders\/Municipal website by 2026-06-23.\r\n-2CE or higher\r\n-Nikhil Parshotam\r\n(t) 031-322 2880\r\nEmail: \r\nNikhil.Parshotam@du\r\nrban.gov.za\r\n",
+  "contactPerson": "Nikhil Parshotam",
+  "email": "Nikhil.Parshotam@durban.gov.za",
+  "telephone": "031-322-2880",
+  "fax": "N\/A",
+  "username": "Ashira.Baller@durban.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 169,
+  "departments": {
+    "departmentsID": 169,
+    "name": "Ethekwini Metropolitan Municipality"
+  },
+  "department": "Ethekwini Metropolitan Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "b369e51f-1721-469d-95a7-db8c7b397030",
+      "fileName": "1R-36460 Umsilinga Way BOQ Rev1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158973,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:28:04.4592605"
+    },
+    {
+      "supportDocumentID": "43519a37-9c90-46ae-a7c1-f74928731231",
+      "fileName": "36460-1R Tender Document_ApprovedD.pdf",
+      "extension": ".pdf",
+      "tendersID": 158973,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:17:38.6680705"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "36460-1R",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "166 K E  Masinga  Road(Formerly Old Fort Road)-Durban-KZN-4001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "Gravel to Surface Upgrade"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "General Building Construction"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)"
+  ],
+  "title": "Gravel to Surface Upgrade of Umsilinga Way, Ward 42",
+  "cidb_grading": "1CE",
+  "isCompulsoryBriefing": false,
+  "reference": "36460-1R",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

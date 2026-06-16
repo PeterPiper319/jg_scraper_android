@@ -1,0 +1,281 @@
+{
+  "id": 158927,
+  "tender_No": "240-114238630",
+  "description": "Supply and delivery of Open Gear Lubricant Grease to Lethabo Power Station for a five (5) year period on an “as and when required” basis.\r\n",
+  "category": "Supplies: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T00:00:00",
+  "briefingVenue": "MS teams https:\/\/teams.microsoft.com\/meet\/31566538233577?p=KmAvhfNLvHccMqLReH",
+  "streetname": "Lethabo Power Station, Deneysville Road",
+  "surburb": "Vereeniging",
+  "town": "Vereeniging",
+  "code": "1930",
+  "conditions": "N\/A",
+  "contactPerson": "Mkateko Maluleke",
+  "email": "malulemc@eskom.co.za",
+  "telephone": "016-457-5023",
+  "fax": "N\/A",
+  "username": "MaluleMC@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 10,
+  "provinces": {
+    "provincesID": 10,
+    "name": "Free State"
+  },
+  "province": "Free State",
+  "categoriesID": 55,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0f81198d-bba5-4c84-a2b5-03099e46a9a2",
+      "fileName": "Annexure J - SBD 4 - Tenderer's Disclosure - 20 April 2026.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.6595972"
+    },
+    {
+      "supportDocumentID": "d3b1922b-37c7-41f7-b1d4-2da16cba8f0a",
+      "fileName": "Authorisation Form - 08 November 2024.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.7324779"
+    },
+    {
+      "supportDocumentID": "bf9af94d-a933-4785-ae67-34ff8d10b5ab",
+      "fileName": "Reverse E-auction Training Acknowledgement Form.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.4368938"
+    },
+    {
+      "supportDocumentID": "6959bd9b-95d0-4600-a3d0-3c2c8740683a",
+      "fileName": "Supplier Development Localisation  Industrialisation (SDLI) Strategy Setting Template for Bidders - Supply and delivery of Open Gear Lubricant Grease.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.4904196"
+    },
+    {
+      "supportDocumentID": "9b6d8695-ddb9-44d8-aaf1-4ca5bf9a0e0c",
+      "fileName": "Annexure D - Integrity Declaration Form - 20 April 2026.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.0079577"
+    },
+    {
+      "supportDocumentID": "295ab1f7-b64f-4525-bbe4-5cd843a5f7e6",
+      "fileName": "Annexure F - CPA (IG) Requirements for Foreign Goods and Services.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.0863439"
+    },
+    {
+      "supportDocumentID": "11d0e6b6-9eed-4af1-b9be-6704e169eed0",
+      "fileName": "Annexure G1-G4 - SBD 6.2 - Declaration Certificate for Local Production and Content for Designated Sectors - 14 March 2025.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.2608379"
+    },
+    {
+      "supportDocumentID": "0092dae2-6138-4139-ac41-67eb6420f8f5",
+      "fileName": "Eskom - Standard Conditions of Tender - 30 January 2025.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.0303517"
+    },
+    {
+      "supportDocumentID": "f1a5d069-98b3-431c-8600-6c9930ab8611",
+      "fileName": "Annexure I - SBD 6.1 Preference Points Claim Form in terms of The PPR 2022.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.5864511"
+    },
+    {
+      "supportDocumentID": "dff3720a-edeb-49f1-ab84-76b46b2a622e",
+      "fileName": "Declaration of Shareholding or Beneficiaries Form.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.8620031"
+    },
+    {
+      "supportDocumentID": "543a7802-36b1-46a9-80bf-789e280a30e0",
+      "fileName": "Invitation to Tender (ITT) - Lubricant Grease.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:48:01.0233656"
+    },
+    {
+      "supportDocumentID": "b1166b87-b38c-460a-9997-78c5636d5ebf",
+      "fileName": "Annexure B – Supplier Tender Receiving Acknowledgement Form (1).docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:21.8056054"
+    },
+    {
+      "supportDocumentID": "7f91d755-1e0b-44fa-830d-8383d5ed1101",
+      "fileName": "E-Tenderers E-Tendering Training Acknowledgement Form - 27 January 2025.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.2345258"
+    },
+    {
+      "supportDocumentID": "87eec803-3974-4072-a66f-8c313dbfa1b7",
+      "fileName": "E-tendering Help Manual for supplier - 27 January 2025.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.2696419"
+    },
+    {
+      "supportDocumentID": "e35282c7-883f-4d55-9a61-b017ee288773",
+      "fileName": "Annexure G - Tax Compliance Questionnaire for Foreign Suppliers (Manadatory for foreign suppliers to complete) - April 2024.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.1615842"
+    },
+    {
+      "supportDocumentID": "904fe7a5-258a-4df6-84fb-b39190f86658",
+      "fileName": "Annexure C - Tenderer's Particulars.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:21.9318461"
+    },
+    {
+      "supportDocumentID": "c7c3d434-e5bc-4a4a-8236-c05acf953ddf",
+      "fileName": "Reverse E-auction Process Template.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.3807878"
+    },
+    {
+      "supportDocumentID": "1ac8224a-e936-474c-87b6-cebfb3d6ce43",
+      "fileName": "Eskom Supplier Integrity Pact - 02 June 2023.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:23.0959221"
+    },
+    {
+      "supportDocumentID": "66100d64-2fda-48cd-ae6e-e06f64e59c76",
+      "fileName": "Draft NEC3 supply and delivery of  Lubricant Grease.pdf",
+      "extension": ".pdf",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.8891609"
+    },
+    {
+      "supportDocumentID": "8e3adab2-5ad0-4330-829c-fdf8a90879d2",
+      "fileName": "Annexure H - SBD 1 - Part A - Invitation to Bid and Part B - Terms and Conditions for Bidding.docx",
+      "extension": ".docx",
+      "tendersID": 158927,
+      "active": true,
+      "updatedBy": "MaluleMC@eskom.co.za",
+      "dateModified": "2026-06-12T08:54:22.5216"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "240-114238630",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Lethabo Power Station, Deneysville Road-Vereeniging-Vereeniging-1930",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "title": "Invitation to Tender (ITT) - Lubricant Grease",
+  "cidb_grading": "2GB",
+  "preference_points": "80\/20 or 90\/10",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "2026-06-22T09:00:00",
+  "reference": "240-114238630",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

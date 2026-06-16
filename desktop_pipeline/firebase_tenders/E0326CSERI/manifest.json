@@ -1,0 +1,197 @@
+{
+  "id": 158812,
+  "tender_No": "240-114238630 Rev 27",
+  "description": "Supply, delivery and application of Road Surfacing for the Matla\/Kriel Road rehabilitation.",
+  "category": "Services: Civil",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-30T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "https:\/\/etendering.eskom.co.za",
+  "surburb": "Mpumalanga",
+  "town": "Kriel",
+  "code": "2271",
+  "conditions": "Not applicable",
+  "contactPerson": "Elise Posthumus",
+  "email": "posthuec@eskom.co.za",
+  "telephone": "011-621-3000",
+  "fax": "N\/A",
+  "username": "posthuec@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 49,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 49,
+    "name": "Services: Civil"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c51b3b6a-8f3a-47fa-8c2e-2b625a587527",
+      "fileName": "ANNEXURE O - Scope of Works - for Roadsurfacing.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.2177321"
+    },
+    {
+      "supportDocumentID": "1dfcef34-f3c2-40e4-8e20-4d25d791137d",
+      "fileName": "ANNEXURE Q - SDL&I - Matla Kriel Road Surfacing EP 042026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.4538902"
+    },
+    {
+      "supportDocumentID": "353c4ea3-91ee-4838-b033-694f3b87311f",
+      "fileName": "ANNEXURE R- Supplier Declaration of Interest - 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.4852374"
+    },
+    {
+      "supportDocumentID": "53c72126-4fbb-4584-bbef-6e1feb352e2b",
+      "fileName": "ANNEXURE P - Functionality Threshold Evaluation for Surfacing Subcontractor - rev 01.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.3408176"
+    },
+    {
+      "supportDocumentID": "bc19ea8c-f124-421b-aedb-7661bbb611a4",
+      "fileName": "ANNEXURE S - Eskom_Standard_Conditions_of_Tender rev 11.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.5920769"
+    },
+    {
+      "supportDocumentID": "8c7581ee-62bd-40c7-89ef-90ba79afb250",
+      "fileName": "ANNEXURE M - NEC3 TSC - Draft - - Road Surfacing - Matla_Kriel. Rev1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:15.9710465"
+    },
+    {
+      "supportDocumentID": "982602ef-ffb0-4dec-ab70-98997303b8af",
+      "fileName": "Invitation to Tender (ITT) Template Rev. 27 - For Roadsurfacing Matla - Kriel Road (004) - signed.pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.7634123"
+    },
+    {
+      "supportDocumentID": "2779a111-7707-43b7-bf80-af537d34a3ea",
+      "fileName": "SHEQ REQUIREMENTS.zip",
+      "extension": ".zip",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.8924732"
+    },
+    {
+      "supportDocumentID": "aa4e8bce-be53-4b81-ae1f-b73541b32a6b",
+      "fileName": "ANNEXURE N _ Bill of Quantities- Matla-Kriel Surfacing subcontractor.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.1933314"
+    },
+    {
+      "supportDocumentID": "df749e03-da76-43c2-a2a6-df1845651367",
+      "fileName": "ANNEXURE T - Briefing Note Security -  Contractor Criminal check.final (007).pdf",
+      "extension": ".pdf",
+      "tendersID": 158812,
+      "active": true,
+      "updatedBy": "posthuec@eskom.co.za",
+      "dateModified": "2026-06-11T10:59:16.7118446"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "240-114238630 Rev 27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "https:\/\/etendering.eskom.co.za-Mpumalanga-Kriel-2271",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Road Construction & Maintenance",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "On-site Safety Equipment"
+  ],
+  "title": "Invitation to Tender (ITT) Template Rev. 27 - For Roadsurfacing Matla - Kriel Road (004) - signed",
+  "cidb_grading": "66SB",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 75,
+  "isCompulsoryBriefing": false,
+  "reference": "240-114238630 Rev 27",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

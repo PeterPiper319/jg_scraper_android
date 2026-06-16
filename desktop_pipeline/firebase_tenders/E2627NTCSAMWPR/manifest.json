@@ -1,0 +1,81 @@
+{
+  "id": 158809,
+  "tender_No": "E2627NTCSAMWPR",
+  "description": "Defective concrete foundations at Ripon Traction substation for a period of 06 months",
+  "category": "Architectural and engineering activities; technical testing and analysis",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom National Transmission Company of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T10:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/395363784914145?p=ZCHnhPS1dPtLrbIgH5",
+  "streetname": "Megawatt Park, 2 Maxwell Drive",
+  "surburb": "Sunninghill",
+  "town": "Sandton",
+  "code": "2157",
+  "conditions": "A compulsory site visit meeting will be held on:\r\n- Date: 25 June 2026\r\n- Time: 10h00 (SAST)\r\n- Venue: Ripon Traction Substation\r\n- GPS Coordinates: 33.077531S 25.846946E\r\n\r\nNote: Failure to attend the compulsory site visit, will result in your tender being disqualified.",
+  "contactPerson": "Dineo Maepa",
+  "email": "MaepaDN@ntcsa.co.za",
+  "telephone": "017-749-5775",
+  "fax": "N\/A",
+  "username": "MaepaDN@ntcsa.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 18,
+  "departmentsID": 860,
+  "departments": {
+    "departmentsID": 860,
+    "name": "Eskom National Transmission Company of South Africa"
+  },
+  "department": "Eskom National Transmission Company of South Africa",
+  "categories": {
+    "categoriesID": 18,
+    "name": "Architectural and engineering activities; technical testing and analysis"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "4741cada-f211-4ca8-a7ac-630a62be7de9",
+      "fileName": "Tender Pack - Ripon Traction SS - E2627NTCSAMWPR.zip",
+      "extension": ".zip",
+      "tendersID": 158809,
+      "active": true,
+      "updatedBy": "MaepaDN@ntcsa.co.za",
+      "dateModified": "2026-06-12T09:41:41.0747665"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E2627NTCSAMWPR",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Megawatt Park, 2 Maxwell Drive-Sunninghill-Sandton-2157"
+}

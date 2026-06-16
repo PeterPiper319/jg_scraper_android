@@ -1,0 +1,121 @@
+{
+  "id": 158793,
+  "tender_No": "ARC\/01\/04\/2026-2",
+  "description": "The Supply, delivery, install and commission of Solar panels at ARC OVR campus",
+  "category": "Electricity, gas, steam and air conditioning",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "ARC",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T00:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "ARC OVR Campus 100 Old Soutpan Road (M35) Private Bag X05 ONDESTEPOORT 0110",
+  "streetname": "OVR Campus 100 Old Soutpan Road (M35)",
+  "surburb": "ONDERSTEPOORT",
+  "town": "Pretoria",
+  "code": "0110",
+  "conditions": "N\/A",
+  "contactPerson": "Emmy",
+  "email": "galanem@arc.agric.za",
+  "telephone": "012-529-9316",
+  "fax": "N\/A",
+  "username": "galanem@arc.agric.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 180,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 77,
+  "departmentsID": 6,
+  "departments": {
+    "departmentsID": 6,
+    "name": "Agricultural Research Council"
+  },
+  "department": "Agricultural Research Council",
+  "categories": {
+    "categoriesID": 77,
+    "name": "Electricity, gas, steam and air conditioning"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5f7c89bc-7fa5-4fdc-a604-03ca1ca447d9",
+      "fileName": "Bid Document for Supply Delivery Install and Commission of Solar Panels.pdf",
+      "extension": ".pdf",
+      "tendersID": 158793,
+      "active": true,
+      "updatedBy": "galanem@arc.agric.za",
+      "dateModified": "2026-06-11T09:26:06.0735019"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ARC\/01\/04\/2026-2",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "OVR Campus 100 Old Soutpan Road (M35)-ONDERSTEPOORT-Pretoria-0110",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Solar, Renewable & Backup Power",
+    "Electrical Distribution & Grid Services"
+  ],
+  "skills": [
+    "Renewable Energy (Solar\/Wind)",
+    "Electrical Grid Maintenance",
+    "Energy Auditing & Efficiency"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "Energy Storage Systems (ESS)"
+  ],
+  "title": "Bid Document for Supply Delivery Install and Commission of Solar Panels",
+  "cidb_grading": "5EP",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "2026-06-18T11:00:00",
+  "closingDate": "2026-07-06T00:00:00",
+  "reference": "ARC\/01\/04\/2026-2",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

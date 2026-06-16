@@ -1,0 +1,119 @@
+{
+  "id": 158856,
+  "tender_No": "N28\/2025",
+  "description": "Supply, delivery and installation of steel bulk filing system at Tshikombani traffic testing station",
+  "category": "Administrative and support activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Thulamela Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "25 June 2026 at 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "OLD AGRIVEN BUILDING",
+  "surburb": "THOHOYANDOU",
+  "town": "THOHOYANDOU",
+  "code": "0950",
+  "conditions": "N\/A",
+  "contactPerson": "MR NEMAKWARANE LR",
+  "email": "NEMAKWARANELR@THULAMELA.GOV.ZA",
+  "telephone": "015-962-7524",
+  "fax": "N\/A",
+  "username": "nevuvhamary@thulamela.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 92,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 44,
+  "departmentsID": 661,
+  "departments": {
+    "departmentsID": 661,
+    "name": "Thulamela Local Municipality"
+  },
+  "department": "Thulamela Local Municipality",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "21f17e4c-6218-4233-937a-e809ed8dc462",
+      "fileName": "SUPPLY, DELIVERY AND INSTALLATION OF STEEL BULK FILING SYSTEM AT TSHIKOMBANI TRAFFIC TESTING STATION.pdf",
+      "extension": ".pdf",
+      "tendersID": 158856,
+      "active": true,
+      "updatedBy": "nevuvhamary@thulamela.gov.za",
+      "dateModified": "2026-06-11T15:10:12.6196932"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "N28\/2025",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "OLD AGRIVEN BUILDING-THOHOYANDOU-THOHOYANDOU-0950",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Metal Fabrication, Machining & Welding",
+    "Furniture, Joinery & Industrial Woodwork"
+  ],
+  "skills": [
+    "Metal Fabrication & Welding",
+    "Industrial Design & Engineering",
+    "Quality Control & Lean Six Sigma"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure",
+    "CNC Machining Centers"
+  ],
+  "title": "SUPPLY, DELIVERY AND INSTALLATION OF STEEL BULK FILING SYSTEM AT TSHIKOMBANI TRAFFIC TESTING STATION",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "25 June 2026 at 11:00 AM",
+  "reference": "N28\/2025",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

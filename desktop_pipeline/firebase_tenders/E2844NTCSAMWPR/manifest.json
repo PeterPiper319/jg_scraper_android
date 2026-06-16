@@ -1,0 +1,244 @@
+{
+  "id": 159114,
+  "tender_No": "240-105658000",
+  "description": "This document constitutes the minimum requirements for a quality plan.",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "MS Teams",
+  "streetname": "THE TENDER OFFICE",
+  "surburb": "Sunninghill",
+  "town": "Gauteng",
+  "code": "2191",
+  "conditions": "N\/A",
+  "contactPerson": "Lebogang Sekgothe",
+  "email": "sekgotlc@eskom.co.za",
+  "telephone": "011-709-3470",
+  "fax": "011-709-3470",
+  "username": "sekgotlc@ntcsa.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 150,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 860,
+  "departments": {
+    "departmentsID": 860,
+    "name": "Eskom National Transmission Company of South Africa"
+  },
+  "department": "Eskom National Transmission Company of South Africa",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e4fb9335-bbf4-4df1-9687-04d6eefc214d",
+      "fileName": "Final George Lease SHE Specification Rev 1.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.6730818"
+    },
+    {
+      "supportDocumentID": "3be72885-750b-4655-a774-379adf021b85",
+      "fileName": "Non Disclosure Agreement (NDA) Vendors Lease agreement for rental of premises for office space in George Western Cape.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:27.1609389"
+    },
+    {
+      "supportDocumentID": "6e4f7308-5d23-4b59-a974-3bb384b29bad",
+      "fileName": "240-105658000 Supplier Quality Management Specification (3).pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.0644314"
+    },
+    {
+      "supportDocumentID": "c885fb20-7c40-4a79-8ef5-62127803a516",
+      "fileName": "240-77471499 Annexure B.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.0144882"
+    },
+    {
+      "supportDocumentID": "1118368d-e387-4000-be4b-633b5c1d887c",
+      "fileName": "20250822_George LeaseList of Tender Returnables_Cat 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.3391055"
+    },
+    {
+      "supportDocumentID": "9651ce0f-2836-4019-8fab-6a71de1b62b8",
+      "fileName": "240-180100134_Transmission Environmental Requirements for Contractors and or Suppliers Standard.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.1476997"
+    },
+    {
+      "supportDocumentID": "e544c3e5-ce04-4064-a464-7a9410dbbc06",
+      "fileName": "Evaluation criteria for George Lease Agreement New Submission.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.624552"
+    },
+    {
+      "supportDocumentID": "ec801fc1-7543-468f-be9d-8900b12bfb19",
+      "fileName": "George Lease  OHS Tender evaluation requirements.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.8159808"
+    },
+    {
+      "supportDocumentID": "f55099f3-c6e2-4990-b433-c8eb9c33d1fb",
+      "fileName": "ESKOM SHEQ POLICY -32-727.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.4935166"
+    },
+    {
+      "supportDocumentID": "26d62d07-4196-47d7-b814-cd02f02f08d3",
+      "fileName": "20260612_NTCSA Invitation_to_Tender_(ITT)_George Lease Agreement.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.3706822"
+    },
+    {
+      "supportDocumentID": "d753bfd0-fb6f-419d-ac99-d1a7ecd25442",
+      "fileName": "LEASE AGREEMENT – STANDARD TERMS.pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:27.028756"
+    },
+    {
+      "supportDocumentID": "ffaa14a7-3ccc-40d0-94e6-d25ef8ef7927",
+      "fileName": "20241106_George Lease_Form A_Cat 4_ Rev 9.docx",
+      "extension": ".docx",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.2033246"
+    },
+    {
+      "supportDocumentID": "c0393f93-1946-4444-9c07-dae69a08fb68",
+      "fileName": "George Office Space - 240-180100154 Env Management Tender Returnable Contractors or Service Providers 2023_Rev7.xls",
+      "extension": ".xls",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.9233156"
+    },
+    {
+      "supportDocumentID": "8e639b64-6da9-4bf6-bef5-dd304096a32f",
+      "fileName": "George Office Space_240-180100129_ Enviromental Requirements Proforma.docx",
+      "extension": ".docx",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.9693865"
+    },
+    {
+      "supportDocumentID": "61278add-76b8-4d29-8b94-e4328c2a8524",
+      "fileName": "SDL&I Unsertaking Lease agreement for rental of Premises in George(Western Cape).pdf",
+      "extension": ".pdf",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:27.2768362"
+    },
+    {
+      "supportDocumentID": "3195e79c-ba65-4baa-a4e4-ff573c71661f",
+      "fileName": "20241106_Method Statement_Cat 4 Tender Returnables.docx",
+      "extension": ".docx",
+      "tendersID": 159114,
+      "active": true,
+      "updatedBy": "sekgotlc@ntcsa.co.za",
+      "dateModified": "2026-06-12T16:11:26.2760049"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "240-105658000",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "THE TENDER OFFICE-Sunninghill-Gauteng-2191",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "On-site Safety Equipment"
+  ],
+  "title": "Supplier Quality Management Specification (3)",
+  "isCompulsoryBriefing": false,
+  "reference": "240-105658000"
+}

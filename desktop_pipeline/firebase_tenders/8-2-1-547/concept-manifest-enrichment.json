@@ -1,0 +1,584 @@
+{
+  "generatedAt": "2026-06-13T16:45:39.267520+02:00",
+  "tenderId": "8-2-1-547",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "pnxumalo@abaqulusi.gov.za",
+      "nmadinana@abaqulusi.gov.za",
+      "scm@abaqulusi.gov.za"
+    ],
+    "phoneNumbers": [
+      "034 9822 133",
+      "034 9821 939",
+      "034 9822133"
+    ],
+    "faxNumbers": [],
+    "addressLines": [
+      {
+        "text": "corner of High Street and Mark Street, AbaQulusi Local Municipality, Vryheid 3100",
+        "sourceFile": ""
+      }
+    ],
+    "contactLines": [
+      {
+        "text": "CONTACT PERSON N Madinana  TELEPHONE NUMBER 034 9822 133 x 2284",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "TELEPHONE NUMBER 034 9822 133 x 3306 FACSIMILE NUMBER 034 9821 939",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "FACSIMILE NUMBER 034 9821 939 E-MAIL ADDRESS pnxumalo@abaqulusi.gov.za",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "E-MAIL ADDRESS nmadinana@abaqulusi.gov.za",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "scm@abaqulusi.gov.za.",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "For more information please contact Supply Chain Management office on 034 9822133 Ext. 2277.",
+        "sourceFile": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Manufacturing & Industrial",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "manufacturing",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "Textiles, Garments & Soft Goods",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The tender document mentions the supply of tents, beach umbrellas, and soccer kits, which are related to textiles and soft goods. This matches the 'Textiles, Garments & Soft Goods' specialization in the manufacturing industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "8\/2\/1\/547",
+      "status": "DONE",
+      "evidence": "8\/2\/1\/547",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "SUPPLY AND DELIVERY OF TENTS, BEACH UMBRELLA AND SOCCER KITS FOR LED PROJECTS",
+      "status": "DONE",
+      "evidence": "SUPPLY AND DELIVERY OF TENTS, BEACH UMBRELLA AND SOCCER KITS FOR LED PROJECTS",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Abaqulusi Municipality invites service providers to submit a Bid for the supply and Delivery of Tents, Beach Umbrella and Soccer Kits for LED Projects.",
+      "status": "DONE",
+      "evidence": "Abaqulusi Municipality invites service providers to submit a Bid for the supply and Delivery of Tents, Beach Umbrella and Soccer Kits for LED Projects.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "Abaqulusi Municipality",
+      "status": "DONE",
+      "evidence": "Abaqulusi Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "Local Municipality",
+      "status": "DONE",
+      "evidence": "Local Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Goods & Services",
+      "status": "DONE",
+      "evidence": "Goods & Services",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "KwaZulu-Natal",
+      "status": "DONE",
+      "evidence": "KwaZulu-Natal",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Zululand District Municipality",
+      "status": "DONE",
+      "evidence": "Zululand District Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Abaqulusi Local Municipality",
+      "status": "DONE",
+      "evidence": "Abaqulusi Local Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "2026-06-05",
+      "status": "DONE",
+      "evidence": "05\/06\/2026",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "No",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "2026-06-19T12:00:00",
+      "status": "DONE",
+      "evidence": "19 June 2026, 12h00",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "90",
+      "status": "DONE",
+      "evidence": "90 days",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Physical Box",
+      "status": "DONE",
+      "evidence": "Physical Box",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "corner of High Street and Mark Street, AbaQulusi Local Municipality, Vryheid 3100",
+      "status": "DONE",
+      "evidence": "corner of High Street and Mark Street, AbaQulusi Local Municipality, Vryheid 3100",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "www.e-tenders.gov.za",
+      "status": "DONE",
+      "evidence": "www.e-tenders.gov.za",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "1",
+      "status": "DONE",
+      "evidence": "1",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "TAX COMPLIANCE STATUS TCS PIN:  OR CSD No:",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "80\/20",
+      "status": "DONE",
+      "evidence": "80 points financial offer and 20 points for Specific Goals",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    }
+  ],
+  "criticalFieldsNeedingReview": []
+}

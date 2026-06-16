@@ -1,0 +1,553 @@
+{
+  "generatedAt": "2026-06-13T09:13:46.494217+02:00",
+  "tenderId": "IEC_ICT-04_2026__",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "info@elections.org.za",
+      "sookany@elections.org.za"
+    ],
+    "phoneNumbers": [
+      "012 622 5700"
+    ],
+    "faxNumbers": [],
+    "addressLines": [
+      {
+        "text": "{\"evidence\":\"ELECTION HOUSE RIVERSIDE OFFICE PARK 1303 HEUWEL AVENUE CENTURION 0046\"}",
+        "sourceFile": ""
+      }
+    ],
+    "contactLines": [
+      {
+        "text": "Tel (+27) 12 622 5700 | info@elections.org.za | www.elections.org.za",
+        "sourceFile": "Tender IEC-ICT-04-2026 Results System Audit.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Tel: 012 622 5700 or eMail: Sookany@elections.org.za",
+        "sourceFile": "Tender IEC-ICT-04-2026 Results System Audit.pdf",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Information Technology & Telecommunications",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "it_telecom",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "Software Platforms & Applications, Systems Integration & Automation, Data, Analytics & AI",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "Software Development (Web\/Mobile), Data Analytics & Business Intelligence, Systems Integration & API Development, IT Support & Managed Services",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Software Licenses & Subscriptions, High-Performance Server Hardware, Network Infrastructure Equipment, Data Center Facilities",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The tender document mentions a 'Results System Audit' for the '2026\/2027 Local Government Elections (LGE)', which suggests a focus on information technology and data analysis. The document also includes sections on pricing schedules, financial information, and technical requirements, which are typical of IT and telecom tenders. The industry match is based on the presence of relevant keywords and phrases, such as 'software', 'data', 'analytics', and 'system audit', which align with the specializations, skills, and capabilities listed in the IT & Telecommunications industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "{\"evidence\":\"IEC\\\/ICT-04\\\/2026\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"IEC\\\/ICT-04\\\/2026\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "{\"evidence\":\"RESULTS SYSTEM AUDIT\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"RESULTS SYSTEM AUDIT\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "{\"evidence\":\"ELECTORAL COMMISSION\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"ELECTORAL COMMISSION\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "{\"evidence\":\"Public Entity\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Public Entity\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "{\"evidence\":\"ICT & Telecommunications\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"ICT & Telecommunications\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "{\"evidence\":\"23 June 2026 at 11:00\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"23 June 2026 at 11:00\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "{\"evidence\":\"6 July 2026 at 11:00\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"6 July 2026 at 11:00\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "{\"evidence\":\"Physical Box\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Physical Box\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "{\"evidence\":\"ELECTION HOUSE RIVERSIDE OFFICE PARK 1303 HEUWEL AVENUE CENTURION 0046\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"ELECTION HOUSE RIVERSIDE OFFICE PARK 1303 HEUWEL AVENUE CENTURION 0046\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Prospective tenderers must register on the National Treasury Central Supplier Database (CSD) prior to submitting their bids.\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"A tenderer's tax affairs must be in order to be considered in the adjudication of this tender. A tenderer's tax compliance status is reflected on the national treasury central supplier database (CSD).\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "{\"evidence\":\"Not found\"}",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "Not applicable",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "{\"evidence\":\"Not found\"}",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    }
+  ],
+  "criticalFieldsNeedingReview": []
+}

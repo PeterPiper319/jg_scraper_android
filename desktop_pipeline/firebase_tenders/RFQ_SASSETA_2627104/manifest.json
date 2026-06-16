@@ -1,0 +1,133 @@
+{
+  "id": 158998,
+  "tender_No": "RFQ\/SASSETA\/2627104",
+  "description": "Procurement of Multimedia Operational Equipment ",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "SASSETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "74 Waterfall Drive, Corporate Campus, Building 2",
+  "surburb": "Waterfall City",
+  "town": "Midrand",
+  "code": "2090",
+  "conditions": "N\/A",
+  "contactPerson": "Koena Legodi",
+  "email": "klegodi@sasseta.org.za",
+  "telephone": "000-000-0000",
+  "fax": "000-000-0000",
+  "username": "klegodi@sasseta.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 754,
+  "departments": {
+    "departmentsID": 754,
+    "name": "Safety and Security Sector Education and Training Authority (Sasseta)"
+  },
+  "department": "Safety and Security Sector Education and Training Authority (Sasseta)",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "bbaf1e85-ef64-461b-9b0f-716aadcbd2d9",
+      "fileName": "Multimedia Equipment - Annexure B.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158998,
+      "active": true,
+      "updatedBy": "klegodi@sasseta.org.za",
+      "dateModified": "2026-06-12T10:58:47.6707459"
+    },
+    {
+      "supportDocumentID": "04ab99c8-2e98-4ecd-84e8-ba926b8b6664",
+      "fileName": "Multimedia.pdf",
+      "extension": ".pdf",
+      "tendersID": 158998,
+      "active": true,
+      "updatedBy": "klegodi@sasseta.org.za",
+      "dateModified": "2026-06-12T10:58:47.7506043"
+    },
+    {
+      "supportDocumentID": "75c2ad21-371c-4171-9cd7-e9ac8671237b",
+      "fileName": "Annexure A.pdf",
+      "extension": ".pdf",
+      "tendersID": 158998,
+      "active": true,
+      "updatedBy": "klegodi@sasseta.org.za",
+      "dateModified": "2026-06-12T10:58:47.619119"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ\/SASSETA\/2627104",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "74 Waterfall Drive, Corporate Campus, Building 2-Waterfall City-Midrand-2090",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Procurement of Multimedia Operational Equipment",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T11:00:00",
+  "reference": "RFQ\/SASSETA\/2627104",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

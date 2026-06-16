@@ -1,0 +1,102 @@
+{
+  "id": 159094,
+  "tender_No": "RFQ -HO-1739",
+  "description": "Refer to annexure A for detailed specification: SATC EXHIBITION STAND",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "South Maritime Safety Authority",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "SATC HELD AT CSIR IN PRETORIA – MEIRING NAUDE ",
+  "surburb": "BRUMMERIA",
+  "town": "PRETORIA",
+  "code": "8001",
+  "conditions": "N\/A",
+  "contactPerson": "PEARL RAMABODU",
+  "email": "pramabodu@samsa.org.za",
+  "telephone": "082-489-1206",
+  "fax": "N\/A",
+  "username": "imothoane@samsa.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 612,
+  "departments": {
+    "departmentsID": 612,
+    "name": "South African Maritime Safety Authority"
+  },
+  "department": "South African Maritime Safety Authority",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "6a20b18d-9443-4510-af60-acbb58d49b14",
+      "fileName": "RFQ -HO-1739 - SATC_ EXHIBITION_ STAND.pdf",
+      "extension": ".pdf",
+      "tendersID": 159094,
+      "active": true,
+      "updatedBy": "imothoane@samsa.org.za",
+      "dateModified": "2026-06-12T15:25:14.9352197"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ -HO-1739",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "SATC HELD AT CSIR IN PRETORIA – MEIRING NAUDE -BRUMMERIA-PRETORIA-8001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "SATC EXHIBITION STAND",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-22T11:00:00",
+  "reference": "RFQ -HO-1739",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": 158908,
+  "tender_No": "JSM FLEET – 06\/08W00",
+  "description": "APPOINTMENT OF PANEL OF SERVICE PROVIDERS FOR THE REPAIRS, MAINTENANCE AND SERVICE OF POOL OF VEHICLE FOR DR JS MOROKA LOCAL MUNICIPALITY FOR THE PERIOD OF THIRTY-SIX [36] MONTHS AS AND WHEN REQUIRED",
+  "category": "Wholesale and retail trade and repair of motor vehicles and motorcycles",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Dr JS Moroka Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "09 July 2026, 11H00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-12T12:00:00",
+  "briefingVenue": "DR JS Moroka Ga-Phahla Community Hall",
+  "streetname": "Bongimfundo street",
+  "surburb": "Siyabuswa",
+  "town": "Siyabuswa",
+  "code": "0472",
+  "conditions": "NONE",
+  "contactPerson": "bongumusa sipho",
+  "email": "mahlangusb@moroka.gov.za",
+  "telephone": "013-973-1101",
+  "fax": "N\/A",
+  "username": "MahlanguSB@moroka.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 24,
+  "departmentsID": 107,
+  "departments": {
+    "departmentsID": 107,
+    "name": "Dr JS Moroka Local Municipality"
+  },
+  "department": "Dr JS Moroka Local Municipality",
+  "categories": {
+    "categoriesID": 24,
+    "name": "Wholesale and retail trade and repair of motor vehicles and motorcycles"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ab3eb578-c607-4f55-942d-fc8c085f39e3",
+      "fileName": "POOL OF VEHICLE.pdf",
+      "extension": ".pdf",
+      "tendersID": 158908,
+      "active": true,
+      "updatedBy": "MahlanguSB@moroka.gov.za",
+      "dateModified": "2026-06-11T21:57:42.6930721"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "JSM FLEET – 06\/08W00",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Bongimfundo street-Siyabuswa-Siyabuswa-0472",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Fleet Management & Vehicle Operations",
+    "Road Freight & Haulage"
+  ],
+  "skills": [
+    "Fleet Management & Telematics",
+    "Road Freight & Haulage"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)"
+  ],
+  "title": "APPOINTMENT OF PANEL OF SERVICE PROVIDERS FOR THE REPAIRS, MAINTENANCE AND SERVICE OF POOL OF VEHICLE FOR DR JS MOROKA LOCAL MUNICIPALITY FOR THE PERIOD OF THIRTY-SIX [36] MONTHS AS AND WHEN REQUIRED",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "12 June 2026, 12H00 to 12H30",
+  "closingDate": "09 July 2026, 11H00",
+  "reference": "JSM FLEET – 06\/08W00",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

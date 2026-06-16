@@ -1,0 +1,224 @@
+{
+  "id": 159118,
+  "tender_No": "240-114238630",
+  "description": "The data acquisition system (DAS) performs all the online vibration monitoring functions on the main turbine (MT), electrical feed pumps (EFP) A&B and the steam feed pump turbine (SFPT) at Arnot Power Station for 3 years (36 months).",
+  "category": "Other personal service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-17T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Arnot Power Station",
+  "surburb": "Rietkuil",
+  "town": "Mpumalanga",
+  "code": "1097",
+  "conditions": "N\/A",
+  "contactPerson": "Mokhele Ramabusa",
+  "email": "RamabuMM@eskom.co.za",
+  "telephone": "013-297-9849",
+  "fax": "N\/A",
+  "username": "ramabumm@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 203,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 57,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 57,
+    "name": "Other personal service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "aeb33d11-09e3-436d-a6f9-2e723c0f6bba",
+      "fileName": "240-68099512 Form A_Cat 1_ Rev 9.docx",
+      "extension": ".docx",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:30:00.7749514"
+    },
+    {
+      "supportDocumentID": "3f64c15e-8c66-4993-8b61-3056f97fa89f",
+      "fileName": "240-12248652_List of Tender Returnables_Cat 1_ Rev 7.docx",
+      "extension": ".docx",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:30:00.72567"
+    },
+    {
+      "supportDocumentID": "34c39968-b24b-427c-af30-6afd26d6f130",
+      "fileName": "Eskom Supplier Integrity Pact_.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.4227589"
+    },
+    {
+      "supportDocumentID": "e53868be-6be5-4d2b-9c6f-78eed0bece84",
+      "fileName": "Eskom General Conditions of Purchase.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.3284469"
+    },
+    {
+      "supportDocumentID": "55fc6e31-fbae-48df-b436-86003cef37e5",
+      "fileName": "Eskom Vehicle Safety Spec 32-345.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.4623365"
+    },
+    {
+      "supportDocumentID": "6cedf894-f0f9-4500-977e-8698972e73e8",
+      "fileName": "Eskom life-saving rules.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.3807937"
+    },
+    {
+      "supportDocumentID": "676ceb02-d8f9-4ef4-b97f-a5995cfcb367",
+      "fileName": "Safety Health Environment and Quality SHEQ Policy.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.6663196"
+    },
+    {
+      "supportDocumentID": "14677fcf-c5bd-4a96-bf0d-ccb9f3e40c1a",
+      "fileName": "Eskom - Standard Conditions of Tender.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.2274819"
+    },
+    {
+      "supportDocumentID": "012f922e-15bc-4f55-aff2-d599c88cb435",
+      "fileName": "Supplier Declaration of Interest Template (G20 Logo) (1).docx",
+      "extension": ".docx",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.7775968"
+    },
+    {
+      "supportDocumentID": "bae1ae24-6528-4ca6-bfef-e5dae8ae09f4",
+      "fileName": "OSH Acknowledge form.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.5606621"
+    },
+    {
+      "supportDocumentID": "de133284-ca81-4cf2-8bd1-ef3658515e6d",
+      "fileName": "Supplier Declaration of Interest Template.docx",
+      "extension": ".docx",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.8354666"
+    },
+    {
+      "supportDocumentID": "3242db44-d512-4569-842b-f3f7702d0ae4",
+      "fileName": "Invitation to Tender (ITT) or Request for Proposal (RFP) Data acquisition system (DAS) performs all the online vibration monitoring.pdf",
+      "extension": ".pdf",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:26:20.2644985"
+    },
+    {
+      "supportDocumentID": "e07cb006-055f-4fdf-9fa9-f79e60e14503",
+      "fileName": "Non-Disclosure Agreement (NDA) Vendors Template - 02 September 2024 (G20 Logo) (1).docx",
+      "extension": ".docx",
+      "tendersID": 159118,
+      "active": true,
+      "updatedBy": "ramabumm@eskom.co.za",
+      "dateModified": "2026-06-12T16:32:55.510776"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "240-114238630",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Arnot Power Station-Rietkuil-Mpumalanga-1097",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Data, Analytics & AI",
+    "Networks, Telecoms & Connectivity",
+    "Systems Integration & Automation"
+  ],
+  "skills": [
+    "Network Engineering & Administration",
+    "Data Analytics & Business Intelligence",
+    "Systems Integration & API Development",
+    "IT Support & Managed Services"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "Data Center Facilities",
+    "Remote Monitoring Tools",
+    "Specialized Testing Equipment"
+  ],
+  "title": "Data acquisition system (DAS) performs all the online vibration monitoring",
+  "cidb_grading": "2Not found",
+  "min_functionality_threshold": 80,
+  "isCompulsoryBriefing": false,
+  "reference": "240-114238630",
+  "complianceRequirements": [
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "SARS Tax Compliance Pin"
+  ]
+}

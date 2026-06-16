@@ -1,0 +1,122 @@
+{
+  "id": 158917,
+  "tender_No": "PPA - 122790",
+  "description": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+  "category": "Construction",
+  "type": "Request for Proposal",
+  "organ_of_State": "Transnet Port Terminal",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T10:00:00",
+  "briefingVenue": "Transnet Port Terminal (Habour) Mhlathuze Building in Port of Richards Bay ",
+  "streetname": "Gordons Road",
+  "surburb": "Richards Bay",
+  "town": "Richards Bay",
+  "code": "3900",
+  "conditions": "N\/A",
+  "contactPerson": "Nthombi Mtshali",
+  "email": "Nthombi.Mtshali@transnet.net",
+  "telephone": "035-905-3350",
+  "fax": "N\/A",
+  "username": "nthombi.mtshali@transnet.net",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 180,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 27,
+  "departmentsID": 667,
+  "departments": {
+    "departmentsID": 667,
+    "name": "Transnet SOC Ltd"
+  },
+  "department": "Transnet SOC Ltd",
+  "categories": {
+    "categoriesID": 27,
+    "name": "Construction"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "770b1d05-0539-4eed-81b0-f0467b33d683",
+      "fileName": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+      "extension": ".pdf",
+      "tendersID": 158917,
+      "active": true,
+      "updatedBy": "nthombi.mtshali@transnet.net",
+      "dateModified": "2026-06-12T07:37:03.297799"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PPA - 122790",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Gordons Road-Richards Bay-Richards Bay-3900",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Structural Steel, Fencing & Paving",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "CIDB Grading Certification",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+  "cidb_grading": "4SL",
+  "min_functionality_threshold": 80,
+  "isCompulsoryBriefing": true,
+  "closingDate": "2026-06-26T12:00:00",
+  "reference": "PPA - 122790",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

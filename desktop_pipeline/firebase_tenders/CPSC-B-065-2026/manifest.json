@@ -1,0 +1,101 @@
+{
+  "id": 159140,
+  "tender_No": "CPSC\/B\/065\/2026",
+  "description": "CPSC\/B\/065\/2026 OUTSOURCING A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF 15X (5MX10M) WARRIOR TENT COMPLETE, WEATHER HAVEN AT 18 DEPLOYMENT SUPPORT UNIT DOD PROC PLAN 26-27\/SAAF\/1904 ",
+  "category": "Supplies: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Defence",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "06 July 2026 at 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "18 DEPLOYMENT SUPPORT UNIT",
+  "surburb": "SWARTKOP",
+  "town": "PRETORIA",
+  "code": "0001",
+  "conditions": "BIDDERS ARE TO CONTACT WARRANT OFFICER CLASS 1 H. REINACH FOR ANY TECHNICAL ENQUIRIES AT 012 351 2706",
+  "contactPerson": "CAPTAIN MMANTWA MMEKWA",
+  "email": "MMANTWA.MMEKWA@DOD.MIL.ZA",
+  "telephone": "012-649-6642",
+  "fax": "N\/A",
+  "username": "mmantwa.mmekwa@dod.mil.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 55,
+  "departmentsID": 90,
+  "departments": {
+    "departmentsID": 90,
+    "name": "Defence"
+  },
+  "department": "Defence",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "bd5e5fad-03ac-4456-a02d-5588ee227432",
+      "fileName": "CPSC-B-065-2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159140,
+      "active": true,
+      "updatedBy": "mmantwa.mmekwa@dod.mil.za",
+      "dateModified": "2026-06-12T19:25:38.3971928"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CPSC\/B\/065\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "18 DEPLOYMENT SUPPORT UNIT-SWARTKOP-PRETORIA-0001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Fabrication, Metal",
+    "Supply Chain & Logistics"
+  ],
+  "skills": [
+    "Supply Chain Management",
+    "Manufacturing & Industrial"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure"
+  ],
+  "title": "OUTSOURCING A SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF 15X (5MX10M) WARRIOR TENT COMPLETE, WEATHER HAVEN AT 18 DEPLOYMENT SUPPORT UNIT",
+  "isCompulsoryBriefing": false,
+  "closingDate": "06 July 2026 at 11:00 AM",
+  "reference": "CPSC\/B\/065\/2026"
+}

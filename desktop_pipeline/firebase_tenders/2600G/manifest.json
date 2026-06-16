@@ -1,0 +1,171 @@
+{
+  "id": 158896,
+  "tender_No": "2600G",
+  "description": "BID-2600G: SUPPLY AND DELIVERY OF ENERGY EFFICIENT LUMINAIRES",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "City Power",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-17T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "40 Heronmere road",
+  "surburb": "REUVEN",
+  "town": "Johannesburg",
+  "code": "2091",
+  "conditions": "COMPULSORY MANDATORY REQUIREMENTS\tBIDDERS SHOULD SUBMIT THE FOLLOWING DOCUMENTS: (FAILURE TO PROVIDE THE DOCUMENTS WILL RESULT IN THE BIDDER NOT BEING EVALUATED FURTHER)\r\n•\tVALID ISO CERTIFICATION 9001:2015 IN THE BIDDER’S NAME (THE SCOPE ON THE DOCUMENTATION SHOULD COVER THE MANUFACTURING OF STREETLIGHTING LUMINAIRES)\r\n1ST STAGE OF BID EVALUATION\tFUNCTIONALITY TOTAL SCORE: 100%\r\n\tTHRESHOLD (MINIMUM SCORE): 85%\r\n2ND STAGE OF BID EVALUATION\tPRICE: 90\r\nSPECIFIC GOALS\tB-BBEE (SPECIFIC GOALS): 10  \r\n",
+  "contactPerson": "KATLEGO NNETE",
+  "email": "knnate@citypower.co.za",
+  "telephone": "011-490-7681",
+  "fax": "011-490-7590",
+  "username": "tmagomani@citypower.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 4,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 84,
+  "departmentsID": 65,
+  "departments": {
+    "departmentsID": 65,
+    "name": "City Power – Johannesburg"
+  },
+  "department": "City Power – Johannesburg",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "490db110-a127-4d72-8f42-1054fea9b507",
+      "fileName": "CP_TSSPEC_ 231-  ENERGY EFFICIENCY LED PUBLISHED REV 3.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:29.3346398"
+    },
+    {
+      "supportDocumentID": "978d77a1-6cc8-4934-b154-1642d828580d",
+      "fileName": "CP_TSSPEC_015 _Specification for Post top LED Luminaires Rev 7.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:30.2453154"
+    },
+    {
+      "supportDocumentID": "8914e89d-3c16-4c41-a482-37488139842e",
+      "fileName": "Bid Document - Supply and Delivery of Energy Efficient Luminaires - 2600G (003)2.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-12T12:37:29.7503489"
+    },
+    {
+      "supportDocumentID": "9833ee2d-45ef-40d1-bce6-7c78bc587a44",
+      "fileName": "CP_NISSP_004 Specifiation for solar powered floodlights  rev 0.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:28.9420274"
+    },
+    {
+      "supportDocumentID": "0b3861bd-e289-4fcd-9bf2-bbe75e7a061a",
+      "fileName": "BID ADVERT  -  2600G - Supply and Delivery of Energy Efficient Luminaires (002).pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:28.2057031"
+    },
+    {
+      "supportDocumentID": "e8251b42-8ec5-4258-8d53-c7ff115e8b4f",
+      "fileName": "CP_TSSPEC_ 278-  ENERGY EFFICIENCY FLOOD LIGHTS Rev 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:29.8123133"
+    },
+    {
+      "supportDocumentID": "22319104-be9d-4ef4-8ff4-f5883388bd64",
+      "fileName": "CP_NISSP_001 Specifiation for solar powered streetlights rev 0.pdf",
+      "extension": ".pdf",
+      "tendersID": 158896,
+      "active": true,
+      "updatedBy": "tmagomani@citypower.co.za",
+      "dateModified": "2026-06-11T20:02:28.3686972"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "2600G",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "40 Heronmere road-REUVEN-Johannesburg-2091",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Solar, Renewable & Backup Power",
+    "Electrical Distribution & Grid Services"
+  ],
+  "skills": [
+    "Renewable Energy (Solar\/Wind)",
+    "Electrical Grid Maintenance"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "ECA\/ECASA Registration"
+  ],
+  "title": "Supply and Delivery of Energy Efficient Luminaires",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-17T11:00:00",
+  "reference": "2600G",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": 158807,
+  "tender_No": "66111\/1007\/2026\/01",
+  "description": "The South African National Roads Agency SOC Limited is soliciting proposals from Service Provider\/s that will offer Advertising and Marketing Services.",
+  "category": "Publishing activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "South African National Roads Agency SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "08 July 2026 12:00PM",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T10:00:00",
+  "briefingVenue": "Link will be sent.",
+  "streetname": "38 Ida street",
+  "surburb": "Menlo park",
+  "town": "Pretoria",
+  "code": "0081",
+  "conditions": "Only tenderers who are registered on the National Treasury Central Supplier Database and meet the eligibility criteria as stated in the submission Data 4.1.1are eligible to tender.",
+  "contactPerson": "Procuremnet office",
+  "email": "ProcurementNR1@sanral.co.za",
+  "telephone": "012-426-6236",
+  "fax": "N\/A",
+  "username": "LangaS@nra.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 58,
+  "departmentsID": 618,
+  "departments": {
+    "departmentsID": 618,
+    "name": "South African National Roads Agency Soc Limited (SANRAL)"
+  },
+  "department": "South African National Roads Agency Soc Limited (SANRAL)",
+  "categories": {
+    "categoriesID": 58,
+    "name": "Publishing activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "8050bd7c-d181-4b52-8af8-8cbab4494c30",
+      "fileName": "ADVERTISNG AND MARKETING TENDER ADVERT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158807,
+      "active": true,
+      "updatedBy": "LangaS@nra.co.za",
+      "dateModified": "2026-06-11T10:35:22.7544585"
+    },
+    {
+      "supportDocumentID": "46cd93c5-0a81-4fa8-8ca9-9936afd23e28",
+      "fileName": "NRA2026-0115-Advertising and Marketing Tender.pdf",
+      "extension": ".pdf",
+      "tendersID": 158807,
+      "active": true,
+      "updatedBy": "LangaS@nra.co.za",
+      "dateModified": "2026-06-11T10:35:22.8152101"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "66111\/1007\/2026\/01",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "38 Ida street-Menlo park-Pretoria-0081",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Graphic Design, Branding & Creative",
+    "Digital Marketing & Paid Media",
+    "Events, Activations & PR"
+  ],
+  "skills": [
+    "Digital Marketing & SEO",
+    "Content Strategy & Copywriting",
+    "Graphic Design & Branding",
+    "Event Planning & Activation"
+  ],
+  "title": "Advertising and Marketing Services for a period of three (3) years",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "closingDate": "08 July 2026 12:00PM",
+  "reference": "66111\/1007\/2026\/01",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

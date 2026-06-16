@@ -1,0 +1,106 @@
+{
+  "id": 158988,
+  "tender_No": "280Q\/2025\/26",
+  "description": "TERM TENDER FOR THE APPOINTMENT OF EMERGENCY HOUSING CONTRACTORS FOR THE SUPPLY, DELIVERY, ERECTION AND CONSTRUCTION OF EMERGENCY HOUSING RELATED TO HUMAN SETTLEMENTS PROGRAMMES",
+  "category": "Services: Building",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "City of Cape Town",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "17 July 2026",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T10:00:00",
+  "briefingVenue": "Microsoft Teams meeting  Join: https:\/\/teams.microsoft.com\/meet\/391029043673484?p=ex7au9T0I2I6i3OVwS",
+  "streetname": "12 Hertzog Boulevard, Cape Town, 2nd Floor ( Concourse Level) Civic Centre",
+  "surburb": "Cape Town",
+  "town": "City of Cape Town",
+  "code": "8000",
+  "conditions": "N\/A",
+  "contactPerson": "Mogamat Adiel Domingo",
+  "email": "MogamatAdiel.Domingo@capetown.gov.za",
+  "telephone": "021-400-6574",
+  "fax": "000-000-0000",
+  "username": "NodumisoMathabo.Ngoko@capetown.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 78,
+  "departmentsID": 59,
+  "departments": {
+    "departmentsID": 59,
+    "name": "City of Cape Town"
+  },
+  "department": "City of Cape Town",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "6aac11eb-cd12-42ee-ae13-9a856da31075",
+      "fileName": "Notice to tenderers No 1_Tender 280Q_2025_26.pdf",
+      "extension": ".pdf",
+      "tendersID": 158988,
+      "active": true,
+      "updatedBy": "NodumisoMathabo.Ngoko@capetown.gov.za",
+      "dateModified": "2026-06-12T10:41:04.6385575"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "280Q\/2025\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "12 Hertzog Boulevard, Cape Town, 2nd Floor ( Concourse Level) Civic Centre-Cape Town-City of Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "General Building Construction",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "TERM TENDER FOR THE APPOINTMENT OF EMERGENCY HOUSING CONTRACTORS FOR THE SUPPLY, DELIVERY, ERECTION AND CONSTRUCTION OF EMERGENCY HOUSING RELATED TO HUMAN SETTLEMENTS PROGRAMMES",
+  "isCompulsoryBriefing": false,
+  "closingDate": "17 July 2026",
+  "reference": "280Q\/2025\/26",
+  "provinceNames": [
+    "Western Cape"
+  ]
+}

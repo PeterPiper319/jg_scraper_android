@@ -1,0 +1,126 @@
+{
+  "id": 158784,
+  "tender_No": "IDTKN27DOE004",
+  "description": "EMERGENCY REPAIRS TO STORM DAMAGED SCHOOL AT KHULANGOLWAZI HIGH SCHOOL IN UTHUKELA DISTRICT-KWAZULU-NATAL PROVINCE",
+  "category": "Construction",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "INDEPENDENT DEVELOPMENT TRUST KWA-ZULU NATAL",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "12h00 on Tuesday, July 7, 2026",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "22 Dorothy Nyembe Street , 4TH Floor – The Marine Building",
+  "streetname": "22 DOROTHY NYEMBE STREET",
+  "surburb": "4TH FLOOR - THE MARINE BUILDING",
+  "town": "DURBAN",
+  "code": "4001",
+  "conditions": "N\/A",
+  "contactPerson": "Nondumiso Ndwandwe",
+  "email": "NondumisoN@idt.org.za",
+  "telephone": "031-369-7400",
+  "fax": "N\/A",
+  "username": "nondumisok@idt.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KWAZULU-NATAL",
+  "categoriesID": 27,
+  "departmentsID": 252,
+  "departments": {
+    "departmentsID": 252,
+    "name": "Independent Development Trust"
+  },
+  "department": "Independent Development Trust",
+  "categories": {
+    "categoriesID": 27,
+    "name": "Construction"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "f2097df0-4627-4087-a7e7-87c5a475963a",
+      "fileName": "IDTKN27DOE004 KHULANGOLWAZI HS CIDB ADVERT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158784,
+      "active": true,
+      "updatedBy": "nondumisok@idt.org.za",
+      "dateModified": "2026-06-11T08:53:13.7442047"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IDTKN27DOE004",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "22 DOROTHY NYEMBE STREET-4TH FLOOR - THE MARINE BUILDING-DURBAN-4001",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "Professional Indemnity Insurance",
+    "On-site Safety Equipment"
+  ],
+  "title": "EMERGENCY REPAIRS TO STORM DAMAGED SCHOOL AT KHULANGOLWAZI HIGH SCHOOL IN UTHUKELA DISTRICT-KWAZULU-NATAL PROVINCE",
+  "cidb_grading": "1null",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "19 June 2026 starting at 11h00",
+  "closingDate": "12h00 on Tuesday, July 7, 2026",
+  "reference": "IDTKN27DOE004",
+  "provinceNames": [
+    "KWAZULU-NATAL"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

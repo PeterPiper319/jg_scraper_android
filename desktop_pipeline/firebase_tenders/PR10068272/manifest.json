@@ -1,0 +1,105 @@
+{
+  "id": 159107,
+  "tender_No": "PR10068272",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE SAP SUPPORT AND PERFORM MAINTENANCE FOR THE GPL FOR A PERIOD OF 6 MONTHS",
+  "category": "Computer programming, consultancy and related activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "GPL",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026, 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-17T12:00:00",
+  "briefingVenue": "Microsoft Teams",
+  "streetname": "43 RISSIK STREET",
+  "surburb": "Johannesburg",
+  "town": "Johannesburg",
+  "code": "2000",
+  "conditions": "Technical Enquiries: KTsogang@gpl.gov.za and CC VLetshokota@gpl.gov.za\r\n\r\nSCM Enquiries and Briefing session link request: VLetshokota@gpl.gov.za",
+  "contactPerson": "Vhukhudo",
+  "email": "vletshokota@gpl.gov.za",
+  "telephone": "011-498-5555",
+  "fax": "N\/A",
+  "username": "MRasebopye@gpl.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 73,
+  "departmentsID": 214,
+  "departments": {
+    "departmentsID": 214,
+    "name": "Gauteng - Legislature"
+  },
+  "department": "Gauteng - Legislature",
+  "categories": {
+    "categoriesID": 73,
+    "name": "Computer programming, consultancy and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ebf2f360-a28d-48ad-be84-62c8fb49349d",
+      "fileName": "PR10068272 -BID DOCUMENT - SAP SUPPORT.pdf",
+      "extension": ".pdf",
+      "tendersID": 159107,
+      "active": true,
+      "updatedBy": "MRasebopye@gpl.gov.za",
+      "dateModified": "2026-06-12T15:52:44.5520598"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PR10068272",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "43 RISSIK STREET-Johannesburg-Johannesburg-2000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Systems Integration & Automation"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Systems Integration & API Development",
+    "Project Management (Agile\/Scrum)"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Remote Monitoring Tools"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE SAP SUPPORT AND PERFORM MAINTENANCE FOR THE GPL FOR A PERIOD OF 6 MONTHS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "17 June 2026, 12h00 pm",
+  "closingDate": "22 June 2026, 11:00 AM",
+  "reference": "PR10068272"
+}

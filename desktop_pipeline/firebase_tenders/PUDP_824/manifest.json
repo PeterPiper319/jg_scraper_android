@@ -1,0 +1,118 @@
+{
+  "id": 159040,
+  "tender_No": "PUDP 824",
+  "description": "TERMS OF REFERENCE FOR THE SUPPLY, DELIVERY AND MAINTENANCE OF FIREARMS, AMMUNITION AND RELATED ACCESSORIES FOR A PERIOD OF 36 MONTHS",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Transport and Community Safety",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T11:00:00",
+  "briefingVenue": "CNR Church and Bodenstein Street ( Phamoko Towers). Boardroom 5-62",
+  "streetname": "CNR Church and Bodenstein Street ( Phamoko Towers)",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0700",
+  "conditions": "A briefing session will be held at the Department of Transport and Community Safety, Corner Church and Bodenstein Streets (Phamoko Towers), Boardroom 5-62, at 11:00.",
+  "contactPerson": "Makwela MD",
+  "email": "makwelam@dtcs.limpopo.gov.za",
+  "telephone": "015-295-1267",
+  "fax": "015-295-1267",
+  "username": "makwelam@dtcs.limpopo.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 48,
+  "departmentsID": 787,
+  "departments": {
+    "departmentsID": 787,
+    "name": "Limpopo - Department of Community Safety and Transport Management"
+  },
+  "department": "Limpopo - Department of Community Safety and Transport Management",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2a217931-c851-40d2-8679-8c554be333a9",
+      "fileName": "BID NO PUDP 824.pdf",
+      "extension": ".pdf",
+      "tendersID": 159040,
+      "active": true,
+      "updatedBy": "makwelam@dtcs.limpopo.gov.za",
+      "dateModified": "2026-06-12T13:19:57.4440915"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PUDP 824",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CNR Church and Bodenstein Street ( Phamoko Towers)-Polokwane-Polokwane-0700",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "SUPPLY, DELIVERY AND MAINTENANCE OF FIREARMS, AMMUNITION AND RELATED ACCESSORIES FOR A PERIOD OF 36 MONTHS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-10T11:00:00",
+  "reference": "PUDP 824",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

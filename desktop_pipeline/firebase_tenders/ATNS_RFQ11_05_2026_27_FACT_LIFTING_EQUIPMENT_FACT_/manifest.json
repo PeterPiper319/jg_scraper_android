@@ -1,0 +1,129 @@
+{
+  "id": 158990,
+  "tender_No": "ATNS\/RFQ11\/05\/2026\/27\/FACT_LIFTING EQUIPMENT",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR THE MAINTENANCE AND REPAIR OF HOIST EQUIPMENT AT ATNS CAPE TOWN INTERNATIONAL AIRPORT (FACT) ON AN AD HOC BASIS FOR A PERIOD OF FIVE (5) YEARS ",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "Air Traffic and Navigation Services SOC Limited (ATNS)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-29T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Tower Road",
+  "surburb": "Matroonfontein",
+  "town": "Cape Town",
+  "code": "7490",
+  "conditions": "N\/A",
+  "contactPerson": "Bright Blessie",
+  "email": "brightb@atns.co.za",
+  "telephone": "011-607-1497",
+  "fax": "N\/A",
+  "username": "charless@atns.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 86,
+  "departmentsID": 9,
+  "departments": {
+    "departmentsID": 9,
+    "name": "Air Traffic and Navigation Services Company Limited"
+  },
+  "department": "Air Traffic and Navigation Services Company Limited",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5d2d15d2-7ce3-46b2-b345-dfaf571812e2",
+      "fileName": "Annexure A - FACT  - Pricing Schedule for Lifting Equipment.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158990,
+      "active": true,
+      "updatedBy": "BrightB@atns.co.za",
+      "dateModified": "2026-06-12T10:48:23.4919944"
+    },
+    {
+      "supportDocumentID": "8a90fba6-51e7-4393-a0e0-e7b6c182e1c7",
+      "fileName": "ATNS - FACT Lifting Equipment.pdf",
+      "extension": ".pdf",
+      "tendersID": 158990,
+      "active": true,
+      "updatedBy": "BrightB@atns.co.za",
+      "dateModified": "2026-06-12T10:48:23.5332309"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ATNS\/RFQ11\/05\/2026\/27\/FACT_LIFTING EQUIPMENT",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Tower Road-Matroonfontein-Cape Town-7490",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Machinery Repair & Industrial Maintenance",
+    "Metal Fabrication, Machining & Welding"
+  ],
+  "skills": [
+    "Industrial Design & Engineering",
+    "Machine Maintenance & Repairs",
+    "Metal Fabrication & Welding"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure",
+    "CNC Machining Centers"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE MAINTENANCE AND REPAIR OF HOIST EQUIPMENT AT ATNS CAPE TOWN INTERNATIONAL AIRPORT (FACT) ON AN AD HOC BASIS FOR A PERIOD OF FIVE (5) YEARS",
+  "cidb_grading": "1Not found",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-29T11:00:00",
+  "reference": "ATNS\/RFQ11\/05\/2026\/27\/FACT_LIFTING EQUIPMENT",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

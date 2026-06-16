@@ -1,0 +1,585 @@
+{
+  "generatedAt": "2026-06-13T09:52:10.231223+02:00",
+  "tenderId": "PPA_-_122790",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "transnet@tip-offs.com",
+      "nthombi.mtshali@transnet.net",
+      "info3@weathersa.co.za"
+    ],
+    "phoneNumbers": [
+      "0800 003 056",
+      "035 905 3350",
+      "012 367 6023"
+    ],
+    "faxNumbers": [],
+    "addressLines": [],
+    "contactLines": [
+      {
+        "text": "TIP-OFFS ANONYMOUS: 0800 003 056 OR Transnet@tip-offs.com",
+        "sourceFile": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "Tel No. 035 905 3350",
+        "sourceFile": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "E mail Nthombi.mtshali@transnet.net",
+        "sourceFile": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "and which are available from: South African Weather Service 012 367 6023",
+        "sourceFile": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "or info3@weathersa.co.za.",
+        "sourceFile": "CIDB - tender pack - PPA 122790. Chrome shut.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Construction & Civil Engineering",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "construction_civil",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "General Building Works, Structural Steel, Fencing & Paving, Civil Works, Roads & Stormwater",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "General Building Construction, Civil Engineering & Infrastructure, Structural Engineering, Project Management (PMBOK), Health & Safety Management (OHS)",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Earthmoving Equipment (TLBs, Excavators), Scaffolding & Access Platforms, Concrete Mixing & Pouring Equipment, CIDB Grading Certification, Professional Indemnity Insurance",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The text snippets mention requirements related to construction, specifically fabrication and installation of walkway structural supports, CIDB registration, and contractor grading designation. These terms are closely related to the construction and civil engineering industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "PPA - 122790",
+      "status": "DONE",
+      "evidence": "PPA - 122790",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+      "status": "DONE",
+      "evidence": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+      "status": "DONE",
+      "evidence": "Fabrication and Installation Walkway Structural Supports for Transnet SOC LTD (reg. n0 Port Rail Terminal (PRT) CHROME SHUTDOWN, as once off.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "Transnet Port Terminal",
+      "status": "DONE",
+      "evidence": "Transnet Port Terminal",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "State Owned Enterprise",
+      "status": "DONE",
+      "evidence": "State Owned Enterprise",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Civil Works",
+      "status": "DONE",
+      "evidence": "Civil Works",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "An authorised representative of the tendering entity or a representative of a tendering entity that intends to form a Joint Venture (JV) must attend the compulsory clarification meeting",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "2026-06-26T12:00:00",
+      "status": "DONE",
+      "evidence": "12:00pm on 2026\/06\/26",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Electronic Portal",
+      "status": "DONE",
+      "evidence": "The Transnet e-Tender Submission Portal",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "https:\/\/www.transnet.etenders.co.za",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Proof of registration on the Central Supplier Database",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "A valid Tax Clearance Certificate issued by the South African Revenue Services. Tenderers also to provide Transnet with a TCS PIN",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "None",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "4",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "SL",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "The minimum qualifying score for functionality is: 80",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "80.0",
+      "status": "DONE",
+      "evidence": "80 points",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "regulatory_audit_finding_0",
+      "label": "Regulatory Audit Finding",
+      "value": "REGULATORY_ANOMALY: Public procurement regulations require an 80\/20 or 90\/10 preference point system, but scoring system is specified as None or Not found.",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    }
+  ],
+  "criticalFieldsNeedingReview": [
+    "regulatory_audit_finding_0"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": 159112,
+  "tender_No": "RFQ28501",
+  "description": "THE CONTRACTOR APPOINTMENT FOR INSTALLATION OF DELINEATION KERBING AT KING SHAKA INTERNATIONAL AIRPORT\r\n",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "ACSA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "30 JUNE 2026 at 16h00 pm",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T13:00:00",
+  "briefingVenue": "MSO BUILDING, RECEPTION, GROUND FLOOR",
+  "streetname": "King Shaka International Airport",
+  "surburb": "La Mercy",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Mlungisi.mgobhozi@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 84,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "424c8ce8-4f51-4971-b60a-59f682a3d21e",
+      "fileName": "Kerbs Delineation Installation Contract.pdf",
+      "extension": ".pdf",
+      "tendersID": 159112,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T16:02:21.3156293"
+    },
+    {
+      "supportDocumentID": "2fff2309-0996-4c22-8c96-e29cbe631cf7",
+      "fileName": "CIDB BID DOCUMENT RFQ28501.pdf",
+      "extension": ".pdf",
+      "tendersID": 159112,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T16:01:20.5080872"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ28501",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Shaka International Airport-La Mercy-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "cidb_grading": "1CE",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 60,
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "18 JUNE 2026 AT 13:00PM",
+  "closingDate": "30 JUNE 2026 at 16h00 pm",
+  "reference": "RFQ28501",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

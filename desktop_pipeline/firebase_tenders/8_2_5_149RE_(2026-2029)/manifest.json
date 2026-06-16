@@ -1,0 +1,98 @@
+{
+  "id": 159143,
+  "tender_No": "8\/2\/5\/149RE (2026-2029)",
+  "description": "8\/2\/5\/149RE (2026-2029) BID FOR RENDERING OF PROFESSIONAL MEDICAL SURVELLANCE, EMPLOYEE HEALTH AND WELLNESS SERVICES FOR MIDVAAL LOCAL MUNICIPALITY, FROM THE DATE OF APPOINTMENT UNTIL 30 JUNE 2029.",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Midvaal Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-24T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "25 Mitchell street",
+  "surburb": "Meyerton",
+  "town": "Meyerton",
+  "code": "1961",
+  "conditions": "Preferences are offered to tenderers who suitable experience and suitably qualified employees and resources to render the services.\r\nThe council reserves the right to accept any bid of part thereof and does not bind itself to accept the lowest or any bid and not to 1consider any bid not suitably endorsed or comprehensively competed.\r\nSPECIFIC GOALS & POINTS:\r\n             Locality: 10 Points\r\n             B-BBEE: 10 Points\r\nBidders using e-Tenders portal are hereby advised to monitor the portal regularly for updates and uploaded addendum documents during the time the bid is advertised. It is the responsibility of the bidder to ensure that they are up to date with all issued documents.",
+  "contactPerson": "Corporate Services",
+  "email": "tenders@midvaal.gov.za",
+  "telephone": "010-496-2827",
+  "fax": "N\/A",
+  "username": "sithembiso@midvaal.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 398,
+  "departments": {
+    "departmentsID": 398,
+    "name": "Midvaal Local Municipality"
+  },
+  "department": "Midvaal Local Municipality",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "6bd54bc0-d837-4e6f-b021-7e8031064d10",
+      "fileName": "ADVERT FOR THE WEEK.pdf",
+      "extension": ".pdf",
+      "tendersID": 159143,
+      "active": true,
+      "updatedBy": "sithembiso@midvaal.gov.za",
+      "dateModified": "2026-06-12T19:38:12.3631109"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/2\/5\/149RE (2026-2029)",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Mitchell street-Meyerton-Meyerton-1961",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "medical_health",
+  "specializations": [
+    "Clinical Services & Patient Care",
+    "Occupational Health & Safety"
+  ],
+  "skills": [
+    "General Medical Practice",
+    "Occupational Health & Safety",
+    "Medical Equipment Maintenance"
+  ],
+  "capabilities": [
+    "Certified Medical Facilities",
+    "HPCSA Professional Registration"
+  ]
+}

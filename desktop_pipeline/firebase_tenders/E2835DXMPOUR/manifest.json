@@ -1,0 +1,120 @@
+{
+  "id": 158888,
+  "tender_No": "E2835DXMPOUR",
+  "description": "Provision of office\/industrial building for acquisition (buying) in the Mpumalanga\r\nOperating Unit in Buffelspruit\/Matsamo area.",
+  "category": "Services: Building",
+  "type": "Expression of interest",
+  "organ_of_State": "Eskom",
+  "status": "Closed",
+  "clustersID": 0,
+  "closing_Date": "2022-11-30T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Eskom Pk, Jellicoe St",
+  "surburb": "Witbank",
+  "town": "Witbank",
+  "code": "1034",
+  "conditions": "N\/A",
+  "contactPerson": "Koketso Mokalapa",
+  "email": "mokalak@eskom.co.za",
+  "telephone": "053-830-5922",
+  "fax": "N\/A",
+  "username": "Mokalak@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 78,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "201e7c8b-12e2-4f40-8ad5-2ac57457842d",
+      "fileName": "Expression of Interest (EOI) or Request for Information (RFI) Template - Buffelspruit Re-issue.pdf",
+      "extension": ".pdf",
+      "tendersID": 158888,
+      "active": true,
+      "updatedBy": "Mokalak@eskom.co.za",
+      "dateModified": "2026-06-11T17:53:45.9637228"
+    },
+    {
+      "supportDocumentID": "483b7972-e038-4ef6-a594-3cde92a89309",
+      "fileName": "E-tendering Help Manual for supplier.pdf",
+      "extension": ".pdf",
+      "tendersID": 158888,
+      "active": true,
+      "updatedBy": "Mokalak@eskom.co.za",
+      "dateModified": "2026-06-11T17:55:08.148822"
+    },
+    {
+      "supportDocumentID": "2937223f-2ba5-4f1b-a65c-8ed8665762f9",
+      "fileName": "Annexure X - E-tendering Help Manual acknowledgement form.pdf",
+      "extension": ".pdf",
+      "tendersID": 158888,
+      "active": true,
+      "updatedBy": "Mokalak@eskom.co.za",
+      "dateModified": "2026-06-11T17:55:08.0846241"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E2835DXMPOUR",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Eskom Pk, Jellicoe St-Witbank-Witbank-1034",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "General Business Advisory",
+    "HR, Recruitment & Labour Services",
+    "Management & Strategy Consulting"
+  ],
+  "skills": [
+    "Management Consulting",
+    "General Business Advisory",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "Award for Provision of Office Cleaning and Janitorial Services at Kusile Power Station Project",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2022-11-30T10:00:00"
+}

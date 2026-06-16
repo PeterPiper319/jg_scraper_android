@@ -1,0 +1,105 @@
+{
+  "id": 159046,
+  "tender_No": "Q91-01-2025-26",
+  "description": "RE-ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE VERIFICATION OF QUALIFICATIONS AND BACKGROUND SCREENING FOR CURRENT AND PROSPECTIVE EMPLOYEES OF THE CITY OF TSHWANE, WITH EFFECT FROM 1 JULY 2026",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "CITY OF TSHWANE METROPOLITAN MUNICIPALITY",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026 at 10:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Tshwane House, 320 Madiba Street, Pretoria",
+  "streetname": "320 MADIBA STREET",
+  "surburb": "Pretoria",
+  "town": "PRETORIA",
+  "code": "0001",
+  "conditions": "Bidders should therefore not deposit their bid responses in the tender box but respond to the bid on the online platform https:\/\/portal.us.bn.cloud.ariba.com\/dashboard\/public\/appext\/comsapsbncdiscoveryui#\/RfxEvent\/preview\/1110015853?anId=ANONYMOUS by no later than 10:00 on 22 June 2026.",
+  "contactPerson": "RIANA ZAAYMAN",
+  "email": "rianaz@tshwane.gov.za",
+  "telephone": "012-358-4363",
+  "fax": "N\/A",
+  "username": "josiasma@tshwane.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 61,
+  "departmentsID": 63,
+  "departments": {
+    "departmentsID": 63,
+    "name": "City of Tshwane"
+  },
+  "department": "City of Tshwane",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c2993de2-f280-4815-be6c-3012c0cc446a",
+      "fileName": "Q91-01-2025-26QUOTATION DOCUMENT.pdf",
+      "extension": ".pdf",
+      "tendersID": 159046,
+      "active": true,
+      "updatedBy": "josiasma@tshwane.gov.za",
+      "dateModified": "2026-06-12T13:39:53.3370062"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "Q91-01-2025-26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "320 MADIBA STREET-Pretoria-PRETORIA-0001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "RE-ADVERTISEMENT: APPOINTMENT OF A SERVICE PROVIDER FOR THE VERIFICATION OF QUALIFICATIONS AND BACKGROUND SCREENING FOR CURRENT AND PROSPECTIVE EMPLOYEES OF THE CITY OF TSHWANE, WITH EFFECT FROM 1 JULY 2026",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "22 June 2026 at 10:00",
+  "closingDate": "22 June 2026 at 10:00",
+  "reference": "Q91-01-2025-26",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

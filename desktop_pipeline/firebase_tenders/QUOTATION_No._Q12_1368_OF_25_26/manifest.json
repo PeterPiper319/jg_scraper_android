@@ -1,0 +1,99 @@
+{
+  "id": 158847,
+  "tender_No": "QUOTATION No. Q12\/1368 OF 25\/26",
+  "description": "APPOINTMENT OF SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF FOUNDATION BRICKS (NFX) FOR GREATER EDENDALE, ROADS AND STORMWATER SECTION",
+  "category": "Supplies: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Msunduzi Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "City Engineers Department",
+  "surburb": "150 Mayors Walk",
+  "town": "Pietermaritzburg",
+  "code": "3201",
+  "conditions": "N\/A",
+  "contactPerson": "Albert Mofokeng",
+  "email": "albert.mofokeng@msunduzi.gov.za",
+  "telephone": "072-600-5151",
+  "fax": "N\/A",
+  "username": "Phiwe.Mthalane@msunduzi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 55,
+  "departmentsID": 437,
+  "departments": {
+    "departmentsID": 437,
+    "name": "Msunduzi Local Municipality"
+  },
+  "department": "Msunduzi Local Municipality",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "7c62375c-a835-4d02-98ce-eb9b7f59dd88",
+      "fileName": "Quaotation No. Q12.1368 Document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158847,
+      "active": true,
+      "updatedBy": "Phiwe.Mthalane@msunduzi.gov.za",
+      "dateModified": "2026-06-11T14:35:10.6530385"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "QUOTATION No. Q12\/1368 OF 25\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "City Engineers Department-150 Mayors Walk-Pietermaritzburg-3201",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "CIDB Grading Certification",
+    "NHBRC Registration"
+  ]
+}

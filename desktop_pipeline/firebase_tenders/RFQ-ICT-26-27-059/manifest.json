@@ -1,0 +1,112 @@
+{
+  "id": 158999,
+  "tender_No": "RFQ-ICT-26-27-059",
+  "description": "Provision of Azure Based Private Cloud for a period of 24 months.",
+  "category": "Computer programming, consultancy and related activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Manufacturing, Engineering and Related Services SETA (merSETA)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-18T16:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "hillside",
+  "surburb": "Parktown",
+  "town": "Johannesburg",
+  "code": "2193",
+  "conditions": "N\/A",
+  "contactPerson": "karabo Phalo",
+  "email": "kphalo@merseta.org.za",
+  "telephone": "069-008-3800",
+  "fax": "N\/A",
+  "username": "nmotha@merseta.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 73,
+  "departmentsID": 752,
+  "departments": {
+    "departmentsID": 752,
+    "name": "Manufacturing, Engineering and Related Services SETA (merSETA)"
+  },
+  "department": "Manufacturing, Engineering and Related Services SETA (merSETA)",
+  "categories": {
+    "categoriesID": 73,
+    "name": "Computer programming, consultancy and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "58a5fa51-856d-4a08-9f3c-2d8acb8433ac",
+      "fileName": "RFQ For Services of Provision of Azure Based Private Cloud for a period of 24 months..pdf",
+      "extension": ".pdf",
+      "tendersID": 158999,
+      "active": true,
+      "updatedBy": "nmotha@merseta.org.za",
+      "dateModified": "2026-06-12T10:59:05.8739757"
+    },
+    {
+      "supportDocumentID": "151fb763-c1c3-40e9-b3e1-9097de321fb0",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022 with goals (3) (2) (2) (2) (1) (2) (1).docx",
+      "extension": ".docx",
+      "tendersID": 158999,
+      "active": true,
+      "updatedBy": "nmotha@merseta.org.za",
+      "dateModified": "2026-06-12T10:59:05.9234248"
+    },
+    {
+      "supportDocumentID": "37e3f1f8-ac9e-4618-9215-9dedaf0b9572",
+      "fileName": "Annexurre A.pdf",
+      "extension": ".pdf",
+      "tendersID": 158999,
+      "active": true,
+      "updatedBy": "nmotha@merseta.org.za",
+      "dateModified": "2026-06-12T10:59:05.8158473"
+    },
+    {
+      "supportDocumentID": "8694249c-9814-4c1f-94f5-aa5db64152f6",
+      "fileName": "Standard Bidding Document (SDB) 4_Annexure A ( (3) (4) (2) (2) (1) (2) (1).doc",
+      "extension": ".doc",
+      "tendersID": 158999,
+      "active": true,
+      "updatedBy": "nmotha@merseta.org.za",
+      "dateModified": "2026-06-12T10:59:05.9483235"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ-ICT-26-27-059",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "hillside-Parktown-Johannesburg-2193",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing"
+}

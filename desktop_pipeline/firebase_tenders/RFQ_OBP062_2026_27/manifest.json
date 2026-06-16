@@ -1,0 +1,119 @@
+{
+  "id": 158950,
+  "tender_No": "RFQ_OBP062_2026_27",
+  "description": "The appointment of a service provider to provide services for the placement of domestic sales and customer relationship manager, compliance officer and research and development manager",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "Onderstepoort Biological Products (SOC) Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T14:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "100 Soutpan Road, ",
+  "surburb": "Onderstepoort",
+  "town": "Pretoria",
+  "code": "0110",
+  "conditions": "N\/A",
+  "contactPerson": "Johannes Makibe Mmako",
+  "email": "Purchasing@obpvaccines.co.za",
+  "telephone": "012-522-1500",
+  "fax": "N\/A",
+  "username": "Nokuthokoza@obpvaccines.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 525,
+  "departments": {
+    "departmentsID": 525,
+    "name": "Onderstepoort Biological Products Limited"
+  },
+  "department": "Onderstepoort Biological Products Limited",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "35d8f594-b7c1-4bec-84f6-a8eaafcca70c",
+      "fileName": "Solicitation ID RFQ_OBP062_2026_27 Request for Quote Jun 12 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158950,
+      "active": true,
+      "updatedBy": "Nokuthokoza@obpvaccines.co.za",
+      "dateModified": "2026-06-12T09:37:04.9262091"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ_OBP062_2026_27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "100 Soutpan Road, -Onderstepoort-Pretoria-0110",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "HR, Recruitment & Labour Services"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Human Resources & Recruitment"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "Request for Quote",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "reference": "RFQ_OBP062_2026_27",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

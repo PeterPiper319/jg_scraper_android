@@ -1,0 +1,560 @@
+{
+  "generatedAt": "2026-06-13T09:30:03.492492+02:00",
+  "tenderId": "ID-3281077",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "kimberley@dpw.gov.za"
+    ],
+    "phoneNumbers": [
+      "012 406 1328",
+      "0800 701 701"
+    ],
+    "faxNumbers": [],
+    "addressLines": [],
+    "contactLines": [
+      {
+        "text": "012 406 1328",
+        "sourceFile": "ID-3281077.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "0800 701 701",
+        "sourceFile": "ID-3281077.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "invoice. kimberley@dpw.gov.za or hand deliver to Registry Services. Please",
+        "sourceFile": "ID-3281077.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Construction & Civil Engineering",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "construction_civil",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "General Building Works, Civil Works, Roads & Stormwater",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "General Building Construction, Civil Engineering & Infrastructure, Project Management (PMBOK), Health & Safety Management (OHS)",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "CIDB Grading Certification, NHBRC Registration, On-site Safety Equipment, Surveying Instruments (Total Stations)",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The tender package mentions 'GENERAL BUILDING WORKS FOR 36 MONTHS TERM CONTRACT' and 'MAINTENANCE AND REPAIRS OF GENERAL BUILDING WORKS', which aligns with the Construction & Civil Engineering industry. The document also references 'DPWI' and 'CIDB Grading Certification', which are relevant to the construction industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "Department of Public Works and Infrastructure",
+      "status": "DONE",
+      "evidence": "Department of Public Works and Infrastructure",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "Provincial Department",
+      "status": "DONE",
+      "evidence": "Provincial Department",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "Civil Works",
+      "status": "DONE",
+      "evidence": "Civil Works",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "Eastern Cape",
+      "status": "DONE",
+      "evidence": "Eastern Cape",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "80\/20",
+      "status": "DONE",
+      "evidence": "80\/20",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "The tenderer shall have a CIDB contractor grading designation of 4 GB or 4 GB* or higher.",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "4",
+      "status": "DONE",
+      "evidence": "4",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "GB",
+      "status": "DONE",
+      "evidence": "GB",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "The minimum functionality score to qualify for further evaluation has been increased to 70",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "70.0",
+      "status": "DONE",
+      "evidence": "70",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    }
+  ],
+  "criticalFieldsNeedingReview": [
+    "tender_metadata_tender_reference_number",
+    "tender_metadata_tender_title",
+    "critical_dates_closing_date_time",
+    "submission_mechanics_submission_method"
+  ]
+}

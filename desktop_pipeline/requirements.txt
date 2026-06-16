@@ -8,4 +8,5 @@ pypdf>=4.2.0
 docling>=2.5.0
 magic-pdf>=1.0.0
 flask>=3.0.0
+firebase-admin>=6.0.0
 sentence-transformers>=2.7.0

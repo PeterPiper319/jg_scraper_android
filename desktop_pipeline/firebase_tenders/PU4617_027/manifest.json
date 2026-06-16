@@ -1,0 +1,116 @@
+{
+  "id": 159050,
+  "tender_No": "PU4617\/027",
+  "description": "THE PROVISION OF SECURITY SERVICES FOR A PERIOD OF THREE (3) YEARS",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Ikhala TVET College",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "17 July 2026 at 11:00am",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T11:00:00",
+  "briefingVenue": "Online via MS Team",
+  "streetname": "ZONE D, 2020 GWADANA DRIVE, EZIBELENI",
+  "surburb": "QUEENSTOWN",
+  "town": "QUEENSTOWN",
+  "code": "5326",
+  "conditions": "An online compulsory information session will be held via MS Team on the 18 June 2026 at 10h00 - 11h00. Please register on PURCO SA website to attend information session is www.purcosa.co.za",
+  "contactPerson": "MR NKOSINATHI FUTSHANE",
+  "email": "nkosinathi.futshane@ikhala.edu.za",
+  "telephone": "047-873-8811",
+  "fax": "N\/A",
+  "username": "Nkosinathi.Futshane@ikhala.edu.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 48,
+  "departmentsID": 248,
+  "departments": {
+    "departmentsID": 248,
+    "name": "IKHALA PUBLIC TVET COLLEGE"
+  },
+  "department": "IKHALA PUBLIC TVET COLLEGE",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2d7726cb-48f4-4e0b-a2e6-cfdca81ad6bc",
+      "fileName": "Advert - Ikhala  PURCO changes 12062026 correvct.pdf",
+      "extension": ".pdf",
+      "tendersID": 159050,
+      "active": true,
+      "updatedBy": "Nkosinathi.Futshane@ikhala.edu.za",
+      "dateModified": "2026-06-12T14:08:41.4027552"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PU4617\/027",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "ZONE D, 2020 GWADANA DRIVE, EZIBELENI-QUEENSTOWN-QUEENSTOWN-5326",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Security & Guarding Services",
+  "industry_id": "security_services",
+  "specializations": [
+    "Static Guarding & Access Control",
+    "Armed Response & Patrol Services"
+  ],
+  "skills": [
+    "Static Guarding & Site Security",
+    "VIP Protection & Bodyguarding",
+    "Risk Assessment & Planning"
+  ],
+  "capabilities": [
+    "PSIRA Registration",
+    "Firearms Licenses & Safe Storage",
+    "Marked Patrol Vehicles"
+  ],
+  "title": "The Provision of Security Services for a period of three (3) years",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "18 June 2026 at 10h00 to 11h00",
+  "closingDate": "17 July 2026 at 11:00am",
+  "reference": "PU4617\/027",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

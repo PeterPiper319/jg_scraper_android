@@ -1,0 +1,122 @@
+{
+  "id": 159135,
+  "tender_No": "DSDP 40\/26",
+  "description": "The Limpopo Department of Social Development is looking for qualified, experienced and accredited training service provider to conduct training on Nail Therapist and Make-Up Consultant skills course to youth in the Limpopo province (once-off)",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Social Development",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "03 July 2026, 11H00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-29T10:00:00",
+  "briefingVenue": "21 Biccard Street Polokwane Olympic Towers building  Ndou boardroom Head office",
+  "streetname": "21 Bicard Street ",
+  "surburb": "Polokwane ",
+  "town": "Polokwane ",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Seopa PA",
+  "email": "Seopapa@dsd.limpopo.gov.za",
+  "telephone": "015-230-4440",
+  "fax": "015-291-2226",
+  "username": "seopapa@dsd.limpopo.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo Province",
+  "categoriesID": 61,
+  "departmentsID": 359,
+  "departments": {
+    "departmentsID": 359,
+    "name": "Limpopo - Social Development"
+  },
+  "department": "Limpopo - Social Development",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "4066406b-2fc0-41f7-902e-9411a7422570",
+      "fileName": "Bid Document appointment of training provider for nail tech.pdf",
+      "extension": ".pdf",
+      "tendersID": 159135,
+      "active": true,
+      "updatedBy": "seopapa@dsd.limpopo.gov.za",
+      "dateModified": "2026-06-12T18:42:35.283233"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "DSDP 40\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "21 Bicard Street -Polokwane -Polokwane -0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Education & Training",
+  "industry_id": "education_training",
+  "specializations": [
+    "SETA, Learnerships & Accredited Training",
+    "Curriculum Design & Content Development"
+  ],
+  "skills": [
+    "Curriculum Development",
+    "Vocational Training & SETA",
+    "E-Learning Content Creation"
+  ],
+  "capabilities": [
+    "SETA Accreditation",
+    "QCTO Provider Status",
+    "LMS (Learning Management System)"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT TRAINING ON NAIL THERAPIST AND MAKE-UP CONSULTANT SKILLS COURSE TO YOUTH IN THE LIMPOPO PROVINCE (ONCE-OFF)",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 0,
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "29 June 2026, 10H00",
+  "closingDate": "03 July 2026, 11H00",
+  "reference": "DSDP 40\/26",
+  "provinceNames": [
+    "Limpopo Province"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

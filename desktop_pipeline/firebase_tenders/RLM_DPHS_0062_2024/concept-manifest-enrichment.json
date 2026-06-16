@@ -1,0 +1,736 @@
+{
+  "generatedAt": "2026-06-13T01:53:26.240906+02:00",
+  "tenderId": "RLM_DPHS_0062_2024",
+  "summary": {
+    "resultCount": 30,
+    "criticalFieldCount": 9,
+    "lowConfidenceCount": 2,
+    "mediumConfidenceCount": 3,
+    "highConfidenceCount": 25
+  },
+  "contactDetails": {
+    "emails": [
+      "nkiet@rustenburg.gov.za",
+      "kmatsemela@rustenburg.gov.za",
+      "fmohammed@rustenburg.gov.za",
+      "dmatshego@rustenburg.gov.za",
+      "news@platinumweekly.co"
+    ],
+    "phoneNumbers": [
+      "014 590 3111",
+      "014 590 3305",
+      "014 590 3633",
+      "014 5333 792",
+      "014 5928 214",
+      "014 590 3550",
+      "014 590 3108",
+      "014 590 3152",
+      "014 594 2771",
+      "014 592 3257",
+      "011 252 6669"
+    ],
+    "faxNumbers": [],
+    "addressLines": [],
+    "contactLines": [
+      {
+        "text": "014 590 3111",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3305",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3305",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "nkiet@rustenburg.gov.za",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "EOHSE cc: 014 5333 792 - OHS Consultants for the Rustenburg Local Municipality",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "Department of Labour:  014 5928 214",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "The client (Rustenburg Local Municipality): 014 590 3550",
+        "sourceFile": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3108",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "kmatsemela@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "nkiet@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3152",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "fmohammed@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "nkiet@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3305",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "dmatshego@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "nkiet@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3305",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "dmatshego@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "014 590 3633",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "nkiet@rustenburg.gov.za",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": false,
+        "hasFax": false
+      },
+      {
+        "text": "Rustenburg a call at 014 594 2771.",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": false,
+        "hasPhone": true,
+        "hasFax": false
+      },
+      {
+        "text": "12 JUNE 2026,    PLATINUM WEEKLY,    Tel:  014 592 3257,    Fax: 011 252 6669,    E-mail: news@platinumweekly.co.zaP8",
+        "sourceFile": "Platinum Weekly Advert - 12 June 2026.pdf",
+        "hasEmail": true,
+        "hasPhone": true,
+        "hasFax": false
+      }
+    ],
+    "hasContactSignals": true
+  },
+  "fields": [
+    {
+      "field": "document_type",
+      "label": "Document Type",
+      "value": "Tender",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classified_industry",
+      "label": "Classified Industry",
+      "value": "Construction & Civil Engineering",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_id",
+      "label": "Industry ID",
+      "value": "construction_civil",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_specializations",
+      "label": "Matched Specializations",
+      "value": "General Building Works, Civil Works, Roads & Stormwater, Electrical Building Services, Plumbing, Water & Sanitation, HVAC & Mechanical Installations, Roofing, Waterproofing & Finishes, Structural Steel, Fencing & Paving",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_skills",
+      "label": "Matched Skills",
+      "value": "General Building Construction, Civil Engineering & Infrastructure, Road Construction & Maintenance, Electrical Wiring & Installation, Plumbing & Drainage Systems, HVAC & Industrial Cooling, Roofing & Waterproofing, Painting & Floor Finishing, Quantity Surveying & Cost Estimation, Architectural Design & Planning, Structural Engineering, Project Management (PMBOK), Health & Safety Management (OHS)",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "matched_capabilities",
+      "label": "Matched Capabilities",
+      "value": "Earthmoving Equipment (TLBs, Excavators), Scaffolding & Access Platforms, Concrete Mixing & Pouring Equipment, Professional Indemnity Insurance, CIDB Grading Certification, NHBRC Registration, On-site Safety Equipment, Surveying Instruments (Total Stations), Material Testing Laboratory Access",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "classification_reasoning",
+      "label": "Classification Reasoning",
+      "value": "The tender document mentions the appointment of service providers for the supply, delivery, installation, and maintenance of municipal rental flats and houses, which falls under the construction and civil engineering industry. The document also mentions various construction-related activities, such as scaffolding, material hoist, excavation work, demolition work, and health and safety management, which are all specialized areas within the construction industry.",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_tender_reference_number",
+      "label": "Tender Reference Number",
+      "value": "RLM\/DPHS\/0062\/2024\/25",
+      "status": "DONE",
+      "evidence": "RLM\/DPHS\/0062\/2024\/25",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_title",
+      "label": "Tender Title",
+      "value": "Re-advert: Appointment of one or more service providers for the supply, delivery, install and maintenance of municipal rental flats and houses for a period of 36 months as and when required",
+      "status": "DONE",
+      "evidence": "Re-advert: Appointment of one or more service providers for the supply, delivery, install and maintenance of municipal rental flats and houses for a period of 36 months as and when required",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_tender_description",
+      "label": "Tender Description",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_issuing_institution",
+      "label": "Issuing Institution",
+      "value": "Rustenburg Local Municipality",
+      "status": "DONE",
+      "evidence": "Rustenburg Local Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_institution_type",
+      "label": "Institution Type",
+      "value": "Local Municipality",
+      "status": "DONE",
+      "evidence": "Local Municipality",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_procurement_category",
+      "label": "Procurement Category",
+      "value": "General Building Works",
+      "status": "DONE",
+      "evidence": "General Building Works",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "tender_metadata_geographic_locality_province",
+      "label": "Geographic Locality Province",
+      "value": "North West",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_district_municipality",
+      "label": "Geographic Locality District Municipality",
+      "value": "Bojanala Platinum",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_local_municipality",
+      "label": "Geographic Locality Local Municipality",
+      "value": "Rustenburg",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "tender_metadata_geographic_locality_ward",
+      "label": "Geographic Locality Ward",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_publish_date",
+      "label": "Publish Date",
+      "value": "29 June 2026",
+      "status": "DONE",
+      "evidence": "29 June 2026",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_is_compulsory",
+      "label": "Briefing: Is Compulsory",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Yes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_date_time",
+      "label": "Briefing: Date Time",
+      "value": "06 July 2026 09:00",
+      "status": "DONE",
+      "evidence": "06 July 2026 09:00",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_compulsory_briefing_briefing_venue",
+      "label": "Briefing: Venue",
+      "value": "Rustenburg Local Municipality Offices",
+      "status": "DONE",
+      "evidence": "Rustenburg Local Municipality Offices",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "critical_dates_closing_date_time",
+      "label": "Closing Date Time",
+      "value": "20 July 2026 10:30",
+      "status": "DONE",
+      "evidence": "20 July 2026 10:30",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "critical_dates_validity_period_days",
+      "label": "Validity Period Days",
+      "value": "0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_submission_method",
+      "label": "Submission Method",
+      "value": "Physical Box",
+      "status": "DONE",
+      "evidence": "Physical Box",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "submission_mechanics_physical_box_address",
+      "label": "Physical Box Address",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_electronic_portal_url",
+      "label": "Electronic Portal Url",
+      "value": "Not found",
+      "status": "WARNING",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "submission_mechanics_required_hard_copies",
+      "label": "Required Hard Copies",
+      "value": "1",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_csd_registration_required",
+      "label": "CSD Registration Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Yes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_sars_tax_compliance_pin_required",
+      "label": "SARS Tax Compliance Pin Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Yes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_cipc_annual_returns_good_standing_required",
+      "label": "CIPC Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "administrative_compliance_coida_letter_of_good_standing_required",
+      "label": "COIDA Letter of Good Standing Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "preferential_procurement_scoring_system_applicable",
+      "label": "Preference Scoring System",
+      "value": "80\/20",
+      "status": "DONE",
+      "evidence": "80\/20",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_is_required",
+      "label": "CIDB Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Yes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_minimum_grade",
+      "label": "CIDB Minimum Grade",
+      "value": "3GB",
+      "status": "DONE",
+      "evidence": "3GB",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "industry_credentials_cidb_requirements_class_of_work",
+      "label": "CIDB Class of Work",
+      "value": "GB",
+      "status": "DONE",
+      "evidence": "GB",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_1_required",
+      "label": "MBD 1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_4_required",
+      "label": "MBD 4 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_6_1_required",
+      "label": "MBD 6.1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_mbd_forms_mbd_15_required",
+      "label": "MBD 15 Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_1_required",
+      "label": "SBD 1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_4_required",
+      "label": "SBD 4 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "statutory_forms_sbd_forms_sbd_6_1_required",
+      "label": "SBD 6.1 Required",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "financial_criteria_estimated_tender_value_zar",
+      "label": "Estimated Tender Value ZAR",
+      "value": "0.0",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": true
+    },
+    {
+      "field": "financial_criteria_audited_financials_required",
+      "label": "Audited Financials Required",
+      "value": "false",
+      "status": "DONE",
+      "evidence": "",
+      "evidenceScore": 0,
+      "evidenceConfidence": "none",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_has_functionality_threshold",
+      "label": "Has Functionality Threshold",
+      "value": "true",
+      "status": "DONE",
+      "evidence": "Yes",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    },
+    {
+      "field": "technical_functionality_minimum_threshold_percentage",
+      "label": "Minimum Functionality Threshold %",
+      "value": "70.0",
+      "status": "DONE",
+      "evidence": "70",
+      "evidenceScore": 100,
+      "evidenceConfidence": "high",
+      "sourceFile": "",
+      "isCritical": false
+    }
+  ],
+  "criticalFieldsNeedingReview": []
+}

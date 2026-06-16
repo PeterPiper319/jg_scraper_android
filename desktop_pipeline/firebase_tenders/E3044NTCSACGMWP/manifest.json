@@ -1,0 +1,168 @@
+{
+  "id": 158802,
+  "tender_No": "559-235050781 Rev 2",
+  "description": "SUPPLY AND DELIVERY OF BOTTLED DRINKING WATER FOR CENTRAL GRID LINES & SERVIRUDES FOR A PERIOD OF THIRTY-SIX (36) MONTHS ON AN ‘’AS AND WHEN REQUIRED BASIS.",
+  "category": "Other service activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "National Transmission Company South Africa SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-09T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "MS Teams Link (page 1)",
+  "streetname": "MAXWELL DRIVE",
+  "surburb": "JOHANNESBURG",
+  "town": "JOHANNESBURG",
+  "code": "2000",
+  "conditions": "N\/A",
+  "contactPerson": "nokwabelwa khanyile",
+  "email": "khanyign@ntcsa.co.za",
+  "telephone": "011-800-6232",
+  "fax": "086-666-7041",
+  "username": "khanyign@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 63,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 48,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "064d174b-b301-489d-8587-084d956e2b44",
+      "fileName": "559-685346544_SOW CG Supply and Delivery of Bottled Water_signed rev 1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.6741215"
+    },
+    {
+      "supportDocumentID": "bf78f723-250d-4980-a796-5074aa2779ae",
+      "fileName": "1.01_NTCSA Invitation_to_Tender_(ITT) SUPPLY AND DELIVERY OF BOTTLE WATER_.pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.5309372"
+    },
+    {
+      "supportDocumentID": "df19f378-634c-4966-8c21-57b28b4be6dd",
+      "fileName": "OHS Tender Evaluation Template low risk work (3).pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.8332425"
+    },
+    {
+      "supportDocumentID": "5d8a19ed-2844-464a-a90a-5941228e0e79",
+      "fileName": "NEC BOTTLED WATER.pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.7149934"
+    },
+    {
+      "supportDocumentID": "869bfd18-9616-4372-b6f4-c72ed0260d06",
+      "fileName": "OHS Tender Evaluation Template low risk work (3).docx",
+      "extension": ".docx",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.7768537"
+    },
+    {
+      "supportDocumentID": "866eac80-1147-4ea5-977c-f1422498fb14",
+      "fileName": "Technical Evaluation Criteria_Bottled Water_Central Grid_rev1_signed 2_10032026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.9195738"
+    },
+    {
+      "supportDocumentID": "f4a0114e-7e99-47dd-9e89-f87f74fc4b7a",
+      "fileName": "SDL&I_Supply and Delivery of Bottled Drinking.pdf",
+      "extension": ".pdf",
+      "tendersID": 158802,
+      "active": true,
+      "updatedBy": "khanyign@eskom.co.za",
+      "dateModified": "2026-06-11T10:11:11.8887046"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "559-235050781 Rev 2",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "MAXWELL DRIVE-JOHANNESBURG-JOHANNESBURG-2000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Food Processing & Beverage Production"
+  ],
+  "skills": [
+    "Food & Beverage Manufacturing",
+    "Quality Control & Lean Six Sigma",
+    "Supply Chain Management"
+  ],
+  "capabilities": [
+    "Food Processing & Packaging Plants",
+    "ISO 9001 Quality Management"
+  ],
+  "title": "SUPPLY AND DELIVERY OF BOTTLE WATER",
+  "min_functionality_threshold": 100,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "23 June 2026 10:00am",
+  "reference": "559-235050781 Rev 2",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

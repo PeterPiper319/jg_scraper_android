@@ -1,0 +1,145 @@
+{
+  "id": 159124,
+  "tender_No": "RFQ29130",
+  "description": "The Supply, Deliver and Installation of Over-height Vehicle Restrictors on Alpha Service Road at King Shaka International Airport",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Airports Company South Africa SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-24T16:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "King Shaka International Airport",
+  "surburb": "La Mercy",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Tenders3.ksia@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "223387b7-ad45-43ef-a103-5a20f9569551",
+      "fileName": "Over-height Vehicle Restrictors_ECSC3 RFQ29130.pdf",
+      "extension": ".pdf",
+      "tendersID": 159124,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T17:09:30.3163501"
+    },
+    {
+      "supportDocumentID": "0c60f398-b78f-4fed-9fd0-a7083192f66e",
+      "fileName": "CIDB BID DOCUMENT RFQ29130.pdf",
+      "extension": ".pdf",
+      "tendersID": 159124,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T17:07:40.2339085"
+    },
+    {
+      "supportDocumentID": "02e69c3f-6341-473d-80a6-d783a6be68ac",
+      "fileName": "ANNEXURE A-INSURANCE CLAUSES FOR AIRSIDE CONSTRUCTION CONTRACTS.pdf",
+      "extension": ".pdf",
+      "tendersID": 159124,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T17:09:49.7181008"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ29130",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Shaka International Airport-La Mercy-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "Over-height Vehicle Restrictors",
+  "cidb_grading": "1CE",
+  "preference_points": "80\/20 or 90\/10",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-24T16:00:00",
+  "reference": "RFQ29130",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

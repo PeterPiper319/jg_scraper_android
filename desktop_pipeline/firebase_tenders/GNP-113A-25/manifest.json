@@ -1,0 +1,141 @@
+{
+  "id": 159001,
+  "tender_No": "GNP-113A-25",
+  "description": "Request for Strategic Partner – Selection of Sub Executing Agency for implementation of GEF8\/GBFF Project",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "South African National Parks",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "643 Leyds Street",
+  "surburb": "Muckleneuk",
+  "town": "Pretoria",
+  "code": null,
+  "conditions": "N\/A",
+  "contactPerson": "Adolf Manaso",
+  "email": "Adolf.Manaso@sanparks.org",
+  "telephone": "012-426-5225",
+  "fax": "N\/A",
+  "username": "adolf.manaso@sanparks.org",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 150,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 48,
+  "departmentsID": 617,
+  "departments": {
+    "departmentsID": 617,
+    "name": "South African National Parks"
+  },
+  "department": "South African National Parks",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ac4b17e7-b428-4809-bb71-9f75939070e1",
+      "fileName": "Annexure D GBFF_MLL SA_CEO_ER_doc.pdf",
+      "extension": ".pdf",
+      "tendersID": 159001,
+      "active": true,
+      "updatedBy": "adolf.manaso@sanparks.org",
+      "dateModified": "2026-06-12T11:07:18.6881929"
+    },
+    {
+      "supportDocumentID": "0cce76a0-f246-4f99-ac42-a0ba90bbd73d",
+      "fileName": "Standard Terms and Conditions of Contract for Services - Request For Bids.pdf",
+      "extension": ".pdf",
+      "tendersID": 159001,
+      "active": true,
+      "updatedBy": "adolf.manaso@sanparks.org",
+      "dateModified": "2026-06-12T11:07:18.991433"
+    },
+    {
+      "supportDocumentID": "ff30b946-7dcb-44b4-b03c-ac763bf39c1d",
+      "fileName": "Annexure C GEF 8 MLL SA - CEO ER doc_.pdf",
+      "extension": ".pdf",
+      "tendersID": 159001,
+      "active": true,
+      "updatedBy": "adolf.manaso@sanparks.org",
+      "dateModified": "2026-06-12T11:07:19.0605615"
+    },
+    {
+      "supportDocumentID": "acdfa00e-d283-40ba-9a30-ca2f0e00bc7d",
+      "fileName": "GNP-113A-25 Selection of Sub Executing Agency for implementation of GEF8GBFF Project Cross Cutting.pdf",
+      "extension": ".pdf",
+      "tendersID": 159001,
+      "active": true,
+      "updatedBy": "adolf.manaso@sanparks.org",
+      "dateModified": "2026-06-12T11:07:18.9077021"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "GNP-113A-25",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "643 Leyds Street-Muckleneuk-Pretoria-",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Selection of Sub Executing Agency for implementation of GEF8GBFF Project Cross Cutting",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-06T11:00:00",
+  "reference": "GNP-113A-25",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

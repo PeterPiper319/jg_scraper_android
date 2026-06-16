@@ -1,0 +1,152 @@
+{
+  "id": 159139,
+  "tender_No": "RLM\/DPHS\/0062\/2024\/25",
+  "description": "Re-advert: appointment of one or more service providers for the supply, delivery, install and maintenance of municipal rental flats and houses for a period of 36 months as and when required",
+  "category": "Services: Building",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Rustenburg Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "20 July 2026 10:30",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-07-06T09:00:00",
+  "briefingVenue": "Rustenburg Local Municipality Offices",
+  "streetname": "Missionary Mpheni House, Beyers Naude Drive",
+  "surburb": "Rustenburg",
+  "town": "Rustenburg",
+  "code": "0300",
+  "conditions": "See attached tender document ",
+  "contactPerson": "Ms. N. Kiet",
+  "email": "nkiet@rustenburg.gov.za",
+  "telephone": "014-590-3633",
+  "fax": "N\/A",
+  "username": "nkiet@rustenburg.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 1,
+  "provinces": {
+    "provincesID": 1,
+    "name": "North West"
+  },
+  "province": "North West",
+  "categoriesID": 78,
+  "departmentsID": 571,
+  "departments": {
+    "departmentsID": 571,
+    "name": "Rustenburg Local Municipality"
+  },
+  "department": "Rustenburg Local Municipality",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "44166f37-7076-4ff3-a65f-acfcbdf3adfa",
+      "fileName": "Tender Document  Re-advert Maintence of rental Flats.pdf",
+      "extension": ".pdf",
+      "tendersID": 159139,
+      "active": true,
+      "updatedBy": "nkiet@rustenburg.gov.za",
+      "dateModified": "2026-06-12T21:10:43.339869"
+    },
+    {
+      "supportDocumentID": "1de92566-4950-47fb-a2fb-d5f1dee7f3f5",
+      "fileName": "Platinum Weekly Advert - 12 June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159139,
+      "active": true,
+      "updatedBy": "nkiet@rustenburg.gov.za",
+      "dateModified": "2026-06-12T19:11:46.8759824"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RLM\/DPHS\/0062\/2024\/25",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Missionary Mpheni House, Beyers Naude Drive-Rustenburg-Rustenburg-0300",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation",
+    "HVAC & Mechanical Installations",
+    "Roofing, Waterproofing & Finishes",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems",
+    "HVAC & Industrial Cooling",
+    "Roofing & Waterproofing",
+    "Painting & Floor Finishing",
+    "Quantity Surveying & Cost Estimation",
+    "Architectural Design & Planning",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)",
+    "Material Testing Laboratory Access"
+  ],
+  "title": "Re-advert: Appointment of one or more service providers for the supply, delivery, install and maintenance of municipal rental flats and houses for a period of 36 months as and when required",
+  "cidb_grading": "1GB",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "06 July 2026 09:00",
+  "closingDate": "20 July 2026 10:30",
+  "reference": "RLM\/DPHS\/0062\/2024\/25",
+  "provinceNames": [
+    "North West"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

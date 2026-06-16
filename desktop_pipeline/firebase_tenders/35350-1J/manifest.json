@@ -1,0 +1,121 @@
+{
+  "id": 158966,
+  "tender_No": "35350-1J",
+  "description": "Supply and delivery of new tyres for \r\nvarious vehicle categories for a period \r\nof 36 months",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "eThekwini Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-17T10:00:00",
+  "briefingVenue": "Microsoft Teams.",
+  "streetname": "166 K E Masinga Road (Formerly Old Fort Road)",
+  "surburb": "Durban",
+  "town": "KZN",
+  "code": "4001",
+  "conditions": "-A COMPULSORY clarification meeting will be held at 10:00, on 2026-06-17, on Microsoft Teams. Prospective bidders interested to attend the session must send an email to \r\nNonkululeko.Gama@durban.gov.za no later than 16:00 on 2026-06-15. Link will be submitted to bidders by 8:30, on 2026-06-17.\r\n-All questions and answers will be consolidated and posted on eTenders\/Municipal website by 2026-07-02.\r\n-Nonkululeko Gama\r\n(t) 031-322 5064",
+  "contactPerson": "Nonkululeko Gama",
+  "email": "Nonkululeko.gama@durban.gov.za",
+  "telephone": "031-322-5064",
+  "fax": "N\/A",
+  "username": "Ashira.Baller@durban.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 169,
+  "departments": {
+    "departmentsID": 169,
+    "name": "Ethekwini Metropolitan Municipality"
+  },
+  "department": "Ethekwini Metropolitan Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c25b461a-dccc-461c-9b80-7cf23c5719ad",
+      "fileName": "32350 -1J TENDER DOCUMENT OF NEW TYRES_ApprovedD.pdf",
+      "extension": ".pdf",
+      "tendersID": 158966,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:04:00.0179478"
+    },
+    {
+      "supportDocumentID": "6678ba67-9900-4346-9a12-a49b958cf230",
+      "fileName": "37.2 Agreement - 1J- 35350- Supply and Delivery of New Tyres for 36 months.doc",
+      "extension": ".doc",
+      "tendersID": 158966,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:03:59.9704056"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "35350-1J",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "166 K E Masinga Road (Formerly Old Fort Road)-Durban-KZN-4001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Fleet Management & Vehicle Operations",
+    "Road Freight & Haulage"
+  ],
+  "skills": [
+    "Fleet Management & Telematics",
+    "Road Freight & Haulage"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)",
+    "Large-scale Warehousing Facility"
+  ],
+  "title": "New Tyres",
+  "isCompulsoryBriefing": true,
+  "reference": "35350-1J",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

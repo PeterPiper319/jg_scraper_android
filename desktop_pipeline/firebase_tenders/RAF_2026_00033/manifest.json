@@ -1,0 +1,134 @@
+{
+  "id": 159150,
+  "tender_No": "RAF\/2026\/00033",
+  "description": "AUTOMATED TESTING, PERFORMANCE TESTING, AND SOFTWARE QUALITY ASSURANCE TOOLS.",
+  "category": "Other service activities",
+  "type": "Request for Information",
+  "organ_of_State": "Road Accident Fund (RAF)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "420 Witch-Hazel Road, Eco Glades 2",
+  "surburb": "Eco Park",
+  "town": "Pretoria",
+  "code": "0046",
+  "conditions": "N\/A",
+  "contactPerson": "SCM - DEMAND MANAGEMENT",
+  "email": "BACsecretariat@raf.co.za",
+  "telephone": "012-621-1951",
+  "fax": "N\/A",
+  "username": "ayandad@raf.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 48,
+  "departmentsID": 565,
+  "departments": {
+    "departmentsID": 565,
+    "name": "Road Accident Fund"
+  },
+  "department": "Road Accident Fund",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "63d87a3b-33a1-4597-96a1-4a9911219fe6",
+      "fileName": "RFI - Quality Assurance Tools.pdf",
+      "extension": ".pdf",
+      "tendersID": 159150,
+      "active": true,
+      "updatedBy": "ayandad@raf.co.za",
+      "dateModified": "2026-06-12T22:31:10.1268815"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RAF\/2026\/00033",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "420 Witch-Hazel Road, Eco Glades 2-Eco Park-Pretoria-0046",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Cybersecurity & Threat Monitoring",
+    "Cloud Infrastructure & DevOps",
+    "Networks, Telecoms & Connectivity",
+    "Data, Analytics & AI",
+    "Systems Integration & Automation"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Cybersecurity & Penetration Testing",
+    "Cloud Infrastructure (AWS\/Azure\/GCP)",
+    "Network Engineering & Administration",
+    "Data Analytics & Business Intelligence",
+    "IT Support & Managed Services",
+    "UI\/UX Design & User Research",
+    "Database Management & Optimization",
+    "AI & Machine Learning Implementation",
+    "Systems Integration & API Development",
+    "Telecommunications Infrastructure",
+    "Project Management (Agile\/Scrum)"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Data Center Facilities",
+    "Remote Monitoring Tools",
+    "Specialized Testing Equipment",
+    "ISO 27001 Certification",
+    "Cloud Hosting Credits",
+    "Disaster Recovery Systems"
+  ],
+  "title": "REQUEST FOR INFORMATION: AUTOMATED TESTING, PERFORMANCE TESTING, AND SOFTWARE QUALITY ASSURANCE TOOLS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-03T11:00:00",
+  "reference": "RAF\/2026\/00033",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

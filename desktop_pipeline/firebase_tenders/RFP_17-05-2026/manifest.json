@@ -1,0 +1,104 @@
+{
+  "id": 158863,
+  "tender_No": "RFP 17-05-2026",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY, IMPLEMENT, CONFIGURE, AND SUPPORT AN INTEGRATED FACILITIES MANAGEMENT SYSTEM FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+  "category": "Other service activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "CROSS-BORDER ROAD TRANSPORT AGENCY",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026 at 11h00 a.m.",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Microsoft Teams",
+  "streetname": "350 WITCH-HAZEL AVENUE",
+  "surburb": "CENTURION",
+  "town": "Pretoria",
+  "code": "0046",
+  "conditions": "N\/A",
+  "contactPerson": "Morwamoche Sekhukhune",
+  "email": "Morwamoche.Sekhukhune@cbrta.co.za",
+  "telephone": "012-471-2163",
+  "fax": "N\/A",
+  "username": "morwamoche.sekhukhune@cbrta.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 770,
+  "departments": {
+    "departmentsID": 770,
+    "name": "Cross-Border Road Transport Agency"
+  },
+  "department": "Cross-Border Road Transport Agency",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "1673886e-d835-4caf-8517-e51eeee58fd2",
+      "fileName": "RFP  17-05-2026 Appointment of a service provider for Facilities Management system.pdf",
+      "extension": ".pdf",
+      "tendersID": 158863,
+      "active": true,
+      "updatedBy": "morwamoche.sekhukhune@cbrta.co.za",
+      "dateModified": "2026-06-11T15:25:59.7845553"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFP 17-05-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "350 WITCH-HAZEL AVENUE-CENTURION-Pretoria-0046",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY, IMPLEMENT, CONFIGURE, AND SUPPORT AN INTEGRATED FACILITIES MANAGEMENT SYSTEM FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "13 April 2026, from 11h00 to 12h00",
+  "closingDate": "22 June 2026 at 11h00 a.m.",
+  "reference": "RFP 17-05-2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

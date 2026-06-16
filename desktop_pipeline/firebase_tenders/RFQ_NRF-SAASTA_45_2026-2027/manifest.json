@@ -1,0 +1,118 @@
+{
+  "id": 159060,
+  "tender_No": "RFQ\/NRF-SAASTA 45\/2026-2027",
+  "description": "The NRF-SAASTA wishes to appoint a suitable service provider to conduct media monitoring, analysis and reporting for a period of 6 months.",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "NRF-SAASTA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T10:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/345877361649809?p=2MoV8vYJBpGq5FgLB2",
+  "streetname": "211 Nana Sita St",
+  "surburb": "Pretoria central",
+  "town": "Pretoria",
+  "code": null,
+  "conditions": "N\/A",
+  "contactPerson": "Silence Suke",
+  "email": "S.Suke@saasta.nrf.ac.za",
+  "telephone": "012-392-9380",
+  "fax": "N\/A",
+  "username": "s.suke@saasta.nrf.ac.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 470,
+  "departments": {
+    "departmentsID": 470,
+    "name": "National Research Foundation"
+  },
+  "department": "National Research Foundation",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "515ded9a-174a-4129-9128-d7e82fc45bc6",
+      "fileName": "RFQ-NRF-SAASTA-45-2026-2027-Media Monitoring.pdf",
+      "extension": ".pdf",
+      "tendersID": 159060,
+      "active": true,
+      "updatedBy": "s.suke@saasta.nrf.ac.za",
+      "dateModified": "2026-06-12T14:32:48.3756157"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ\/NRF-SAASTA 45\/2026-2027",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "211 Nana Sita St-Pretoria central-Pretoria-",
+  "document_type": "RFQ",
+  "tenderAdvertType": "rfq",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Media Monitoring",
+    "Content Analysis"
+  ],
+  "skills": [
+    "Media Monitoring & Analysis",
+    "Content Creation & Curation",
+    "Digital Media Management"
+  ],
+  "capabilities": [
+    "Media Database Access",
+    "Content Analysis Software",
+    "Digital Ad Management Platforms"
+  ],
+  "title": "Media Monitoring, Analysis and Reporting",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-26T11:00:00",
+  "reference": "RFQ\/NRF-SAASTA 45\/2026-2027",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

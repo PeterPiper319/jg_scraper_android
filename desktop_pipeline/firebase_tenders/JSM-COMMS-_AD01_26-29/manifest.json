@@ -1,0 +1,125 @@
+{
+  "id": 158867,
+  "tender_No": "JSM-COMMS-AD01\/26-29",
+  "description": "APPOINTMENT OF SERVICE PROVIDER FOR PROVISION OF ADVERTISING AGENCY SERVICES ON AN AS AND WHEN REQUIRED FOR A PERIOD OF 36 MONTHS (THREE YEARS)",
+  "category": "Advertising and market research",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Dr JS Moroka Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-09T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-12T11:00:00",
+  "briefingVenue": "Dr JS Moroka Ga-Phahla Community Hall",
+  "streetname": "Bongimfundo street",
+  "surburb": "Siyabuswa",
+  "town": "Siyabuswa",
+  "code": "0472",
+  "conditions": "NONE",
+  "contactPerson": "bongumusa sipho",
+  "email": "mahlangusb@moroka.gov.za",
+  "telephone": "013-973-1101",
+  "fax": "N\/A",
+  "username": "MahlanguSB@moroka.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 45,
+  "departmentsID": 107,
+  "departments": {
+    "departmentsID": 107,
+    "name": "Dr JS Moroka Local Municipality"
+  },
+  "department": "Dr JS Moroka Local Municipality",
+  "categories": {
+    "categoriesID": 45,
+    "name": "Advertising and market research"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "3168fecc-8e17-41ae-8b9d-78529d202f09",
+      "fileName": "Advertising tender doc JSM COMMS ADS01 2629 final.pdf",
+      "extension": ".pdf",
+      "tendersID": 158867,
+      "active": true,
+      "updatedBy": "MahlanguSB@moroka.gov.za",
+      "dateModified": "2026-06-11T15:33:48.3271582"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "JSM-COMMS-AD01\/26-29",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Bongimfundo street-Siyabuswa-Siyabuswa-0472",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Graphic Design, Branding & Creative",
+    "Printing, Signage & Promotional Materials",
+    "Digital Marketing & Paid Media",
+    "Video, Photography & Content Production"
+  ],
+  "skills": [
+    "Digital Marketing & SEO",
+    "Content Strategy & Copywriting",
+    "Graphic Design & Branding",
+    "Video Production & Editing"
+  ],
+  "capabilities": [
+    "High-end Video\/Photo Equipment",
+    "Licensed Creative Software (Adobe)",
+    "Digital Ad Management Platforms",
+    "Studio Facilities",
+    "Large-scale Printing Equipment"
+  ],
+  "title": "APPOINTMENT OF SERVICE PROVIDER FOR THE PROVISION OF ADVERTISING AGENCY SERVICES ON AN AS AND WHEN REQUIRED BASIS FOR A PERIOD OF 36 MONTHS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 100,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "12 June 2026 at 11H00",
+  "reference": "JSM-COMMS-AD01\/26-29",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

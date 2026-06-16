@@ -1,0 +1,151 @@
+{
+  "id": 159126,
+  "tender_No": "POS9820",
+  "description": "The Technology Innovation Agency (TIA) requires a service provider for the provision of 100Mbps Internet Connectivity either via a Fibre-Optic or Microwave link (licensed spectrum) for a period of 2 years.",
+  "category": "Information and communication",
+  "type": "Request for Quotation",
+  "organ_of_State": "Technology Innovation Agency (TIA)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T17:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "1 DICKENS ROAD",
+  "surburb": "AECI INDUSTRIAL COMPLEX",
+  "town": "UMBOGINTWINI",
+  "code": "4120",
+  "conditions": "All submissions to be emailed to mapule.msiza@tia.org.za but the service is for Umbongitwini KZN ",
+  "contactPerson": "Mapule Msiza",
+  "email": "mapule.msiza@tia.org.za",
+  "telephone": "012-472-2752",
+  "fax": "N\/A",
+  "username": "Mapule.Msiza@tia.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 40,
+  "departmentsID": 642,
+  "departments": {
+    "departmentsID": 642,
+    "name": "Technology Innovation Agency"
+  },
+  "department": "Technology Innovation Agency",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ca723b86-a78c-4e61-a037-5f70a7fa7cd0",
+      "fileName": "POS9820.docx",
+      "extension": ".docx",
+      "tendersID": 159126,
+      "active": true,
+      "updatedBy": "Mapule.Msiza@tia.org.za",
+      "dateModified": "2026-06-12T17:28:21.6850829"
+    },
+    {
+      "supportDocumentID": "c58d0092-dcc4-4008-85a7-734e714fd96d",
+      "fileName": "SBD4 new.doc",
+      "extension": ".doc",
+      "tendersID": 159126,
+      "active": true,
+      "updatedBy": "Mapule.Msiza@tia.org.za",
+      "dateModified": "2026-06-12T17:28:21.7609514"
+    },
+    {
+      "supportDocumentID": "76e3dd65-09ea-4fdb-87c5-7f385cc5785d",
+      "fileName": "POS9820 specification.pdf",
+      "extension": ".pdf",
+      "tendersID": 159126,
+      "active": true,
+      "updatedBy": "Mapule.Msiza@tia.org.za",
+      "dateModified": "2026-06-12T17:28:21.6471268"
+    },
+    {
+      "supportDocumentID": "d9aa8ed0-ba0e-4fb8-a41e-94c5364991e9",
+      "fileName": "Exact location.pdf",
+      "extension": ".pdf",
+      "tendersID": 159126,
+      "active": true,
+      "updatedBy": "Mapule.Msiza@tia.org.za",
+      "dateModified": "2026-06-12T17:28:21.5626263"
+    },
+    {
+      "supportDocumentID": "51aa3022-32b5-42d3-b27e-b65a28730fd1",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022 CORRECT_request for quotes.docx",
+      "extension": ".docx",
+      "tendersID": 159126,
+      "active": true,
+      "updatedBy": "Mapule.Msiza@tia.org.za",
+      "dateModified": "2026-06-12T17:28:21.7205257"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "POS9820",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1 DICKENS ROAD-AECI INDUSTRIAL COMPLEX-UMBOGINTWINI-4120",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Networks, Telecoms & Connectivity",
+    "Internet Connectivity"
+  ],
+  "skills": [
+    "Network Engineering & Administration",
+    "Telecommunications Infrastructure"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "Internet Connectivity Services"
+  ],
+  "title": "REQUEST FOR QUOTATION - INTERNET CONNECTIVITY",
+  "isCompulsoryBriefing": false,
+  "reference": "POS9820",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

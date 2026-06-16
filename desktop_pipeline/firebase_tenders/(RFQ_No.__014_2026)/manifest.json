@@ -1,0 +1,117 @@
+{
+  "id": 158817,
+  "tender_No": "RFQ No.014\/2026",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER TO ASSIST NRCS WITH MIGRATION AND WEBSITE CONTENT SUPPORT AND MIANTENANCE FOR PERIOD OF TWENTY-FOUR (24) MONTHS.\r\n\r\n\r\n\r\n",
+  "category": "Information and communication",
+  "type": "Request for Quotation",
+  "organ_of_State": "National Regulator for Compulsory Specifications",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "30 June 2026 11H00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "1 Dr Lategaan drive, SABS campus",
+  "surburb": "Groenkloof",
+  "town": "Tshwane",
+  "code": "0075",
+  "conditions": "N\/A",
+  "contactPerson": "Solomon Motlana",
+  "email": "solly.motlana@nrcs.org.za",
+  "telephone": "012-482-8827",
+  "fax": "N\/A",
+  "username": "glenda.mathane@nrcs.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 93,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 40,
+  "departmentsID": 469,
+  "departments": {
+    "departmentsID": 469,
+    "name": "National Regulator for Compulsory Specifications"
+  },
+  "department": "National Regulator for Compulsory Specifications",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "9f299d0e-4c5d-4b68-a1c6-108c01536592",
+      "fileName": "RFQ NO; 014-26-WEBSITE CONTENT SUPPORT AND MAINTENANCE.pdf",
+      "extension": ".pdf",
+      "tendersID": 158817,
+      "active": true,
+      "updatedBy": "glenda.mathane@nrcs.org.za",
+      "dateModified": "2026-06-11T11:38:35.8946699"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ No.014\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1 Dr Lategaan drive, SABS campus-Groenkloof-Tshwane-0075",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Web Development",
+    "Content Management"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "UI\/UX Design & User Research",
+    "Content Creation & Management"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER TO ASSIST NRCS WITH MIGRATION AND WEBSITE CONTENT SUPPORT AND MAINTENANCE FOR PERIOD OF TWENTY-FOUR (24) MONTHS.",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "30 June 2026 11H00",
+  "reference": "RFQ No.014\/2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

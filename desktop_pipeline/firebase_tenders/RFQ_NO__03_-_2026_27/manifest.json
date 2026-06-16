@@ -1,0 +1,163 @@
+{
+  "id": 158829,
+  "tender_No": "RFQ NO: 03 - 2026\/27",
+  "description": "TERMS OF REFERENCE FOR THE APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY MICROSOFT LICENSES FOR ETDP SETA",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "ETDP SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026 11h00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "112 Main Street, 9th Floor",
+  "surburb": "Ghandi Square",
+  "town": "Johannesburg",
+  "code": "2609",
+  "conditions": "N\/A",
+  "contactPerson": "Sibusiso Kutshwa",
+  "email": "Tenderers@etdpseta.org.za",
+  "telephone": "011-372-3330",
+  "fax": "N\/A",
+  "username": "SibusisoK@etdpseta.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 146,
+  "departments": {
+    "departmentsID": 146,
+    "name": "Education, Training and Development Practices SETA"
+  },
+  "department": "Education, Training and Development Practices SETA",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ab4ebb94-47bd-4541-a454-17cdaf68f60c",
+      "fileName": "SCM-Bid documents SBD 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:19.0015525"
+    },
+    {
+      "supportDocumentID": "86ad56d4-8f6a-476b-a947-28d9cf166326",
+      "fileName": "General Conditions of Contract_ETDP SETA.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:18.8267395"
+    },
+    {
+      "supportDocumentID": "5b82f984-aad7-43ae-b640-297ffb06189d",
+      "fileName": "BEE_Affidavit-EME_New.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:18.788291"
+    },
+    {
+      "supportDocumentID": "d810f8d0-b18f-43a4-b1a7-672bfc254f38",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022_ETDP SETA.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:18.8754529"
+    },
+    {
+      "supportDocumentID": "1e5400ef-340d-488b-92e5-919f0a1255f9",
+      "fileName": "Annexure A - Microsoft Licenses renewal.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:18.6380592"
+    },
+    {
+      "supportDocumentID": "b35939b7-9f5e-40ec-8f6c-b3985999b0d6",
+      "fileName": "SCM-Bid documents_SBD 1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:19.0393956"
+    },
+    {
+      "supportDocumentID": "91e088a4-07fa-4f98-9d97-f26bda143ce6",
+      "fileName": "ToR_Microsoft Licenses_Final.pdf",
+      "extension": ".pdf",
+      "tendersID": 158829,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:37:19.0674337"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ NO: 03 - 2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "112 Main Street, 9th Floor-Ghandi Square-Johannesburg-2609",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Cloud Infrastructure & DevOps"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Cloud Infrastructure (AWS\/Azure\/GCP)",
+    "IT Support & Managed Services",
+    "UI\/UX Design & User Research",
+    "Database Management & Optimization"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Data Center Facilities",
+    "Remote Monitoring Tools",
+    "Specialized Testing Equipment",
+    "ISO 27001 Certification",
+    "Cloud Hosting Credits",
+    "Disaster Recovery Systems"
+  ],
+  "isCompulsoryBriefing": false,
+  "closingDate": "22 June 2026 11h00"
+}

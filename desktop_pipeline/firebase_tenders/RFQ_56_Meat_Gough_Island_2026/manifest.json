@@ -1,0 +1,115 @@
+{
+  "id": 158985,
+  "tender_No": "RFQ 56",
+  "description": "Provision of meat for the annual Gough 2026 Relief Voyage",
+  "category": "Other manufacturing",
+  "type": "Request for Quotation",
+  "organ_of_State": "Department of Forestry, Fisheries & Environment",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-23T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 East Pier Building, East Pier Road",
+  "surburb": "Waterfront",
+  "town": "Cape Town",
+  "code": "8001",
+  "conditions": "N\/A",
+  "contactPerson": "Andiswa Charlie",
+  "email": "acharlie@environment.gov.za",
+  "telephone": "021-493-7149",
+  "fax": "N\/A",
+  "username": "acharlie@dffe.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 7,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 67,
+  "departmentsID": 180,
+  "departments": {
+    "departmentsID": 180,
+    "name": "National - Environment, Forestry and Fisheries"
+  },
+  "department": "National - Environment, Forestry and Fisheries",
+  "categories": {
+    "categoriesID": 67,
+    "name": "Other manufacturing"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d2ef84cc-6c37-418a-b026-32c4b88a1f04",
+      "fileName": "DFFE RFQ 56 Meat Gough Island 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158985,
+      "active": true,
+      "updatedBy": "acharlie@dffe.gov.za",
+      "dateModified": "2026-06-12T10:37:24.0640629"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 56",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 East Pier Building, East Pier Road-Waterfront-Cape Town-8001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Agriculture, Forestry & Fishing",
+  "industry_id": "agriculture",
+  "specializations": [
+    "Agro-processing & Packaging"
+  ],
+  "skills": [
+    "Food Processing & Beverage Production"
+  ],
+  "capabilities": [
+    "Global GAP Certification",
+    "Processing & Packaging Plants"
+  ],
+  "title": "Meat Gough Island 2026",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-23T11:00:00",
+  "reference": "RFQ 56",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

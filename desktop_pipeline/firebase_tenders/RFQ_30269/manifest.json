@@ -1,0 +1,142 @@
+{
+  "id": 159128,
+  "tender_No": "RFQ30269",
+  "description": "Airports Company South Africa SOC Limited invites tenders for the PROVISION OF OPERATION AND MAINTENANCE OF BAGGAGE HANDLING SYSTEM FOR A PERIOD OF 5 MONTHS AT KING SHAKA INTERNATIONAL AIRPORT",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Airports Company South Africa SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T16:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T10:00:00",
+  "briefingVenue": "King Shaka International Airport, Reception, Ground Floor. Multi Storey Office Block, Located Opposi",
+  "streetname": "King Shaka International Airport",
+  "surburb": "La Mercy",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Mlungisi.mgobhozi@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 84,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5ce86002-4557-4a07-a19a-947057254cad",
+      "fileName": "NEC Contract - Operation and Maintenance of Baggage Handling System for a period of 5 Months at King Shaka.pdf",
+      "extension": ".pdf",
+      "tendersID": 159128,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T17:32:24.6146313"
+    },
+    {
+      "supportDocumentID": "602cea04-7859-4098-877c-b2bfd8f349ea",
+      "fileName": "Functuality_BHS for 5 months  ANNEX C.pdf",
+      "extension": ".pdf",
+      "tendersID": 159128,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T22:54:35.2053445"
+    },
+    {
+      "supportDocumentID": "926a2dfa-d3aa-4f5a-a126-c4341c163c71",
+      "fileName": "CIDB BID DOCUMENT RFQ30269.pdf",
+      "extension": ".pdf",
+      "tendersID": 159128,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T17:41:43.4756192"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ30269",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Shaka International Airport-La Mercy-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "PROVISION OF OPERATION AND MAINTENANCE OF BAGGAGE HANDLING SYSTEM FOR A PERIOD OF 5 MONTHS AT KING SHAKA INTERNATIONAL AIRPORT",
+  "cidb_grading": "4ME",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "closingDate": "2026-06-25T16:00:00",
+  "reference": "RFQ30269",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

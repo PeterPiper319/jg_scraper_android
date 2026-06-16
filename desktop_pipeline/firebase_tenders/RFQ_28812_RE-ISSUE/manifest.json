@@ -1,0 +1,142 @@
+{
+  "id": 158913,
+  "tender_No": "RFQ28812 RE-ISSUE",
+  "description": "CONTRACTOR APPOINTMENT FOR THE MAINTENANCE OF SLIDING DOORS AND ACCESS CONTROLS FOR 36 MONTHS AT KING SHAKA INTERNATIONAL AIRPORT.",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Airports Company South Africa SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T16:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "King Shaka International Airport",
+  "surburb": "La Mercy",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Mlungisi.mgobhozi@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d980964e-6653-4403-9ce9-a38d027bcea0",
+      "fileName": "NEC TSC Contract and Scope_Access Control.pdf",
+      "extension": ".pdf",
+      "tendersID": 158913,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-11T23:57:36.625691"
+    },
+    {
+      "supportDocumentID": "62362bb9-b51d-4371-949c-aff932d0ce9b",
+      "fileName": "CIDB BID DOCUMENT RFQ28812 RE-ISSUE.pdf",
+      "extension": ".pdf",
+      "tendersID": 158913,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-11T23:56:48.764245"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ28812 RE-ISSUE",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Shaka International Airport-La Mercy-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "CONTRACTOR APPOINTMENT FOR THE MAINTENANCE OF SLIDING DOORS AND ACCESS CONTROLS FOR 36 MONTHS AT KING SHAKA INTERNATIONAL AIRPORT",
+  "cidb_grading": "3ME",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T16:00:00",
+  "reference": "RFQ28812 RE-ISSUE",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

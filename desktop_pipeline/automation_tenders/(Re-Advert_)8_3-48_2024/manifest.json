@@ -1,0 +1,104 @@
+{
+  "id": 158983,
+  "tender_No": "8\/3-48\/2024",
+  "description": "Appointment of a Panel of the Service Providers for Supply and Delivery of Potholes Patching Materials for the Period of 36 Months. Re-Advert",
+  "category": "Disposals: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Msukaligwa Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "14 July 2026 at 12H00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Corner Taute and Church Street",
+  "surburb": "Ermelo",
+  "town": "Ermelo",
+  "code": "2350",
+  "conditions": "Service Providers who bought the document, the first time will get the document free of charge if they produce proof of payment. Only the Re-Advert",
+  "contactPerson": "Mr. EM Ndlovu",
+  "email": "endlovu@msukaligwa.gov.za",
+  "telephone": "017-801-3542",
+  "fax": "N\/A",
+  "username": "fnhangombe@msukaligwa.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 19,
+  "departmentsID": 757,
+  "departments": {
+    "departmentsID": 757,
+    "name": "Msukaligwa Local Municipality"
+  },
+  "department": "Msukaligwa Local Municipality",
+  "categories": {
+    "categoriesID": 19,
+    "name": "Disposals: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "31177bbb-74b1-4e90-82f4-41e79ff6849d",
+      "fileName": "Invitation to Bid (Tender) 2026-06-11.pdf",
+      "extension": ".pdf",
+      "tendersID": 158983,
+      "active": true,
+      "updatedBy": "fnhangombe@msukaligwa.gov.za",
+      "dateModified": "2026-06-12T10:30:43.5113217"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/3-48\/2024",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Corner Taute and Church Street-Ermelo-Ermelo-2350",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "General Building Works"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "General Building Construction"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "CIDB Grading Certification"
+  ],
+  "title": "Appointment of a Panel of Service Providers for Supply and Delivery of Potholes Patching Materials for the Period of 36 Months. (Re-Advert)",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "14 July 2026 at 12H00",
+  "reference": "8\/3-48\/2024"
+}

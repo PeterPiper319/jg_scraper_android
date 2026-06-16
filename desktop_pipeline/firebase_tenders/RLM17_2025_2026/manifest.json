@@ -1,0 +1,107 @@
+{
+  "id": 158862,
+  "tender_No": "RLM17\/2025\/2026",
+  "description": "COMPLETION OF SMOZOMENI P6 ELECTRIFICATION PROJECT",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Richmond - KZ Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Richmond Council chamber",
+  "streetname": "57 Shepstone Street, Richmond",
+  "surburb": "Richmond KZN",
+  "town": "Richmond KZN",
+  "code": "3780",
+  "conditions": "N\/A",
+  "contactPerson": "Sandile Sithole",
+  "email": "sandile.sithole@richmond.gov.za",
+  "telephone": "033-212-2155",
+  "fax": "033-212-4668",
+  "username": "sandile.sithole@richmond.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 84,
+  "departmentsID": 847,
+  "departments": {
+    "departmentsID": 847,
+    "name": "Richmond - KZ Local Municipality"
+  },
+  "department": "Richmond - KZ Local Municipality",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "1b4f847f-a061-4056-a6cd-40414ba36219",
+      "fileName": "Bid Document Completion of Smozomeni P6 Projects .pdf",
+      "extension": ".pdf",
+      "tendersID": 158862,
+      "active": true,
+      "updatedBy": "sandile.sithole@richmond.gov.za",
+      "dateModified": "2026-06-11T15:19:08.3649852"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RLM17\/2025\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "57 Shepstone Street, Richmond-Richmond KZN-Richmond KZN-3780",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "On-site Safety Equipment"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": 159130,
+  "tender_No": "RFP 04\/2026",
+  "description": "RFP 04\/2026 - THE APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF CUSTOMER INSIGHTS PLATFORM (INCLUDING CUSTOMER EXPERIENCE AND RESEARCH COMPONENTS) FOR A PERIOD OF THREE (3) YEARS.",
+  "category": "Information and communication",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "South African Revenue Service",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T11:00:00",
+  "briefingVenue": "Microsoft Teams - Link on attached on the invitation letter and Main RFP document",
+  "streetname": "299 Bronkhorsts Street",
+  "surburb": "Nieuw Muckleneuk",
+  "town": "Brooklyn",
+  "code": "0181",
+  "conditions": "BRIEFING SESSION DETAILS:\r\nMICROSOFT TEAMS \r\nMEETING ID NUMBER: 361 945 385 227 687\r\nPASSCODE\/PASSWORD: s5md9F8d   \r\n",
+  "contactPerson": "Tender Office",
+  "email": "tenderoffice@sars.gov.za",
+  "telephone": "012-422-4078",
+  "fax": "N\/A",
+  "username": "rndabezitha@sars.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 40,
+  "departmentsID": 624,
+  "departments": {
+    "departmentsID": 624,
+    "name": "South African Revenue Service"
+  },
+  "department": "South African Revenue Service",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "4250e84f-eb7e-4d27-9af9-0e54598f31b8",
+      "fileName": "RFP 04-2026 Tender Pack.zip",
+      "extension": ".zip",
+      "tendersID": 159130,
+      "active": true,
+      "updatedBy": "rndabezitha@sars.gov.za",
+      "dateModified": "2026-06-12T17:39:14.8970319"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFP 04\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "299 Bronkhorsts Street-Nieuw Muckleneuk-Brooklyn-0181"
+}

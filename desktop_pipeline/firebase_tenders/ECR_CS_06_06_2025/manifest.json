@@ -1,0 +1,115 @@
+{
+  "id": 158965,
+  "tender_No": "ECR\/CS\/06\/06\/2025",
+  "description": "REQUEST FOR QUOTATION (RFQ) FOR THE APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF COURIER SERVICES ON A ONCE OFF BASIS IN THE EASTERN CAPE REGION",
+  "category": "Administrative and support activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Passenger Rail Agency (PRASA)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "18.06.2026 12:00 PM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "8 station street, Station building",
+  "surburb": "East london",
+  "town": "East london",
+  "code": "5200",
+  "conditions": "N\/A",
+  "contactPerson": "Simnikiwe Nqulo",
+  "email": "simnikiwe.nqulo@prasa.com",
+  "telephone": "043-700-2331",
+  "fax": "N\/A",
+  "username": "simnikiwe.nqulo@prasa.com",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 44,
+  "departmentsID": 534,
+  "departments": {
+    "departmentsID": 534,
+    "name": "Passenger Rail Agency of South Africa"
+  },
+  "department": "Passenger Rail Agency of South Africa",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "31edab7c-e578-434f-9528-5d9352cd491f",
+      "fileName": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF COURIER SERVICES ON A ONCE OFF BASIS IN THE EASTERN CAPE REGION.pdf",
+      "extension": ".pdf",
+      "tendersID": 158965,
+      "active": true,
+      "updatedBy": "simnikiwe.nqulo@prasa.com",
+      "dateModified": "2026-06-12T10:01:19.7831519"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECR\/CS\/06\/06\/2025",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "8 station street, Station building-East london-East london-5200",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Road Freight & Haulage",
+    "Courier, Dispatch & Last-mile Delivery"
+  ],
+  "skills": [
+    "Road Freight & Haulage",
+    "Courier & Last-mile Delivery"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)"
+  ],
+  "title": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF COURIER SERVICES ON A ONCE OFF BASIS IN THE EASTERN CAPE REGION",
+  "isCompulsoryBriefing": false,
+  "closingDate": "18.06.2026 12:00 PM",
+  "reference": "ECR\/CS\/06\/06\/2025",
+  "provinceNames": [
+    "Eastern Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

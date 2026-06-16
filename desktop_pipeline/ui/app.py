@@ -5,6 +5,12 @@ import uuid
 import subprocess
 from flask import Flask, jsonify, request, Response, send_from_directory
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+try:
+    from pull_firebase_storage import list_firebase_tender_ids
+except Exception:
+    list_firebase_tender_ids = None
+
 app = Flask(__name__, static_folder="static")
 
 # In-memory store for active task streams and status
@@ -177,9 +183,232 @@ def stream_batch_logs(task_id):
                 yield f"data: {json.dumps({'log': f'[{os.path.basename(path)}] {log_line}'})}\n\n"
                 
             proc.wait()
-            
+            if proc.returncode != 0:
+                task["status"] = "failed"
+                yield f"data: {json.dumps({'done': True, 'success': False, 'exit_code': proc.returncode})}\n\n"
+                return
+        
         task["status"] = "success"
         yield f"data: {json.dumps({'done': True, 'success': True})}\n\n"
+        
+    return Response(generate(), mimetype="text/event-stream")
+
+@app.route("/api/firebase/pull", methods=["POST"])
+def firebase_pull():
+    task_id = str(uuid.uuid4())
+    active_tasks[task_id] = {
+        "type": "firebase_pull",
+        "status": "running",
+        "logs": []
+    }
+    return jsonify({"task_id": task_id})
+
+@app.route("/api/firebase/pull/<task_id>/stream")
+def stream_firebase_pull(task_id):
+    task = active_tasks.get(task_id)
+    if not task:
+        return Response("Task not found", status=404)
+        
+    def generate():
+        pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        script_path = os.path.join(pipeline_dir, "pull_firebase_storage.py")
+        
+        proc = subprocess.Popen(
+            [sys.executable, script_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=pipeline_dir
+        )
+        
+        for line in proc.stdout:
+            log_line = line.rstrip()
+            task["logs"].append(log_line)
+            yield f"data: {json.dumps({'log': log_line})}\n\n"
+            
+        proc.wait()
+        success = proc.returncode == 0
+        task["status"] = "success" if success else "failed"
+        yield f"data: {json.dumps({'done': True, 'success': success, 'exit_code': proc.returncode})}\n\n"
+        
+    return Response(generate(), mimetype="text/event-stream")
+
+@app.route("/api/firebase/list")
+def firebase_list():
+    if list_firebase_tender_ids is None:
+        return jsonify({"error": "Firebase list helper is unavailable."}), 500
+    try:
+        tender_ids = list_firebase_tender_ids()
+        return jsonify({"tender_ids": tender_ids})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/firebase/download", methods=["POST"])
+def firebase_download():
+    data = request.json or {}
+    tender_ids = data.get("tender_ids")
+    if not tender_ids:
+        return jsonify({"error": "tender_ids is required"}), 400
+    if isinstance(tender_ids, str):
+        tender_ids = [tender_ids]
+    task_id = str(uuid.uuid4())
+    active_tasks[task_id] = {
+        "type": "firebase_download",
+        "status": "running",
+        "logs": [],
+        "tender_ids": tender_ids
+    }
+    return jsonify({"task_id": task_id})
+
+@app.route("/api/firebase/download/<task_id>/stream")
+def stream_firebase_download(task_id):
+    task = active_tasks.get(task_id)
+    if not task:
+        return Response("Task not found", status=404)
+        
+    def generate():
+        pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        script_path = os.path.join(pipeline_dir, "pull_firebase_storage.py")
+        tender_ids = task.get("tender_ids", [])
+        args = [sys.executable, script_path]
+        for tid in tender_ids:
+            args.extend(["--tender-id", tid])
+
+        proc = subprocess.Popen(
+            args,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=pipeline_dir
+        )
+
+        for line in proc.stdout:
+            log_line = line.rstrip()
+            task["logs"].append(log_line)
+            yield f"data: {json.dumps({'log': log_line})}\n\n"
+
+        proc.wait()
+        success = proc.returncode == 0
+        task["status"] = "success" if success else "failed"
+        yield f"data: {json.dumps({'done': True, 'success': success, 'exit_code': proc.returncode})}\n\n"
+
+    return Response(generate(), mimetype="text/event-stream")
+
+@app.route("/api/firebase/enrich", methods=["POST"])
+def firebase_enrich():
+    data = request.json or {}
+    tender_ids = data.get("tender_ids")
+    if not tender_ids:
+        return jsonify({"error": "tender_ids is required"}), 400
+    if isinstance(tender_ids, str):
+        tender_ids = [tender_ids]
+    task_id = str(uuid.uuid4())
+    active_tasks[task_id] = {
+        "type": "firebase_enrich",
+        "status": "running",
+        "logs": [],
+        "tender_ids": tender_ids
+    }
+    return jsonify({"task_id": task_id})
+
+@app.route("/api/firebase/enrich/<task_id>/stream")
+def stream_firebase_enrich(task_id):
+    task = active_tasks.get(task_id)
+    if not task:
+        return Response("Task not found", status=404)
+        
+    def generate():
+        pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        download_script = os.path.join(pipeline_dir, "pull_firebase_storage.py")
+        enrich_script = os.path.join(pipeline_dir, "run_enrichment.py")
+        tender_ids = task.get("tender_ids", [])
+
+        for tid in tender_ids:
+            local_folder = os.path.join(pipeline_dir, "firebase_tenders", tid)
+            if not os.path.isdir(local_folder) or not os.listdir(local_folder):
+                yield f"data: {json.dumps({'log': f'Downloading Firebase folder {tid}...'})}\n\n"
+                download_proc = subprocess.Popen(
+                    [sys.executable, download_script, "--tender-id", tid],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    bufsize=1,
+                    cwd=pipeline_dir
+                )
+                for line in download_proc.stdout:
+                    log_line = line.rstrip()
+                    task["logs"].append(log_line)
+                    yield f"data: {json.dumps({'log': log_line})}\n\n"
+                download_proc.wait()
+                if download_proc.returncode != 0:
+                    task["status"] = "failed"
+                    yield f"data: {json.dumps({'done': True, 'success': False, 'exit_code': download_proc.returncode})}\n\n"
+                    return
+
+            yield f"data: {json.dumps({'log': f'Running enrichment for {tid}...'})}\n\n"
+            enrich_proc = subprocess.Popen(
+                [sys.executable, enrich_script, local_folder],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1,
+                cwd=pipeline_dir
+            )
+            for line in enrich_proc.stdout:
+                log_line = line.rstrip()
+                task["logs"].append(log_line)
+                yield f"data: {json.dumps({'log': log_line})}\n\n"
+            enrich_proc.wait()
+            if enrich_proc.returncode != 0:
+                task["status"] = "failed"
+                yield f"data: {json.dumps({'done': True, 'success': False, 'exit_code': enrich_proc.returncode})}\n\n"
+                return
+
+        task["status"] = "success"
+        yield f"data: {json.dumps({'done': True, 'success': True})}\n\n"
+
+    return Response(generate(), mimetype="text/event-stream")
+
+@app.route("/api/automation/run", methods=["POST"])
+def automation_run():
+    task_id = str(uuid.uuid4())
+    active_tasks[task_id] = {
+        "type": "automation",
+        "status": "running",
+        "logs": []
+    }
+    return jsonify({"task_id": task_id})
+
+@app.route("/api/automation/run/<task_id>/stream")
+def stream_automation(task_id):
+    task = active_tasks.get(task_id)
+    if not task:
+        return Response("Task not found", status=404)
+        
+    def generate():
+        pipeline_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        script_path = os.path.join(pipeline_dir, "run_automation.py")
+        
+        proc = subprocess.Popen(
+            [sys.executable, script_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            cwd=pipeline_dir
+        )
+        
+        for line in proc.stdout:
+            log_line = line.rstrip()
+            task["logs"].append(log_line)
+            yield f"data: {json.dumps({'log': log_line})}\n\n"
+            
+        proc.wait()
+        success = proc.returncode == 0
+        task["status"] = "success" if success else "failed"
+        yield f"data: {json.dumps({'done': True, 'success': success, 'exit_code': proc.returncode})}\n\n"
         
     return Response(generate(), mimetype="text/event-stream")
 

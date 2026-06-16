@@ -1,0 +1,120 @@
+{
+  "id": 159146,
+  "tender_No": "{\"evidence\":\"IEC\\\/ICT-04\\\/2026\"}",
+  "description": "{\"evidence\":\"Not found\"}",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "{\"evidence\":\"ELECTORAL COMMISSION\"}",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "{\"evidence\":\"6 July 2026 at 11:00\"}",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T11:00:00",
+  "briefingVenue": "{\"evidence\":\"Not found\"}",
+  "streetname": "1303 Heuwel Avenue",
+  "surburb": "Centurion",
+  "town": "Pretoria",
+  "code": "0046",
+  "conditions": "N\/A",
+  "contactPerson": "Yash Sookan",
+  "email": "Sookany@elections.org.za",
+  "telephone": "012-622-5700",
+  "fax": "N\/A",
+  "username": "baloyit@elections.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "{\"evidence\":\"Not found\"}",
+  "categoriesID": 86,
+  "departmentsID": 153,
+  "departments": {
+    "departmentsID": 153,
+    "name": "Electoral Commission (IEC)"
+  },
+  "department": "Electoral Commission (IEC)",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "46134859-8127-4cb0-ad4d-bde4ecb17310",
+      "fileName": "Tender IEC-ICT-04-2026 Results System Audit.pdf",
+      "extension": ".pdf",
+      "tendersID": 159146,
+      "active": true,
+      "updatedBy": "baloyit@elections.org.za",
+      "dateModified": "2026-06-12T20:02:29.7666607"
+    },
+    {
+      "supportDocumentID": "ee15e9ff-fc98-4e48-b2e9-c2f8736d71d9",
+      "fileName": "Tender Cover Page  ICT 04 Results System Audit.pdf",
+      "extension": ".pdf",
+      "tendersID": 159146,
+      "active": true,
+      "updatedBy": "baloyit@elections.org.za",
+      "dateModified": "2026-06-12T20:02:29.9055784"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "{\"evidence\":\"IEC\\\/ICT-04\\\/2026\"}",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1303 Heuwel Avenue-Centurion-Pretoria-0046",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Systems Integration & Automation",
+    "Data, Analytics & AI"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Data Analytics & Business Intelligence",
+    "Systems Integration & API Development",
+    "IT Support & Managed Services"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Data Center Facilities"
+  ],
+  "title": "{\"evidence\":\"RESULTS SYSTEM AUDIT\"}",
+  "preference_points": "{\"evidence\":\"Not found\"}",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "{\"evidence\":\"23 June 2026 at 11:00\"}",
+  "closingDate": "{\"evidence\":\"6 July 2026 at 11:00\"}",
+  "reference": "{\"evidence\":\"IEC\\\/ICT-04\\\/2026\"}",
+  "provinceNames": [
+    "{\"evidence\":\"Not found\"}"
+  ]
+}

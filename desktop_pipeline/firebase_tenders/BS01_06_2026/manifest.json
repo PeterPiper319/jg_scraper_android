@@ -1,0 +1,127 @@
+{
+  "id": 158930,
+  "tender_No": "BS01\/06\/2026",
+  "description": "APPOINTMENT OF A PANEL OF MAXIMUM OF FIVE (5) CONTRACTORS (CONTRACTOR DEVELPMENT ) FOR THE REPLACEMENT AND CONSTRUCTION OF WATER AND SEWER NETWORKS IN STLM AREA FOR THREE (3) FINANCIAL YEARS AS AND WHEN REQUIRED ",
+  "category": "Water supply; sewerage, waste management and remediation activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Steve Tshwete Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "14\/07\/2026 AT 12H00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Electrical Workshop Boardroom, Services Centre (Magasyn), Cnr Walter Sisulu & Protea Street, Middelburg, 1050",
+  "streetname": "CORNER WALTER SISULU AND WANDERERS",
+  "surburb": "MIDDELBURG",
+  "town": "MIDDELBURG",
+  "code": "1050",
+  "conditions": "TENDERERS SHOULD HAVE A CIDB CONTRACTOR GRADING OF 1CE OR HIGHER ",
+  "contactPerson": "Thabo Manko",
+  "email": "thabom@stlm.gov.za",
+  "telephone": "013-249-7230",
+  "fax": "N\/A",
+  "username": "nonhlanhlamo@stlm.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 11,
+  "departmentsID": 636,
+  "departments": {
+    "departmentsID": 636,
+    "name": "Steve Tshwete Local Municipality"
+  },
+  "department": "Steve Tshwete Local Municipality",
+  "categories": {
+    "categoriesID": 11,
+    "name": "Water supply; sewerage, waste management and remediation activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e8801443-72fc-4a92-a790-a5a07b232aaa",
+      "fileName": "advert BS01-06-2026 Water SMME's (002).pdf",
+      "extension": ".pdf",
+      "tendersID": 158930,
+      "active": true,
+      "updatedBy": "nonhlanhlamo@stlm.gov.za",
+      "dateModified": "2026-06-12T09:00:11.4494444"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "BS01\/06\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CORNER WALTER SISULU AND WANDERERS-MIDDELBURG-MIDDELBURG-1050",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "General Building Works"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "General Building Construction",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "Professional Indemnity Insurance",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)"
+  ],
+  "title": "APPOINTMENT OF A PANEL OF MAXIMUM OF FIVE (5) CONTRACTORS (CONTRACTOR DEVELOPMENT) FOR THE REPLACEMENT AND CONSTRUCTION OF WATER AND SEWER NETWORKS IN STLM AREA FOR THREE (3) FINANCIAL YEARS AS AND WHEN REQUIRED",
+  "cidb_grading": "1CE",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "29\/06\/2026 starting at 10:00",
+  "closingDate": "14\/07\/2026 AT 12H00",
+  "reference": "BS01\/06\/2026",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

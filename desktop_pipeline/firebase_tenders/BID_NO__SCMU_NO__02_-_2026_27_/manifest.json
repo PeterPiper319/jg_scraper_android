@@ -1,0 +1,81 @@
+{
+  "id": 158826,
+  "tender_No": "BID NO: SCMU NO: 02 - 2026\/27 ",
+  "description": "TERMS OF REFERENCE FOR THE APPOINTMENT OF A PANEL OF AGENCIES FOR MARKETING AND \r\nCOMMUNICATION SERVICES. ",
+  "category": "Advertising and market research",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Education, Training and Development Practices SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T11:00:00",
+  "briefingVenue": " available on www.etdpseta.org.za ",
+  "streetname": "112 MAIN STREET. 09TH FLOOR",
+  "surburb": "MARSHALTOWN",
+  "town": "JOHANNESBURG",
+  "code": "2001",
+  "conditions": "N\/A",
+  "contactPerson": "Siphesihle Nzima",
+  "email": "Tenderers@etdpseta.org.za",
+  "telephone": "011-372-3300",
+  "fax": "N\/A",
+  "username": "SiphesihleK@etdpseta.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 45,
+  "departmentsID": 146,
+  "departments": {
+    "departmentsID": 146,
+    "name": "Education, Training and Development Practices SETA"
+  },
+  "department": "Education, Training and Development Practices SETA",
+  "categories": {
+    "categoriesID": 45,
+    "name": "Advertising and market research"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0596d7f8-4648-4faa-9dd0-36c1cd9f888a",
+      "fileName": "Advertisement_of_a_new_tender__Panel_of_Marketing_agencies_ToR._BID_NO__SCMU_NO__02_-_2026_27_.zip",
+      "extension": ".zip",
+      "tendersID": 158826,
+      "active": true,
+      "updatedBy": "SiphesihleK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:31:11.1223942"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "BID NO: SCMU NO: 02 - 2026\/27 ",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "112 MAIN STREET. 09TH FLOOR-MARSHALTOWN-JOHANNESBURG-2001"
+}

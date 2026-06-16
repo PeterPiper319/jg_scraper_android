@@ -1,0 +1,115 @@
+{
+  "id": 159019,
+  "tender_No": "HEDP006\/25\/26",
+  "description": "The department of health offers various specialized clinical services that require advanced technology in order to ensure effective and efficient medical diagnosis and reporting.",
+  "category": "Supplies: Medical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Health",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-21T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "18 College Avenue",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Taelo Sekome",
+  "email": "Taelo.Sekome@dhsd.limpopo.gov.za",
+  "telephone": "083-265-8365",
+  "fax": "N\/A",
+  "username": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 365,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 89,
+  "departmentsID": 349,
+  "departments": {
+    "departmentsID": 349,
+    "name": "Limpopo - Health"
+  },
+  "department": "Limpopo - Health",
+  "categories": {
+    "categoriesID": 89,
+    "name": "Supplies: Medical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0fc9ceb0-3ab4-41c2-90d7-d880bd0756da",
+      "fileName": "Bid Document Esophagael Manometer HEDP006 25 26.pdf",
+      "extension": ".pdf",
+      "tendersID": 159019,
+      "active": true,
+      "updatedBy": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+      "dateModified": "2026-06-12T12:02:26.0363681"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "HEDP006\/25\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "18 College Avenue-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "medical_health",
+  "specializations": [
+    "Medical Equipment Supply & Maintenance"
+  ],
+  "skills": [
+    "Medical Equipment Maintenance",
+    "Hospital Management & Administration"
+  ],
+  "capabilities": [
+    "Certified Medical Facilities",
+    "Specialized Diagnostic Machinery"
+  ],
+  "title": "SUPPLY, DELIVERY, COMMISSIONING, AND MAINTENANCE OF MEDICAL EQUIPMENT (ESOPHAGEAL HIGH-RESOLUTION MANOMETER) FOR THE LIMPOPO DEPARTMENT OF HEALTH FOR A PERIOD OF 36 MONTHS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-21T11:00:00",
+  "reference": "HEDP006\/25\/26",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

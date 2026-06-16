@@ -1,0 +1,110 @@
+{
+  "id": 159005,
+  "tender_No": "IZIKO RFQ-CYP 12\/06\/2026",
+  "description": "Removal and relocation of Gaiasphere at Iziko South African Museum",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Iziko Museums of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T09:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Not specified",
+  "streetname": "25 Queen Victoria Street",
+  "surburb": "Cape Town",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "Quotes \/ Proposals, and accompanying documentation, must be emailed to SCM scm@iziko.org.za; kthemba@iziko.org.za; smadlavu@iziko.org.za",
+  "contactPerson": "Gabriel Lukoji",
+  "email": "glukoji@iziko.org.za",
+  "telephone": "021-481-7240",
+  "fax": "N\/A",
+  "username": "smadlavu@iziko.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 48,
+  "departmentsID": 268,
+  "departments": {
+    "departmentsID": 268,
+    "name": "Iziko Museums of Cape Town"
+  },
+  "department": "Iziko Museums of Cape Town",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "11db00f2-252a-4d26-bf95-cf8d25dcfb2e",
+      "fileName": "IZIKO-RFQ-RE Relocate 12 June 2026 Updated.pdf",
+      "extension": ".pdf",
+      "tendersID": 159005,
+      "active": true,
+      "updatedBy": "smadlavu@iziko.org.za",
+      "dateModified": "2026-06-12T11:28:41.8551919"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IZIKO RFQ-CYP 12\/06\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Queen Victoria Street-Cape Town-Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "title": "Removal and Relocation of Gaiasphere",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "Not specified",
+  "closingDate": "2026-06-22T09:00:00",
+  "reference": "IZIKO RFQ-CYP 12\/06\/2026",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

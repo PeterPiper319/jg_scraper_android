@@ -1,0 +1,113 @@
+{
+  "id": 159016,
+  "tender_No": "4489\/26",
+  "description": "Appointment of an accredited service provider to provide Portable Electrical Equipment and Hand tools Training.",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "South African Weather Service",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "ABSA building, 1st Floor, Reception Desk, 1263 Heuwel Road",
+  "surburb": "Centurion,",
+  "town": "Centurion,",
+  "code": "0157",
+  "conditions": "N\/A",
+  "contactPerson": "Ms.Carol Lekalakala",
+  "email": "Carol.lekalakala@weathersa.co.za",
+  "telephone": "012-367-6252",
+  "fax": "N\/A",
+  "username": "carol.lekalakala@weathersa.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 628,
+  "departments": {
+    "departmentsID": 628,
+    "name": "South African Weather Service"
+  },
+  "department": "South African Weather Service",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "95d33f7f-49f4-45cd-b4a7-a21ea0e57325",
+      "fileName": "RFQ number 4489 26.pdf",
+      "extension": ".pdf",
+      "tendersID": 159016,
+      "active": true,
+      "updatedBy": "carol.lekalakala@weathersa.co.za",
+      "dateModified": "2026-06-12T11:57:14.638336"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "4489\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "ABSA building, 1st Floor, Reception Desk, 1263 Heuwel Road-Centurion,-Centurion,-0157",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Regulatory Compliance"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Appointment of an accredited service provider to provide Portable Electrical Equipment and Hand tools Training",
+  "isCompulsoryBriefing": false,
+  "reference": "4489\/26",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": 158806,
+  "tender_No": "QCTO RFQ 07\/2026",
+  "description": "Provide fleet cards services for QCTO fleet vehicles for a period of 36 months",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "QCTO",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "24 June 2026 @ 11:00 am",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "256 Glyn Street",
+  "surburb": "Hatfield",
+  "town": "Pretoria",
+  "code": "0083",
+  "conditions": "Submissions via email: RFQ@qcto.org.za",
+  "contactPerson": "L Motloung",
+  "email": "SCM@qcto.org.za",
+  "telephone": "012-003-1800",
+  "fax": "N\/A",
+  "username": "makondo.t@qcto.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 556,
+  "departments": {
+    "departmentsID": 556,
+    "name": "Quality Council for Trades and Occupations"
+  },
+  "department": "Quality Council for Trades and Occupations",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "62104d78-0606-48a7-a168-1864586f19b5",
+      "fileName": "SBD 6.1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158806,
+      "active": true,
+      "updatedBy": "makondo.t@qcto.org.za",
+      "dateModified": "2026-06-11T10:34:57.5828036"
+    },
+    {
+      "supportDocumentID": "01c2cd06-0502-43ee-a21f-c176f0db0ab5",
+      "fileName": "RFQ - Fleet Cards.pdf",
+      "extension": ".pdf",
+      "tendersID": 158806,
+      "active": true,
+      "updatedBy": "makondo.t@qcto.org.za",
+      "dateModified": "2026-06-11T10:34:57.5463817"
+    },
+    {
+      "supportDocumentID": "3ec015ab-ef99-4d48-9484-d5f5d7445119",
+      "fileName": "TERMS OF REFERENCE FOR FLEET CARDS.pdf",
+      "extension": ".pdf",
+      "tendersID": 158806,
+      "active": true,
+      "updatedBy": "makondo.t@qcto.org.za",
+      "dateModified": "2026-06-11T10:34:57.7278445"
+    },
+    {
+      "supportDocumentID": "9c12b61e-faac-4066-ab06-f78739518e42",
+      "fileName": "Standard Bidding Document (SDB) 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 158806,
+      "active": true,
+      "updatedBy": "makondo.t@qcto.org.za",
+      "dateModified": "2026-06-11T10:34:57.6192596"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "QCTO RFQ 07\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "256 Glyn Street-Hatfield-Pretoria-0083",
+  "document_type": "RFQ",
+  "tenderAdvertType": "rfq",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Fleet Management & Vehicle Operations"
+  ],
+  "skills": [
+    "Fleet Management & Telematics"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)",
+    "Fleet Management Software"
+  ],
+  "title": "FLEET CARDS SERVICES FOR QCTO FLEET VEHICLES FOR A PERIOD OF 36 MONTHS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "24 June 2026 @ 11:00 am",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

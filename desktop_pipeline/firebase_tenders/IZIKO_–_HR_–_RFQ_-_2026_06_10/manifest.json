@@ -1,0 +1,104 @@
+{
+  "id": 158850,
+  "tender_No": "IZIKO – HR – RFQ - 2026\/06\/10",
+  "description": "Request For Quotation (RFQ) to appoint Executive Recruitment and Selection Service Provider with proven Executive Recruitment experience for the recruitment of CEO",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "Iziko Museums of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-23T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "25 Queen Victoria Street",
+  "surburb": "Cape Town",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "Quotes \/ proposals and accompanying documentation must be emailed to SCM: scm@iziko.org.za and smadlavu@iziko.org.za",
+  "contactPerson": "Siphamandla Oupa",
+  "email": "soupa@iziko.org.za",
+  "telephone": "021-481-3889",
+  "fax": "N\/A",
+  "username": "smadlavu@iziko.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 61,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 86,
+  "departmentsID": 268,
+  "departments": {
+    "departmentsID": 268,
+    "name": "Iziko Museums of Cape Town"
+  },
+  "department": "Iziko Museums of Cape Town",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "f93d3311-caeb-4560-a15a-d604543407de",
+      "fileName": "Recruitment Final June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158850,
+      "active": true,
+      "updatedBy": "smadlavu@iziko.org.za",
+      "dateModified": "2026-06-11T14:45:25.0021837"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IZIKO – HR – RFQ - 2026\/06\/10",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Queen Victoria Street-Cape Town-Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "Recruitment Services for Iziko Museums of South Africa",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

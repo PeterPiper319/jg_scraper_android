@@ -1,0 +1,115 @@
+{
+  "id": 158789,
+  "tender_No": "RFQ 001-2026\/2027",
+  "description": "REQUEST FOR PROPOSALS OF TRAINING FOR BEGINNERS DIGITAL MARKETING AND ADVANCED DIGITAL MARKETING FOR GOVERNMENT COMMUNICATION AND INFORMATION SYSTEM (GCIS)",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Government Communications (GCIS)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "1035 Corner Francis Baard and Festival",
+  "streetname": "1035 Corner Festival and Francis Baard Street",
+  "surburb": "Hatfield",
+  "town": "Pretoria",
+  "code": "0002",
+  "conditions": "N\/A",
+  "contactPerson": "NAMANE MAHLABA",
+  "email": "namane@gcis.gov.za",
+  "telephone": "012-473-0093",
+  "fax": "N\/A",
+  "username": "Namane@gcis.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 48,
+  "departmentsID": 755,
+  "departments": {
+    "departmentsID": 755,
+    "name": "Government Communications (GCIS)"
+  },
+  "department": "Government Communications (GCIS)",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "4892ea3d-d8c2-46ad-9a84-14aac3de91fa",
+      "fileName": "RFQ 001-2026-2027 Training for Beginners and Advanced Digital Marketing.pdf",
+      "extension": ".pdf",
+      "tendersID": 158789,
+      "active": true,
+      "updatedBy": "Namane@gcis.gov.za",
+      "dateModified": "2026-06-11T09:03:18.600257"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 001-2026\/2027",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1035 Corner Festival and Francis Baard Street-Hatfield-Pretoria-0002",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Digital Marketing & Paid Media",
+    "Content Strategy & Copywriting"
+  ],
+  "skills": [
+    "Digital Marketing & SEO",
+    "Content Strategy & Copywriting"
+  ],
+  "capabilities": [
+    "Licensed Creative Software (Adobe)",
+    "Digital Ad Management Platforms"
+  ],
+  "title": "REQUEST FOR PROPOSALS OF TRAINING FOR BEGINNERS DIGITAL MARKETING AND ADVANCED DIGITAL MARKETING FOR GOVERNMENT COMMUNICATION AND INFORMATION SYSTEMS (GCIS)",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 65,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T11:00:00",
+  "reference": "RFQ 001-2026\/2027",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

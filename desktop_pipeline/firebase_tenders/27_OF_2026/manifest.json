@@ -1,0 +1,113 @@
+{
+  "id": 159035,
+  "tender_No": "27 OF 2026",
+  "description": "Maintenance of 10MVA 66\/22kv Transformer at Levubu Substation ",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Bela-Bela Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "26 June 2026 at 16h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "83 Krogh Street",
+  "surburb": "Makhado",
+  "town": "Makhado",
+  "code": "0920",
+  "conditions": "•\tCIDB Grading 2EP or higher\r\n•\tCertified copy of wireman license\r\n•\tCertified copy of ORHVS 1-10 Module or HV04\r\n•\tA letter\/certificate as proof of being registered with the department of labour as an electrical contractor with IE or ME (installation or master electrician) number.\r\n\r\n",
+  "contactPerson": "Ms Phophi Mudau",
+  "email": "phophimu@makhado.gov.za",
+  "telephone": "015-519-3000",
+  "fax": "N\/A",
+  "username": "rotondwap@makhado.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 84,
+  "departmentsID": 369,
+  "departments": {
+    "departmentsID": 369,
+    "name": "Makhado Local Municipality"
+  },
+  "department": "Makhado Local Municipality",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2c44ba72-70e2-4eec-a4f5-ea6542435384",
+      "fileName": "TEAR SHEET JUNE 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159035,
+      "active": true,
+      "updatedBy": "rotondwap@makhado.gov.za",
+      "dateModified": "2026-06-12T13:06:21.2506622"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "27 OF 2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "83 Krogh Street-Makhado-Makhado-0920",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "General Building Works"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "General Building Construction",
+    "Road Construction & Maintenance"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)"
+  ],
+  "isCompulsoryBriefing": false,
+  "closingDate": "26 June 2026 at 16h00",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "id": 159014,
+  "tender_No": "240-105658000",
+  "description": "Supplier Quality Management Specification",
+  "category": "Supplies: Electrical Equipment",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T11:00:00",
+  "briefingVenue": "Microsoft Teams",
+  "streetname": "Eskom Rotek Industries",
+  "surburb": "Rosherville",
+  "town": "Johannesburg",
+  "code": "2094",
+  "conditions": "N\/A",
+  "contactPerson": "Sindy",
+  "email": "MakhazS@eskom.co.za",
+  "telephone": "011-621-3084",
+  "fax": "N\/A",
+  "username": "MakhazS@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 52,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 52,
+    "name": "Supplies: Electrical Equipment"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0a525f8a-2637-4a54-9f8b-06482e5abb19",
+      "fileName": "Technical Evaluation Bushings.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.5840873"
+    },
+    {
+      "supportDocumentID": "4300e96b-0757-443a-b1e0-08b847f6a0da",
+      "fileName": "SOW 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.0781326"
+    },
+    {
+      "supportDocumentID": "9bcf7c38-9f2f-41eb-bd0f-19eb5e83d7f6",
+      "fileName": "Specifications for Power transformers ST_240-68973110 specification Rev 3 TC signed.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.2098154"
+    },
+    {
+      "supportDocumentID": "29b1d236-33a6-4b4e-9d11-501dd3ba15a2",
+      "fileName": "240-105658000 Supplier QM Spec Rev 3-QM 58.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.2835073"
+    },
+    {
+      "supportDocumentID": "da562b6b-edcb-4a1c-976a-525d31f7b7b4",
+      "fileName": "240-12248652 (Rev 7) - List of Tender Returnables.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.2214455"
+    },
+    {
+      "supportDocumentID": "74f67135-d691-4066-8860-6683c097a8d8",
+      "fileName": "240- 68099512 (Rev 9) - Form A Tender & Contract Quality Requirements for 240-105658000 and Quality Requirements for ISO 9001 Standard.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.1752451"
+    },
+    {
+      "supportDocumentID": "1c6a2a81-4003-4174-b55d-67b74030b4d3",
+      "fileName": "Quality Requirements.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.0541797"
+    },
+    {
+      "supportDocumentID": "7f59a658-e67e-42a7-acff-728114c2ce9c",
+      "fileName": "240-106084675 Annexure C 3.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.4372681"
+    },
+    {
+      "supportDocumentID": "acbfa6b0-b36d-4bbd-beff-83b83b0e952b",
+      "fileName": "240-109253698 (Rev 3) - Contract Quality Plan (QCP) - Template.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.6174406"
+    },
+    {
+      "supportDocumentID": "09b5fdd3-4bbe-4383-9838-84192dbf92e0",
+      "fileName": "32-136 Contractor Health and Safety Requirements.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.02448"
+    },
+    {
+      "supportDocumentID": "ae87f750-ebad-4126-81c2-92b3ca983b35",
+      "fileName": "240-109253302 (Rev 2) - Quality Control Plan or Inspection Test Plan (QCP or ITP) - Template.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.5483437"
+    },
+    {
+      "supportDocumentID": "e885247d-55ff-41bb-a0eb-9463857485c9",
+      "fileName": "Annexure K - Capacitive transformer bushing..pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.6864841"
+    },
+    {
+      "supportDocumentID": "77daf1bd-e296-48aa-9bfb-ad8722e99345",
+      "fileName": "ITT Supply and delivery of Capacitive Bushings.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.8392624"
+    },
+    {
+      "supportDocumentID": "52267cc3-ff6a-4e33-9cfe-b2c898ba4188",
+      "fileName": "240-77471499 (2) Annexure B - Acknowledgement Form for Eskom SHE Rules and other Requirements.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.2559215"
+    },
+    {
+      "supportDocumentID": "977b211a-916f-42db-b05d-c383a3c534eb",
+      "fileName": "Template for NEC3 Supply Contract Supply of Capacitive Bushings.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.7168815"
+    },
+    {
+      "supportDocumentID": "d98a7651-cd5b-4a99-be5d-d3ec4948e781",
+      "fileName": "ST_240-56062799_Bushings Technical Specification_Rev 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:48.430942"
+    },
+    {
+      "supportDocumentID": "7d04cdcb-6882-44bb-ace8-f40093c3ad99",
+      "fileName": "240-108987034 Environmental Tender Evaluation and Scoring Card (High, Medium and Low risk work) - Copy.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.484367"
+    },
+    {
+      "supportDocumentID": "f33d1edf-4140-4fda-ab38-f64478c26154",
+      "fileName": "Clarification link.docx",
+      "extension": ".docx",
+      "tendersID": 159014,
+      "active": true,
+      "updatedBy": "MakhazS@eskom.co.za",
+      "dateModified": "2026-06-12T11:54:47.8129214"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "240-105658000",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Eskom Rotek Industries-Rosherville-Johannesburg-2094",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Electrical Distribution & Grid Services",
+    "Quality Management Systems (QMS)"
+  ],
+  "skills": [
+    "Electrical Grid Maintenance",
+    "Quality Control & Assurance",
+    "ISO 9001 Certification"
+  ],
+  "capabilities": [
+    "ECA\/ECASA Registration",
+    "ISO 9001 Quality Management"
+  ],
+  "title": "Supplier QM Spec Rev 3-QM 58",
+  "isCompulsoryBriefing": false,
+  "reference": "240-105658000",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

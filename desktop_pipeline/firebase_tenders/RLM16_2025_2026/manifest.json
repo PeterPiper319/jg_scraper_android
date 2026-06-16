@@ -1,0 +1,97 @@
+{
+  "id": 158855,
+  "tender_No": "RLM16\/2025\/2026",
+  "description": "PROVISION OF CERTFICATE OF ROADWORTHINESS, MECHANICAL SERVICING, REPAIRS, CERTIFICATE OF ROAD WORTHY FITNESS AND LICENCING FOR FOUR (4) TIPPER TRUCKS",
+  "category": "Repair and installation of machinery and equipment",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Richmond - KZ Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Richmond Council Chambers",
+  "streetname": "57 Shepstone Street, Richmond ",
+  "surburb": "Richmond KZN",
+  "town": "Richmond KZN",
+  "code": "3780",
+  "conditions": "N\/A",
+  "contactPerson": "Sandile Sithole",
+  "email": "sandile.sithole@richmond.gov.za",
+  "telephone": "033-212-2155",
+  "fax": "033-212-4668",
+  "username": "sandile.sithole@richmond.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 43,
+  "departmentsID": 847,
+  "departments": {
+    "departmentsID": 847,
+    "name": "Richmond - KZ Local Municipality"
+  },
+  "department": "Richmond - KZ Local Municipality",
+  "categories": {
+    "categoriesID": 43,
+    "name": "Repair and installation of machinery and equipment"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "13caaf98-16e3-4377-809e-7f20581aff49",
+      "fileName": "draft document - COF .pdf",
+      "extension": ".pdf",
+      "tendersID": 158855,
+      "active": true,
+      "updatedBy": "sandile.sithole@richmond.gov.za",
+      "dateModified": "2026-06-11T15:09:23.6835268"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RLM16\/2025\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "57 Shepstone Street, Richmond -Richmond KZN-Richmond KZN-3780",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Road Freight & Haulage",
+    "Fleet Management & Vehicle Operations"
+  ],
+  "skills": [
+    "Road Freight & Haulage",
+    "Fleet Management & Telematics"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)",
+    "RTMS Certification"
+  ]
+}

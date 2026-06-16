@@ -1,0 +1,118 @@
+{
+  "id": 158868,
+  "tender_No": "RFP No. 1230\/26\/06\/2026",
+  "description": "Request for Proposals (RFP) Appointment of a service provider to map local capabilities for green economic participation. A demographic, skills, and enterprise assessment at Atlantis Special Economic Zone, as part of Eco-Industrial Park Programme of CSIR",
+  "category": "Professional, scientific and technical activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "CSIR",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T16:30:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "627 Meiring Naude Road",
+  "surburb": "Brummeria",
+  "town": "Pretoria",
+  "code": "0184",
+  "conditions": "N\/A",
+  "contactPerson": "SCM",
+  "email": "tender@csir.co.za",
+  "telephone": "012-841-2911",
+  "fax": "N\/A",
+  "username": "nngubane2@csir.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 90,
+  "departmentsID": 83,
+  "departments": {
+    "departmentsID": 83,
+    "name": "Council for Scientific and Industrial Research (CSIR)"
+  },
+  "department": "Council for Scientific and Industrial Research (CSIR)",
+  "categories": {
+    "categoriesID": 90,
+    "name": "Professional, scientific and technical activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0a51df1a-26bf-431f-a895-b9d8f1a536d8",
+      "fileName": "RFP 1230-26-06-2026 1 Pre-feasibility Study at ASeZ.pdf",
+      "extension": ".pdf",
+      "tendersID": 158868,
+      "active": true,
+      "updatedBy": "nngubane2@csir.co.za",
+      "dateModified": "2026-06-11T15:36:46.8363907"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFP No. 1230\/26\/06\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "627 Meiring Naude Road-Brummeria-Pretoria-0184",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Research, Surveys & Assessments"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Strategic Planning",
+    "Market Research & Analysis",
+    "Research, Surveys & Assessments"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Proprietary Assessment Tools",
+    "Cloud-based Analytical Software"
+  ],
+  "title": "Request for Proposals (RFP) Appointment of a service provider to map local capabilities for green economic participation. A demographic, skills, and enterprise assessment at Atlantis Special Economic Zone, as part of Eco-Industrial Park Programme of CSIR",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-26T16:30:00",
+  "reference": "RFP No. 1230\/26\/06\/2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

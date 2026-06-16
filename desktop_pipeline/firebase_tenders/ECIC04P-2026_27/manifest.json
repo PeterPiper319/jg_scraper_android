@@ -1,0 +1,140 @@
+{
+  "id": 159020,
+  "tender_No": "ECIC04P-2026_27",
+  "description": "The purpose of this Request for Proposal (RFP) is to appoint a supplier to provide and implement a modern and AI-ready Customer Relationship Management (CRM) system in a Software as a Service Model, including 36 months post-Phase One implementation support and maintenance",
+  "category": "Financial and insurance activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "Export Credit and Foreign Investments Insurance Corporation (ECIC)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-14T00:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T11:00:00",
+  "briefingVenue": "ECIC Office",
+  "streetname": "11 Byls bridge Boulevard",
+  "surburb": "Highveld",
+  "town": "Centurion",
+  "code": "0157",
+  "conditions": "N\/A",
+  "contactPerson": "Lopang Kwape",
+  "email": "procurement@ecic.co.za",
+  "telephone": "012-471-3800",
+  "fax": "N\/A",
+  "username": "lmakwela@ecic.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 5,
+  "departmentsID": 170,
+  "departments": {
+    "departmentsID": 170,
+    "name": "Export Credit Insurance Corporation of South Africa Limited"
+  },
+  "department": "Export Credit Insurance Corporation of South Africa Limited",
+  "categories": {
+    "categoriesID": 5,
+    "name": "Financial and insurance activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "861bc262-7d22-457b-b354-07e56596171d",
+      "fileName": "ECIC04P-2026_27 CRM Platform.pdf",
+      "extension": ".pdf",
+      "tendersID": 159020,
+      "active": true,
+      "updatedBy": "lmakwela@ecic.co.za",
+      "dateModified": "2026-06-12T12:08:38.2971234"
+    },
+    {
+      "supportDocumentID": "aa3afb61-5c27-4165-9535-3a70f56cc218",
+      "fileName": "ECIC04P-2026_27 Annexure B Pricing template.docx",
+      "extension": ".docx",
+      "tendersID": 159020,
+      "active": true,
+      "updatedBy": "lmakwela@ecic.co.za",
+      "dateModified": "2026-06-12T12:08:38.2158955"
+    },
+    {
+      "supportDocumentID": "d42fdb45-9da0-4487-a622-c1be07e047d5",
+      "fileName": "ECIC04P-2026_27 Annexure C Self evaluation.docx",
+      "extension": ".docx",
+      "tendersID": 159020,
+      "active": true,
+      "updatedBy": "lmakwela@ecic.co.za",
+      "dateModified": "2026-06-12T12:08:38.2687118"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECIC04P-2026_27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "11 Byls bridge Boulevard-Highveld-Centurion-0157",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Systems Integration & Automation",
+    "Data, Analytics & AI"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Systems Integration & API Development",
+    "Data Analytics & Business Intelligence",
+    "UI\/UX Design & User Research",
+    "Project Management (Agile\/Scrum)"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Remote Monitoring Tools",
+    "Disaster Recovery Systems"
+  ],
+  "title": "AUTOMATION OF CRM PROCESSES INCLUDING SUPPORT AND MAINTENANCE FOR A PERIOD OF THREE YEARS",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "2026-06-23T11:00:00",
+  "closingDate": "2026-07-14T00:00:00",
+  "reference": "ECIC04P-2026_27",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

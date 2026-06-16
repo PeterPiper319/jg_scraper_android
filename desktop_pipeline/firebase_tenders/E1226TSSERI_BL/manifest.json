@@ -1,0 +1,100 @@
+{
+  "id": 158923,
+  "tender_No": "E1226TSSERI\/BL",
+  "description": "SUPPLY AND DELIVERY OF THREE PHASE TRANSFORMER WINDING ANALYZER-BIDDERS LIST",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-17T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Corner Hunslet and Lower Germiston Road",
+  "surburb": "ROSHERVILLE",
+  "town": "Gauteng",
+  "code": "2022",
+  "conditions": "N\/A",
+  "contactPerson": "Josephine",
+  "email": "mahlan@eskom.co.za",
+  "telephone": "011-621-3069",
+  "fax": "N\/A",
+  "username": "MahlaN@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 34,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "955b20de-c5f8-440c-9f11-7495dc35b788",
+      "fileName": "LIST OF BIDDERS.pdf",
+      "extension": ".pdf",
+      "tendersID": 158923,
+      "active": true,
+      "updatedBy": "MahlaN@eskom.co.za",
+      "dateModified": "2026-06-12T08:25:22.2680544"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E1226TSSERI\/BL",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Corner Hunslet and Lower Germiston Road-ROSHERVILLE-Gauteng-2022",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Electrical Distribution & Grid Services",
+    "Solar, Renewable & Backup Power"
+  ],
+  "skills": [
+    "Electrical Grid Maintenance",
+    "Renewable Energy (Solar\/Wind)"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "Electrical Distribution Equipment"
+  ],
+  "title": "Supply and delivery of three phase transformer winding analyzer",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-17T10:00:00"
+}

@@ -1,0 +1,114 @@
+{
+  "id": 158977,
+  "tender_No": "Q2026\/046",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR THE PROVISION OF MEDIATION SERVICES IN SOCIAL CONFLICT SITUATIONS",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Cape Winelands District Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "29 Du Toit Street",
+  "surburb": "Stellenbosch",
+  "town": "Stellenbosch",
+  "code": null,
+  "conditions": "N\/A",
+  "contactPerson": "Lee Meisenheimer",
+  "email": "lee.meisenheimer@capewinelands.gov.za",
+  "telephone": "086-126-5263",
+  "fax": "N\/A",
+  "username": "nobulali@capewinelands.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 61,
+  "departmentsID": 46,
+  "departments": {
+    "departmentsID": 46,
+    "name": "Cape Winelands District Municipality"
+  },
+  "department": "Cape Winelands District Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d371542a-0b81-4a32-8c2b-f32e28642257",
+      "fileName": "Q2026 046 DOC.pdf",
+      "extension": ".pdf",
+      "tendersID": 158977,
+      "active": true,
+      "updatedBy": "nobulali@capewinelands.gov.za",
+      "dateModified": "2026-06-12T10:23:44.6505003"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "Q2026\/046",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "29 Du Toit Street-Stellenbosch-Stellenbosch-",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Mediation & Arbitration Services"
+  ],
+  "skills": [
+    "Mediation & Conflict Resolution",
+    "Dispute Resolution & Arbitration"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance"
+  ],
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 60,
+  "isCompulsoryBriefing": false,
+  "reference": "Q2026\/046",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

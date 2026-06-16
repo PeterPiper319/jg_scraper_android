@@ -544,24 +544,11 @@ class TenderScraperViewModel @Inject constructor(
 
     fun enrichFirebaseTender(model: Model, tenderId: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            val folder = fileManager.getTenderFolder(tenderId)
-            val hasEnrichment = fileManager.hasGemmaEnrichment(folder)
-            
-            val success = if (hasEnrichment) {
-                Log.i(TAG, "Tender $tenderId already has local enrichment file. Skipping extraction and proceeding to upload.")
-                true
-            } else {
-                val downloaded = downloadTenderFromFirebaseInternal(tenderId)
-                if (!downloaded) {
-                    false
-                } else {
-                    enrichManifestWithGemmaInternal(model, tenderId)
-                }
+            val downloaded = downloadTenderFromFirebaseInternal(tenderId)
+            if (!downloaded) {
+                return@launch
             }
-
-            if (success) {
-                uploadTenderToFirebaseInternal(tenderId)
-            }
+            enrichManifestWithGemmaInternal(model, tenderId)
         }
     }
 
@@ -608,29 +595,16 @@ class TenderScraperViewModel @Inject constructor(
                     if (stopRequested) break
 
                     _uiState.value = _uiState.value.copy(
-                        bulkEnrichmentStatus = "[$progress] Enriching $tenderId...",
+                        bulkEnrichmentStatus = "[$progress] Enriching and uploading $tenderId...",
                     )
 
                     val enriched = enrichManifestWithGemmaInternal(model, tenderId)
-                    if (!enriched) {
+                    if (enriched) {
+                        succeeded++
+                    } else {
                         Log.w(TAG, "Bulk enrich: skipping upload for $tenderId — enrichment failed")
                         failed++
                         lastError = "Enrichment failed for $tenderId"
-                        continue
-                    }
-
-                    if (stopRequested) break
-
-                    _uiState.value = _uiState.value.copy(
-                        bulkEnrichmentStatus = "[$progress] Uploading $tenderId...",
-                    )
-
-                    val uploaded = uploadTenderToFirebaseInternal(tenderId)
-                    if (uploaded) {
-                        succeeded++
-                    } else {
-                        failed++
-                        lastError = "Upload failed for $tenderId"
                     }
 
                     // Cool down delay between tenders

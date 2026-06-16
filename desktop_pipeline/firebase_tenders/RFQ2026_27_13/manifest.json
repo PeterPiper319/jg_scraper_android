@@ -1,0 +1,138 @@
+{
+  "id": 158997,
+  "tender_No": "RFQ2026\/27\/13",
+  "description": "PROVISION OF OFFICE CARPET CLEANING AND FUMIGATION",
+  "category": "Services: Functional (Including Cleaning and Security Services)",
+  "type": "Request for Quotation",
+  "organ_of_State": "Ports Regulator of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-18T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "22 Dorothy Nyembe street, 11th Floor the Marine Building",
+  "surburb": "Durban",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "N\/A",
+  "contactPerson": "SCM TEAM",
+  "email": "quotations@portsregulator.org",
+  "telephone": "031-355-0710",
+  "fax": "N\/A",
+  "username": "lisav@portsregulator.org",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 74,
+  "departmentsID": 546,
+  "departments": {
+    "departmentsID": 546,
+    "name": "Ports Regulator of South Africa"
+  },
+  "department": "Ports Regulator of South Africa",
+  "categories": {
+    "categoriesID": 74,
+    "name": "Services: Functional (Including Cleaning and Security Services)"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "3a5665e7-606d-4bfc-bdee-0f9625031516",
+      "fileName": "Supplier POPIA Consent.pdf",
+      "extension": ".pdf",
+      "tendersID": 158997,
+      "active": true,
+      "updatedBy": "lisav@portsregulator.org",
+      "dateModified": "2026-06-12T10:56:02.1063753"
+    },
+    {
+      "supportDocumentID": "c0230f9b-0f1a-45f5-99a3-698a0896ad58",
+      "fileName": "RFQ CARPET CLEANING AND FUMIGATION.pdf",
+      "extension": ".pdf",
+      "tendersID": 158997,
+      "active": true,
+      "updatedBy": "lisav@portsregulator.org",
+      "dateModified": "2026-06-12T10:56:01.6506181"
+    },
+    {
+      "supportDocumentID": "66f365f6-812c-449f-b39c-7e535fa353a6",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022.pdf",
+      "extension": ".pdf",
+      "tendersID": 158997,
+      "active": true,
+      "updatedBy": "lisav@portsregulator.org",
+      "dateModified": "2026-06-12T10:56:01.7998184"
+    },
+    {
+      "supportDocumentID": "3ff21767-a9ba-4bd7-a789-a17d559a133e",
+      "fileName": "Standard Bidding Document (SDB) 4_Annexure A.pdf",
+      "extension": ".pdf",
+      "tendersID": 158997,
+      "active": true,
+      "updatedBy": "lisav@portsregulator.org",
+      "dateModified": "2026-06-12T10:56:01.9786662"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ2026\/27\/13",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "22 Dorothy Nyembe street, 11th Floor the Marine Building-Durban-Durban-4000",
+  "document_type": "RFQ",
+  "tenderAdvertType": "rfq",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Regulatory Compliance"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance"
+  ],
+  "title": "PROVISION OF OFFICE CARPET CLEANING AND FUMIGATION",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-18T12:00:00",
+  "reference": "RFQ2026\/27\/13",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

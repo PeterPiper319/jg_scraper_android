@@ -1,0 +1,117 @@
+{
+  "id": 158869,
+  "tender_No": "RFQ 021\/2026",
+  "description": "Supply, delivery, installation and commissioning of 2 firefighting jockey pumps",
+  "category": "Services: Electrical",
+  "type": "Request for Quotation",
+  "organ_of_State": "TASEZ",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Meiring Naude road, Brummeria",
+  "surburb": "Lynwood",
+  "town": "Pretoria",
+  "code": "0184",
+  "conditions": "N\/A",
+  "contactPerson": "Lucy Kapa",
+  "email": "Lucyk@tasez.co.za",
+  "telephone": "012-940-6378",
+  "fax": "N\/A",
+  "username": "hlamulos@tasez.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 84,
+  "departmentsID": 671,
+  "departments": {
+    "departmentsID": 671,
+    "name": "TSHWANE AUTOMOTIVE SPECIAL ECONOMIC ZONE"
+  },
+  "department": "TSHWANE AUTOMOTIVE SPECIAL ECONOMIC ZONE",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5e388871-6174-4083-92f3-13329a4c4e0f",
+      "fileName": "RFQ 021-2026 Jockey Pumps.pdf",
+      "extension": ".pdf",
+      "tendersID": 158869,
+      "active": true,
+      "updatedBy": "hlamulos@tasez.co.za",
+      "dateModified": "2026-06-11T15:39:12.4886066"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 021\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Meiring Naude road, Brummeria-Lynwood-Pretoria-0184",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Machinery Repair & Industrial Maintenance",
+    "Industrial Maintenance"
+  ],
+  "skills": [
+    "Industrial Design & Engineering",
+    "Quality Control & Lean Six Sigma",
+    "Machine Maintenance & Repairs"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure",
+    "CNC Machining Centers"
+  ],
+  "title": "SUPPLY, DELIVERY, INSTALLATION AND COMMISSIONING OF 2 FIREFIGHTING JOCKEY PUMPS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "closingDate": "2026-06-19T12:00:00",
+  "reference": "RFQ 021\/2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

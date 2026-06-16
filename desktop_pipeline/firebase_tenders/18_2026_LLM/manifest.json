@@ -1,0 +1,118 @@
+{
+  "id": 158964,
+  "tender_No": "18\/2026",
+  "description": "The Lesedi Local Municipality requires a suitably qualified service provider for supply, delivery and off-loading of medium voltage and low voltage circuit breakers for Lesedi local municipality on an as and when required basis for a period of three years.",
+  "category": "Supplies: Electrical Equipment",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Lesedi Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "15 July 2026@12h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "1.H.F Verwoerd Street",
+  "surburb": null,
+  "town": "Heidelberg",
+  "code": null,
+  "conditions": "N\/A",
+  "contactPerson": "Sibulelo Mokoena",
+  "email": "sibulelom@lesedi.gov.za",
+  "telephone": "016-466-1947",
+  "fax": "N\/A",
+  "username": "sibulelom@lesedi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 52,
+  "departmentsID": 342,
+  "departments": {
+    "departmentsID": 342,
+    "name": "Lesedi Local Municipality"
+  },
+  "department": "Lesedi Local Municipality",
+  "categories": {
+    "categoriesID": 52,
+    "name": "Supplies: Electrical Equipment"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "1e2e2c94-22f2-4bff-acd9-85fb2ea7faf7",
+      "fileName": "18-2026 SUPPLY OF CIRCUIT BREAKERS TENDER ADVERT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158964,
+      "active": true,
+      "updatedBy": "sibulelom@lesedi.gov.za",
+      "dateModified": "2026-06-12T10:00:05.1645647"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "18\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1.H.F Verwoerd Street--Heidelberg-",
+  "document_type": "Advert",
+  "tenderAdvertType": "advert",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Electrical Distribution & Grid Services",
+    "Solar, Renewable & Backup Power"
+  ],
+  "skills": [
+    "Electrical Grid Maintenance",
+    "Renewable Energy (Solar\/Wind)"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "Electrical Distribution Equipment"
+  ],
+  "title": "SUPPLY, DELIVERY AND OFF-LOADING OF MEDIUM VOLTAGE AND LOW VOLTAGE CIRCUIT BREAKERS FOR LESEDI LOCAL MUNICIPALITY ON AN AS AND WHEN REQUIRED BASIS FOR A PERIOD OF THREE YEARS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "15 July 2026@12h00",
+  "reference": "18\/2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

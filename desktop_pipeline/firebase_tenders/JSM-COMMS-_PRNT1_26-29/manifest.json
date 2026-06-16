@@ -1,0 +1,119 @@
+{
+  "id": 158870,
+  "tender_No": "JSM-COMMS-PRNT1\/26-29",
+  "description": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE LAYOUT, DESIGN, BRANDING, PRINTING, SUPPLY AND DELIVERY OF THE PRINTING WORKS ON AN AS AND WHEN REQUIRED BASIS FOR A PERIOD OF 36 MONTHS",
+  "category": "Printing and reproduction of recorded media",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Dr JS Moroka Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "09 July 2026 at 11H00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-12T11:30:00",
+  "briefingVenue": "Phahla Community Hall",
+  "streetname": "Bongimfundo street",
+  "surburb": "Siyabuswa",
+  "town": "Siyabuswa",
+  "code": "0472",
+  "conditions": "N\/A",
+  "contactPerson": "bongumusa sipho",
+  "email": "mahlangusb@moroka.gov.za",
+  "telephone": "013-973-1101",
+  "fax": "N\/A",
+  "username": "MahlanguSB@moroka.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 60,
+  "departmentsID": 107,
+  "departments": {
+    "departmentsID": 107,
+    "name": "Dr JS Moroka Local Municipality"
+  },
+  "department": "Dr JS Moroka Local Municipality",
+  "categories": {
+    "categoriesID": 60,
+    "name": "Printing and reproduction of recorded media"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "3276ff3a-2041-4dfd-9987-bf60f5b21f1f",
+      "fileName": "Printing tender doc JSM COMMS PRNT01 2629.pdf",
+      "extension": ".pdf",
+      "tendersID": 158870,
+      "active": true,
+      "updatedBy": "MahlanguSB@moroka.gov.za",
+      "dateModified": "2026-06-11T15:42:48.1830515"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "JSM-COMMS-PRNT1\/26-29",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Bongimfundo street-Siyabuswa-Siyabuswa-0472",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Graphic Design, Branding & Creative",
+    "Printing, Signage & Promotional Materials"
+  ],
+  "skills": [
+    "Graphic Design & Branding",
+    "Content Strategy & Copywriting"
+  ],
+  "capabilities": [
+    "High-end Video\/Photo Equipment",
+    "Licensed Creative Software (Adobe)",
+    "Large-scale Printing Equipment"
+  ],
+  "title": "APPOINTMENT OF A PANEL OF SERVICE PROVIDERS FOR THE LAYOUT, DESIGN, BRANDING, PRINTING, SUPPLY AND DELIVERY OF THE PRINTING WORKS ON AN AS AND WHEN REQUIRED BASIS FOR A PERIOD OF 36 MONTHS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "12 June 2026 at 11H00",
+  "closingDate": "09 July 2026 at 11H00",
+  "reference": "JSM-COMMS-PRNT1\/26-29",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": 158992,
+  "tender_No": "NWDOH 16\/2026",
+  "description": "Open bids are hereby invited the procurement of service provider to repair and upgrade laundry building & equipment at Tshepong Hospital in the North West Province CIDB grade 6ME or higher.",
+  "category": "Services: Building",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department: Health North West Provincial Government",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-08T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "3801 Corner First Street and Sekame Road",
+  "surburb": "Mmabatho",
+  "town": "Mafikeng",
+  "code": "2745",
+  "conditions": "REFER TO THE BID DOCUMENT",
+  "contactPerson": "SCM Admin Ms  N. Tshabala  Tech Mr P Nhlabatsi",
+  "email": "nsegwabanyane@nwpg.gov.za",
+  "telephone": "073-603-7005",
+  "fax": "000-000-0000",
+  "username": "letswalom@nwpg.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 1,
+  "provinces": {
+    "provincesID": 1,
+    "name": "North West"
+  },
+  "province": "North West",
+  "categoriesID": 78,
+  "departmentsID": 492,
+  "departments": {
+    "departmentsID": 492,
+    "name": "North West - Department of Health"
+  },
+  "department": "North West - Department of Health",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e875be32-79de-472d-835f-7a7ce41a9ebe",
+      "fileName": "NWDOH 16_2026 BID DOCUMENT PROCUREMENT OF SERVICE PROVIDER _REPAIR AND UPGRADE OF LAUNDRY BUILDING AND EQUIPMENT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158992,
+      "active": true,
+      "updatedBy": "letswalom@nwpg.gov.za",
+      "dateModified": "2026-06-12T10:50:31.137983"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "NWDOH 16\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "3801 Corner First Street and Sekame Road-Mmabatho-Mafikeng-2745",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "THE PROCUREMENT OF SERVICE PROVIDER TO REPAIR AND UPGRADE LAUNDRY BUILDING & EQUIPMENT AT TSHEPONG HOSPITAL IN THE NORTH WEST PROVINCE",
+  "cidb_grading": "6Not found",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "NWDOH 16\/2026",
+  "provinceNames": [
+    "North West"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

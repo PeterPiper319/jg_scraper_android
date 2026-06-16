@@ -1,0 +1,106 @@
+{
+  "id": 159013,
+  "tender_No": "HEDP004\/26\/27",
+  "description": "SUPPLY AND DELIVERY OF MEDICAL MALE CIRCUMCISION (MMC) PACKS FOR A PERIOD OF THIRTY-SIX (36) MONTHS IN THE DEPARTMENT OF HEALTH: LIMPOPO PROVINCE",
+  "category": "Supplies: Medical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "DEPARTMENT OF HEALTH",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-16T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "18 College Avenue",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Taelo Sekome",
+  "email": "Taelo.Sekome@dhsd.limpopo.gov.za",
+  "telephone": "083-265-8365",
+  "fax": "N\/A",
+  "username": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 365,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo Province",
+  "categoriesID": 89,
+  "departmentsID": 349,
+  "departments": {
+    "departmentsID": 349,
+    "name": "Limpopo - Health"
+  },
+  "department": "Limpopo - Health",
+  "categories": {
+    "categoriesID": 89,
+    "name": "Supplies: Medical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5143dafb-dbcb-4407-a2f5-97f6697bf135",
+      "fileName": "BID DOCUMENT MMC PACKS HEDP004 26 27.pdf",
+      "extension": ".pdf",
+      "tendersID": 159013,
+      "active": true,
+      "updatedBy": "Ntlama.Maphahlele@dhsd.limpopo.gov.za",
+      "dateModified": "2026-06-12T11:52:52.6876033"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "HEDP004\/26\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "18 College Avenue-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "SUPPLY AND DELIVERY OF MEDICAL MALE CIRCUMCISION (MMC) PACKS FOR A PERIOD OF THIRTY-SIX (36) MONTHS IN THE DEPARTMENT OF HEALTH: LIMPOPO PROVINCE",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-16T11:00:00",
+  "reference": "HEDP004\/26\/27",
+  "provinceNames": [
+    "Limpopo Province"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

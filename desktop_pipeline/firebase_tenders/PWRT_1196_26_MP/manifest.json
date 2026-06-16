@@ -1,0 +1,123 @@
+{
+  "id": 158892,
+  "tender_No": "PWRT 1196",
+  "description": "The Department of Public Works, Roads and Transport is inviting bids for the supply and delivery of uniforms for Transport Inspectors for a period of three years.",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Public Works, Roads and Transport",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T11:00:00",
+  "briefingVenue": "Not specified",
+  "streetname": "Riverside Government Complex, Building No9, Government Boulevard",
+  "surburb": "Riverside",
+  "town": "Mbombela",
+  "code": "1200",
+  "conditions": "BRIEFING SESSION INFO\r\n\r\nDATE: 19 JUNE 2026\r\nTIME: 11:00\r\nVENUE: Cnr. Lillian Ngoyi and Dr Beyers Naude Street, Department of Public Works, Roads & Transport, Middelburg\r\n\r\nNO LATE BIDS WILL BE ACCPTED BY PROVINCIAL TREASURY",
+  "contactPerson": "Mr. MG Tsotetsi      ",
+  "email": "mtsotetsi@mpg.gov.za",
+  "telephone": "071-400-9763",
+  "fax": "N\/A",
+  "username": "tlkhathide@mpg.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 61,
+  "departmentsID": 433,
+  "departments": {
+    "departmentsID": 433,
+    "name": "Mpumalanga - Public Works Roads and Transport"
+  },
+  "department": "Mpumalanga - Public Works Roads and Transport",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ceaa7c0c-0b61-44bd-a641-68053c1f0e31",
+      "fileName": "PWRT 1196.pdf",
+      "extension": ".pdf",
+      "tendersID": 158892,
+      "active": true,
+      "updatedBy": "tlkhathide@mpg.gov.za",
+      "dateModified": "2026-06-11T18:01:41.3066843"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PWRT 1196",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Riverside Government Complex, Building No9, Government Boulevard-Riverside-Mbombela-1200",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Transport, Storage & Logistics",
+  "industry_id": "transport_logistics",
+  "specializations": [
+    "Road Freight & Haulage",
+    "Courier, Dispatch & Last-mile Delivery",
+    "Fleet Management & Vehicle Operations"
+  ],
+  "skills": [
+    "Road Freight & Haulage",
+    "Fleet Management & Telematics",
+    "Inventory Optimization"
+  ],
+  "capabilities": [
+    "Trucking Fleet (Interlink\/Side-tipper)",
+    "Large-scale Warehousing Facility",
+    "RTMS Certification"
+  ],
+  "title": "SUPPLY AND DELIVERY OF UNIFORMS FOR TRANSPORT INSPECTORS FOR THE DEPARTMENT OF PUBLIC WORKS, ROADS AND TRANSPORT FOR A PERIOD OF THREE YEARS (TRAFFIC UNIFORM)",
+  "min_functionality_threshold": 75,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "As per the tender bulletin issued by Provincial Treasury",
+  "reference": "PWRT 1196",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

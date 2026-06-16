@@ -1,0 +1,165 @@
+{
+  "id": 159129,
+  "tender_No": "HOAC-HO-57992",
+  "description": "AN APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT ADVISORY SERVICES FOR ESTABLISHING A TECHNICAL ADVISOR COMPANY WITH FINANCIAL MODELLING AND CIVIL ENGINEERING AND RAILWAY ENGINEERING EXPERTISE TO SUPPORT THE CAPACITY VALIDATION PROCESS ON THE ORE EXPORT CORRIDOR UNDERTAKEN BY TRANSNET GROUP BUSINESS DEVELOPMENT FOR A PERIOD OF SIX MONTHS.",
+  "category": "Services: General",
+  "type": "Request for Proposal",
+  "organ_of_State": "Transnet Freight Rail, a division of Transnet SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T13:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T12:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/325901111137360?p=t2XKAR7yGrnC3sHlGj",
+  "streetname": "commissioner street",
+  "surburb": "Johannesburg",
+  "town": "Johannesburg",
+  "code": "2091",
+  "conditions": "Bidders are required to confirm their attendance and to send their contact details including the number of representatives (where applicable) to the following address: Lolo.Sokhela@transnet .\r\nThis is to ensure that Transnet may make the necessary arrangements for the briefing session.",
+  "contactPerson": "Muzi Thusi",
+  "email": "muzi.thusi@transnet.net",
+  "telephone": "011-584-0659",
+  "fax": "011-584-0659",
+  "username": "Lolo.Sokhela@transnet.net",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 260,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 61,
+  "departmentsID": 667,
+  "departments": {
+    "departmentsID": 667,
+    "name": "Transnet SOC Ltd"
+  },
+  "department": "Transnet SOC Ltd",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "fae96e0b-d674-48d9-872c-0f71748fc6ef",
+      "fileName": "ANNEXURE B - Master Agreement.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:40.5929181"
+    },
+    {
+      "supportDocumentID": "46f3d4c6-136e-4b37-ad15-125cd545f9de",
+      "fileName": "ANNEXURE C - Transnet General Bid Conditions.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:41.0864531"
+    },
+    {
+      "supportDocumentID": "b13734e3-b4a4-4bf3-973e-29f0950d7de1",
+      "fileName": "RFP FINANCIAL MODELLING.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:41.7150683"
+    },
+    {
+      "supportDocumentID": "8f0575ac-dc4a-4a01-913e-a2ab0f07f639",
+      "fileName": "ANNEXURE D - Supplier Integrity Pact.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:41.3175709"
+    },
+    {
+      "supportDocumentID": "44469b56-10c4-4084-b02e-b7f9eff80870",
+      "fileName": "ANNEXURE E - Non Disclosure Agreement.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:41.5426402"
+    },
+    {
+      "supportDocumentID": "f9bd80de-7385-4dd1-b6f2-cd6a98538d77",
+      "fileName": "ANNEXURE A - SCOPE OF WORK.pdf",
+      "extension": ".pdf",
+      "tendersID": 159129,
+      "active": true,
+      "updatedBy": "Lolo.Sokhela@transnet.net",
+      "dateModified": "2026-06-12T17:32:40.5549926"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "HOAC-HO-57992",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "commissioner street-Johannesburg-Johannesburg-2091",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "AN APPOINTMENT OF A SERVICE PROVIDER TO CONDUCT ADVISORY SERVICES FOR ESTABLISHING A TECHNICAL ADVISOR COMPANY WITH FINANCIAL MODELLING AND CIVIL ENGINEERING AND RAILWAY ENGINEERING EXPERTISE TO SUPPORT THE CAPACITY VALIDATION PROCESS ON THE ORE EXPORT CORRIDOR UNDERTAKEN BY TRANSNET GROUP BUSINESS DEVELOPMENT FOR A PERIOD OF SIX MONTHS.",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "2026-06-18T12:00:00",
+  "closingDate": "2026-06-25T13:00:00",
+  "reference": "HOAC-HO-57992",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ]
+}

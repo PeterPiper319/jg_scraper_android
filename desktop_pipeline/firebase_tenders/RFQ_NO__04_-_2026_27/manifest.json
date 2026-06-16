@@ -1,0 +1,167 @@
+{
+  "id": 158832,
+  "tender_No": "RFQ NO: 04 - 2026\/27",
+  "description": "ETDP SETA is currently seeking to appoint diverse legal service providers to provide legal services as and when required",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "ETDP SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-01T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Access details will be available on www.etdpseta.org.za as from 18 June 2026",
+  "streetname": "112 Main Street, 9th Floor",
+  "surburb": "Ghandi Square",
+  "town": "Johannesburg",
+  "code": "2609",
+  "conditions": "N\/A",
+  "contactPerson": "Sibusiso Kutshwa",
+  "email": "Tenderers@etdpseta.org.za",
+  "telephone": "011-372-3330",
+  "fax": "N\/A",
+  "username": "SibusisoK@etdpseta.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 64,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 146,
+  "departments": {
+    "departmentsID": 146,
+    "name": "Education, Training and Development Practices SETA"
+  },
+  "department": "Education, Training and Development Practices SETA",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a823e873-c4e4-411b-b3b0-6a0ea44fca5b",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022_ETDP SETA.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.1370817"
+    },
+    {
+      "supportDocumentID": "1b75fdc1-1039-4725-bb71-b1ead2cd8d56",
+      "fileName": "BEE_Affidavit-EME_New.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.0562628"
+    },
+    {
+      "supportDocumentID": "1462facd-a72d-4cf5-b82d-c9cf591ca523",
+      "fileName": "SCM-Bid documents_SBD 1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.2218173"
+    },
+    {
+      "supportDocumentID": "7b2245c8-f7df-45bb-859d-dcc74746d3dc",
+      "fileName": "ToR_Legal Services_Final.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.2591322"
+    },
+    {
+      "supportDocumentID": "3412fb33-f15a-413e-9ba7-e1e2d8f8ae19",
+      "fileName": "SCM-Bid documents SBD 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.1911207"
+    },
+    {
+      "supportDocumentID": "2851b075-7c55-46a6-8029-e559355f0508",
+      "fileName": "General Conditions of Contract_ETDP SETA.pdf",
+      "extension": ".pdf",
+      "tendersID": 158832,
+      "active": true,
+      "updatedBy": "SibusisoK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:43:09.1054098"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ NO: 04 - 2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "112 Main Street, 9th Floor-Ghandi Square-Johannesburg-2609",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Legal & Regulatory Services",
+  "industry_id": "legal_regulatory",
+  "specializations": [
+    "Corporate, Commercial & Contract Law",
+    "Litigation, Arbitration & Mediation"
+  ],
+  "skills": [
+    "Corporate & Commercial Law",
+    "Litigation & Dispute Resolution",
+    "Contract Drafting & Review"
+  ],
+  "capabilities": [
+    "Legal Practice Council Registration",
+    "Secure Digital Signatures (e-Law)",
+    "Law Library & Database Access"
+  ],
+  "title": "Appointment of diverse legal service providers",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "19 June 2026 at 11h00 – 13h00",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

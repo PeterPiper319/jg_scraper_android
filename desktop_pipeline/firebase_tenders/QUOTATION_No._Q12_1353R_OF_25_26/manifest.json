@@ -1,0 +1,130 @@
+{
+  "id": 158849,
+  "tender_No": "Q12\/1353R",
+  "description": "APPOINTMENT OF SERVICE PROVIDER FOR THE SUPPLY AND INSTALLATION OF GAS BURNERS USED FOR CREMATIONS",
+  "category": "Supplies: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Msunduzi Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Mountain Rise Crematorium Number 2",
+  "surburb": "Northdale",
+  "town": "Pietermaritzburg",
+  "code": "3201",
+  "conditions": "N\/A",
+  "contactPerson": "Nonsikelelo Mkhize",
+  "email": "nonsikelelo.mkhize@msunduzi.gov.za",
+  "telephone": "064-062-7704",
+  "fax": "N\/A",
+  "username": "Phiwe.Mthalane@msunduzi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 55,
+  "departmentsID": 437,
+  "departments": {
+    "departmentsID": 437,
+    "name": "Msunduzi Local Municipality"
+  },
+  "department": "Msunduzi Local Municipality",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ef179ceb-39a8-459f-88ea-389e0b5c1fb2",
+      "fileName": "Quaotation No. Q12-1353R Document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158849,
+      "active": true,
+      "updatedBy": "Phiwe.Mthalane@msunduzi.gov.za",
+      "dateModified": "2026-06-11T14:41:59.2305638"
+    },
+    {
+      "supportDocumentID": "b9c3cf06-cb9a-40bd-9401-6a6592870019",
+      "fileName": "Attachment 1353.pdf",
+      "extension": ".pdf",
+      "tendersID": 158849,
+      "active": true,
+      "updatedBy": "Phiwe.Mthalane@msunduzi.gov.za",
+      "dateModified": "2026-06-11T14:42:41.6249223"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "Q12\/1353R",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Mountain Rise Crematorium Number 2-Northdale-Pietermaritzburg-3201",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Metal Fabrication, Machining & Welding",
+    "Machinery Repair & Industrial Maintenance"
+  ],
+  "skills": [
+    "Metal Fabrication & Welding",
+    "Industrial Design & Engineering",
+    "Machine Maintenance & Repairs"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure",
+    "CNC Machining Centers",
+    "SABS Product Approval"
+  ],
+  "title": "APPOINTMENT OF SERVICE PROVIDER FOR THE SUPPLY AND INSTALLATION OF GAS BURNERS USED FOR CREMATIONS",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-19T12:00:00",
+  "reference": "Q12\/1353R",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": 158937,
+  "tender_No": "ECGB-26\/27-BID 1",
+  "description": "PROVISION OF TRAVEL MANAGEMENT SERVICES FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+  "category": "Travel agency, tour operator, reservation service and related activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "ECGB",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Quenera Drive",
+  "surburb": "Beacon Bay",
+  "town": "EAST LONDON",
+  "code": "5245",
+  "conditions": "N\/A",
+  "contactPerson": "Thandazwa Malotana",
+  "email": "thandazwam@ecgb.org.za",
+  "telephone": "043-702-8307",
+  "fax": "043-748-2108",
+  "username": "thandazwam@ecgb.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 65,
+  "departmentsID": 123,
+  "departments": {
+    "departmentsID": 123,
+    "name": "Eastern Cape - Eastern Cape Gambling and Betting Board"
+  },
+  "department": "Eastern Cape - Eastern Cape Gambling and Betting Board",
+  "categories": {
+    "categoriesID": 65,
+    "name": "Travel agency, tour operator, reservation service and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "94bf9bc3-24a7-4538-a4fe-5ac815605148",
+      "fileName": "BID 1- Bid document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158937,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:14:49.6698963"
+    },
+    {
+      "supportDocumentID": "af06fb23-3871-4803-9fd4-6db1a5b13ef8",
+      "fileName": "ANNEXURE A.docx",
+      "extension": ".docx",
+      "tendersID": 158937,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:14:49.6249082"
+    },
+    {
+      "supportDocumentID": "62405eee-b860-40bf-ab21-9b9a928ae5e8",
+      "fileName": "PRICING SCHEDULE 2026.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158937,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:14:49.718718"
+    },
+    {
+      "supportDocumentID": "c3fc3aad-70f4-440a-b7c4-f0d0476d5305",
+      "fileName": "Terms of Reference TMC.pdf",
+      "extension": ".pdf",
+      "tendersID": 158937,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:14:49.7591085"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECGB-26\/27-BID 1",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Quenera Drive-Beacon Bay-EAST LONDON-5245",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Tourism, Hospitality & Catering",
+  "industry_id": "travel_management",
+  "specializations": [
+    "Travel Management & Tour Operations"
+  ],
+  "skills": [
+    "Travel Agency Services",
+    "Tour Guiding & Expedition Planning",
+    "Event & Venue Management"
+  ],
+  "capabilities": [
+    "Tour Vehicles (4x4\/Minibus)",
+    "Tourism Grading Council Membership",
+    "Qualified Professional Guides"
+  ],
+  "title": "Appointment of Travel Management Companies To Provide Travel Management Services to ECGB",
+  "min_functionality_threshold": 75,
+  "isCompulsoryBriefing": false,
+  "reference": "ECGB-26\/27-BID 1",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

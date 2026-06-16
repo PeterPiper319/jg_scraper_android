@@ -1,0 +1,101 @@
+{
+  "id": 159023,
+  "tender_No": "OVI01REQ003476",
+  "description": "SUPPLY AND DELIVERY OF RESEARCH CONSUMABLES -\r\nREFER TO THE ATTACHED LIST OF ITEMS\r\n",
+  "category": "Other professional, scientific and technical activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Agricultural Research Council",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "100 SOUTPAN ROAD",
+  "surburb": "ONDERSTEPOORT",
+  "town": "Pretoria",
+  "code": "0029",
+  "conditions": "N\/A",
+  "contactPerson": "BELINDAH LEHABE",
+  "email": "LehabeC@arc.agric.za",
+  "telephone": "012-529-9332",
+  "fax": "N\/A",
+  "username": "LehabeC@arc.agric.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 32,
+  "departmentsID": 6,
+  "departments": {
+    "departmentsID": 6,
+    "name": "Agricultural Research Council"
+  },
+  "department": "Agricultural Research Council",
+  "categories": {
+    "categoriesID": 32,
+    "name": "Other professional, scientific and technical activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e05d74eb-8a37-4a07-9936-d3d7437a19ec",
+      "fileName": "OVI01REQ003476 ITEMS.pdf",
+      "extension": ".pdf",
+      "tendersID": 159023,
+      "active": true,
+      "updatedBy": "LehabeC@arc.agric.za",
+      "dateModified": "2026-06-12T12:22:50.0845578"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "OVI01REQ003476",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "100 SOUTPAN ROAD-ONDERSTEPOORT-Pretoria-0029",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "medical_health",
+  "specializations": [
+    "Laboratory Diagnostics & Testing",
+    "Medical Equipment Supply & Maintenance"
+  ],
+  "skills": [
+    "Laboratory Testing & Diagnostics",
+    "Medical Equipment Maintenance"
+  ],
+  "capabilities": [
+    "Certified Medical Facilities",
+    "Specialized Diagnostic Machinery",
+    "Medical Grade Sterilization Equipment"
+  ],
+  "title": "Research Consumables",
+  "isCompulsoryBriefing": false,
+  "reference": "OVI01REQ003476"
+}

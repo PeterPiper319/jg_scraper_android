@@ -1,0 +1,125 @@
+{
+  "id": 159142,
+  "tender_No": "8\/2\/5\/149",
+  "description": "BID 8\/2\/6\/88 (2026-2029) BID TO APPOINT A PANEL OF GEOTECHNICAL ENGINEERS TO PROVIDE MIDVAAL LOCAL MUNICIPALITY WITH PROFESSIONAL GEOTECHNICAL SERVICES ON AN AS AND WHEN REQUIRED BASIS FROM DATE OF APPOINTMENT UNTIL 30 JUNE 2029",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Midvaal Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "24 June 2026 @10H00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "25 Mitchell street",
+  "surburb": "Meyerton",
+  "town": "Meyerton",
+  "code": "1961",
+  "conditions": "Preferences are offered to tenderers who suitable experience and suitably qualified employees and resources to render the services.\r\nThe council reserves the right to accept any bid of part thereof and does not bind itself to accept the lowest or any bid and not to 1consider any bid not suitably endorsed or comprehensively competed.\r\nSPECIFIC GOALS & POINTS:\r\n             Locality: 10 Points\r\n             B-BBEE: 10 Points\r\nBidders using e-Tenders portal  are hereby advised to monitor the portal regularly for updates and uploaded addendum documents during the time the bid is advertised. It is the responsibility of the bidder to ensure that they are up to date with all issued documents.",
+  "contactPerson": "Development and Planning Services",
+  "email": "tenders@midvaal.gov.za",
+  "telephone": "016-360-7415",
+  "fax": "N\/A",
+  "username": "sithembiso@midvaal.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 398,
+  "departments": {
+    "departmentsID": 398,
+    "name": "Midvaal Local Municipality"
+  },
+  "department": "Midvaal Local Municipality",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "71d61afe-5c72-4cec-afa6-3f8a81854104",
+      "fileName": "ADVERT FOR THE WEEK.pdf",
+      "extension": ".pdf",
+      "tendersID": 159142,
+      "active": true,
+      "updatedBy": "sithembiso@midvaal.gov.za",
+      "dateModified": "2026-06-12T19:30:41.8560921"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/2\/5\/149",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Mitchell street-Meyerton-Meyerton-1961",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "medical_health",
+  "specializations": [
+    "Clinical Services & Patient Care",
+    "Occupational Health & Safety"
+  ],
+  "skills": [
+    "General Medical Practice",
+    "Occupational Health & Safety",
+    "Nursing & Patient Care"
+  ],
+  "capabilities": [
+    "Certified Medical Facilities",
+    "HPCSA Professional Registration"
+  ],
+  "title": "BID FOR RENDERING OF PROFESSIONAL MEDICAL SURVELLANCE, EMPLOYEE HEALTH AND WELLNESS SERVICES FOR MIDVAAL LOCAL MUNICIPALITY, FROM THE DATE OF APPOINTMENT UNTIL 30 JUNE 2029.",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "24 June 2026 @10H00",
+  "closingDate": "24 June 2026 @10H00",
+  "reference": "8\/2\/5\/149",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

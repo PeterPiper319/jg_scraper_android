@@ -1,0 +1,129 @@
+{
+  "id": 158969,
+  "tender_No": "31613-1R",
+  "description": "Lanes and passages on Shallot and \r\nGranadilla Roads, in Waterloo, Ward \r\n106",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Ethekwini Metropolitan Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-17T11:00:00",
+  "briefingVenue": "the Corner of Shallot and Ginger Road, in Waterloo, Ward 106 (GPS Coordinates: S 29°40’18”; E 31°03’",
+  "streetname": "166 K E Masinga Road (Formerly Old Fort Road)",
+  "surburb": "Durban",
+  "town": "KZN",
+  "code": "4001",
+  "conditions": "-A COMPULSORY clarification meeting will be held at 11:00, on 2026-06-17, at the Corner of Shallot and Ginger Road, in Waterloo, Ward 106 (GPS Coordinates: S 29°40’18”; E 31°03’13”).\r\n-All questions and answers will be consolidated and posted on eTenders\/Municipal website by 2026-06-23.\r\n-3CE or higher\r\n-Lerato Khumalo\r\n(t) 031-311 6042\r\n",
+  "contactPerson": "Lerato Khumalo",
+  "email": "Lerato.Khumalo@Durban.gov.za",
+  "telephone": "031-311-6042",
+  "fax": "N\/A",
+  "username": "Ashira.Baller@durban.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 169,
+  "departments": {
+    "departmentsID": 169,
+    "name": "Ethekwini Metropolitan Municipality"
+  },
+  "department": "Ethekwini Metropolitan Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "06d3ac55-261d-4fac-ae5d-5ba148dafb1b",
+      "fileName": "BOQ Waterloo.pdf",
+      "extension": ".pdf",
+      "tendersID": 158969,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:09:47.6962049"
+    },
+    {
+      "supportDocumentID": "e2a7aa41-490f-4987-a0c6-a1b416466469",
+      "fileName": "1R-31613 Tender Document_ApprovedD.pdf",
+      "extension": ".pdf",
+      "tendersID": 158969,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:09:47.4942444"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "31613-1R",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "166 K E Masinga Road (Formerly Old Fort Road)-Durban-KZN-4001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "Road Construction & Maintenance",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Structural Engineering",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification"
+  ],
+  "title": "Lanes and Passages on Shallot and Granadilla Road in Waterloo, Ward 106",
+  "cidb_grading": "1CE",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "31613-1R",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

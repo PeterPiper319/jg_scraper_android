@@ -1,0 +1,106 @@
+{
+  "id": 158840,
+  "tender_No": "IZIKO-FIN-RFQ-2026\/06\/11",
+  "description": "Appointment of a suitably qualified and experienced service provider to conduct a procurement analytics and value-for-money review, flag suspicious transactions and indicators of bid-rigging or related procurement manipulation, and perform approved forensic follow-up work where required.",
+  "category": "Supplies: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Iziko Museums of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "23 June 2026 at 11h00am",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "25 Queen Victoria Street ",
+  "surburb": "Gardens",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "N\/A",
+  "contactPerson": "Siphamandla Oupa",
+  "email": "soupa@iziko.org.za",
+  "telephone": "021-481-3889",
+  "fax": "N\/A",
+  "username": "sgwampi@iziko.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 55,
+  "departmentsID": 268,
+  "departments": {
+    "departmentsID": 268,
+    "name": "Iziko Museums of Cape Town"
+  },
+  "department": "Iziko Museums of Cape Town",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "ffaafa90-b1fe-4584-9fc2-e289201c8ab0",
+      "fileName": "Iziko_RFQ_Procurement_Analytics_Value_for_Money_Review.pdf",
+      "extension": ".pdf",
+      "tendersID": 158840,
+      "active": true,
+      "updatedBy": "sgwampi@iziko.org.za",
+      "dateModified": "2026-06-11T13:44:15.5491634"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IZIKO-FIN-RFQ-2026\/06\/11",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Queen Victoria Street -Gardens-Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "PROCUREMENT ANALYTICS AND VALUE-FOR-MONEY REVIEW SERVICES",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "23 June 2026 at 11h00am",
+  "reference": "IZIKO-FIN-RFQ-2026\/06\/11",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": 158959,
+  "tender_No": "IZIKO_C&D_RFQ_2026\/05\/12",
+  "description": "REQUEST FOR QUOTATION (RFQ) FOR SUPPLY AND INSTALLATION OF THIRTY (X30) GLASS DISPLAY PANELS FOR THE EXHIBITION AT THE NELSON MANDELA PRISON HOUSE",
+  "category": "Specialised construction activities",
+  "type": "Request for Information",
+  "organ_of_State": "Iziko Museums of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "25 June 2026 11h00am",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "25 Queen Victoria Street ",
+  "surburb": "Cape Town CBD",
+  "town": "Cape Town",
+  "code": "8001",
+  "conditions": "Quotes \/ Proposals, and accompanying documentation, must be email SCM scm@iziko.org.za; kthemba@iziko.org.za ",
+  "contactPerson": "Kagiso Themba",
+  "email": "kthemba@iziko.org.za",
+  "telephone": "021-481-3917",
+  "fax": "N\/A",
+  "username": "kthemba@iziko.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 76,
+  "departmentsID": 268,
+  "departments": {
+    "departmentsID": 268,
+    "name": "Iziko Museums of Cape Town"
+  },
+  "department": "Iziko Museums of Cape Town",
+  "categories": {
+    "categoriesID": 76,
+    "name": "Specialised construction activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a956b600-8a13-436d-a5c3-73168b77c82d",
+      "fileName": "IZIKO-RFQ- Glass .pdf",
+      "extension": ".pdf",
+      "tendersID": 158959,
+      "active": true,
+      "updatedBy": "kthemba@iziko.org.za",
+      "dateModified": "2026-06-12T09:54:29.671302"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IZIKO_C&D_RFQ_2026\/05\/12",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "25 Queen Victoria Street -Cape Town CBD-Cape Town-8001",
+  "document_type": "RFQ",
+  "tenderAdvertType": "rfq",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Structural Engineering"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification"
+  ],
+  "title": "REQUEST FOR QUOTATION (RFQ) FOR SUPPLY AND INSTALLATION OF THIRTY (X30) GLASS DISPLAY PANELS FOR THE EXHIBITION AT THE NELSON MANDELA PRISON HOUSE",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "25 June 2026 11h00am",
+  "reference": "IZIKO_C&D_RFQ_2026\/05\/12",
+  "provinceNames": [
+    "Western Cape"
+  ]
+}

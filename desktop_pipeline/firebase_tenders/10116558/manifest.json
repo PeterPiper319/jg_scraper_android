@@ -1,0 +1,145 @@
+{
+  "id": 158819,
+  "tender_No": "PR10116558",
+  "description": "The Road Accident Fund (RAF) wishes to appoint a suitable service provider for Pest Control Services at RAF Pretoria (Hatfield) Office for a period of six (6) months.",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Road Accident Fund",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026 at 10:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-17T11:00:00",
+  "briefingVenue": "PRASA House, 1040 Burnett Street, Hatfield, Pretoria",
+  "streetname": "1040 Burnett Street ",
+  "surburb": "Hatfield",
+  "town": "Pretoria",
+  "code": "0028",
+  "conditions": "Please arrive early, RAF does not have parking on the premises.",
+  "contactPerson": "Khensani Maboya",
+  "email": "khensanimab@raf.co.za",
+  "telephone": "066-342-5298",
+  "fax": "N\/A",
+  "username": "Khensanimab@raf.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 565,
+  "departments": {
+    "departmentsID": 565,
+    "name": "Road Accident Fund"
+  },
+  "department": "Road Accident Fund",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e555b390-04fa-4776-85f3-3699ca9a6f76",
+      "fileName": "RFQ Document PR10116558 for Pest Control Services.docx",
+      "extension": ".docx",
+      "tendersID": 158819,
+      "active": true,
+      "updatedBy": "Khensanimab@raf.co.za",
+      "dateModified": "2026-06-11T11:58:24.7354592"
+    },
+    {
+      "supportDocumentID": "46c8ca37-a502-4474-a725-4474a0840d4d",
+      "fileName": "SCM-Bid Documents SBD 4_.doc",
+      "extension": ".doc",
+      "tendersID": 158819,
+      "active": true,
+      "updatedBy": "Khensanimab@raf.co.za",
+      "dateModified": "2026-06-11T11:57:27.5023847"
+    },
+    {
+      "supportDocumentID": "81a29d25-de16-4038-ae58-e61a34c8339f",
+      "fileName": "Annexure A_Security Measures.pdf",
+      "extension": ".pdf",
+      "tendersID": 158819,
+      "active": true,
+      "updatedBy": "Khensanimab@raf.co.za",
+      "dateModified": "2026-06-11T11:56:53.1736696"
+    },
+    {
+      "supportDocumentID": "ee4c4597-81be-424d-9fbe-fa6c46330531",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022.docx",
+      "extension": ".docx",
+      "tendersID": 158819,
+      "active": true,
+      "updatedBy": "Khensanimab@raf.co.za",
+      "dateModified": "2026-06-11T11:57:57.1602248"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PR10116558",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1040 Burnett Street -Hatfield-Pretoria-0028",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "pest_control_services",
+  "specializations": [
+    "Pest Control Services"
+  ],
+  "skills": [
+    "Pest Control",
+    "Insect Control",
+    "Rodent Control"
+  ],
+  "capabilities": [
+    "Pest Control Equipment",
+    "Pest Control Chemicals"
+  ],
+  "title": "Pest Control Services",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "17 June 2026 @ 11:00",
+  "closingDate": "22 June 2026 at 10:00",
+  "reference": "PR10116558",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

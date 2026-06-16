@@ -1,0 +1,140 @@
+{
+  "id": 158825,
+  "tender_No": "POVCP\/2026",
+  "description": "Appointment of a panel of five (5) suppliers for the supply and delivery of various concrete products for City of Johannesburg on an as-and-when required for period of 36 months",
+  "category": "Manufacturing",
+  "type": "Request for Proposal",
+  "organ_of_State": "Johannesburg Development Agency (JDA)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-21T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "JDA BUS FACTORY OFFICES, 3 Helen Joseph Street (Formerly President Street)",
+  "streetname": "3 Helen Joseph",
+  "surburb": "Newtown",
+  "town": "Johannesburg",
+  "code": "2000",
+  "conditions": "N\/A",
+  "contactPerson": "Yandisa Dinga",
+  "email": "ydinga@jda.org.za",
+  "telephone": "011-688-7878",
+  "fax": "N\/A",
+  "username": "ydinga@jda.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 66,
+  "departmentsID": 274,
+  "departments": {
+    "departmentsID": 274,
+    "name": "Johannesburg Development Agency"
+  },
+  "department": "Johannesburg Development Agency",
+  "categories": {
+    "categoriesID": 66,
+    "name": "Manufacturing"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "278e8da7-2c8e-437d-80e4-5ae1cb423df2",
+      "fileName": "PI-annex.xls",
+      "extension": ".xls",
+      "tendersID": 158825,
+      "active": true,
+      "updatedBy": "ydinga@jda.org.za",
+      "dateModified": "2026-06-11T12:23:14.2090077"
+    },
+    {
+      "supportDocumentID": "3d8c8bb6-25cb-47d7-82df-a6c9f8d0f360",
+      "fileName": "Panel of suppliers to supply and deliver of concrete products.pdf",
+      "extension": ".pdf",
+      "tendersID": 158825,
+      "active": true,
+      "updatedBy": "ydinga@jda.org.za",
+      "dateModified": "2026-06-11T12:23:14.0295799"
+    },
+    {
+      "supportDocumentID": "f0f7f118-b59e-4584-be93-ff2e0be6012e",
+      "fileName": "SoR for Supply of concrete Products.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158825,
+      "active": true,
+      "updatedBy": "ydinga@jda.org.za",
+      "dateModified": "2026-06-11T12:23:14.2758433"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "POVCP\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "3 Helen Joseph-Newtown-Johannesburg-2000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Construction Manager",
+    "Construction Supervisor"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment",
+    "Concrete Mixing & Pouring Equipment"
+  ],
+  "title": "Appointment of a panel of five (5) suppliers for the supply and delivery of various concrete products for City of Johannesburg on an as-and-when required for period of 36 months",
+  "cidb_grading": "1null",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-21T12:00:00",
+  "reference": "POVCP\/2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

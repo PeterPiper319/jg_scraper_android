@@ -1,0 +1,119 @@
+{
+  "id": 158979,
+  "tender_No": "RFQ 55",
+  "description": "Supply and delivery of Medicals for Gough Island 2026",
+  "category": "Supplies: Medical",
+  "type": "Request for Quotation",
+  "organ_of_State": "Department of Environment, Forestry and Fisheries",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 East Pier Building, East Pier Road",
+  "surburb": "Waterfront",
+  "town": "Cape Town",
+  "code": "8001",
+  "conditions": "N\/A",
+  "contactPerson": "Andiswa Charlie",
+  "email": "acharlie@environment.gov.za",
+  "telephone": "021-493-7149",
+  "fax": "N\/A",
+  "username": "acharlie@dffe.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 7,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 89,
+  "departmentsID": 180,
+  "departments": {
+    "departmentsID": 180,
+    "name": "National - Environment, Forestry and Fisheries"
+  },
+  "department": "National - Environment, Forestry and Fisheries",
+  "categories": {
+    "categoriesID": 89,
+    "name": "Supplies: Medical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "95baf2c8-55fb-44c4-969f-443f6df96ea5",
+      "fileName": "DFFE RFQ 55 Mrdicals Gough Island 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158979,
+      "active": true,
+      "updatedBy": "acharlie@dffe.gov.za",
+      "dateModified": "2026-06-12T10:25:29.7976604"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 55",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 East Pier Building, East Pier Road-Waterfront-Cape Town-8001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Medical & Health Services",
+  "industry_id": "medical_health",
+  "specializations": [
+    "Clinical Services & Patient Care",
+    "Medical Equipment Supply & Maintenance"
+  ],
+  "skills": [
+    "General Medical Practice",
+    "Medical Equipment Maintenance",
+    "Hospital Management & Administration"
+  ],
+  "capabilities": [
+    "Certified Medical Facilities",
+    "Specialized Diagnostic Machinery",
+    "HPCSA Professional Registration"
+  ],
+  "title": "Mrdicals Gough Island 2026",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-22T12:00:00",
+  "reference": "RFQ 55",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

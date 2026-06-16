@@ -1,0 +1,128 @@
+{
+  "id": 158943,
+  "tender_No": "276C\/2025\/26",
+  "description": "PROVISION OF PROFESSIONAL SERVICES: DESIGN AND CONSTRUCTION MONITORING OF SUBSTATIONS \/ SWITCHING STATIONS AND BUILDING ADDITIONS, ALTERATIONS AND RENOVATIONS AND OTHER DESIGN\/ IMPLEMENTATION\/MANAGEMENT OF WORKS PROJECTS INCLUDING FEASIBILITY STUDIES FOR THE INSTALLATION AND REPLACEMENT OF ELECTRICAL EQUIPMENT AND INFRASTRUCTURE\r\n",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "CITY OF CAPE TOWN",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "16 July 2026 at 10h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-30T10:00:00",
+  "briefingVenue": "Auditorium, Ground Floor, Head Office Building, Bloemhof Centre, Oakdale, Bellville",
+  "streetname": "Tender Distribution Office, 2nd Floor (Concourse Level) Civic Centre",
+  "surburb": "Cape Town",
+  "town": "Cape Town",
+  "code": "8001",
+  "conditions": "Tender fee: R250\r\n\r\nA non-compulsory but strongly recommended clarification meeting will be held on 30 June 2026 at 10h00.\r\nVenue for the clarification meeting: Auditorium, Ground Floor, Head Office Building, Bloemhof Centre, Oakdale, Bellville.\r\nClarification meeting Microsoft Teams link: https:\/\/teams.microsoft.com\/meet\/378416629291847?p=IYgVnA4HN3Tcd3YTnr\r\nMeeting ID: 378 416 629 291 847\r\nPasscode: rS7QL3Rq\r\n",
+  "contactPerson": "CCT Representative",
+  "email": "SCM.Tenders23@capetown.gov.za",
+  "telephone": "021-000-0000",
+  "fax": "021-000-0000",
+  "username": "MaryJane.Opperman@capetown.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 365,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 84,
+  "departmentsID": 59,
+  "departments": {
+    "departmentsID": 59,
+    "name": "City of Cape Town"
+  },
+  "department": "City of Cape Town",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "8bf64794-7446-47d3-892e-54712444edf9",
+      "fileName": "276C-2025-26  Notice 1.pdf",
+      "extension": ".pdf",
+      "tendersID": 158943,
+      "active": true,
+      "updatedBy": "MaryJane.Opperman@capetown.gov.za",
+      "dateModified": "2026-06-12T11:28:05.6015254"
+    },
+    {
+      "supportDocumentID": "4319fe8a-9110-41eb-97f5-aab4cb07a3e2",
+      "fileName": "276C-2025-26 Tender Document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158943,
+      "active": true,
+      "updatedBy": "MaryJane.Opperman@capetown.gov.za",
+      "dateModified": "2026-06-12T09:25:56.1261878"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "276C\/2025\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Tender Distribution Office, 2nd Floor (Concourse Level) Civic Centre-Cape Town-Cape Town-8001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Electrical Distribution & Grid Services",
+    "Solar, Renewable & Backup Power"
+  ],
+  "skills": [
+    "Renewable Energy (Solar\/Wind)",
+    "Electrical Grid Maintenance",
+    "Energy Auditing & Efficiency"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "Energy Storage Systems (ESS)"
+  ],
+  "title": "PROVISION OF PROFESSIONAL SERVICES: DESIGN AND CONSTRUCTION MONITORING OF SUBSTATIONS \/ SWITCHING STATIONS AND BUILDING ADDITIONS, ALTERATIONS AND RENOVATIONS AND OTHER DESIGN\/ IMPLEMENTATION\/MANAGEMENT OF WORKS PROJECTS INCLUDING FEASIBILITY STUDIES FOR THE INSTALLATION AND REPLACEMENT OF ELECTRICAL EQUIPMENT AND INFRASTRUCTURE",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "30 June 2026 at 10h00",
+  "closingDate": "16 July 2026 at 10h00",
+  "reference": "276C\/2025\/26",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

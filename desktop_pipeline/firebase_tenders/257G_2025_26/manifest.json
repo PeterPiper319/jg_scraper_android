@@ -1,0 +1,99 @@
+{
+  "id": 158944,
+  "tender_No": "257G\/2025\/26",
+  "description": "SUPPLY AND DELIVERY OF VARIOUS BATTERIES AND 10W BATTERY CHARGERS ON AN ADHOC BASIS",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "City of Cape Town",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-13T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-26T10:30:00",
+  "briefingVenue": "Meeting ID: 392 372 620 861 683 Passcode: Z2JN2eT3.",
+  "streetname": "12 Hertzog Boulevard",
+  "surburb": "Foreshore",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "N\/A",
+  "contactPerson": "SCM Department",
+  "email": "finance.tender@capetown.gov.za",
+  "telephone": "000-000-0000",
+  "fax": "N\/A",
+  "username": "Yamkela.Jayiya@capetown.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 61,
+  "departmentsID": 59,
+  "departments": {
+    "departmentsID": 59,
+    "name": "City of Cape Town"
+  },
+  "department": "City of Cape Town",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "7a18688d-fe87-4865-9afd-d4289ea072bd",
+      "fileName": "257G.2025.26_Supply and Delivery of various batteries_Final.pdf",
+      "extension": ".pdf",
+      "tendersID": 158944,
+      "active": true,
+      "updatedBy": "Yamkela.Jayiya@capetown.gov.za",
+      "dateModified": "2026-06-12T09:29:40.0197237"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "257G\/2025\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "12 Hertzog Boulevard-Foreshore-Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Electrical Components & Control Panels",
+    "Chemical Processing & Industrial Consumables"
+  ],
+  "skills": [
+    "Industrial Design & Engineering",
+    "Quality Control & Lean Six Sigma",
+    "Supply Chain Management"
+  ],
+  "capabilities": [
+    "Industrial Plant & Machinery",
+    "Factory Floor Infrastructure",
+    "ISO 9001 Quality Management"
+  ]
+}

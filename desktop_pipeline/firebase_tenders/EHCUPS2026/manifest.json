@@ -1,0 +1,131 @@
+{
+  "id": 158887,
+  "tender_No": "EHCUPS2026",
+  "description": "The service providers are required to supply and install a UPS system capable of providing stable, uninterrupted power to the following critical ICT infrastructure located in the server room: ...",
+  "category": "Other service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Ekurhuleni Housing Company (EHC)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19 June 2026, 11h00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Cnr Victoria Street and Linton Street Chris Hani Village Germiston 1400 (next to Fire Station)",
+  "streetname": "Cnr Victoria Street and Linton Street Chris Hani Village Germiston 1400 (next to Fire Station)",
+  "surburb": "Germiston",
+  "town": "Germiston",
+  "code": "1400",
+  "conditions": "N\/A",
+  "contactPerson": "Mathinyane Selane",
+  "email": "mathinyanes@ehco.org.za",
+  "telephone": "010-101-4675",
+  "fax": "N\/A",
+  "username": "Patriciam@ehco.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 62,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 150,
+  "departments": {
+    "departmentsID": 150,
+    "name": "Ekurhuieni Housing Company"
+  },
+  "department": "Ekurhuieni Housing Company",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c7245a01-6f2e-452d-bb10-20c0c60edadf",
+      "fileName": "etender ICT -UPS server room June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158887,
+      "active": true,
+      "updatedBy": "Patriciam@ehco.org.za",
+      "dateModified": "2026-06-11T17:34:06.4597054"
+    },
+    {
+      "supportDocumentID": "4c64979d-b260-4f69-998a-cb49b67d6b6b",
+      "fileName": "MBDs.zip",
+      "extension": ".zip",
+      "tendersID": 158887,
+      "active": true,
+      "updatedBy": "Patriciam@ehco.org.za",
+      "dateModified": "2026-06-11T17:34:54.478899"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "EHCUPS2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Cnr Victoria Street and Linton Street Chris Hani Village Germiston 1400 (next to Fire Station)-Germiston-Germiston-1400",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Hardware Supply & End-user Computing",
+    "Networks, Telecoms & Connectivity",
+    "Systems Integration & Automation"
+  ],
+  "skills": [
+    "Network Engineering & Administration",
+    "IT Support & Managed Services",
+    "Systems Integration & API Development"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "High-Performance Server Hardware",
+    "Remote Monitoring Tools"
+  ],
+  "title": "Request for the Supply, Installation, Configuration, and Commissioning of a Server Room Uninterruptible Power Supply (UPS) System, Biometric Access Control System, and Server Room Floor Raising",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "17 June 2026, 12h00",
+  "closingDate": "19 June 2026, 11h00",
+  "reference": "EHCUPS2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

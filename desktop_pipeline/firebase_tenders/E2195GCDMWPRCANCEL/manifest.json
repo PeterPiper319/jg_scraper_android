@@ -1,0 +1,102 @@
+{
+  "id": 158800,
+  "tender_No": "E2195GCDMWPR",
+  "description": "Provision of Governance, Compliance & Assurance (GC&A) Services for Infrastructure Construction Projects across Eskom on behalf of Group Capital (GCD) for a period of five (05) years",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom Holdings SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-31T10:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Not Applicable ",
+  "surburb": "Not Applicable ",
+  "town": "Not Applicable ",
+  "code": null,
+  "conditions": "Tender cancelled due to no acceptable tenders (as the term is defined in the PPPFA) were received.",
+  "contactPerson": "Ngwanamahula Makgai",
+  "email": "makgaini@eskom.co.za",
+  "telephone": "013-296-3837",
+  "fax": "N\/A",
+  "username": "makgaini@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 14,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 86,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "6885ad0c-c25f-4a94-8745-29b1a3365160",
+      "fileName": "E2195GCDMWPR_ Cancellation Letter for GC&ASSURANCE.pdf",
+      "extension": ".pdf",
+      "tendersID": 158800,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-11T10:04:18.9101239"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E2195GCDMWPR",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Not Applicable -Not Applicable -Not Applicable -",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "Provision of Governance, Compliance & Assurance (GC&A) Services for Infrastructure Construction Projects across Eskom on behalf of Group Capital (GCD) for a period of five (05) years",
+  "isCompulsoryBriefing": false,
+  "reference": "E2195GCDMWPR"
+}

@@ -1,0 +1,125 @@
+{
+  "id": 158972,
+  "tender_No": "Q00255",
+  "description": "SPECIFICATION AND BID DOCUMENT FOR Q00255- SUPPLY AND DELIVERY OF WORKING MATERIAL FOR SSETHEMBE LEGAL PROJECT ON BEHALF OF UMZINYATHI DISTRICT DEVELOPMENT AGENCY",
+  "category": "Manufacture of basic metals",
+  "type": "Request for Quotation",
+  "organ_of_State": "uMzinyathi District Development Agency",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19 June 2026",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "MHLANGANE",
+  "surburb": "TUGELA",
+  "town": "MSINGA",
+  "code": "3010",
+  "conditions": "The Material will be delivered to the beneficiary address at Msinga ",
+  "contactPerson": "MR DOCTOR XABA",
+  "email": "agriculture@umziagency.co.za",
+  "telephone": "034-492-0642",
+  "fax": "N\/A",
+  "username": "expenditure@umziagency.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 20,
+  "departmentsID": 697,
+  "departments": {
+    "departmentsID": 697,
+    "name": "Umzinyathi District Municipality"
+  },
+  "department": "Umzinyathi District Municipality",
+  "categories": {
+    "categoriesID": 20,
+    "name": "Manufacture of basic metals"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2edb7700-ae08-415f-914e-0cf9cdf6dc5a",
+      "fileName": "SPECIFICATION AND BID DOCUMENT FOR Q00255- SUPPLY AND DELIVERY OF WORKING MATERIAL FOR SSETHEMBE LEGAL PROJECT ON BEHALF OF UMZINYATHI DISTRICT DEVELOPMENT AGENCY.pdf",
+      "extension": ".pdf",
+      "tendersID": 158972,
+      "active": true,
+      "updatedBy": "expenditure@umziagency.co.za",
+      "dateModified": "2026-06-12T10:15:29.372603"
+    },
+    {
+      "supportDocumentID": "cee805ff-5e7d-4fce-a828-c7d20206a60d",
+      "fileName": "RE-ADVERTISEMENT REQ00255.pdf",
+      "extension": ".pdf",
+      "tendersID": 158972,
+      "active": true,
+      "updatedBy": "expenditure@umziagency.co.za",
+      "dateModified": "2026-06-12T10:15:29.3197694"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "Q00255",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "MHLANGANE-TUGELA-MSINGA-3010",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Legal & Regulatory Services",
+  "industry_id": "legal_regulatory",
+  "specializations": [
+    "Corporate, Commercial & Contract Law",
+    "Regulatory Compliance & Governance"
+  ],
+  "skills": [
+    "Contract Drafting & Review",
+    "Regulatory Compliance Auditing",
+    "Legal Practice"
+  ],
+  "capabilities": [
+    "Legal Practice Council Registration",
+    "Secure Digital Signatures (e-Law)"
+  ],
+  "title": "SUPPLY AND DELIVERY OF WORKING MATERIAL FOR SSETHEMBE LEGAL PROJECT ON BEHALF OF UMZINYATHI DISTRICT DEVELOPMENT AGENCY",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 60,
+  "isCompulsoryBriefing": false,
+  "closingDate": "19 June 2026",
+  "reference": "Q00255",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

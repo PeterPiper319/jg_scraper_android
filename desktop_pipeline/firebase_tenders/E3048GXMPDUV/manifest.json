@@ -1,0 +1,81 @@
+{
+  "id": 158970,
+  "tender_No": "E3048GXMPDUV",
+  "description": "Design, Manufacture, Installation and Commissioning of the new Sulphuric Acid Bulk Tank at Duvha Power Station for a period of 10 months.",
+  "category": "Specialised construction activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "ESKOM",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T11:00:00",
+  "briefingVenue": "Ms Teams",
+  "streetname": "Duvha Power Station",
+  "surburb": "Emalahleni",
+  "town": "Witbank",
+  "code": "1035",
+  "conditions": "N\/A",
+  "contactPerson": "Tebogo Seyama",
+  "email": "molotstm@eskom.co.za",
+  "telephone": "013-690-0193",
+  "fax": "000-000-0000",
+  "username": "MolotsTM@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 76,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 76,
+    "name": "Specialised construction activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "644702c3-55a9-417d-a3e7-da9c6917a852",
+      "fileName": "Tender Documents.zip",
+      "extension": ".zip",
+      "tendersID": 158970,
+      "active": true,
+      "updatedBy": "MolotsTM@eskom.co.za",
+      "dateModified": "2026-06-12T10:10:17.7528425"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E3048GXMPDUV",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Duvha Power Station-Emalahleni-Witbank-1035"
+}

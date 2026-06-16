@@ -1,0 +1,132 @@
+{
+  "id": 158889,
+  "tender_No": "CD04\/2026",
+  "description": "CENTLEC (SOC) Ltd invites competent and equipped service providers to deliver a service of excavation of cable trenches, repairs as well as installation of cables for a period of thirty-six (36) months",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "CENTLEC (SOC) LTD",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-14T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "30 Rhodes Avenue",
+  "surburb": "Oranjesig",
+  "town": "Bloemfontein",
+  "code": "9301",
+  "conditions": "None",
+  "contactPerson": "Andre Oelofse",
+  "email": "Andre.Oelofse@centlec.co.za",
+  "telephone": "051-409-2290",
+  "fax": "N\/A",
+  "username": "Kamohelo.Moshodi@centlec.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 10,
+  "provinces": {
+    "provincesID": 10,
+    "name": "Free State"
+  },
+  "province": "Free State",
+  "categoriesID": 84,
+  "departmentsID": 52,
+  "departments": {
+    "departmentsID": 52,
+    "name": "CENTLEC SOC LTD"
+  },
+  "department": "CENTLEC SOC LTD",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a213844b-4c3b-4eea-b8f0-03d41b56fb63",
+      "fileName": "CD04-2026 - CALL FOR BIDS.pdf",
+      "extension": ".pdf",
+      "tendersID": 158889,
+      "active": true,
+      "updatedBy": "Kamohelo.Moshodi@centlec.co.za",
+      "dateModified": "2026-06-11T17:54:46.511622"
+    },
+    {
+      "supportDocumentID": "6aef1380-f24d-4b88-9bf2-5fec77eff62b",
+      "fileName": "CD04-2026 - BID DOCUMENT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158889,
+      "active": true,
+      "updatedBy": "Kamohelo.Moshodi@centlec.co.za",
+      "dateModified": "2026-06-11T17:54:46.1727574"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CD04\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "30 Rhodes Avenue-Oranjesig-Bloemfontein-9301",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "CIDB Grading Certification"
+  ],
+  "title": "Service providers to deliver a service of excavation of cable trenches, repairs as well as installation of cables for a period of thirty-six (36) months",
+  "cidb_grading": "6CE",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "closingDate": "2026-07-14T11:00:00",
+  "reference": "CD04\/2026",
+  "provinceNames": [
+    "Free State"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

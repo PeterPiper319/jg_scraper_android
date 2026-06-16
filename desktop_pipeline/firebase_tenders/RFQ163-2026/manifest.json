@@ -1,0 +1,115 @@
+{
+  "id": 159101,
+  "tender_No": "RFQ 163 - 2026",
+  "description": "INVITATION TO SUBMIT AN OFFER TO PURCHASE WATER DAMAGED INVENTORY ITEMS.",
+  "category": "Supplies: Stationery\/Printing",
+  "type": "Request for Quotation",
+  "organ_of_State": "SOUTH AFRICAN DIAMOND AND PRECIOUS METALS REGULATOR",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19 June 2026 @11:00AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 COTE D'AZURE",
+  "surburb": "KEMPTON PARK",
+  "town": "KEMPTON PARK",
+  "code": "1622",
+  "conditions": "N\/A",
+  "contactPerson": "Cynthia Khadiamovha",
+  "email": "cynthiak@sadpmr.co.za",
+  "telephone": "011-223-7000",
+  "fax": "N\/A",
+  "username": "cynthiak@sadpmr.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 31,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 28,
+  "departmentsID": 603,
+  "departments": {
+    "departmentsID": 603,
+    "name": "South African Diamond and Precious Metals Regulator"
+  },
+  "department": "South African Diamond and Precious Metals Regulator",
+  "categories": {
+    "categoriesID": 28,
+    "name": "Supplies: Stationery\/Printing"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "84d0610c-8de6-4ca5-a902-1285d3337ece",
+      "fileName": "BID DOCUMENTS TO INVITE BIDDERS TO PURCHASE INVENTORY FROM SADPMR.pdf",
+      "extension": ".pdf",
+      "tendersID": 159101,
+      "active": true,
+      "updatedBy": "cynthiak@sadpmr.co.za",
+      "dateModified": "2026-06-12T15:36:25.7766011"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 163 - 2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 COTE D'AZURE-KEMPTON PARK-KEMPTON PARK-1622",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation",
+    "Taxation & Regulatory Compliance"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "INVITATION TO SUBMIT AN OFFER TO PURCHASE WATER DAMAGED INVENTORY ITEMS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "19 June 2026 @11:00AM",
+  "reference": "RFQ 163 - 2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": 158993,
+  "tender_No": "Q45-2025",
+  "description": "Provision for the leasing of a fire station over a period of 11 months for Barrydale",
+  "category": "Rental and leasing activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "Overberg District Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-24T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Barrydale Area",
+  "surburb": "Barrydale Town",
+  "town": "Barrydale",
+  "code": "6750",
+  "conditions": "N\/A",
+  "contactPerson": "Mr R. Geldenhuys",
+  "email": "rgeldenhuys@odm.org.za",
+  "telephone": "028-425-1157",
+  "fax": "N\/A",
+  "username": "ltshambu@odm.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 71,
+  "departmentsID": 529,
+  "departments": {
+    "departmentsID": 529,
+    "name": "Overberg District Municipality"
+  },
+  "department": "Overberg District Municipality",
+  "categories": {
+    "categoriesID": 71,
+    "name": "Rental and leasing activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "54220a84-60a2-474d-8c2c-aa719599e7cd",
+      "fileName": "Q45-2025_Bid Doc.pdf",
+      "extension": ".pdf",
+      "tendersID": 158993,
+      "active": true,
+      "updatedBy": "ltshambu@odm.org.za",
+      "dateModified": "2026-06-12T10:51:30.5265437"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "Q45-2025",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Barrydale Area-Barrydale Town-Barrydale-6750",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation",
+    "Taxation & Regulatory Compliance"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Legal Practice Council Registration",
+    "Professional Indemnity Insurance"
+  ],
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 30,
+  "isCompulsoryBriefing": false,
+  "reference": "Q45-2025",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

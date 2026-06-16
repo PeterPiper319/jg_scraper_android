@@ -1,0 +1,163 @@
+{
+  "id": 159123,
+  "tender_No": "E3061GCDMWP",
+  "description": "Eskom requires a comprehensive suite of Safety, Health, Environmental, and Quality (SHEQ) services to support program delivery and fulfil Eskom’s commitment to people, the environment and quality.",
+  "category": "Services: Professional",
+  "type": "Request for Information",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "06 July 2026 at 10:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-24T10:00:00",
+  "briefingVenue": "MS Teams",
+  "streetname": "Eskom Holdings SOC Limited, 1 Maxwell Drive, Megawatt Park",
+  "surburb": "Sunninghill",
+  "town": "Sandton",
+  "code": "2157",
+  "conditions": "A non-compulsory clarification meeting will be held online via MS\r\nTeams.\r\nDate: 24 June 2026\r\nTime: 10h00am\r\nBelow is the link to join the non-compulsory meeting on MS Teams:\r\nhttps:\/\/teams.microsoft.com\/meet\/398232479676736?p=vtEhyrSkKGeqV\r\nmKNGq\r\nMeeting ID: 398 232 479 676 736\r\nPasscode: cu2w8QY6\r\nDial in by phone\r\n+27 21 834 0825,756584293# South Africa, Cape Town\r\nFind a local number\r\nPhone conference ID: 756 584 293#\r\nAll clarification questions should be directed to MokwenRJ@eskom.co.za as\r\nspecified.",
+  "contactPerson": "Romeo Mokwena",
+  "email": "MokwenRJ@eskom.co.za",
+  "telephone": "013-699-7369",
+  "fax": "N\/A",
+  "username": "MokwenRJ@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 178,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 86,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "eae775a9-3323-4783-92a6-2128570fc500",
+      "fileName": "Annexure K - E-tendering Help Manual for supplier - 27 January 2025 (G20 Logo) (1).docx",
+      "extension": ".docx",
+      "tendersID": 159123,
+      "active": true,
+      "updatedBy": "MokwenRJ@eskom.co.za",
+      "dateModified": "2026-06-12T17:03:55.6525887"
+    },
+    {
+      "supportDocumentID": "ea4a6da7-d052-46cc-9dbc-78fef0a4f67d",
+      "fileName": "EAnnexure J -Tenderers E-Tendering Training Acknowledgement Form -.docx",
+      "extension": ".docx",
+      "tendersID": 159123,
+      "active": true,
+      "updatedBy": "MokwenRJ@eskom.co.za",
+      "dateModified": "2026-06-12T17:03:57.2150946"
+    },
+    {
+      "supportDocumentID": "c4a5a7f7-2960-406b-bde5-833f301e616b",
+      "fileName": "SHEQ Market Sounding Questionnaire_12 June 2026.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 159123,
+      "active": true,
+      "updatedBy": "MokwenRJ@eskom.co.za",
+      "dateModified": "2026-06-12T17:04:30.1064592"
+    },
+    {
+      "supportDocumentID": "84240c0d-a63d-4f4f-a73a-8add22cc6e23",
+      "fileName": "Appendix A_SHEQ RFI_ 12 June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159123,
+      "active": true,
+      "updatedBy": "MokwenRJ@eskom.co.za",
+      "dateModified": "2026-06-12T17:03:56.0576818"
+    },
+    {
+      "supportDocumentID": "36473943-8a1c-439e-914e-a88d9fdcb5fa",
+      "fileName": "20260612 SHEQ ESKOM RFI.pdf",
+      "extension": ".pdf",
+      "tendersID": 159123,
+      "active": true,
+      "updatedBy": "MokwenRJ@eskom.co.za",
+      "dateModified": "2026-06-12T17:51:50.5015799"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E3061GCDMWP",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Eskom Holdings SOC Limited, 1 Maxwell Drive, Megawatt Park-Sunninghill-Sandton-2157",
+  "document_type": "RFI (Request for Information)",
+  "tenderAdvertType": "rfi (request for information)",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Risk Assessment & Planning",
+    "Strategic Planning",
+    "Project Management (Agile\/Scrum)",
+    "Quality Control & Lean Six Sigma"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools",
+    "Cloud-based Analytical Software",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "Safety, Health, Environment & Quality Services",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "24 June 2026 at 10:00",
+  "closingDate": "06 July 2026 at 10:00",
+  "reference": "E3061GCDMWP",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing",
+    "COIDA Letter of Good Standing"
+  ]
+}

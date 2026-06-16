@@ -1,0 +1,108 @@
+{
+  "id": 158853,
+  "tender_No": "8\/2\/1\/547",
+  "description": "Abaqulusi Municipality invites service providers to submit a Bid for the supply and Delivery of Tents, Beach Umbrella and Soccer Kits for LED Projects.",
+  "category": "Administrative and support activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Abaqulusi Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "CORNER OF HIGH AND MARK STREET",
+  "surburb": "VRYHEID",
+  "town": "VRYHEID",
+  "code": "3100",
+  "conditions": "N\/A",
+  "contactPerson": "LINDIWE NTSHANGASE",
+  "email": "lntshangase@abaqulusi.gov.za",
+  "telephone": "034-982-2133",
+  "fax": "034-980-9637",
+  "username": "pnxumalo@abaqulusi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 92,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 44,
+  "departmentsID": 1,
+  "departments": {
+    "departmentsID": 1,
+    "name": "Abaqulusi Local Municipality"
+  },
+  "department": "Abaqulusi Local Municipality",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "cc43bbdd-dbd2-40d5-951c-eaddc70249d2",
+      "fileName": "TENDER DOCUMENT FOR TENTS  BEACH UMBRELLA AND SOCCER KITS  8-2-1-547.pdf",
+      "extension": ".pdf",
+      "tendersID": 158853,
+      "active": true,
+      "updatedBy": "pnxumalo@abaqulusi.gov.za",
+      "dateModified": "2026-06-11T15:04:47.7094957"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/2\/1\/547",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CORNER OF HIGH AND MARK STREET-VRYHEID-VRYHEID-3100",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "specializations": [
+    "Textiles, Garments & Soft Goods"
+  ],
+  "title": "SUPPLY AND DELIVERY OF TENTS, BEACH UMBRELLA AND SOCCER KITS FOR LED PROJECTS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-19T12:00:00",
+  "reference": "8\/2\/1\/547",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

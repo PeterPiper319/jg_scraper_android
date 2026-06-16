@@ -1,0 +1,137 @@
+{
+  "id": 159133,
+  "tender_No": "E3056GCDMWP",
+  "description": "Eskom Holdings SOC Ltd (“Eskom”) invites you to respond to this Request for Information (RFI) for Independent Governance, Compliance & Assurance Services",
+  "category": "Services: Professional",
+  "type": "Request for Information",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-25T10:00:00",
+  "briefingVenue": "MS Teams",
+  "streetname": "N\/A",
+  "surburb": null,
+  "town": "N\/A",
+  "code": null,
+  "conditions": "Link to join the non-compulsory meeting on MS Teams:\r\nhttps:\/\/teams.microsoft.com\/meet\/326311374046292?p=5TJqssru3qVINytiEQ\r\nMeeting ID: 326 311 374 046 292\r\nPasscode: qX2Kc6EF",
+  "contactPerson": "Ngwanamahula Makgai",
+  "email": "makgaini@eskom.co.za",
+  "telephone": "013-297-3837",
+  "fax": "N\/A",
+  "username": "makgaini@eskom.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 86,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "8862ae81-d168-4382-ba5c-44df25ba1430",
+      "fileName": "20260612_ iGC&A_Eskom RFI.pdf",
+      "extension": ".pdf",
+      "tendersID": 159133,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-12T18:25:43.1448243"
+    },
+    {
+      "supportDocumentID": "1160b8d2-a17c-4599-8dd9-54ae9700693e",
+      "fileName": "iGC&A _ Market Sounding Questionnaire.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 159133,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-12T18:25:43.1047251"
+    },
+    {
+      "supportDocumentID": "fbb32124-bccb-4f8e-ab21-7bbeaee47f9d",
+      "fileName": "eTendering System Suppliers Help Manual.pdf",
+      "extension": ".pdf",
+      "tendersID": 159133,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-12T18:25:44.1718987"
+    },
+    {
+      "supportDocumentID": "94a6f347-6a58-46ea-a27e-9388e97cabc9",
+      "fileName": "Appendix A iGCA RFI  12 June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159133,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-12T18:25:43.1968375"
+    },
+    {
+      "supportDocumentID": "f357e589-e249-4a04-939c-f265807f4ae1",
+      "fileName": "E-Tendering Training Acknowledgement Form.pdf",
+      "extension": ".pdf",
+      "tendersID": 159133,
+      "active": true,
+      "updatedBy": "makgaini@eskom.co.za",
+      "dateModified": "2026-06-12T18:25:43.0423551"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E3056GCDMWP",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "N\/A--N\/A-",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "title": "Request for Information (RFI) for Independent Governance, Compliance & Assurance Services",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-07T10:00:00",
+  "reference": "E3056GCDMWP",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

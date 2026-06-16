@@ -1,0 +1,132 @@
+{
+  "id": 159069,
+  "tender_No": "DM822\/26",
+  "description": "APPOINTMENT OF AN INDEPENDENT SERVICE PROVIDER TO CONDUCT A DETAILED FOLLOW-UP INVESTIGATION INTO THE IDENTIFIED ASSET MISMANAGEMENT PRACTICES AND IRREGULAR DISPOSAL PROCESSES",
+  "category": "Security and investigation activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "Department of Tourism",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Trevenna",
+  "surburb": "Sunnyside",
+  "town": "Pretoria",
+  "code": "0002",
+  "conditions": "ONLY HAND DELIVERED QUOTATION\/PROPOSAL WILL BE ACCEPTED.\r\nTHE QUOTATION\/PROPOSAL MUST BE PHYSICALLY SUBMITTED IN A SEALED ENVELOPE TO TOURISM HOUSE,17 TREVENNA STREET, SUNNYSIDE, PRETORIA,0002.",
+  "contactPerson": "Ms O Sekgweleo",
+  "email": "OSekgweleo@tourism.gov.za",
+  "telephone": "012-444-6773",
+  "fax": "N\/A",
+  "username": "DMatsetela@tourism.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 62,
+  "departmentsID": 663,
+  "departments": {
+    "departmentsID": 663,
+    "name": "Tourism"
+  },
+  "department": "Tourism",
+  "categories": {
+    "categoriesID": 62,
+    "name": "Security and investigation activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "791b9120-6064-4be4-83cb-1a606f00b7fd",
+      "fileName": "SBD4.pdf",
+      "extension": ".pdf",
+      "tendersID": 159069,
+      "active": true,
+      "updatedBy": "DMatsetela@tourism.gov.za",
+      "dateModified": "2026-06-12T14:48:52.587341"
+    },
+    {
+      "supportDocumentID": "ff97ca8f-01d6-4b41-909b-2601441eaf4a",
+      "fileName": "DM822.pdf",
+      "extension": ".pdf",
+      "tendersID": 159069,
+      "active": true,
+      "updatedBy": "DMatsetela@tourism.gov.za",
+      "dateModified": "2026-06-12T14:48:26.2431502"
+    },
+    {
+      "supportDocumentID": "05be4f8e-dc74-4d7c-a09b-c084ff01d982",
+      "fileName": "BODY OF EMAIL TO SERVICE PROVIDERS FOR UNIFORMITY IN THE RFQ - Copy.pdf",
+      "extension": ".pdf",
+      "tendersID": 159069,
+      "active": true,
+      "updatedBy": "DMatsetela@tourism.gov.za",
+      "dateModified": "2026-06-12T14:50:52.3093846"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "DM822\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Trevenna-Sunnyside-Pretoria-0002",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Appointment of an independent service provider to conduct a detailed follow-up investigation into the identified asset mismanagement practices and irregular disposal processes",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 65,
+  "isCompulsoryBriefing": false,
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

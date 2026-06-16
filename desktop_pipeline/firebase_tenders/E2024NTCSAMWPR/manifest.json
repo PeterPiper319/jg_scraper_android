@@ -1,0 +1,81 @@
+{
+  "id": 158968,
+  "tender_No": "E2024NTCSAMWPR",
+  "description": "Re-issue: Design, supply, delivery, installation, commissioning, maintenance, support and training of an Operational Technology (OT) Security Information and Event Management (SIEM) solution for a period of five (5) years",
+  "category": "Information and communication",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom National Transmission Company of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T10:00:00",
+  "briefingVenue": "https:\/\/teams.microsoft.com\/meet\/375325444073313?p=KUDnPbALZXN0c2XzED",
+  "streetname": "Megawatt Park, 2 Maxwell Drive",
+  "surburb": "Sunninghill",
+  "town": "Sandton",
+  "code": "2157",
+  "conditions": "N\/A",
+  "contactPerson": "Dineo Maepa",
+  "email": "MaepaDN@ntcsa.co.za",
+  "telephone": "017-749-5775",
+  "fax": "N\/A",
+  "username": "MaepaDN@ntcsa.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 40,
+  "departmentsID": 860,
+  "departments": {
+    "departmentsID": 860,
+    "name": "Eskom National Transmission Company of South Africa"
+  },
+  "department": "Eskom National Transmission Company of South Africa",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "7e95e472-f18e-4740-9b9e-aeb4e313566e",
+      "fileName": "Tender Pack - OT SIEM Solution - E2024NTCSAMWPR.zip",
+      "extension": ".zip",
+      "tendersID": 158968,
+      "active": true,
+      "updatedBy": "MaepaDN@ntcsa.co.za",
+      "dateModified": "2026-06-12T10:08:33.9028077"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E2024NTCSAMWPR",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Megawatt Park, 2 Maxwell Drive-Sunninghill-Sandton-2157"
+}

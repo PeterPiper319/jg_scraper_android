@@ -1,0 +1,81 @@
+{
+  "id": 158822,
+  "tender_No": "BID NO: SCMU NO: 01 - 2026\/27 ",
+  "description": "TERMS OF REFERENCE FOR THE APPOINTMENT OF A SUITABLY QUALIFIES SERVICE PROVIDER\/S FOR THE \r\nIMPLEMENTATION OF QCTO REGISTERED SKILLS PROGRAMMES FOR THE GAUTENG PROVINCE ON BEHALF \r\nOF THE GAUTENG DEPARTMENT OF EDUCATION ",
+  "category": "Education",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Education, Training and Development Practices SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T11:00:00",
+  "briefingVenue": "22 June 2026 at  11h00. Access details will be available on www.etdpseta.org.za as from 19 June 20",
+  "streetname": "112 MAIN STREET",
+  "surburb": "MARSHALTOWN",
+  "town": "JOHANNESBURG",
+  "code": "2001",
+  "conditions": "N\/A",
+  "contactPerson": "Siphesihle Nzima",
+  "email": "Tenderers@etdpseta.org.za",
+  "telephone": "011-372-3300",
+  "fax": "N\/A",
+  "username": "SiphesihleK@etdpseta.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 4,
+  "departmentsID": 146,
+  "departments": {
+    "departmentsID": 146,
+    "name": "Education, Training and Development Practices SETA"
+  },
+  "department": "Education, Training and Development Practices SETA",
+  "categories": {
+    "categoriesID": 4,
+    "name": "Education"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "529cf615-78d5-49e1-8cbf-20a2fa05059d",
+      "fileName": "ADVERTISEMENT OF A TENDER. SCMU_ 01 - 2026_27. TOR. QCTO SKILLS PROGRAMMES.zip",
+      "extension": ".zip",
+      "tendersID": 158822,
+      "active": true,
+      "updatedBy": "SiphesihleK@etdpseta.org.za",
+      "dateModified": "2026-06-11T12:07:34.2439776"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "BID NO: SCMU NO: 01 - 2026\/27 ",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "112 MAIN STREET-MARSHALTOWN-JOHANNESBURG-2001"
+}

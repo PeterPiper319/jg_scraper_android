@@ -1,0 +1,137 @@
+{
+  "id": 159153,
+  "tender_No": "RFQ12023",
+  "description": "THE CONTRACTOR APPOINTMENT FOR FIRE MAINS RING HYDRANT SYSTEM REPLACEMENT AT KING PHALO AIRPORT\r\n",
+  "category": "Services: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Airports Company South Africa SOC Limited",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T16:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-25T12:00:00",
+  "briefingVenue": "King Phalo Airport, Information help desk, East London",
+  "streetname": "King Phalo Airport",
+  "surburb": "East London",
+  "town": "East London",
+  "code": "1632",
+  "conditions": "N\/A",
+  "contactPerson": "Mlungisi Professor Mgobhozi",
+  "email": "Mlungisi.mgobhozi@airports.co.za",
+  "telephone": "032-436-6198",
+  "fax": "N\/A",
+  "username": "mlungisi.mgobhozi@airports.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 84,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 61,
+  "departmentsID": 11,
+  "departments": {
+    "departmentsID": 11,
+    "name": "Airports Company of South Africa"
+  },
+  "department": "Airports Company of South Africa",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "b3a9f6a1-27c7-4541-8f7c-59cec62ac58d",
+      "fileName": "KPA 4974 Fire Mains Ring Hydrant Replacement ...pdf",
+      "extension": ".pdf",
+      "tendersID": 159153,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T23:26:39.3795821"
+    },
+    {
+      "supportDocumentID": "64117495-43f6-4d70-bfec-98fa60914bc7",
+      "fileName": "CIDB BID DOCUMENT RFQ12023.pdf",
+      "extension": ".pdf",
+      "tendersID": 159153,
+      "active": true,
+      "updatedBy": "mlungisi.mgobhozi@airports.co.za",
+      "dateModified": "2026-06-12T23:53:28.3884891"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ12023",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "King Phalo Airport-East London-East London-1632",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems",
+    "Health & Safety Management (OHS)",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "THE CONTRACTOR APPOINTMENT FOR FIRE MAINS RING HYDRANT SYSTEM REPLACEMENT AT KING PHALO AIRPORT",
+  "cidb_grading": "2ME",
+  "preference_points": "80\/20",
+  "site_inspection_required": true,
+  "isCompulsoryBriefing": true,
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "COIDA Letter of Good Standing"
+  ]
+}

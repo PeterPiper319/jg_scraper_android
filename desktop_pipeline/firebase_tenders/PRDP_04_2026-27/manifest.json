@@ -1,0 +1,118 @@
+{
+  "id": 158884,
+  "tender_No": "PRDP: 04\/2026-27",
+  "description": "SUSTAINABLE LIVELIHOODS FUND CALL FOR PROPOSALS",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "LIMPOPO PROVINCIAL GOVERNMENT OFFICE OF THE PREMIER",
+  "status": "Closed",
+  "clustersID": 0,
+  "closing_Date": "2025-07-03T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "40 HANS VAN RENSBURG STREET",
+  "surburb": "POLOKWANE",
+  "town": "POLOKWANE",
+  "code": "0700",
+  "conditions": "NB: KINDLY NOTE THAT BIDDERS WHO DO NOT RESIDE IN THE CAPRICORN DISTRICT MAY SUBMIT THEIR BIDS TO THE FOLLOWING MUNICIPALITIES ON OR BEFORE THE CLOSING DATE AS FOLLOWS:\r\nVHEMBE DISTRICT MUNICIPALITY AND SEKHUKHUNE DISTRICT MUNICIPALITY MAY SUBMIT THEIR BID DOCUMENTS ON THE 1ST OF JULY 2026 BETWEEN 08H00 AND 15H00\r\nMOPANI DISTRICT MUNICIPALITY AND WATERBERG DISTRICT MUNICIPALITY MAY SUBMIT THEIR BID DOCUMENTS ON THE 2ND OF JULY 2026 BETWEEN 08H00 AND 15H00\r\n\r\nIN CASE BIDDERS FROM ABOVE COULD NOT SUBMIT THEIR BIDS ON THE SAID DATE ABOVE, THEY CAN SUBMIT THEIR BID DOCUMENTS AT 40 HANS VAN RENSBURG STREET IN POLOKWANE ON OR BEFORE 03 JULY 2026",
+  "contactPerson": "MALINDA F.E",
+  "email": "tenders@premier.limpopo.gov.za",
+  "telephone": "015-287-6000",
+  "fax": "N\/A",
+  "username": "mbowenir@premier.limpopo.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 48,
+  "departmentsID": 355,
+  "departments": {
+    "departmentsID": 355,
+    "name": "Limpopo - Office of the Premier"
+  },
+  "department": "Limpopo - Office of the Premier",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "814ff525-5098-4741-9528-832b504fcd76",
+      "fileName": "BID DOCUMENT SUSTAINABLE LIVEL.pdf",
+      "extension": ".pdf",
+      "tendersID": 158884,
+      "active": true,
+      "updatedBy": "mbowenir@premier.limpopo.gov.za",
+      "dateModified": "2026-06-12T09:10:19.5399539"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "PRDP: 04\/2026-27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "40 HANS VAN RENSBURG STREET-POLOKWANE-POLOKWANE-0700",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Strategic Planning",
+    "Project Management (Agile\/Scrum)",
+    "Business Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "SUSTAINABLE LIVELIHOODS FUND CALL FOR PROPOSALS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2025-07-03T11:00:00",
+  "reference": "PRDP: 04\/2026-27",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

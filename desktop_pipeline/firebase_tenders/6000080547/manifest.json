@@ -1,0 +1,119 @@
+{
+  "id": 159047,
+  "tender_No": "6000080547",
+  "description": "Supply and Deliver Parts as per attached RFQ.",
+  "category": "Supplies: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Johannesburg Water SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 Link Road",
+  "surburb": "Langlaagte",
+  "town": "Johannesburg",
+  "code": "2092",
+  "conditions": "All Quotes Must Be Submitted Via eTender.\r\nEmailed Quotes Will NOT Be Accepted.",
+  "contactPerson": "Mthetho Maqhutyana",
+  "email": "Mthetho.Maqhutyana@jwater.co.za",
+  "telephone": "011-688-1574",
+  "fax": "N\/A",
+  "username": "Mthetho.Maqhutyana@jwater.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 55,
+  "departmentsID": 279,
+  "departments": {
+    "departmentsID": 279,
+    "name": "Johannesburg Water"
+  },
+  "department": "Johannesburg Water",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "42ee5ac2-16d7-456b-81e4-e72fa469767e",
+      "fileName": "6000080547_Materials_JHB Water.pdf",
+      "extension": ".pdf",
+      "tendersID": 159047,
+      "active": true,
+      "updatedBy": "Mthetho.Maqhutyana@jwater.co.za",
+      "dateModified": "2026-06-12T13:50:28.4022815"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "6000080547",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 Link Road-Langlaagte-Johannesburg-2092",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Water Treatment & Purification",
+    "Wastewater & Sanitation Systems",
+    "Boreholes, Pipelines & Water Infrastructure"
+  ],
+  "skills": [
+    "Water Purification & Treatment",
+    "Wastewater Management",
+    "Borehole Drilling & Installation"
+  ],
+  "capabilities": [
+    "Water Treatment Plants",
+    "Waste Collection Fleet",
+    "ECA\/ECASA Registration"
+  ],
+  "title": "Materials",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "6000080547",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

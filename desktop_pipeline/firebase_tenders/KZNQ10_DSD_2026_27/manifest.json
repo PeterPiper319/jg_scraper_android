@@ -1,0 +1,118 @@
+{
+  "id": 159039,
+  "tender_No": "KZNQ10\/DSD\/2026\/27",
+  "description": "PROVISION OF CAPACITY BUILDING INTERVENTIONS FOR FUNDED NON-PROFIT ORGANIZATIONS FOR 2026\/2027 FINANCIAL YEAR-RESOURCE MOBILIZATION TRAINING",
+  "category": "Education",
+  "type": "Request for Quotation",
+  "organ_of_State": "KZN Department of Social Development",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "30 June 2026 11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "208 Hoosen Haffejje",
+  "surburb": "Department of Social Development",
+  "town": "Pietermaritzburg",
+  "code": "3201",
+  "conditions": "N\/A",
+  "contactPerson": "MS S.P SHOBA",
+  "email": "samukelisiwe.shoba@kznsocdev.gov.za",
+  "telephone": "082-741-7703",
+  "fax": "N\/A",
+  "username": "samukelisiwe.shoba@kzndsd.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 4,
+  "departmentsID": 321,
+  "departments": {
+    "departmentsID": 321,
+    "name": "Kwazulu Natal - Social Development"
+  },
+  "department": "Kwazulu Natal - Social Development",
+  "categories": {
+    "categoriesID": 4,
+    "name": "Education"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "257a57fd-b0aa-4042-a7c6-8335546a10db",
+      "fileName": "QUOTATION DOCUMENT - RESOURCE MOBILISATION TRAINING.pdf",
+      "extension": ".pdf",
+      "tendersID": 159039,
+      "active": true,
+      "updatedBy": "samukelisiwe.shoba@kzndsd.gov.za",
+      "dateModified": "2026-06-12T13:14:03.5266917"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "KZNQ10\/DSD\/2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "208 Hoosen Haffejje-Department of Social Development-Pietermaritzburg-3201",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "PROVISION OF CAPACITY BUILDING INTERVENTIONS FOR FUNDED NON-PROFIT ORGANIZATIONS FOR 2026\/2027 FINANCIAL YEAR- RESOURCE MOBILISATION TRAINING",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 60,
+  "isCompulsoryBriefing": false,
+  "closingDate": "30 June 2026 11:00:00",
+  "reference": "KZNQ10\/DSD\/2026\/27",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": 159049,
+  "tender_No": "2636S",
+  "description": "BID 2636S - Provision of Strategic Partners for Engineering Services.\r\n",
+  "category": "Services: Electrical",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "City Power Johannesburg",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "28 July 2026 11h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "City Power Head Office, Tender Advice Centre, 40 Heronmere Road, Booysens, Johannesburg",
+  "streetname": "40 Heronmere road",
+  "surburb": "Reuven ",
+  "town": "Johannesburg",
+  "code": "2016",
+  "conditions": "Enterprises owned by black \r\npeople with at least 51% \r\nshareholding   \r\n➢ 51% black ownership \r\n= 2 points \r\n➢ Less than 51% black \r\nownership = 0 points \r\n \r\nProvide a valid and certified copy (not older than three \r\n(3) months) of BEE certificate \/ sworn affidavit, \r\nconsolidated B-BBEE certificate from verification \r\nagency if bidder is JV\/consortium and certified copies \r\n(not older than three (3) months of ID copies of owners",
+  "contactPerson": "LUCKY MUNYAI ",
+  "email": "Lmunyai@citypower.co.za",
+  "telephone": "011-490-7624",
+  "fax": "011-870-3717",
+  "username": "vsono@citypower.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 84,
+  "departmentsID": 65,
+  "departments": {
+    "departmentsID": 65,
+    "name": "City Power – Johannesburg"
+  },
+  "department": "City Power – Johannesburg",
+  "categories": {
+    "categoriesID": 84,
+    "name": "Services: Electrical"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "13186b67-625e-433a-bfb7-115b4e7736d1",
+      "fileName": "Bid Advert Template 2636S.pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:01:41.5617178"
+    },
+    {
+      "supportDocumentID": "8323106f-4cf3-48ec-b3db-31392aaf83f7",
+      "fileName": "STANDARD FOR ENGINEERING SERVICES STRATEGIC PARTNERS 17075.pdf 12 June 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:01:42.137449"
+    },
+    {
+      "supportDocumentID": "1c322c19-373c-4568-8854-65a2e0bde044",
+      "fileName": "Annexure D- Infrastructure Planning Scenario.pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:01:41.1970437"
+    },
+    {
+      "supportDocumentID": "99e25626-491d-45af-a445-c868fe82ba01",
+      "fileName": "Annexure E - Alternative Energy Scenario.pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:01:41.3320299"
+    },
+    {
+      "supportDocumentID": "4b1b3b9a-75d1-49ad-aeff-d7862730c028",
+      "fileName": "Annexure F -Project Management Case Study Scenarios.pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:01:41.4484618"
+    },
+    {
+      "supportDocumentID": "78f23594-dbc0-4bcc-a1b0-fea4802a1c0d",
+      "fileName": "Bid Document - Strategic Partners for Engineering Services 2636S (1).pdf",
+      "extension": ".pdf",
+      "tendersID": 159049,
+      "active": true,
+      "updatedBy": "vsono@citypower.co.za",
+      "dateModified": "2026-06-12T14:22:28.5094039"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "2636S",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "40 Heronmere road-Reuven -Johannesburg-2016",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "Civil Works, Roads & Stormwater",
+    "General Building Works",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "Civil Engineering & Infrastructure",
+    "General Building Construction",
+    "Road Construction & Maintenance",
+    "Structural Engineering",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification"
+  ],
+  "title": "Bid for Strategic Partners for Engineering Services",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 85,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "23 June 2026 10h00",
+  "closingDate": "28 July 2026 11h00",
+  "reference": "2636S",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

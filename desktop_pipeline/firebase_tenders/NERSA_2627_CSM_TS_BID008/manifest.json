@@ -1,0 +1,112 @@
+{
+  "id": 159149,
+  "tender_No": "NERSA\/2627\/CSM\/TS\/BID008",
+  "description": "THE APPOINTMENT OF A SERVICE PROVIDER TO PROVIDE THE NATIONAL ENERGY REGULATOR OF SOUTH AFRICA WITH TRANSLATION SERVICES FOR A PERIOD OF THREE (3) YEARS",
+  "category": "Services: Professional",
+  "type": "Request for Proposal",
+  "organ_of_State": "NERSA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T10:00:00",
+  "briefingVenue": "MS TEAMS",
+  "streetname": "526 Madiba Street Kulawula House Arcadia",
+  "surburb": "Arcadia",
+  "town": "Pretoria",
+  "code": "0083",
+  "conditions": "N\/A",
+  "contactPerson": "SCM TEAM",
+  "email": "briefingsessions@nersa.org.za",
+  "telephone": "012-401-4696",
+  "fax": "N\/A",
+  "username": "Tebogo.Williams@nersa.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 86,
+  "departmentsID": 455,
+  "departments": {
+    "departmentsID": 455,
+    "name": "National Energy Regulator of South Africa"
+  },
+  "department": "National Energy Regulator of South Africa",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "aa37e0e6-efe2-4d4e-8700-60d0189e1aa6",
+      "fileName": "BID DOCUMENT_ NERSA-2627-CSM-TS-BID008.pdf",
+      "extension": ".pdf",
+      "tendersID": 159149,
+      "active": true,
+      "updatedBy": "Tebogo.Williams@nersa.org.za",
+      "dateModified": "2026-06-12T22:12:47.5988282"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "NERSA\/2627\/CSM\/TS\/BID008",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "526 Madiba Street Kulawula House Arcadia-Arcadia-Pretoria-0083",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Solar, Renewable & Backup Power",
+    "Electrical Distribution & Grid Services"
+  ],
+  "skills": [
+    "Renewable Energy (Solar\/Wind)",
+    "Electrical Grid Maintenance"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "ECA\/ECASA Registration"
+  ],
+  "isCompulsoryBriefing": false,
+  "briefingDate": "19 June 2026 at 10:00",
+  "reference": "NERSA\/2627\/CSM\/TS\/BID008",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

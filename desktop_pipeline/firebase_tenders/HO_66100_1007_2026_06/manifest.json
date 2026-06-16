@@ -1,0 +1,122 @@
+{
+  "id": 158820,
+  "tender_No": "NRA 2025\/0486",
+  "description": "The South African National Roads Agency SOC Limited (SANRAL) is soliciting tenders from Service Provider\/s that will offer Video Production and Management Services for SANRAL TV. The agreement will be for a period of three (3) years.",
+  "category": "Motion picture, video and television programme production, sound recording and music publishing activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "SANRAL",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "02 July 2026 12:00PM",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T11:00:00",
+  "briefingVenue": "Not specified",
+  "streetname": "36 Assegai Wood Road",
+  "surburb": "Centurion",
+  "town": "Pretoria",
+  "code": "0157",
+  "conditions": "*Conditions are stated in the tender document",
+  "contactPerson": "Procurement Office",
+  "email": "ProcurementNR3@sanral.co.za",
+  "telephone": "012-426-6236",
+  "fax": "012-426-6236",
+  "username": "radebej@nra.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "Not specified",
+  "categoriesID": 64,
+  "departmentsID": 618,
+  "departments": {
+    "departmentsID": 618,
+    "name": "South African National Roads Agency Soc Limited (SANRAL)"
+  },
+  "department": "South African National Roads Agency Soc Limited (SANRAL)",
+  "categories": {
+    "categoriesID": 64,
+    "name": "Motion picture, video and television programme production, sound recording and music publishing activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5cecf6a0-135a-45fc-b38e-ebed428d3664",
+      "fileName": "Video Production And Management Services Tender (002).pdf",
+      "extension": ".pdf",
+      "tendersID": 158820,
+      "active": true,
+      "updatedBy": "radebej@nra.co.za",
+      "dateModified": "2026-06-11T12:06:26.648141"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "NRA 2025\/0486",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "36 Assegai Wood Road-Centurion-Pretoria-0157",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Media, Advertising & Marketing",
+  "industry_id": "media_marketing",
+  "specializations": [
+    "Video, Photography & Content Production",
+    "Graphic Design, Branding & Creative"
+  ],
+  "skills": [
+    "Video Production & Editing",
+    "Content Strategy & Copywriting",
+    "Graphic Design & Branding",
+    "Digital Marketing & SEO"
+  ],
+  "capabilities": [
+    "High-end Video\/Photo Equipment",
+    "Licensed Creative Software (Adobe)",
+    "Digital Ad Management Platforms",
+    "Studio Facilities"
+  ],
+  "title": "Video Production and Management Services",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "Not specified",
+  "closingDate": "02 July 2026 12:00PM",
+  "reference": "NRA 2025\/0486",
+  "provinceNames": [
+    "Not specified"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": 158952,
+  "tender_No": "ECIC03P-2026\/27",
+  "description": "Review of ORSA for a period of 3 years",
+  "category": "Financial and insurance activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "EXPORT CREDIT INSURANCE CORPORATION OF SOUTH AFRICA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "11 Byls bridge Boulevard",
+  "surburb": "Highveld",
+  "town": "Centurion",
+  "code": "0157",
+  "conditions": "N\/A",
+  "contactPerson": "Florence Mokgonyana",
+  "email": "procurement@ecic.co.za",
+  "telephone": "012-471-3800",
+  "fax": "N\/A",
+  "username": "lmakwela@ecic.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 5,
+  "departmentsID": 170,
+  "departments": {
+    "departmentsID": 170,
+    "name": "Export Credit Insurance Corporation of South Africa Limited"
+  },
+  "department": "Export Credit Insurance Corporation of South Africa Limited",
+  "categories": {
+    "categoriesID": 5,
+    "name": "Financial and insurance activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "b5b7e07d-b797-41b7-8b25-f12f4c3f8216",
+      "fileName": "ECIC03P-2026_27 ORSA Review.pdf",
+      "extension": ".pdf",
+      "tendersID": 158952,
+      "active": true,
+      "updatedBy": "lmakwela@ecic.co.za",
+      "dateModified": "2026-06-12T09:46:43.3459356"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECIC03P-2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "11 Byls bridge Boulevard-Highveld-Centurion-0157",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Risk Assessment & Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "INDEPENDENT REVIEW OF ORSA FOR A PERIOD OF THREE YEARS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-07T11:00:00",
+  "reference": "ECIC03P-2026\/27",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

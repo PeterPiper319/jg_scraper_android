@@ -1,0 +1,108 @@
+{
+  "id": 158942,
+  "tender_No": "ID-3281077",
+  "description": "UPINGTON AND SURROUNDING AREA:  Maintenance and repairs of general building works for 36 months term contract.",
+  "category": "Services: Building",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Public Works and Infrastructure",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "21-23 Market Street, Old Magistrate Office",
+  "surburb": "Kimberley",
+  "town": "Kimberley",
+  "code": "8301",
+  "conditions": "N\/A",
+  "contactPerson": "Ms G Aysen",
+  "email": "gail.aysen@dpw.gov.za",
+  "telephone": "053-838-5221",
+  "fax": "N\/A",
+  "username": "Gail.Aysen@dpw.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 78,
+  "departmentsID": 555,
+  "departments": {
+    "departmentsID": 555,
+    "name": "Public Works"
+  },
+  "department": "Public Works",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0e09a8fe-6988-4f3d-acb6-e5c0c3e5a85a",
+      "fileName": "ID-3281077.pdf",
+      "extension": ".pdf",
+      "tendersID": 158942,
+      "active": true,
+      "updatedBy": "Gail.Aysen@dpw.gov.za",
+      "dateModified": "2026-06-12T09:24:52.3107662"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ID-3281077",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "21-23 Market Street, Old Magistrate Office-Kimberley-Kimberley-8301",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)"
+  ],
+  "cidb_grading": "4GB",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "provinceNames": [
+    "Eastern Cape"
+  ]
+}

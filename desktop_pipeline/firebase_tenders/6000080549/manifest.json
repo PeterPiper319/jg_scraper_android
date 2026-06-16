@@ -1,0 +1,118 @@
+{
+  "id": 159076,
+  "tender_No": "6000080549",
+  "description": "Supply and Deliver Materials as per attached RFQ.",
+  "category": "Supplies: General",
+  "type": "Request for Quotation",
+  "organ_of_State": "Johannesburg Water SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-19T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 Link Road",
+  "surburb": "Langlaagte",
+  "town": "Johannesburg",
+  "code": "2092",
+  "conditions": "All Bids Must Be Submitted Via eTender.\r\nEmailed Bids Will NOT Be Accepted.",
+  "contactPerson": "Mthetho Maqhutyana",
+  "email": "Mthetho.Maqhutyana@jwater.co.za",
+  "telephone": "011-688-1574",
+  "fax": "N\/A",
+  "username": "Mthetho.Maqhutyana@jwater.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 55,
+  "departmentsID": 279,
+  "departments": {
+    "departmentsID": 279,
+    "name": "Johannesburg Water"
+  },
+  "department": "Johannesburg Water",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "2bdff44e-9f46-4bd3-8065-324b85139a2b",
+      "fileName": "6000080549_Materials_JHB Water.pdf",
+      "extension": ".pdf",
+      "tendersID": 159076,
+      "active": true,
+      "updatedBy": "Mthetho.Maqhutyana@jwater.co.za",
+      "dateModified": "2026-06-12T14:59:14.8515462"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "6000080549",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 Link Road-Langlaagte-Johannesburg-2092",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Materials",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "6000080549",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

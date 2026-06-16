@@ -1,0 +1,131 @@
+{
+  "id": 158986,
+  "tender_No": "GSM040\/26",
+  "description": "Request for Quotation for network penetration service (Internal & External), and ongoing active watch on hacking exploits that are applicable for South African Airways’s (SAA) environment and industry",
+  "category": "Information service activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "South African Airways",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19 June 2026 at 16:00pm",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "32 Jones Road,  Airways Park, Johannesburg (Head Office)",
+  "surburb": "Kempton Park",
+  "town": "Isando",
+  "code": "1627",
+  "conditions": "N\/A",
+  "contactPerson": "Rubina Data",
+  "email": "RubinaData@flysaa.com",
+  "telephone": "011-978-2155",
+  "fax": "N\/A",
+  "username": "HappyZwane@flysaa.com",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 75,
+  "departmentsID": 598,
+  "departments": {
+    "departmentsID": 598,
+    "name": "South African Airways (Pty) Limited"
+  },
+  "department": "South African Airways (Pty) Limited",
+  "categories": {
+    "categoriesID": 75,
+    "name": "Information service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "9ed2c8b8-af63-47ce-a160-0a055f3362d1",
+      "fileName": "RFQ GSM040-2026 - Request for Quotation for network penetration service (Internal & External), and ongoing active watch on hacking exploits that are applicable for South African Airways’s (SAA.pdf",
+      "extension": ".pdf",
+      "tendersID": 158986,
+      "active": true,
+      "updatedBy": "HappyZwane@flysaa.com",
+      "dateModified": "2026-06-12T10:38:39.5064945"
+    },
+    {
+      "supportDocumentID": "c85e8350-96fa-4568-b7dc-18246d707763",
+      "fileName": "Annexure 2 - SAA SBD 4 Standard Bidding Document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158986,
+      "active": true,
+      "updatedBy": "HappyZwane@flysaa.com",
+      "dateModified": "2026-06-12T10:38:39.4383398"
+    },
+    {
+      "supportDocumentID": "efc0f99a-2d81-47b1-8a95-69763857a6d3",
+      "fileName": "Annexure 3 - SAA General conditions of contract.pdf",
+      "extension": ".pdf",
+      "tendersID": 158986,
+      "active": true,
+      "updatedBy": "HappyZwane@flysaa.com",
+      "dateModified": "2026-06-12T10:38:39.4716378"
+    },
+    {
+      "supportDocumentID": "e127a6fd-3abe-4d85-8176-6ef3633cd6bc",
+      "fileName": "Annexure 1 - Vendor application Local.pdf",
+      "extension": ".pdf",
+      "tendersID": 158986,
+      "active": true,
+      "updatedBy": "HappyZwane@flysaa.com",
+      "dateModified": "2026-06-12T10:38:39.3900351"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "GSM040\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "32 Jones Road,  Airways Park, Johannesburg (Head Office)-Kempton Park-Isando-1627",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Cybersecurity & Threat Monitoring",
+    "Networks, Telecoms & Connectivity"
+  ],
+  "skills": [
+    "Cybersecurity & Penetration Testing",
+    "Network Engineering & Administration",
+    "IT Support & Managed Services"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "Network Infrastructure Equipment",
+    "Remote Monitoring Tools",
+    "ISO 27001 Certification"
+  ],
+  "title": "Request for Quotation for network penetration service (Internal & External), and ongoing active watch on hacking exploits that are applicable for South African Airways’s (SAA)",
+  "isCompulsoryBriefing": false,
+  "closingDate": "19 June 2026 at 16:00pm",
+  "reference": "GSM040\/26"
+}

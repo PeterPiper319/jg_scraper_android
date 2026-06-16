@@ -1,0 +1,127 @@
+{
+  "id": 158953,
+  "tender_No": "NLM\/BT\/007\/2025-26",
+  "description": "Suitable qualified service providers are hereby invited to submit their proposals for the compilation of Grap-Compliant Annual Financial Statements for 2025\/26",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Nala Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-29T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-22T10:00:00",
+  "briefingVenue": "Nala Local Municipality Offices; No. 8 Preller Street; Bothaville; 9660",
+  "streetname": "8 Preller Street",
+  "surburb": "Bothaville",
+  "town": "Bothaville",
+  "code": "9660",
+  "conditions": "N\/A",
+  "contactPerson": "D Tau",
+  "email": "dtau@nala.org.za",
+  "telephone": "056-514-9200",
+  "fax": "056-515-3922",
+  "username": "mmalete@nala.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 91,
+  "provincesID": 10,
+  "provinces": {
+    "provincesID": 10,
+    "name": "Free State"
+  },
+  "province": "Free State",
+  "categoriesID": 86,
+  "departmentsID": 826,
+  "departments": {
+    "departmentsID": 826,
+    "name": "Nala Local Municipality"
+  },
+  "department": "Nala Local Municipality",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "821041b3-39d1-4505-9661-d81c9429eb25",
+      "fileName": "Nala AFS Tender doc 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158953,
+      "active": true,
+      "updatedBy": "mmalete@nala.org.za",
+      "dateModified": "2026-06-12T09:48:14.3551555"
+    },
+    {
+      "supportDocumentID": "44b50d01-a76e-4396-83d8-ff7377a38f49",
+      "fileName": "Advert - AFS 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158953,
+      "active": true,
+      "updatedBy": "mmalete@nala.org.za",
+      "dateModified": "2026-06-12T09:48:14.3039258"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "NLM\/BT\/007\/2025-26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "8 Preller Street-Bothaville-Bothaville-9660",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Financial Auditing & Accounting",
+    "Management Consulting"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Compilation of Grap-Compliant Annual Financial Statements for 2025\/26",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "2026-06-22T10:00:00",
+  "closingDate": "2026-06-29T12:00:00",
+  "reference": "NLM\/BT\/007\/2025-26",
+  "provinceNames": [
+    "Free State"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

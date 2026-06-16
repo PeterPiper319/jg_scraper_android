@@ -1,0 +1,107 @@
+{
+  "id": 159119,
+  "tender_No": "FpDpUVINGE CLASAeDATE: POLOKWANE 0699",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR RENDERING PHYSICAL SECURITY SERVICES AT LEDET VARIOUS SITES, (CLUSTER 11, 12, 13, 14, 15,16, 17) FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+  "category": "Security and investigation activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "DEPARTMENT OF ECONOMIC DEVELOPMENT, ENVIRONMENT AND TOURISM",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-14T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "19 Biccard Street",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Ms Makhubele VM",
+  "email": "makhubelevm@ledet.gov.za",
+  "telephone": "015-293-8852",
+  "fax": "N\/A",
+  "username": "MakhubeleVM@ledet.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 210,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 62,
+  "departmentsID": 346,
+  "departments": {
+    "departmentsID": 346,
+    "name": "Limpopo - Economic Development Environment & Tourism"
+  },
+  "department": "Limpopo - Economic Development Environment & Tourism",
+  "categories": {
+    "categoriesID": 62,
+    "name": "Security and investigation activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "1e1d3113-fe02-4bd3-9305-9c5fcf414bbe",
+      "fileName": "BID DOCUMENT EDET 322.pdf",
+      "extension": ".pdf",
+      "tendersID": 159119,
+      "active": true,
+      "updatedBy": "MakhubeleVM@ledet.gov.za",
+      "dateModified": "2026-06-12T16:26:54.9649553"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "FpDpUVINGE CLASAeDATE: POLOKWANE 0699",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "19 Biccard Street-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Legal Practice Council Registration",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "APPOINTMENT OF A SERVvICE PROVIDER FOR RENDERING PHYSICAL SECURITY SERVICES AT LEDET VARIOUS SITES, (CLUSTER 11, 12, 13, 14, 15,16, 17)FOR A PERIOD OF THIRTY-SIX (36) MONTHS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "FpDpUVINGE CLASAeDATE: POLOKWANE 0699",
+  "provinceNames": [
+    "Limpopo"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": 159105,
+  "tender_No": "FIN\/PMU01\/2026",
+  "description": "THE UPGRADING OF RITCHIE SPORTS FACILITY ",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Sol Plaatje Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-01T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-24T10:00:00",
+  "briefingVenue": "Kimberley City Hall, Market Square, Kimberley",
+  "streetname": "ABATTOIR ROAD",
+  "surburb": "ASHBURNHAM",
+  "town": "KIMBERLEY",
+  "code": "8301",
+  "conditions": "Payment for purchasing tender documents is made at Municipal Traffic Department Office at Cnr. Phakamile Mabija\/Market Str. (Pioneer House Building front opposite City Hall). Payments can be made from 08H00 till 15H00 on normal working days. The bid document is R1500.00 (One Thousand Five Hundred Rand) each, which is non-refundable.  Payment must be made at the cashiers on a “NO 10-deposit slip” using the following vote no 2112 142 4510 SG ZZZZZ WM. The tender document will be available for purchase from 19 JUNE 2026 @ 12:00 pm",
+  "contactPerson": "Dillon Everson ",
+  "email": "deverson@solplaatje.org.za",
+  "telephone": "053-830-6312",
+  "fax": "N\/A",
+  "username": "BNkoe@solplaatje.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 91,
+  "provincesID": 2,
+  "provinces": {
+    "provincesID": 2,
+    "name": "Northern Cape"
+  },
+  "province": "Northern Cape",
+  "categoriesID": 61,
+  "departmentsID": 597,
+  "departments": {
+    "departmentsID": 597,
+    "name": "Solplaatje Local Municipality"
+  },
+  "department": "Solplaatje Local Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "896ce416-9442-4003-aeaf-c449634bab30",
+      "fileName": "FIN PMU01 2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 159105,
+      "active": true,
+      "updatedBy": "BNkoe@solplaatje.org.za",
+      "dateModified": "2026-06-12T15:48:57.6721775"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "FIN\/PMU01\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "ABATTOIR ROAD-ASHBURNHAM-KIMBERLEY-8301",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Structural Engineering",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification"
+  ],
+  "title": "THE UPGRADING OF RITCHIE SPORTS FACILITY",
+  "cidb_grading": "1null",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "2026-06-24T10:00:00",
+  "closingDate": "2026-07-01T10:00:00",
+  "reference": "FIN\/PMU01\/2026",
+  "provinceNames": [
+    "Northern Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": 158872,
+  "tender_No": "JSM\/ICT – 01\/04W00-2026",
+  "description": "ROUTINE MAINTENANCE OF THE MUNICIPAL ICT INFRASTRUCTURE AND SUPPORT PROVISION FOR THE PERIOD OF THIRTY-SIX MONTHS [36] \r\n(3 YEARS) \r\n",
+  "category": "Information and communication",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "DR JS MOROKA LOCAL MUNICIPALITY",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-09T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-12T10:00:00",
+  "briefingVenue": "Ga-Phaahla Community Hall",
+  "streetname": "Bongimfundo street",
+  "surburb": "Siyabuswa",
+  "town": "Siyabuswa",
+  "code": "0472",
+  "conditions": "NONE",
+  "contactPerson": "bongumusa sipho",
+  "email": "mahlangusb@moroka.gov.za",
+  "telephone": "013-973-1101",
+  "fax": "N\/A",
+  "username": "MahlanguSB@moroka.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 40,
+  "departmentsID": 107,
+  "departments": {
+    "departmentsID": 107,
+    "name": "Dr JS Moroka Local Municipality"
+  },
+  "department": "Dr JS Moroka Local Municipality",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e64104bd-1e8c-493e-8941-3120b73f9490",
+      "fileName": "The Routine Maintenance  ICT Support Provision.pdf",
+      "extension": ".pdf",
+      "tendersID": 158872,
+      "active": true,
+      "updatedBy": "MahlanguSB@moroka.gov.za",
+      "dateModified": "2026-06-11T16:04:04.7402848"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "JSM\/ICT – 01\/04W00-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Bongimfundo street-Siyabuswa-Siyabuswa-0472",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "ICT Support Provision",
+    "Routine Maintenance"
+  ],
+  "skills": [
+    "ICT Support",
+    "Technical Maintenance",
+    "Infrastructure Management"
+  ],
+  "capabilities": [
+    "ICT Infrastructure",
+    "Technical Support Services"
+  ],
+  "title": "ROUTINE MAINTENANCE OF THE MUNICIPAL ICT INFRASTRUCTURE AND SUPPORT PROVISION FOR THE PERIOD OF THIRTY-SIX [36] MONTHS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "reference": "JSM\/ICT – 01\/04W00-2026",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

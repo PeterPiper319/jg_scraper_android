@@ -1,0 +1,106 @@
+{
+  "id": 158958,
+  "tender_No": "16\/2026",
+  "description": "The Lesedi Local Municipality requires the services of a suitably qualified and experienced service provider for Termite eradication & quarterly IPM\/Fumigation programme on an \"as and when required basis for a period of three years.",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Lesedi Local Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "13 July 2026@12h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "1.H.F Verwoerd Street",
+  "surburb": "Heidelberg",
+  "town": "Heidelberg",
+  "code": "1441",
+  "conditions": "N\/A",
+  "contactPerson": "Sibulelo Mokoena",
+  "email": "sibulelom@lesedi.gov.za",
+  "telephone": "016-466-1947",
+  "fax": "N\/A",
+  "username": "sibulelom@lesedi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 61,
+  "departmentsID": 342,
+  "departments": {
+    "departmentsID": 342,
+    "name": "Lesedi Local Municipality"
+  },
+  "department": "Lesedi Local Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "0b984c30-be7b-45cd-8e8e-1d5ed1910d47",
+      "fileName": "16-2026 TERMITE ERADICATION TENDER ADVERT.pdf",
+      "extension": ".pdf",
+      "tendersID": 158958,
+      "active": true,
+      "updatedBy": "sibulelom@lesedi.gov.za",
+      "dateModified": "2026-06-12T09:52:52.4365428"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "16\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "1.H.F Verwoerd Street-Heidelberg-Heidelberg-1441",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Manufacturing & Industrial",
+  "industry_id": "manufacturing",
+  "title": "TERMITE ERADICATION & QUARTERLY IPM \/ FUMIGATION PROGRAMME ON AN AS AND WHEN REQUIRED BASIS FOR A PERIOD OF THREE YEARS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "13 July 2026@12h00",
+  "reference": "16\/2026",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

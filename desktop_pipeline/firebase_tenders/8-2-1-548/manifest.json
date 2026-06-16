@@ -1,0 +1,116 @@
+{
+  "id": 158851,
+  "tender_No": "8\/2\/1\/548",
+  "description": "Abaqulusi Municipality invites service providers to submit a Bid for the supply and Delivery of Catering Equipment, Printers and Laptops for LED Projects.",
+  "category": "Administrative and support activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Abaqulusi Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 June 2026, 12h00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "CORNER OF HIGH AND MARK STREET",
+  "surburb": "VRYHEID",
+  "town": "VRYHEID",
+  "code": "3100",
+  "conditions": "N\/A",
+  "contactPerson": "LINDIWE NTSHANGASE",
+  "email": "lntshangase@abaqulusi.gov.za",
+  "telephone": "034-982-2133",
+  "fax": "034-980-9637",
+  "username": "pnxumalo@abaqulusi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 92,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 44,
+  "departmentsID": 1,
+  "departments": {
+    "departmentsID": 1,
+    "name": "Abaqulusi Local Municipality"
+  },
+  "department": "Abaqulusi Local Municipality",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "810b6df3-ed73-48c1-b40f-26782f78a0e9",
+      "fileName": "TENDER DOCUMENT FOR LED CATERING AND ICT EQUIPMENT 8-2-1-548.pdf",
+      "extension": ".pdf",
+      "tendersID": 158851,
+      "active": true,
+      "updatedBy": "pnxumalo@abaqulusi.gov.za",
+      "dateModified": "2026-06-11T14:55:44.0166374"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/2\/1\/548",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CORNER OF HIGH AND MARK STREET-VRYHEID-VRYHEID-3100",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Hardware Supply & End-user Computing",
+    "Networks, Telecoms & Connectivity"
+  ],
+  "skills": [
+    "IT Support & Managed Services",
+    "Network Engineering & Administration",
+    "Telecommunications Infrastructure"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "High-Performance Server Hardware"
+  ],
+  "title": "SUPPLY AND DELIVERY OF CATERING EQUIPMENT, PRINTERS AND LAPTOPS FOR LED PROJECTS",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "closingDate": "22 June 2026, 12h00",
+  "reference": "8\/2\/1\/548",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

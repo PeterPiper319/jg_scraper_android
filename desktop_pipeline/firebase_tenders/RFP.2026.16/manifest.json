@@ -1,0 +1,116 @@
+{
+  "id": 158895,
+  "tender_No": "RP.2026.16",
+  "description": "Appointment of a Service Provider for the Provision of end-to-end Total Rewards and Advisory Services for a Period of five (5) Years",
+  "category": "Professional, scientific and technical activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Sasria",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-07T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "34 & 36 Fricker Rd ",
+  "surburb": "Illovo",
+  "town": "Sandton",
+  "code": "2196",
+  "conditions": "N\/A",
+  "contactPerson": "Thandeka Ngozi",
+  "email": "ThandekaN@sasria.co.za",
+  "telephone": "011-214-0800",
+  "fax": "N\/A",
+  "username": "Thandekan@sasria.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 150,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 90,
+  "departmentsID": 580,
+  "departments": {
+    "departmentsID": 580,
+    "name": "SASRIA"
+  },
+  "department": "SASRIA",
+  "categories": {
+    "categoriesID": 90,
+    "name": "Professional, scientific and technical activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "5b5513e5-9aa0-4c7d-9869-653a72c26578",
+      "fileName": "RP.2026.16-Appointment of a Service Provider for the Provision of end-to-end Total Rewards and Advisory Services for a Period of five (5) Years.pdf",
+      "extension": ".pdf",
+      "tendersID": 158895,
+      "active": true,
+      "updatedBy": "Thandekan@sasria.co.za",
+      "dateModified": "2026-06-11T19:25:19.0459807"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RP.2026.16",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "34 & 36 Fricker Rd -Illovo-Sandton-2196",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "HR, Recruitment & Labour Services"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Human Resources & Recruitment",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ],
+  "title": "Appointment of a Service Provider for the Provision of end-to-end Total Rewards and Advisory Services for a Period of five (5) Years",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-07T12:00:00",
+  "reference": "RP.2026.16",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": 158976,
+  "tender_No": "36209-1N",
+  "description": "Virginia Airport Management Service \r\n(36-month contract)",
+  "category": "Services: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "eThekwini Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": " Virginia Airport (Terminal Building Entrance). ",
+  "streetname": "166 K E Masinga Road (Formerly Old Fort Road)",
+  "surburb": "Durban",
+  "town": "KZN",
+  "code": "4001",
+  "conditions": "-A COMPULSORY clarification meeting will be held at 11:00, on 2026-06-17, at Virginia Airport (Terminal Building Entrance). \r\n-All questions and answers will be consolidated and posted on eTenders\/Municipal website by 2026-07-02.\r\n-Technical:\r\nDuduzile Ntombela\r\n(t) 031-311 4098\r\nEmail:\r\ndudu.ntombela@dur\r\nban.gov.za",
+  "contactPerson": "Duduzile Ntombela",
+  "email": "dudu.ntombela@durban.gov.za",
+  "telephone": "031-311-4098",
+  "fax": "N\/A",
+  "username": "Ashira.Baller@durban.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 61,
+  "departmentsID": 169,
+  "departments": {
+    "departmentsID": 169,
+    "name": "Ethekwini Metropolitan Municipality"
+  },
+  "department": "Ethekwini Metropolitan Municipality",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d49f99ed-21c1-4b12-8e71-7270a4ac5ea3",
+      "fileName": "Virginia Airport Management Services.pdf",
+      "extension": ".pdf",
+      "tendersID": 158976,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:22:26.1425899"
+    },
+    {
+      "supportDocumentID": "b8c647b7-1e4e-40b6-83e2-ac9c70282009",
+      "fileName": "VIRGINIA AIRPORT MANAGEMENT SERVICE_ApprovedD.pdf",
+      "extension": ".pdf",
+      "tendersID": 158976,
+      "active": true,
+      "updatedBy": "Ashira.Baller@durban.gov.za",
+      "dateModified": "2026-06-12T10:22:25.8712822"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "36209-1N",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "166 K E Masinga Road (Formerly Old Fort Road)-Durban-KZN-4001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment",
+    "Surveying Instruments (Total Stations)"
+  ],
+  "title": "VIRGINIA AIRPORT MANAGEMENT SERVICE (36 MONTHS CONTRACT)",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "reference": "36209-1N",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": 158638,
+  "tender_No": "061643",
+  "description": "DEPARTMENT OF SOCIAL DEVELOPMENT:KWADABEKA :ZAKHE CYCC: REPLACE COLLAPSED PERIMETER FENCING",
+  "category": "Services: Building",
+  "type": "Request for Quotation",
+  "organ_of_State": "Department of Public Works: KZN",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-24T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "KWADABEKA :ZAKHE PLACE OF SAFETY",
+  "surburb": "CLERMONT",
+  "town": "Durban",
+  "code": "4000",
+  "conditions": "KINDLY CHECK OUR DEPARTMENTAL WEBISTE FOR ADVERT .\r\nADVERT DATE: 11 JUNE 2026\r\nCLOSING DATE:24 JUNE 2026",
+  "contactPerson": "SANDILE BAILEY",
+  "email": "sandile.bailey@kznworks.gov.za",
+  "telephone": "076-062-3388",
+  "fax": "087-288-7063",
+  "username": "thembisa.ngubane@kznworks.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 78,
+  "departmentsID": 320,
+  "departments": {
+    "departmentsID": 320,
+    "name": "Kwazulu Natal - Public Works (Head Office)"
+  },
+  "department": "Kwazulu Natal - Public Works (Head Office)",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "db8b7774-e297-4b9b-a2ef-f1fc6e66c7a2",
+      "fileName": "CORRECT TENDER DOCUMENT-061643.pdf",
+      "extension": ".pdf",
+      "tendersID": 158638,
+      "active": true,
+      "updatedBy": "thembisa.ngubane@kznworks.gov.za",
+      "dateModified": "2026-06-10T11:28:58.486596"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "061643",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "KWADABEKA :ZAKHE PLACE OF SAFETY-CLERMONT-Durban-4000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "CIDB Grading Certification"
+  ],
+  "title": "PROVISION OF: PART T1: QUOTATION PROCEDURES",
+  "cidb_grading": "1GB",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-24T11:00:00",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": 158975,
+  "tender_No": "REQ-00258",
+  "description": "BID DOCUMENT FOR REQ00258- APPOINTMENT OF VALUER TO EVALUATE BIOLOGICAL ASSETS ON BEHALF OF UMZINYATHI DISTRICT DEVELOPMENT AGENCY. ONCE OFF EVALUATION FOR 2025-2026 FINANCIAL YEAR",
+  "category": "Agricultural Products and Services",
+  "type": "Request for Quotation",
+  "organ_of_State": "Umzinyathi District Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T13:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "44 VICTORIA STREET ",
+  "surburb": "ENDUMENI",
+  "town": "DUNDEE",
+  "code": "3000",
+  "conditions": "NO",
+  "contactPerson": "MR DOCTOR XABA",
+  "email": "agriculture@umziagency.co.za",
+  "telephone": "034-492-0642",
+  "fax": "N\/A",
+  "username": "expenditure@umziagency.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 91,
+  "departmentsID": 697,
+  "departments": {
+    "departmentsID": 697,
+    "name": "Umzinyathi District Municipality"
+  },
+  "department": "Umzinyathi District Municipality",
+  "categories": {
+    "categoriesID": 91,
+    "name": "Agricultural Products and Services"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d6e35b4b-0f54-4829-a498-8326bf5d0674",
+      "fileName": "RE-ADVERTISEMENT REQ00258.pdf",
+      "extension": ".pdf",
+      "tendersID": 158975,
+      "active": true,
+      "updatedBy": "expenditure@umziagency.co.za",
+      "dateModified": "2026-06-12T10:21:42.1505998"
+    },
+    {
+      "supportDocumentID": "61fc84d1-da34-4d1d-a5f5-aa45cbdcea40",
+      "fileName": "BID DOCUMENT FOR REQ00258- APPOINTMENT OF VALUER TO EVALUATE BIOLOGICAL ASSETS ON BEHALF OF UMZINYATHI DISTRICT DEVELOPMENT AGENCY. ONCE OFF EVALUATION FOR 2025-2026 FINANCIAL YEAR.pdf",
+      "extension": ".pdf",
+      "tendersID": 158975,
+      "active": true,
+      "updatedBy": "expenditure@umziagency.co.za",
+      "dateModified": "2026-06-12T10:21:41.9658866"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "REQ-00258",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "44 VICTORIA STREET -ENDUMENI-DUNDEE-3000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Valuation, Appraisal & Advisory"
+  ],
+  "skills": [
+    "Valuation & Appraisal",
+    "Professional Advisory"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Valuation Professional Membership"
+  ]
+}

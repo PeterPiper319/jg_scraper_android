@@ -1,0 +1,111 @@
+{
+  "id": 158996,
+  "tender_No": "E0326TSSERI",
+  "description": "Tender Validity Extension",
+  "category": "Other service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Hunslet House no.5",
+  "surburb": "Germiston",
+  "town": "Johannesburg South",
+  "code": "2020",
+  "conditions": "N\/A",
+  "contactPerson": "Jackie Gopal",
+  "email": "gopalj@eskom.co.za",
+  "telephone": "011-621-3067",
+  "fax": "N\/A",
+  "username": "GopalJ@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 46,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 48,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 48,
+    "name": "Other service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "f3edb13b-4333-41e1-a697-525661d92275",
+      "fileName": "Letter to Extend validity period of Tender - E0326TSSERI.pdf",
+      "extension": ".pdf",
+      "tendersID": 158996,
+      "active": true,
+      "updatedBy": "GopalJ@eskom.co.za",
+      "dateModified": "2026-06-12T10:53:50.6976968"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E0326TSSERI",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Hunslet House no.5-Germiston-Johannesburg South-2020",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Electrical Instrument Repair",
+    "Transformer and Switchgear services"
+  ],
+  "skills": [
+    "Electrical Engineering",
+    "Instrumentation and Control"
+  ],
+  "capabilities": [
+    "Electrical Testing and Maintenance Equipment"
+  ],
+  "title": "Electrical Instrument Repair for a period of five (5) years on an as when required basis",
+  "isCompulsoryBriefing": false,
+  "reference": "E0326TSSERI",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": 158939,
+  "tender_No": "ECGB-26\/27-BID 02",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER TO OFFER INTERNAL AUDIT SERVICES TO ECGB FOR A MINIMUM PERIOD OF THREE YEARS",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eastern Cape - Eastern Cape Gambling and Betting Board",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-06T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Quenera Drive",
+  "surburb": "Beacon Bay",
+  "town": "EAST LONDON",
+  "code": "5245",
+  "conditions": "N\/A",
+  "contactPerson": "Thandazwa Malotana",
+  "email": "thandazwam@ecgb.org.za",
+  "telephone": "043-702-8307",
+  "fax": "043-748-2108",
+  "username": "thandazwam@ecgb.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 86,
+  "departmentsID": 123,
+  "departments": {
+    "departmentsID": 123,
+    "name": "Eastern Cape - Eastern Cape Gambling and Betting Board"
+  },
+  "department": "Eastern Cape - Eastern Cape Gambling and Betting Board",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "13ffa9f3-979c-46db-a38d-a37703aa9197",
+      "fileName": "BID 2- Bid document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158939,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:21:18.84431"
+    },
+    {
+      "supportDocumentID": "886dda38-07cd-468c-ab15-c80403d1b622",
+      "fileName": "INTERNAL AUDIT PRICING SCHEDULE.xlsx",
+      "extension": ".xlsx",
+      "tendersID": 158939,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:21:18.9607126"
+    },
+    {
+      "supportDocumentID": "8877974b-7702-4552-8390-e86250d2cef1",
+      "fileName": "Internal Audit TOR.pdf",
+      "extension": ".pdf",
+      "tendersID": 158939,
+      "active": true,
+      "updatedBy": "thandazwam@ecgb.org.za",
+      "dateModified": "2026-06-12T09:21:18.9984468"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECGB-26\/27-BID 02",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Quenera Drive-Beacon Bay-EAST LONDON-5245",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof"
+}

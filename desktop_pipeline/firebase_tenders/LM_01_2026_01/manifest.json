@@ -1,0 +1,125 @@
+{
+  "id": 159108,
+  "tender_No": "LM 01\/2026\/01",
+  "description": "APPOINTMENT OF A QUALIFIED AND EXPERIENCED SERVICE PROVIDER FOR THE PROVISION OF WEBSITE DEVELOPMENT HOSTING AND SUPPORT SERVICES FOR THE LUTHULI MUSEUM, FOR A PERIOD OF THIRTY-SIX MONTHS (3 YEARS) ",
+  "category": "Computer programming, consultancy and related activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Luthuli Museum",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "03 July 2026, 13h00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-19T09:30:00",
+  "briefingVenue": "https:\/\/us02web.zoom.us\/webinar\/register\/WN_aMvP9NNxSa2GqMWrlE83Fg",
+  "streetname": "3233 Nokukhanya Luthuli Street",
+  "surburb": "Groutville",
+  "town": "KwaDukuza",
+  "code": "4450",
+  "conditions": "N\/A",
+  "contactPerson": "SCM OFFICER",
+  "email": "scmofficer@luthulimuseum.org.za",
+  "telephone": "033-559-8063",
+  "fax": "N\/A",
+  "username": "scmofficer@luthulimuseum.org.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 73,
+  "departmentsID": 759,
+  "departments": {
+    "departmentsID": 759,
+    "name": "Luthuli museum"
+  },
+  "department": "Luthuli museum",
+  "categories": {
+    "categoriesID": 73,
+    "name": "Computer programming, consultancy and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "dd551661-2fde-4890-8546-6daeadb367f5",
+      "fileName": "LUTHULI MUSEUM WEB DEVELOPMENT SERVICES BID DOCUMENT 12.06.2026 -COMPLETE.pdf",
+      "extension": ".pdf",
+      "tendersID": 159108,
+      "active": true,
+      "updatedBy": "scmofficer@luthulimuseum.org.za",
+      "dateModified": "2026-06-12T15:53:40.7437622"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "LM 01\/2026\/01",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "3233 Nokukhanya Luthuli Street-Groutville-KwaDukuza-4450",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Web Development"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "UI\/UX Design & User Research",
+    "Database Management & Optimization",
+    "Project Management (Agile\/Scrum)"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Remote Monitoring Tools"
+  ],
+  "title": "APPOINTMENT OF A QUALIFIED AND EXPERIENCED SERVICE PROVIDER FOR THE PROVISION OF WEBSITE DEVELOPMENT HOSTING AND SUPPORT SERVICES FOR THE LUTHULI MUSEUM, FOR A PERIOD OF THIRTY-SIX MONTHS (3 YEARS)",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "briefingDate": "19 June 2026, 09h30",
+  "closingDate": "03 July 2026, 13h00",
+  "reference": "LM 01\/2026\/01",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ]
+}

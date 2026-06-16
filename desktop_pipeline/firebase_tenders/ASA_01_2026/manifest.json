@@ -1,0 +1,136 @@
+{
+  "id": 158946,
+  "tender_No": "ASA 01\/2026",
+  "description": "Terms of Reference for External Audit Services",
+  "category": "Activities of head offices; management consultancy activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "Auditing Services Agency (ASA)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Arcadia Street",
+  "surburb": "Hatfield",
+  "town": "Pretoria",
+  "code": "0028",
+  "conditions": "Submissions via email: procurement@agrement.co.za",
+  "contactPerson": "Moloko Mosha",
+  "email": "procurement@agrement.co.za",
+  "telephone": "076-035-2769",
+  "fax": "N\/A",
+  "username": "mmosha@agrement.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 150,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 51,
+  "departmentsID": 5,
+  "departments": {
+    "departmentsID": 5,
+    "name": "Agrément South Africa"
+  },
+  "department": "Agrément South Africa",
+  "categories": {
+    "categoriesID": 51,
+    "name": "Activities of head offices; management consultancy activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d306c3b0-9e24-4167-b20f-8497325b6937",
+      "fileName": "SBD 4.pdf",
+      "extension": ".pdf",
+      "tendersID": 158946,
+      "active": true,
+      "updatedBy": "mmosha@agrement.co.za",
+      "dateModified": "2026-06-12T09:30:22.819557"
+    },
+    {
+      "supportDocumentID": "c3ceed7b-bca2-41de-94a9-9f804856daab",
+      "fileName": "SBD 6.1 IN TERMS OF PPR2022 .pdf",
+      "extension": ".pdf",
+      "tendersID": 158946,
+      "active": true,
+      "updatedBy": "mmosha@agrement.co.za",
+      "dateModified": "2026-06-12T09:30:22.8557107"
+    },
+    {
+      "supportDocumentID": "5ca044dc-2aa4-4157-b54a-d14052e5b6b8",
+      "fileName": "General Conditions of Contract.pdf",
+      "extension": ".pdf",
+      "tendersID": 158946,
+      "active": true,
+      "updatedBy": "mmosha@agrement.co.za",
+      "dateModified": "2026-06-12T09:30:22.7644407"
+    },
+    {
+      "supportDocumentID": "ed46bbb9-c7af-412c-b0b1-ec38b3c0b05f",
+      "fileName": "Terms of Reference - External Audit.pdf",
+      "extension": ".pdf",
+      "tendersID": 158946,
+      "active": true,
+      "updatedBy": "mmosha@agrement.co.za",
+      "dateModified": "2026-06-12T09:30:22.8886705"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ASA 01\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Arcadia Street-Hatfield-Pretoria-0028",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Financial Auditing & Accounting",
+    "Audit, Accounting & Advisory"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Professional Body Membership (SAICA\/SAIPA)"
+  ],
+  "title": "External Audit Services",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 80,
+  "isCompulsoryBriefing": false,
+  "complianceRequirements": [
+    "CSD Registration"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration"
+  ],
+  "requirements": [
+    "CSD Registration"
+  ]
+}

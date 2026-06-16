@@ -1,0 +1,119 @@
+{
+  "id": 159100,
+  "tender_No": "FWQ 19\/2026",
+  "description": "Bids are hereby invited from potential service providers for Supply and Delivery of Fourteen (14) Notebooks\/Laptops",
+  "category": "Supplies: Computer Equipment",
+  "type": "Request for Quotation",
+  "organ_of_State": "BLUE CRANE ROUTE MUNICIPALITY",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "67 NOJOLI STREET",
+  "surburb": "SOMERSET EAST",
+  "town": "SOMERSET EAST",
+  "code": "5850",
+  "conditions": "N\/A",
+  "contactPerson": "Mr Z GUSH",
+  "email": "appolisv@bcrm.gov.za",
+  "telephone": "042-243-6400",
+  "fax": "N\/A",
+  "username": "nozukom@bcrm.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 22,
+  "departmentsID": 32,
+  "departments": {
+    "departmentsID": 32,
+    "name": "Blue crane route local municipality"
+  },
+  "department": "Blue crane route local municipality",
+  "categories": {
+    "categoriesID": 22,
+    "name": "Supplies: Computer Equipment"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "1a82b857-5920-4ddb-a43e-e54f094bcb96",
+      "fileName": "14 laptops.docx",
+      "extension": ".docx",
+      "tendersID": 159100,
+      "active": true,
+      "updatedBy": "nozukom@bcrm.gov.za",
+      "dateModified": "2026-06-12T15:36:12.1020053"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "FWQ 19\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "67 NOJOLI STREET-SOMERSET EAST-SOMERSET EAST-5850",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Hardware Supply & End-user Computing",
+    "Systems Integration & Automation"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "IT Support & Managed Services",
+    "Network Engineering & Administration"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment"
+  ],
+  "title": "SUPPLY AND DELIVERY OF FOURTEEN (14) NOTEBOOKS\/ LAPTOPS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-22T12:00:00",
+  "reference": "FWQ 19\/2026",
+  "provinceNames": [
+    "Eastern Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

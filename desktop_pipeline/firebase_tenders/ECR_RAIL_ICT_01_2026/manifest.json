@@ -1,0 +1,146 @@
+{
+  "id": 159113,
+  "tender_No": "ECR\/RAIL\/ICT\/01\/2026",
+  "description": "APPOINTMENT OF ONE SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF TICKETING MATERIAL (PITIX ROLLS, ITIX ROLLS AND RIBBONS) ON AS AND WHEN BASIS FOR A PERIOD OF 36 MONTHS AT PRASA IN THE EASTERN CAPE REGION (ECR)",
+  "category": "Administrative and support activities",
+  "type": "Request for Proposal",
+  "organ_of_State": "PRASA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-13T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "8 station street, Station building",
+  "surburb": "East london",
+  "town": "East london",
+  "code": "5200",
+  "conditions": "N\/A",
+  "contactPerson": "Simnikiwe Nqulo",
+  "email": "simnikiwe.nqulo@prasa.com",
+  "telephone": "043-700-2331",
+  "fax": "N\/A",
+  "username": "simnikiwe.nqulo@prasa.com",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 44,
+  "departmentsID": 534,
+  "departments": {
+    "departmentsID": 534,
+    "name": "Passenger Rail Agency of South Africa"
+  },
+  "department": "Passenger Rail Agency of South Africa",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "c55bd37b-3eff-45a5-867b-002cdaa73af2",
+      "fileName": "ANNEXURE B - RFP Clarification Form - TICKETING MATERIAL.pdf",
+      "extension": ".pdf",
+      "tendersID": 159113,
+      "active": true,
+      "updatedBy": "simnikiwe.nqulo@prasa.com",
+      "dateModified": "2026-06-12T16:04:44.1756339"
+    },
+    {
+      "supportDocumentID": "96713990-36ff-40ae-94be-163db946e4f0",
+      "fileName": "ANNEXURE A PRICING SCHEDULE TICKETING MATERIAL.pdf",
+      "extension": ".pdf",
+      "tendersID": 159113,
+      "active": true,
+      "updatedBy": "simnikiwe.nqulo@prasa.com",
+      "dateModified": "2026-06-12T16:04:08.6182482"
+    },
+    {
+      "supportDocumentID": "83f8d1f0-05eb-49cf-b7a8-3e10fc0a75c8",
+      "fileName": "APF1B6~1.PDF",
+      "extension": ".PDF",
+      "tendersID": 159113,
+      "active": true,
+      "updatedBy": "simnikiwe.nqulo@prasa.com",
+      "dateModified": "2026-06-12T16:05:48.1194679"
+    },
+    {
+      "supportDocumentID": "503834cd-3e6b-4ea6-8674-9ce4aa940fb8",
+      "fileName": "ANNEXURE C - APPENDENDICES TICKETING MATERIAL CONTRACT.pdf",
+      "extension": ".pdf",
+      "tendersID": 159113,
+      "active": true,
+      "updatedBy": "simnikiwe.nqulo@prasa.com",
+      "dateModified": "2026-06-12T16:02:34.8283017"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ECR\/RAIL\/ICT\/01\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "8 station street, Station building-East london-East london-5200",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Software Platforms & Applications",
+    "Networks, Telecoms & Connectivity"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "Network Engineering & Administration",
+    "IT Support & Managed Services"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "Network Infrastructure Equipment",
+    "Remote Monitoring Tools"
+  ],
+  "title": "APPOINTMENT OF ONE SERVICE PROVIDER FOR SUPPLY AND DELIVERY OF TICKETING MATERIAL (PITIX ROLLS, ITIX ROLLS AND RIBBONS) ON AS AND WHEN BASIS FOR A PERIOD OF 36 MONTHS AT PRASA IN THE EASTERN CAPE REGION (ECR)",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-13T12:00:00",
+  "reference": "ECR\/RAIL\/ICT\/01\/2026",
+  "provinceNames": [
+    "Eastern Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

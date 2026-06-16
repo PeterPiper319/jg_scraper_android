@@ -1,0 +1,118 @@
+{
+  "id": 158890,
+  "tender_No": "CPSC-RFI-071-2026",
+  "description": "Request for Information for the appointment of specialised service providers for sanitary services in six provinces",
+  "category": "Services: General",
+  "type": "Request for Information",
+  "organ_of_State": "Department of Defence (DOD)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-02T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Witch-Hazel Eco-Park 349",
+  "surburb": "ECO PARK, CENTURION",
+  "town": "Pretoria",
+  "code": "0140",
+  "conditions": "PROVIDERS ARE TO CONTACT WARRANT OFFICER CLASS 1 S.E. LENNOX AT 012 649 6693 FOR ANY TECHNICAL INFORMATION",
+  "contactPerson": "CAPTAIN MMANTWA MMEKWA",
+  "email": "MMANTWA.MMEKWA@DOD.MIL.ZA",
+  "telephone": "012-649-6642",
+  "fax": "N\/A",
+  "username": "mmantwa.mmekwa@dod.mil.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Multiple Provinces",
+  "categoriesID": 61,
+  "departmentsID": 90,
+  "departments": {
+    "departmentsID": 90,
+    "name": "Defence"
+  },
+  "department": "Defence",
+  "categories": {
+    "categoriesID": 61,
+    "name": "Services: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "fe889c1c-63d6-4d07-b117-c3c93310e72e",
+      "fileName": "CPSC-RFI-071-2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158890,
+      "active": true,
+      "updatedBy": "mmantwa.mmekwa@dod.mil.za",
+      "dateModified": "2026-06-11T17:56:10.7286928"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CPSC-RFI-071-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Witch-Hazel Eco-Park 349-ECO PARK, CENTURION-Pretoria-0140",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Wastewater & Sanitation Systems",
+    "Solid Waste, Recycling & Landfill Services"
+  ],
+  "skills": [
+    "Wastewater Management",
+    "Refuse Removal & Waste Logistics",
+    "Environmental Impact Assessment"
+  ],
+  "capabilities": [
+    "Waste Collection Fleet",
+    "ECA\/ECASA Registration",
+    "Environmental Permits"
+  ],
+  "title": "Specialised Service Providers for Sanitary Services in Six (6) Provinces",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": false,
+  "reference": "CPSC-RFI-071-2026",
+  "provinceNames": [
+    "Multiple Provinces"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

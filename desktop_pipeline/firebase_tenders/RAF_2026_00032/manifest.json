@@ -1,0 +1,103 @@
+{
+  "id": 159148,
+  "tender_No": "RAF\/2026\/00032",
+  "description": "The Road Accident Fund (RAF) is a schedule 3A public entity established in terms of the Road Accident Fund Act, 1996 (Act No. 56 of 1996), as amended. Its mandate is the provision of compulsory social insurance cover to all users of South African roads, to rehabilitate and compensate persons injured as a result of the negligent driving of motor vehicles in a timely and caring manner, and to actively promote the safe use of our roads.",
+  "category": "Supplies: Computer Equipment",
+  "type": "Request for Information",
+  "organ_of_State": "Road Accident Fund (RAF)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "22 JUNE 2026 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "420 Witch-Hazel Road, Eco Glades 2",
+  "surburb": "Eco Park",
+  "town": "Pretoria",
+  "code": "0046",
+  "conditions": "N\/A",
+  "contactPerson": "SCM - DEMAND MANAGEMENT",
+  "email": "BACsecretariat@raf.co.za",
+  "telephone": "012-621-1951",
+  "fax": "N\/A",
+  "username": "ayandad@raf.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 22,
+  "departmentsID": 565,
+  "departments": {
+    "departmentsID": 565,
+    "name": "Road Accident Fund"
+  },
+  "department": "Road Accident Fund",
+  "categories": {
+    "categoriesID": 22,
+    "name": "Supplies: Computer Equipment"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e5cbd691-ea78-4fef-85cb-74341ee2541b",
+      "fileName": "RFI - Rental of End User Equipment.pdf",
+      "extension": ".pdf",
+      "tendersID": 159148,
+      "active": true,
+      "updatedBy": "ayandad@raf.co.za",
+      "dateModified": "2026-06-12T22:34:03.9756755"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RAF\/2026\/00032",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "420 Witch-Hazel Road, Eco Glades 2-Eco Park-Pretoria-0046",
+  "document_type": "RFI",
+  "tenderAdvertType": "rfi",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Hardware Supply & End-user Computing",
+    "Networks, Telecoms & Connectivity"
+  ],
+  "skills": [
+    "IT Support & Managed Services",
+    "Network Engineering & Administration",
+    "Hardware Supply & End-user Computing"
+  ],
+  "capabilities": [
+    "High-Performance Server Hardware",
+    "Network Infrastructure Equipment",
+    "Remote Monitoring Tools"
+  ],
+  "title": "REQUEST FOR INFORMATION – RENTAL OF END-USER EQUIPMENT (LAPTOPS & MONITOR) ON A PAY-AS-YOU-USE MODEL FOR A PERIOD OF 5 YEARS",
+  "isCompulsoryBriefing": false,
+  "closingDate": "22 JUNE 2026 11:00 AM",
+  "reference": "RAF\/2026\/00032"
+}

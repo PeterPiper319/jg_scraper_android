@@ -1,0 +1,123 @@
+{
+  "id": 158780,
+  "tender_No": "RFQ 03\/06\/2026",
+  "description": "SUPPLY, DELIVERY AND INSTALLATION OF CURTAINS & BLINDS AT MPILA CAMP(HiP) OF EZEMVELO KZN WILDLIFE.",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "Ezemvelo KZN Wildlife",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "23 June 2026 11:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": "2026-06-18T14:30:00",
+  "briefingVenue": "Mpila Camp, Hluhluwe Imfolozi Park",
+  "streetname": "MPILA CAMP",
+  "surburb": "HLUHLUWE IMFOLOZI PARK",
+  "town": "Hluhluwe Imfolozi Park",
+  "code": "3960",
+  "conditions": "It is the bidder's responsibility to constantly check for any updates or changes to this RFQ, any changes or updates will be made on the e-tender portal.",
+  "contactPerson": "Mfundo Shezi",
+  "email": "shezim@kznwildlife.com",
+  "telephone": "033-845-1631",
+  "fax": "N\/A",
+  "username": "sitholes@kznwildlife.com",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 86,
+  "departmentsID": 310,
+  "departments": {
+    "departmentsID": 310,
+    "name": "Kwa-Zulu Natal - Ezemvelo KwaZulu-Natal Wildlife"
+  },
+  "department": "Kwa-Zulu Natal - Ezemvelo KwaZulu-Natal Wildlife",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "458501a9-6596-45e0-88a1-1d027570452c",
+      "fileName": "SUPPLY, DELIVERY AND INSTALLATION OF CURTAINS & BLINDS AT MPILA CAMP(HiP) OF EZEMVELO KZN WILDLIFE..pdf",
+      "extension": ".pdf",
+      "tendersID": 158780,
+      "active": true,
+      "updatedBy": "sitholes@kznwildlife.com",
+      "dateModified": "2026-06-11T08:42:41.0129497"
+    },
+    {
+      "supportDocumentID": "355e9106-a549-47e3-8678-5b24aa5f97e8",
+      "fileName": "2 ANNEXURE 1 MPILA 5 BED CHALET SPECIFICATION.pdf",
+      "extension": ".pdf",
+      "tendersID": 158780,
+      "active": true,
+      "updatedBy": "sitholes@kznwildlife.com",
+      "dateModified": "2026-06-11T08:44:31.9950352"
+    },
+    {
+      "supportDocumentID": "45e2a859-d9de-433c-986a-8863f4df422a",
+      "fileName": "3 ANNEXURE 2 MPILA 7 BED COTTAGE SPECIFICATION.pdf",
+      "extension": ".pdf",
+      "tendersID": 158780,
+      "active": true,
+      "updatedBy": "sitholes@kznwildlife.com",
+      "dateModified": "2026-06-11T08:44:32.0383782"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ 03\/06\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "MPILA CAMP-HLUHLUWE IMFOLOZI PARK-Hluhluwe Imfolozi Park-3960",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "title": "SUPPLY, DELIVERY AND INSTALLATION OF CURTAINS & BLINDS AT MPILA CAMP(HiP) OF EZEMVELO KZN WILDLIFE",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "18 June 2026 14:30",
+  "closingDate": "23 June 2026 11:00",
+  "reference": "RFQ 03\/06\/2026",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

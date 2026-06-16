@@ -1,0 +1,117 @@
+{
+  "id": 158859,
+  "tender_No": "8\/2\/1\/550",
+  "description": "Abaqulusi Municipality invites service providers to submit a Bid for the supply and Delivery of Agriculture for LED Projects.",
+  "category": "Administrative and support activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Abaqulusi Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-22T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "CORNER OF HIGH AND MARK STREET",
+  "surburb": "VRYHEID",
+  "town": "VRYHEID",
+  "code": "3100",
+  "conditions": "N\/A",
+  "contactPerson": "LINDIWE NTSHANGASE",
+  "email": "lntshangase@abaqulusi.gov.za",
+  "telephone": "034-982-2133",
+  "fax": "034-980-9637",
+  "username": "pnxumalo@abaqulusi.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 92,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 44,
+  "departmentsID": 1,
+  "departments": {
+    "departmentsID": 1,
+    "name": "Abaqulusi Local Municipality"
+  },
+  "department": "Abaqulusi Local Municipality",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d2a75d69-2f58-44f1-ab76-4ae30a6cb703",
+      "fileName": "TENDER DOCUMENT FOR LED AGRICULTURE  PROJECTS 8-2-1-550.pdf",
+      "extension": ".pdf",
+      "tendersID": 158859,
+      "active": true,
+      "updatedBy": "pnxumalo@abaqulusi.gov.za",
+      "dateModified": "2026-06-11T15:17:18.2019443"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "8\/2\/1\/550",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "CORNER OF HIGH AND MARK STREET-VRYHEID-VRYHEID-3100",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Agriculture, Forestry & Fishing",
+  "industry_id": "agriculture",
+  "specializations": [
+    "Agricultural Equipment & Inputs",
+    "Crop Production & Irrigation",
+    "Agro-processing & Packaging"
+  ],
+  "skills": [
+    "Crop Production & Scaling",
+    "Irrigation Systems Management",
+    "Agro-Processing & Value Addition"
+  ],
+  "capabilities": [
+    "Tractors & Harvesting Machinery",
+    "Large-scale Irrigation Infrastructure",
+    "Global GAP Certification"
+  ],
+  "title": "SUPPLY AND DELIVERY OF AGRICULTURE FOR LED PROJECTS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-22T12:00:00",
+  "reference": "8\/2\/1\/550",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

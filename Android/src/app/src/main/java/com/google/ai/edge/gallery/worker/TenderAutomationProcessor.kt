@@ -80,9 +80,15 @@ class TenderAutomationProcessor @Inject constructor(
     try {
       val folder = fileManager.getTenderFolder(tenderId)
       if (!hasGemmaReadableDocuments(folder)) {
+        statusUpdater?.invoke("No readable source documents found. Syncing the existing tender package...")
         fileManager.clearTenderUploadedMarker(folder)
         firebaseSync.uploadTenderFolder(folder)
+        val synced = syncExistingManifestToFirestore(tenderId, folder, statusUpdater)
+        if (!synced) {
+          return false
+        }
         fileManager.markTenderUploaded(folder)
+        statusUpdater?.invoke("Existing tender package synced to Firebase and Firestore.")
         return true
       }
 
@@ -1078,6 +1084,21 @@ Return ONLY a valid JSON object matching the schema. Do not include markdown wra
       ?.filterNot { it.name.equals("support-documents.json", ignoreCase = true) }
       ?.any(::isGemmaReadableFile)
       ?: false
+  }
+
+  private suspend fun syncExistingManifestToFirestore(
+    tenderId: String,
+    folder: File,
+    statusUpdater: ((String) -> Unit)? = null,
+  ): Boolean {
+    val manifestFile = File(folder, "manifest.json")
+    if (!manifestFile.exists()) {
+      statusUpdater?.invoke("Sync failed: manifest.json is missing for $tenderId.")
+      return false
+    }
+
+    statusUpdater?.invoke("Syncing manifest to Firestore...")
+    return firebaseSync.syncToFirestore(tenderId, manifestFile.readText())
   }
 
   private fun extractTenderDocuments(files: List<File>): List<ExtractedTenderDocument> {

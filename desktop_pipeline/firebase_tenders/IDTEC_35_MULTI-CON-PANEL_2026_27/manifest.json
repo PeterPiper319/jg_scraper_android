@@ -1,0 +1,130 @@
+{
+  "id": 159117,
+  "tender_No": "IDTEC\/35\/MULTI-CON-PANEL\/2026\/27",
+  "description": "INVITATION TO BID FOR PARTICIPATION IN THE INDEPENDENT DEVELOPMENT TRUST (IDT) PANEL FOR MULTI-DISCIPLINARY FIRM OR CONSORTIUM OF PROFESSIONAL SERVICE PROVIDERS (PSPs) ",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Independent Development Trust",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-17T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "C\/O N2 & Bonza Bay Road, Beacon Bay,",
+  "surburb": "BEACON BAY",
+  "town": "EAST LONDON",
+  "code": "5241",
+  "conditions": "N\/A",
+  "contactPerson": "Zanele Madzidzela",
+  "email": "zanele@idt.org.za",
+  "telephone": "043-711-6000",
+  "fax": "N\/A",
+  "username": "MasixoleM@idt.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 86,
+  "departmentsID": 252,
+  "departments": {
+    "departmentsID": 252,
+    "name": "Independent Development Trust"
+  },
+  "department": "Independent Development Trust",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "aeaa531e-0b29-4a42-a351-5450299463b0",
+      "fileName": "BID DOCUMENT FOR ESTABLISHING MULTI-DISCIPLINARY PANEL OF PSP FOR 3 YEARS ).pdf",
+      "extension": ".pdf",
+      "tendersID": 159117,
+      "active": true,
+      "updatedBy": "MasixoleM@idt.org.za",
+      "dateModified": "2026-06-12T16:22:01.7650849"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "IDTEC\/35\/MULTI-CON-PANEL\/2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "C\/O N2 & Bonza Bay Road, Beacon Bay,-BEACON BAY-EAST LONDON-5241",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Structural Steel, Fencing & Paving",
+    "Electrical Building Services",
+    "Plumbing, Water & Sanitation"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Electrical Wiring & Installation",
+    "Plumbing & Drainage Systems",
+    "Structural Engineering",
+    "Project Management (PMBOK)",
+    "Health & Safety Management (OHS)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "Professional Indemnity Insurance",
+    "CIDB Grading Certification",
+    "NHBRC Registration",
+    "On-site Safety Equipment"
+  ],
+  "title": "INVITATION TO BID FOR PARTICIPATION IN THE INDEPENDENT DEVELOPMENT TRUST (IDT) PANEL FOR MULTI-DISCIPLINARY FIRM OR CONSORTIUM OF PROFESSIONAL SERVICE PROVIDERS (PSPs)",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-17T12:00:00",
+  "reference": "IDTEC\/35\/MULTI-CON-PANEL\/2026\/27",
+  "provinceNames": [
+    "Eastern Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

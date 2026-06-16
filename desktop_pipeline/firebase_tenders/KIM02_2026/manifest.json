@@ -1,0 +1,106 @@
+{
+  "id": 158932,
+  "tender_No": "KIM02-2026",
+  "description": "JAN KEMPDORP AMUNITION DEPOT:  Accessibility for persons with disabilities.",
+  "category": "Construction",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Public Works and Infrastructure",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "21-23 Market Street, Old Magistrate Office",
+  "surburb": "Kimberley",
+  "town": "Kimberley",
+  "code": "8301",
+  "conditions": "N\/A",
+  "contactPerson": "Ms G Aysen",
+  "email": "gail.aysen@dpw.gov.za",
+  "telephone": "053-838-5221",
+  "fax": "N\/A",
+  "username": "Gail.Aysen@dpw.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 27,
+  "departmentsID": 555,
+  "departments": {
+    "departmentsID": 555,
+    "name": "Public Works"
+  },
+  "department": "Public Works",
+  "categories": {
+    "categoriesID": 27,
+    "name": "Construction"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "b06a56b3-4f9f-49aa-9b27-81b9f050b134",
+      "fileName": "KIM02-2026.pdf",
+      "extension": ".pdf",
+      "tendersID": 158932,
+      "active": true,
+      "updatedBy": "Gail.Aysen@dpw.gov.za",
+      "dateModified": "2026-06-12T09:02:51.972555"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "KIM02-2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "21-23 Market Street, Old Magistrate Office-Kimberley-Kimberley-8301",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "CIDB Grading Certification"
+  ],
+  "title": "JAN KEMPDORP AMMUNITION DEPOT: ACCESSIBILITY FOR PERSONS WITH DISABILITIES",
+  "cidb_grading": "3GB",
+  "preference_points": "80\/20 or 90\/10",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "briefingDate": "12 June 2026 11h00",
+  "reference": "KIM02-2026"
+}

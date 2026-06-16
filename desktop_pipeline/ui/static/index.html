@@ -25,6 +25,9 @@
                 <button class="nav-btn" data-tab="batch">
                     <span class="btn-icon">📁</span> Batch Processing
                 </button>
+                <button class="nav-btn" data-tab="automation">
+                    <span class="btn-icon">⚡</span> Continuous Automation
+                </button>
                 <button class="nav-btn" data-tab="settings">
                     <span class="btn-icon">⚙️</span> Settings
                 </button>
@@ -143,8 +146,38 @@
                     <div class="input-group">
                         <input type="text" id="batch-root-path" placeholder="e.g. C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline" value="C:\Users\HFX\Desktop\Jillian Projects\jgs\desktop_pipeline">
                         <button id="btn-scan-batch" class="btn btn-secondary">Scan Directories</button>
+                        <button id="btn-list-firebase" class="btn btn-secondary">🔍 List Firebase Folders</button>
+                        <button id="btn-pull-firebase" class="btn btn-secondary" style="background-color:#f6821f; border-color:#f6821f; color:white;">☁️ Pull Firebase Storage</button>
                         <button id="btn-run-batch" class="btn btn-primary hidden">▶ Run Batch Enrichment</button>
                     </div>
+                </div>
+
+                <!-- Firebase Storage Pull Logs -->
+                <div class="card terminal-card hidden" id="firebase-log-card">
+                    <div class="card-header">
+                        <h3>Cloud Storage Sync Feed</h3>
+                        <span class="live-indicator">DOWNLOADING</span>
+                    </div>
+                    <div id="firebase-terminal-output" class="terminal" style="max-height: 200px;">
+                        <div class="terminal-line system">Waiting for execution request...</div>
+                    </div>
+                </div>
+
+                <div class="card hidden" id="firebase-list-card">
+                    <div class="card-header" style="justify-content: space-between; gap: 12px;">
+                        <h3>Firebase Tender Folders</h3>
+                        <button id="btn-download-firebase" class="btn btn-primary" disabled>☁️ Download Selected</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Tender ID</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="firebase-list-table-body"></tbody>
+                    </table>
                 </div>
 
                 <div class="card hidden" id="batch-list-card">
@@ -170,6 +203,29 @@
                         </thead>
                         <tbody id="batch-table-body"></tbody>
                     </table>
+                </div>
+            </section>
+
+            <!-- Automation Tab -->
+            <section id="tab-automation" class="tab-content">
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <div>
+                            <h3>⚡ Continuous Automation Pipeline</h3>
+                            <p class="card-desc">Automatically fetch, download, extract, and sync all tenders from Cloud Storage to Firestore in one continuous loop.</p>
+                        </div>
+                        <button id="btn-start-automation" class="btn btn-primary" style="font-size: 16px; padding: 12px 24px; background-color: #28a745; border-color: #28a745;">▶ Start Automation Cycle</button>
+                    </div>
+                </div>
+
+                <div class="card terminal-card hidden" id="automation-log-card">
+                    <div class="card-header">
+                        <h3>Automation Activity Stream</h3>
+                        <span class="live-indicator">LIVE FEED</span>
+                    </div>
+                    <div id="automation-terminal-output" class="terminal" style="height: 400px;">
+                        <div class="terminal-line system">Ready to launch automation loop...</div>
+                    </div>
                 </div>
             </section>
 

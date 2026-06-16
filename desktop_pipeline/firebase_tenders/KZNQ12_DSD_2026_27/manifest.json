@@ -1,0 +1,117 @@
+{
+  "id": 159064,
+  "tender_No": "KZNQ12\/DSD\/2026\/27",
+  "description": "Request for the provision of capacity building interventions for funded non-profit organizations for 2026\/2027 financial year-financial management and records management training",
+  "category": "Education",
+  "type": "Request for Quotation",
+  "organ_of_State": "KZN Department of Social Development",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-30T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "208 Hoosen Haffejje",
+  "surburb": "Department of Social Development",
+  "town": "Pietermaritzburg",
+  "code": "3201",
+  "conditions": "N\/A",
+  "contactPerson": "MS S.P SHOBA",
+  "email": "samukelisiwe.shoba@kznsocdev.gov.za",
+  "telephone": "082-741-7703",
+  "fax": "N\/A",
+  "username": "samukelisiwe.shoba@kzndsd.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 4,
+  "departmentsID": 321,
+  "departments": {
+    "departmentsID": 321,
+    "name": "Kwazulu Natal - Social Development"
+  },
+  "department": "Kwazulu Natal - Social Development",
+  "categories": {
+    "categoriesID": 4,
+    "name": "Education"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a2d3be7f-7b8c-4e7a-a29c-cb1a0ca26e34",
+      "fileName": "QUOTATION DOCUMENT - FINANCIAL AND RECORDS MANAGEMENT TRAINING.pdf",
+      "extension": ".pdf",
+      "tendersID": 159064,
+      "active": true,
+      "updatedBy": "samukelisiwe.shoba@kzndsd.gov.za",
+      "dateModified": "2026-06-12T14:38:20.0338983"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "KZNQ12\/DSD\/2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "208 Hoosen Haffejje-Department of Social Development-Pietermaritzburg-3201",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "Audit, Accounting & Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Supply and Delivery of Capacity Building Interventions for Funded Non-Profit Organizations for 2026\/2027 Financial Year-Financial Management and Records Management Training",
+  "min_functionality_threshold": 60,
+  "isCompulsoryBriefing": false,
+  "reference": "KZNQ12\/DSD\/2026\/27",
+  "provinceNames": [
+    "KwaZulu-Natal"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

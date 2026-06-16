@@ -1,0 +1,123 @@
+{
+  "id": 158974,
+  "tender_No": "RFQ\/SASSETA\/2526122\/3",
+  "description": "Procurement of a service provider for the supply, installation, and maintenance of floor standing bottleless water dispensers from date of appointment to 31 March 2028 at SASSETA",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "SASSETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-25T15:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "74 Waterfall Drive Corporate Campus",
+  "surburb": "Midrand",
+  "town": "Midrand",
+  "code": "2090",
+  "conditions": "N\/A",
+  "contactPerson": "Karabo Mokone",
+  "email": "kmokone@sasseta.org.za",
+  "telephone": "000-000-0000",
+  "fax": "000-000-0000",
+  "username": "kmokone@SASSETA.ORG.ZA",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 754,
+  "departments": {
+    "departmentsID": 754,
+    "name": "Safety and Security Sector Education and Training Authority (Sasseta)"
+  },
+  "department": "Safety and Security Sector Education and Training Authority (Sasseta)",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "466942f8-c686-44f6-994e-0b199ad4f78b",
+      "fileName": "RFQ document - Water Dispensers.pdf",
+      "extension": ".pdf",
+      "tendersID": 158974,
+      "active": true,
+      "updatedBy": "kmokone@SASSETA.ORG.ZA",
+      "dateModified": "2026-06-12T10:21:14.8443827"
+    },
+    {
+      "supportDocumentID": "fad67007-4e5b-4ef3-b185-2018682d7530",
+      "fileName": "Annexure A GCC.pdf",
+      "extension": ".pdf",
+      "tendersID": 158974,
+      "active": true,
+      "updatedBy": "kmokone@SASSETA.ORG.ZA",
+      "dateModified": "2026-06-12T10:21:14.9176689"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ\/SASSETA\/2526122\/3",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "74 Waterfall Drive Corporate Campus-Midrand-Midrand-2090",
+  "document_type": "RFQ",
+  "tenderAdvertType": "rfq",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Water Treatment & Purification",
+    "Wastewater & Sanitation Systems"
+  ],
+  "skills": [
+    "Water Purification & Treatment",
+    "Wastewater Management"
+  ],
+  "capabilities": [
+    "Water Treatment Plants",
+    "Waste Collection Fleet"
+  ],
+  "title": "Appointment of a service provider for the supply, installation, and maintenance of floor standing bottleless water dispensers",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-25T15:00:00",
+  "reference": "RFQ\/SASSETA\/2526122\/3",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

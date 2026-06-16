@@ -1,0 +1,94 @@
+{
+  "id": 159012,
+  "tender_No": "27195\/TNP\/2026-27 ",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR THE REPLACEMENT OF CUPBOARDS AND CARPENTRY WORK AT THE TSITSIKAMMA SECTION OF GARDEN ROUTE NATIONAL PARK FOR A PERIOD OF 24 MONTHS",
+  "category": "Services: Building",
+  "type": "Request for Quotation",
+  "organ_of_State": "South African National Parks",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-29T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-23T10:00:00",
+  "briefingVenue": "Technical Services Stores, Stormsriver Mouth",
+  "streetname": "Stormsriver Mouth Camp",
+  "surburb": "Stormsriver Mouth",
+  "town": "Tsitsikamma",
+  "code": "6308",
+  "conditions": "N\/A",
+  "contactPerson": "Meagan van Neel",
+  "email": "meagan.duplessis@sanparks.org",
+  "telephone": "042-281-1607",
+  "fax": "N\/A",
+  "username": "Meagan.DuPlessis@sanparks.org",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 90,
+  "provincesID": 5,
+  "provinces": {
+    "provincesID": 5,
+    "name": "Eastern Cape"
+  },
+  "province": "Eastern Cape",
+  "categoriesID": 78,
+  "departmentsID": 617,
+  "departments": {
+    "departmentsID": 617,
+    "name": "South African National Parks"
+  },
+  "department": "South African National Parks",
+  "categories": {
+    "categoriesID": 78,
+    "name": "Services: Building"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a26b79ee-6b3f-4034-8cc0-4c051b029a2d",
+      "fileName": "RFQ - 27195-TNP-2026-27.pdf",
+      "extension": ".pdf",
+      "tendersID": 159012,
+      "active": true,
+      "updatedBy": "Meagan.DuPlessis@sanparks.org",
+      "dateModified": "2026-06-12T11:51:55.488812"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "27195\/TNP\/2026-27 ",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Stormsriver Mouth Camp-Stormsriver Mouth-Tsitsikamma-6308",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Strategic Planning"
+  ],
+  "capabilities": [
+    "Professional Indemnity Insurance",
+    "Proprietary Assessment Tools"
+  ]
+}

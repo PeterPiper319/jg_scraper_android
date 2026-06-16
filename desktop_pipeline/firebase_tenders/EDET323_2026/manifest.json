@@ -1,0 +1,105 @@
+{
+  "id": 159120,
+  "tender_No": "EDet 82G\/2060",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR PROCUREMENT OF SOPHOS FIREWALL DEVICE AND LICENSE FOR FINANCIAL YEAR 2026\/2027",
+  "category": "Computer programming, consultancy and related activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Economic Development, Environment and Tourism",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-21T00:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "19 Biccard Street",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Ms Makhubele VM",
+  "email": "makhubelevm@ledet.gov.za",
+  "telephone": "015-293-8852",
+  "fax": "N\/A",
+  "username": "MakhubeleVM@ledet.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 73,
+  "departmentsID": 346,
+  "departments": {
+    "departmentsID": 346,
+    "name": "Limpopo - Economic Development Environment & Tourism"
+  },
+  "department": "Limpopo - Economic Development Environment & Tourism",
+  "categories": {
+    "categoriesID": 73,
+    "name": "Computer programming, consultancy and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "e1fb0a35-9533-4ba4-8977-2859e9778a11",
+      "fileName": "BID DOCUMENT EDET 323.pdf",
+      "extension": ".pdf",
+      "tendersID": 159120,
+      "active": true,
+      "updatedBy": "MakhubeleVM@ledet.gov.za",
+      "dateModified": "2026-06-12T16:36:26.1141114"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "EDet 82G\/2060",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "19 Biccard Street-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "Appointment of a Service Provider for Procurement of Sophos Firewall Device and License for Financial Year 2026\/2027",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-21T00:00:00",
+  "reference": "EDet 82G\/2060",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

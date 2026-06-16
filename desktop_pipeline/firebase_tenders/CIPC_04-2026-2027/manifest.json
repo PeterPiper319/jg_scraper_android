@@ -1,0 +1,122 @@
+{
+  "id": 159048,
+  "tender_No": "CIPC 04-2026-2027",
+  "description": "APPOINTMENT OF AN ICT SERVICES PROVIDER TO PROVIDE SD-WAN DEDICATED TWO (2) LINKS FIBER TO FIBER ACTIVE-ACTIVE FAILOVER INTERNET SERVICES FOR 2600Mbps TERMINATING ON TWO SEPARATE DIFERENT POPS. UNCONTENDED BANDWITH (1:1), UNCAPPED, UNSHARPED, UNTHROTTLED, DIA, VOICE, L2 & P2P, SERVICE OPTION, SYNMMETRICAL BANDWITH, 99.5 PERCENT UPTIME AND 24\/7\/365 SUPPORT",
+  "category": "Information and communication",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Companies and Intellectual Property Registration Office",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "14 July 2026, 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-30T11:00:00",
+  "briefingVenue": "Block F, DTI Campus, 77 Meintjies Street, Sunnyside, Pretoria",
+  "streetname": "77 Meintjes Street, Sunnyside, The DTI Campus",
+  "surburb": "Sunnyside",
+  "town": "Tshwane (Pretoria)",
+  "code": "0001",
+  "conditions": "N\/A",
+  "contactPerson": "Rhulane Baloyi",
+  "email": "rbaloyi@cipc.co.za",
+  "telephone": "071-877-3445",
+  "fax": "N\/A",
+  "username": "RBaloyi@cipc.co.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "Gauteng",
+  "categoriesID": 40,
+  "departmentsID": 73,
+  "departments": {
+    "departmentsID": 73,
+    "name": "Companies and Intellectual Property Commission"
+  },
+  "department": "Companies and Intellectual Property Commission",
+  "categories": {
+    "categoriesID": 40,
+    "name": "Information and communication"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "37dbaf55-c595-4275-b6f2-9e9fa66ff6b1",
+      "fileName": "CIPC 04-2026-2027_r.pdf",
+      "extension": ".pdf",
+      "tendersID": 159048,
+      "active": true,
+      "updatedBy": "RBaloyi@cipc.co.za",
+      "dateModified": "2026-06-12T16:25:03.2655091"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CIPC 04-2026-2027",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "77 Meintjes Street, Sunnyside, The DTI Campus-Sunnyside-Tshwane (Pretoria)-0001",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Networks, Telecoms & Connectivity",
+    "Software Platforms & Applications"
+  ],
+  "skills": [
+    "Network Engineering & Administration",
+    "Software Development (Web\/Mobile)",
+    "Telecommunications Infrastructure",
+    "Systems Integration & API Development"
+  ],
+  "capabilities": [
+    "Network Infrastructure Equipment",
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware",
+    "Remote Monitoring Tools"
+  ],
+  "title": "CIPC SD-WAN",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": true,
+  "briefingDate": "30 June 2026, 11H00 AM",
+  "closingDate": "14 July 2026, 11:00 AM",
+  "reference": "CIPC 04-2026-2027",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

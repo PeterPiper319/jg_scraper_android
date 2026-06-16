@@ -1,0 +1,135 @@
+{
+  "id": 158925,
+  "tender_No": "283Q\/2025\/26",
+  "description": "TERM TENDER FOR ROAD RESURFACING AND ANCILLARY WORKS",
+  "category": "Services: Civil",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "CITY OF CAPE TOWN",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-22T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": "2026-06-29T10:00:00",
+  "briefingVenue": "Online: Teams (Link available under T1.1 Tender Notice and Invitation to Tender)",
+  "streetname": "12 Hertzog Boulevard, Civic Centre",
+  "surburb": "Cape Town",
+  "town": "Cape Town",
+  "code": "8000",
+  "conditions": "Tenderers must have a CIDB contractor grading designation of 3CE or higher for Category A and 4CE or higher for\r\nCategory B.\r\nTenderers must be registered on Supplier Databases as described in the tender conditions\r\nPreferences are offered to tenderers who tender in accordance with the Preferential Procurement Regulations and\r\nthe City of Cape Town’s Supply Chain Management Policy (SCM Policy). Furthermore, in terms of these\r\nRegulations and the SCM Policy, tenderers are required to meet the HDI and\/or RDP specific goals",
+  "contactPerson": "SCM Tender 15",
+  "email": "SCM.Tenders15@capetown.gov.za",
+  "telephone": "021-400-6196",
+  "fax": "N\/A",
+  "username": "Wandile.Papani@capetown.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": false,
+  "validity": 84,
+  "provincesID": 3,
+  "provinces": {
+    "provincesID": 3,
+    "name": "Western Cape"
+  },
+  "province": "Western Cape",
+  "categoriesID": 49,
+  "departmentsID": 59,
+  "departments": {
+    "departmentsID": 59,
+    "name": "City of Cape Town"
+  },
+  "department": "City of Cape Town",
+  "categories": {
+    "categoriesID": 49,
+    "name": "Services: Civil"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "a54043f3-6fee-461f-a9ef-2a4c261fbf21",
+      "fileName": "Electronic BOQ_283Q-2025-26_SoR_AllRegions_Cat A&B.xlsm",
+      "extension": ".xlsm",
+      "tendersID": 158925,
+      "active": true,
+      "updatedBy": "Wandile.Papani@capetown.gov.za",
+      "dateModified": "2026-06-12T14:12:34.0760495"
+    },
+    {
+      "supportDocumentID": "bbd7756b-2ae9-4a15-9366-cd4c367232ba",
+      "fileName": "283Q-2025-26 -Tender Document.pdf",
+      "extension": ".pdf",
+      "tendersID": 158925,
+      "active": true,
+      "updatedBy": "Wandile.Papani@capetown.gov.za",
+      "dateModified": "2026-06-12T08:37:17.7626667"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "283Q\/2025\/26",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "12 Hertzog Boulevard, Civic Centre-Cape Town-Cape Town-8000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Construction & Civil Engineering",
+  "industry_id": "construction_civil",
+  "specializations": [
+    "General Building Works",
+    "Civil Works, Roads & Stormwater",
+    "Structural Steel, Fencing & Paving"
+  ],
+  "skills": [
+    "General Building Construction",
+    "Civil Engineering & Infrastructure",
+    "Road Construction & Maintenance",
+    "Structural Engineering",
+    "Project Management (PMBOK)"
+  ],
+  "capabilities": [
+    "Earthmoving Equipment (TLBs, Excavators)",
+    "Scaffolding & Access Platforms",
+    "Concrete Mixing & Pouring Equipment",
+    "CIDB Grading Certification",
+    "NHBRC Registration"
+  ],
+  "title": "TERM TENDER FOR ROAD RESURFACING AND ANCILLARY WORKS",
+  "cidb_grading": "1Not found",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "briefingDate": "2026-06-29T10:00:00",
+  "closingDate": "2026-07-22T10:00:00",
+  "reference": "283Q\/2025\/26",
+  "provinceNames": [
+    "Western Cape"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

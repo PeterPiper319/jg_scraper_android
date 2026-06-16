@@ -1,0 +1,105 @@
+{
+  "id": 158910,
+  "tender_No": "CGE-T-05-2026-27-WAN",
+  "description": "PROVISSION OF WIDE AREA NETWORK(WAN) SERVICES WITH INTERNET ACCESS FOR 36 MONTHS",
+  "category": "Information service activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Commission for Gender Equality (CGE)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-03T11:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "2 Kotze Street",
+  "surburb": "Braamfontein",
+  "town": "Johannesburg",
+  "code": "2000",
+  "conditions": "N\/A",
+  "contactPerson": "Shadrack Mafutsa",
+  "email": "shadrack@cge.org.za",
+  "telephone": "011-403-7182",
+  "fax": "N\/A",
+  "username": "shadrack@cge.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 120,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "Gauteng",
+  "categoriesID": 75,
+  "departmentsID": 764,
+  "departments": {
+    "departmentsID": 764,
+    "name": "Commission for Gender Equality"
+  },
+  "department": "Commission for Gender Equality",
+  "categories": {
+    "categoriesID": 75,
+    "name": "Information service activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "82db8a13-ca7d-4101-a57c-c0cdf35cabe4",
+      "fileName": "CGE-T-05-2026-27-WAN with Internet Access.pdf",
+      "extension": ".pdf",
+      "tendersID": 158910,
+      "active": true,
+      "updatedBy": "shadrack@cge.org.za",
+      "dateModified": "2026-06-11T22:05:06.9191684"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "CGE-T-05-2026-27-WAN",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "2 Kotze Street-Braamfontein-Johannesburg-2000",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "WAN with Internet Access",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 0,
+  "isCompulsoryBriefing": false,
+  "reference": "CGE-T-05-2026-27-WAN",
+  "provinceNames": [
+    "Gauteng"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

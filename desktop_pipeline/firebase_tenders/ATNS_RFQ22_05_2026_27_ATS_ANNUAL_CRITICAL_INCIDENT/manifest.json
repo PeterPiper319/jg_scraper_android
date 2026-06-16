@@ -1,0 +1,105 @@
+{
+  "id": 159037,
+  "tender_No": "ATNS\/RFQ22\/05\/2026\/27\/ATS_ANNUAL",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR ANNUAL CRITICAL INCIDENT STRESS MANAGEMENT TRAINING FOR A PERIOD OF THREE (3) YEARS, \r\nINCLUDING THREE TRAINING SESSIONS OVER THE THREE YEARS, AND A ONCE-OFF TWO-DAY HUMAN FACTORS (HF) TRAINING ",
+  "category": "Services: Professional",
+  "type": "Request for Quotation",
+  "organ_of_State": "Air Traffic and Navigation Services SOC Limited (ATNS)",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "South Boulevard Road",
+  "surburb": "Bruma",
+  "town": "Bedfordview",
+  "code": "2198",
+  "conditions": "N\/A",
+  "contactPerson": "BRIGHT BLESSIE",
+  "email": "BrightB@atns.co.za",
+  "telephone": "011-607-1497",
+  "fax": "N\/A",
+  "username": "charless@atns.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 86,
+  "departmentsID": 9,
+  "departments": {
+    "departmentsID": 9,
+    "name": "Air Traffic and Navigation Services Company Limited"
+  },
+  "department": "Air Traffic and Navigation Services Company Limited",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": true,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "44e8fecf-4060-403b-bfce-e2b2ce7080e1",
+      "fileName": "Annual Critical Incident Stress Management Training.pdf",
+      "extension": ".pdf",
+      "tendersID": 159037,
+      "active": true,
+      "updatedBy": "BrightB@atns.co.za",
+      "dateModified": "2026-06-12T13:11:33.0938299"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "ATNS\/RFQ22\/05\/2026\/27\/ATS_ANNUAL",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "South Boulevard Road-Bruma-Bedfordview-2198",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "title": "APPOINTMENT OF A SERVICE PROVIDER FOR ANNUAL CRITICAL INCIDENT STRESS MANAGEMENT TRAINING FOR A PERIOD OF THREE (3) YEARS, INCLUDING THREE TRAINING SESSIONS OVER THE THREE YEARS, AND A ONCE-OFF TWO-DAY HUMAN FACTORS (HF) TRAINING",
+  "preference_points": "80\/20 or 90\/10",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-06-26T11:00:00",
+  "reference": "ATNS\/RFQ22\/05\/2026\/27\/ATS_ANNUAL",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin",
+    "CIPC Good Standing"
+  ]
+}

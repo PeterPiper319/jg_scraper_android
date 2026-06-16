@@ -1,0 +1,121 @@
+{
+  "id": 158845,
+  "tender_No": "EDUMPRO02\/2026\/27",
+  "description": "Integrated Vending, Revenue Enhancement & STS TID Management Solution",
+  "category": "Financial service activities, except insurance and pension funding",
+  "type": "Request for Proposal",
+  "organ_of_State": "eDumbe Municipality",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-29T12:00:00",
+  "date_Published": "2026-06-11T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "10 Hoog Street",
+  "surburb": "Paulpietersburg",
+  "town": "Paulpietersburg",
+  "code": "3180",
+  "conditions": "NONE",
+  "contactPerson": "Zandile Nkambule",
+  "email": "nkambulep@edumbe.gov.za",
+  "telephone": "034-995-1650",
+  "fax": "N\/A",
+  "username": "nkambulep@edumbe.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 93,
+  "provincesID": 4,
+  "provinces": {
+    "provincesID": 4,
+    "name": "KwaZulu-Natal"
+  },
+  "province": "KwaZulu-Natal",
+  "categoriesID": 81,
+  "departmentsID": 148,
+  "departments": {
+    "departmentsID": 148,
+    "name": "eDumbe Local Municipality"
+  },
+  "department": "eDumbe Local Municipality",
+  "categories": {
+    "categoriesID": 81,
+    "name": "Financial service activities, except insurance and pension funding"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "bd6128c3-d603-46fb-b41c-0aab76d14037",
+      "fileName": "Revenue Enhancement Tender Document..pdf",
+      "extension": ".pdf",
+      "tendersID": 158845,
+      "active": true,
+      "updatedBy": "nkambulep@edumbe.gov.za",
+      "dateModified": "2026-06-12T14:18:12.0636189"
+    },
+    {
+      "supportDocumentID": "9223fa03-2ee6-4a31-b45a-e525ffd3962d",
+      "fileName": "Revenue enhancement advert.pdf",
+      "extension": ".pdf",
+      "tendersID": 158845,
+      "active": true,
+      "updatedBy": "nkambulep@edumbe.gov.za",
+      "dateModified": "2026-06-11T14:27:20.1110734"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "EDUMPRO02\/2026\/27",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "10 Hoog Street-Paulpietersburg-Paulpietersburg-3180",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "specializations": [
+    "Management & Strategy Consulting",
+    "General Business Advisory"
+  ],
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting",
+    "Legal Advisory & Litigation"
+  ],
+  "capabilities": [
+    "Professional Body Membership (SAICA\/SAIPA)",
+    "Professional Indemnity Insurance"
+  ],
+  "title": "Revenue Enhancement Tender",
+  "isCompulsoryBriefing": false,
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

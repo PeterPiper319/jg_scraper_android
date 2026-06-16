@@ -1,0 +1,109 @@
+{
+  "id": 159121,
+  "tender_No": "EDet 324",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER FOR PROCUREMENT OF AD MANAGER PLUS SOFTWARE  LICENSE FOR FINANCIAL YEAR 2026\/2027",
+  "category": "Computer programming, consultancy and related activities",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of Economic Development, Environment and Tourism",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-21T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "19 Biccard Street",
+  "surburb": "Polokwane",
+  "town": "Polokwane",
+  "code": "0699",
+  "conditions": "N\/A",
+  "contactPerson": "Ms Makhubele VM",
+  "email": "makhubelevm@ledet.gov.za",
+  "telephone": "015-293-8852",
+  "fax": "N\/A",
+  "username": "MakhubeleVM@ledet.gov.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 180,
+  "provincesID": 6,
+  "provinces": {
+    "provincesID": 6,
+    "name": "Limpopo"
+  },
+  "province": "Limpopo",
+  "categoriesID": 73,
+  "departmentsID": 346,
+  "departments": {
+    "departmentsID": 346,
+    "name": "Limpopo - Economic Development Environment & Tourism"
+  },
+  "department": "Limpopo - Economic Development Environment & Tourism",
+  "categories": {
+    "categoriesID": 73,
+    "name": "Computer programming, consultancy and related activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "00d95676-6a41-43d2-9fe6-cc78e75465e1",
+      "fileName": "BID DOCUMENT EDET 324.pdf",
+      "extension": ".pdf",
+      "tendersID": 159121,
+      "active": true,
+      "updatedBy": "MakhubeleVM@ledet.gov.za",
+      "dateModified": "2026-06-12T16:39:48.1266341"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "EDet 324",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "19 Biccard Street-Polokwane-Polokwane-0699",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Professional & Consulting Services",
+  "industry_id": "consulting_prof",
+  "skills": [
+    "Management Consulting",
+    "Financial Auditing & Accounting"
+  ],
+  "title": "Appointment of a Service Provider for Procurement of AD Manager Plus Software License for Financial Year 2026\/2027",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "2026-07-21T11:00:00",
+  "reference": "EDet 324",
+  "provinceNames": [
+    "Limpopo"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

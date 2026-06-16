@@ -1,0 +1,118 @@
+{
+  "id": 158929,
+  "tender_No": "COGHSTA  023",
+  "description": "Appointment of one or more professional service providers into a panel for the rendering of legal conveyancing services for the department in all the municipalities of all the districts of Mpumalanga province for a period of three (03) years as- and- when- required.",
+  "category": "Services: Professional",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Department of CoGHSTA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-07-10T12:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": "Valencia Community Hall",
+  "streetname": "Riversisde Government Complex, Building no: 9, Government Boulevard",
+  "surburb": "Riverside",
+  "town": "Mbombela",
+  "code": "1200",
+  "conditions": "N\/A",
+  "contactPerson": "Ms. L Van Der Walt",
+  "email": "lydwalt@mpg.gov.za",
+  "telephone": "013-766-6584",
+  "fax": "N\/A",
+  "username": "tlkhathide@mpg.gov.za",
+  "briefingSession": true,
+  "briefingCompulsory": true,
+  "validity": 120,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 86,
+  "departmentsID": 875,
+  "departments": {
+    "departmentsID": 875,
+    "name": "Mpumalanga - Co-operative Governance, Human Settlements, and Traditional Affairs"
+  },
+  "department": "Mpumalanga - Co-operative Governance, Human Settlements, and Traditional Affairs",
+  "categories": {
+    "categoriesID": 86,
+    "name": "Services: Professional"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "63fc8634-1d3e-4d56-94ef-9128c6d6a766",
+      "fileName": "COGHSTA  023.pdf",
+      "extension": ".pdf",
+      "tendersID": 158929,
+      "active": true,
+      "updatedBy": "tlkhathide@mpg.gov.za",
+      "dateModified": "2026-06-12T08:57:25.5179121"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "COGHSTA  023",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Riversisde Government Complex, Building no: 9, Government Boulevard-Riverside-Mbombela-1200",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Legal & Regulatory Services",
+  "industry_id": "legal_regulatory",
+  "specializations": [
+    "Corporate, Commercial & Contract Law",
+    "Conveyancing"
+  ],
+  "skills": [
+    "Contract Drafting & Review",
+    "Conveyancing",
+    "Property Law"
+  ],
+  "capabilities": [
+    "Legal Practice Council Registration",
+    "Secure Digital Signatures (e-Law)"
+  ],
+  "title": "APPOINTMENT OF ONE OR MORE PROFESSIONAL SERVICE PROVIDERS INTO A PANEL FOR THE RENDERING OF LEGAL CONVEYANCING SERVICES FOR THE DEPARTMENT IN ALL THE MUNICIPALITIES OF ALL THE DISTRICTS OF MPUMALANGA PROVINCE FOR A PERIOD OF THREE (03) YEARS AS- AND- WHEN- REQUIRED.",
+  "preference_points": "80\/20",
+  "min_functionality_threshold": 70,
+  "isCompulsoryBriefing": true,
+  "reference": "COGHSTA  023",
+  "provinceNames": [
+    "Mpumalanga"
+  ],
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

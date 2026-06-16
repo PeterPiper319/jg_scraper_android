@@ -1,0 +1,113 @@
+{
+  "id": 159063,
+  "tender_No": "RFQ08 2026-2027",
+  "description": "APPOINTMENT OF A SERVICE PROVIDER TO SUPPLY AND DELIVER TWO (02) TABLETS. ",
+  "category": "Office administrative, office support and other business support activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "National Film and Video Foundation of South Africa",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-26T11:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "87 Central Steet",
+  "surburb": "Houghton",
+  "town": "Johannesburg",
+  "code": "2198",
+  "conditions": "N\/A",
+  "contactPerson": "Akhona Mgobo",
+  "email": "nfvftenders@nfvf.co.za",
+  "telephone": "011-483-4880",
+  "fax": "N\/A",
+  "username": "akhonam@nfvf.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 60,
+  "provincesID": 8,
+  "provinces": {
+    "provincesID": 8,
+    "name": "Gauteng"
+  },
+  "province": "Gauteng",
+  "categoriesID": 68,
+  "departmentsID": 456,
+  "departments": {
+    "departmentsID": 456,
+    "name": "National Film and Video Foundation of South Africa"
+  },
+  "department": "National Film and Video Foundation of South Africa",
+  "categories": {
+    "categoriesID": 68,
+    "name": "Office administrative, office support and other business support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "374073a0-b0dd-4893-9efb-e1f8446f7b29",
+      "fileName": "RFQ08 2026-2027 SUPPLY AND DELIVERY OF TWO TABLETS..pdf",
+      "extension": ".pdf",
+      "tendersID": 159063,
+      "active": true,
+      "updatedBy": "akhonam@nfvf.co.za",
+      "dateModified": "2026-06-12T14:37:53.4137499"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ08 2026-2027",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "87 Central Steet-Houghton-Johannesburg-2198",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Information Technology & Telecommunications",
+  "industry_id": "it_telecom",
+  "specializations": [
+    "Hardware Supply & End-user Computing",
+    "Software Platforms & Applications"
+  ],
+  "skills": [
+    "Software Development (Web\/Mobile)",
+    "IT Support & Managed Services"
+  ],
+  "capabilities": [
+    "Software Licenses & Subscriptions",
+    "High-Performance Server Hardware"
+  ],
+  "title": "SUPPLY AND DELIVERY OF TWO TABLETS",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "reference": "RFQ08 2026-2027",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": 159034,
+  "tender_No": "E1705GXMPKRI",
+  "description": "Supply and delivery of Boiler Tube Spares on an 'as and when' required basis at Kriel Power Station for a period of five years",
+  "category": "Supplies: General",
+  "type": "Request for Bid(Open-Tender)",
+  "organ_of_State": "Eskom Holdings SOC Ltd",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "2026-06-15T10:00:00",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "Ogies and Bethal Road",
+  "surburb": "Kriel",
+  "town": "Kriel Town",
+  "code": "2271",
+  "conditions": "N\/A",
+  "contactPerson": "Matlou Maremane",
+  "email": "MaremaMF@eskom.co.za",
+  "telephone": "017-648-0141",
+  "fax": "N\/A",
+  "username": "MaremaMF@eskom.co.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 30,
+  "provincesID": 9,
+  "provinces": {
+    "provincesID": 9,
+    "name": "Mpumalanga"
+  },
+  "province": "Mpumalanga",
+  "categoriesID": 55,
+  "departmentsID": 167,
+  "departments": {
+    "departmentsID": 167,
+    "name": "ESKOM"
+  },
+  "department": "ESKOM",
+  "categories": {
+    "categoriesID": 55,
+    "name": "Supplies: General"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "50f31069-b65a-42dc-8869-f59f6e31b689",
+      "fileName": "Notification of Tender Advertised and Awarded - Boiler Tube Spares.pdf",
+      "extension": ".pdf",
+      "tendersID": 159034,
+      "active": true,
+      "updatedBy": "MaremaMF@eskom.co.za",
+      "dateModified": "2026-06-12T13:05:40.0204948"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "E1705GXMPKRI",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "Ogies and Bethal Road-Kriel-Kriel Town-2271",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Energy, Water & Waste Management",
+  "industry_id": "energy_water",
+  "specializations": [
+    "Solar, Renewable & Backup Power",
+    "Electrical Distribution & Grid Services"
+  ],
+  "skills": [
+    "Renewable Energy (Solar\/Wind)",
+    "Electrical Grid Maintenance"
+  ],
+  "capabilities": [
+    "Solar Panel Systems & Inverters",
+    "ECA\/ECASA Registration"
+  ],
+  "title": "Supply and delivery of Boiler Tube Spares on an 'as and when' required basis at Kriel Power Station for a period of five years",
+  "isCompulsoryBriefing": false,
+  "reference": "E1705GXMPKRI",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}

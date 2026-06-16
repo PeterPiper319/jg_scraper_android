@@ -1,0 +1,116 @@
+{
+  "id": 159017,
+  "tender_No": "RFQ\/MICT\/22\/2026",
+  "description": "APPOINTMENT OF A SUBJECT MATTER EXPERT FACILITATOR FOR THE DEVELOPMENT OF A SKILLS PROGRAMME – TECHNOLOGY AND DIGITAL SKILLS PRACTITIONER.",
+  "category": "Administrative and support activities",
+  "type": "Request for Quotation",
+  "organ_of_State": "MICT SETA",
+  "status": "Published",
+  "clustersID": 0,
+  "closing_Date": "19 June 2026 @ 11:00 AM",
+  "date_Published": "2026-06-12T00:00:00",
+  "compulsory_briefing_session": null,
+  "briefingVenue": null,
+  "streetname": "19 Richards Drive Gallagher Convention Centre",
+  "surburb": "Midrand",
+  "town": "Midrand",
+  "code": "1685",
+  "conditions": "N\/A",
+  "contactPerson": "Peter Masipa  ",
+  "email": "rfqs@mict.org.za",
+  "telephone": "011-207-2600",
+  "fax": "N\/A",
+  "username": "peter.masipa@mict.org.za",
+  "briefingSession": false,
+  "briefingCompulsory": false,
+  "validity": 90,
+  "provincesID": 7,
+  "provinces": {
+    "provincesID": 7,
+    "name": "National"
+  },
+  "province": "National",
+  "categoriesID": 44,
+  "departmentsID": 392,
+  "departments": {
+    "departmentsID": 392,
+    "name": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)"
+  },
+  "department": "Media, Information and Communication Technologies Sector Education and training Authority (MICT SETA)",
+  "categories": {
+    "categoriesID": 44,
+    "name": "Administrative and support activities"
+  },
+  "biddersListDocument": null,
+  "biddersListDocumentGuid": null,
+  "eSubmission": false,
+  "twoEnvelopeSubmission": false,
+  "supportDocument": [
+    {
+      "supportDocumentID": "d07a15df-d095-487a-b44e-015061914376",
+      "fileName": "RFQ-MICT-22-2026-DEVELOPMENT OF A SKILLS PROGRAMME.pdf",
+      "extension": ".pdf",
+      "tendersID": 159017,
+      "active": true,
+      "updatedBy": "peter.masipa@mict.org.za",
+      "dateModified": "2026-06-12T11:58:41.6128203"
+    }
+  ],
+  "biddersListDocuments": null,
+  "isModified": null,
+  "questionsAndAnswers": null,
+  "esubRequiredDocuments": null,
+  "discussions": null,
+  "discussion": null,
+  "awards": null,
+  "bidders": null,
+  "cancelled": null,
+  "closed": null,
+  "clusters": null,
+  "releaseId": 0,
+  "ocid": null,
+  "sysStartTime": "0001-01-01T00:00:00",
+  "sysEndTime": "0001-01-01T00:00:00",
+  "actions": {
+    "authorized": false,
+    "tender_No": "RFQ\/MICT\/22\/2026",
+    "notification": false,
+    "bookmark": false
+  },
+  "delivery": "19 Richards Drive Gallagher Convention Centre-Midrand-Midrand-1685",
+  "document_type": "Tender",
+  "tenderAdvertType": "tender",
+  "classified_industry": "Education & Training",
+  "industry_id": "education_training",
+  "specializations": [
+    "SETA, Learnerships & Accredited Training",
+    "Curriculum Design & Content Development"
+  ],
+  "skills": [
+    "Curriculum Development",
+    "Vocational Training & SETA",
+    "E-Learning Content Creation"
+  ],
+  "capabilities": [
+    "SETA Accreditation",
+    "QCTO Provider Status",
+    "LMS (Learning Management System)"
+  ],
+  "title": "APPOINTMENT OF A SUBJECT MATTER EXPERT FACILITATOR FOR THE DEVELOPMENT OF A SKILLS PROGRAMME – TECHNOLOGY AND DIGITAL SKILLS PRACTITIONER",
+  "preference_points": "80\/20",
+  "isCompulsoryBriefing": false,
+  "closingDate": "19 June 2026 @ 11:00 AM",
+  "reference": "RFQ\/MICT\/22\/2026",
+  "complianceRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "mandatoryRegistrationRequirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ],
+  "requirements": [
+    "CSD Registration",
+    "SARS Tax Compliance Pin"
+  ]
+}
